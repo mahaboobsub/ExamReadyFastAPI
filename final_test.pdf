@@ -1,0 +1,165 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Physics Unit Test</title>
+        </head>
+        <body>
+            <div class="header">
+                <h1>CBSE Class 10 - Physics</h1>
+                <h2>Chapters: Light</h2>
+                <div class="meta">
+                    <span>Time: 60 mins</span>
+                    <span>Max Marks: 5</span>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <strong>General Instructions:</strong>
+                <ol>
+                    <li>All questions are compulsory.</li>
+                    <li>The question paper consists of 5 questions.</li>
+                </ol>
+            </div>
+            
+            <div class="questions">
+                
+            <div class="question-block">
+                <div class="question-text">
+                    <span class="q-num">1.</span> What enables us to see objects in the world around us?
+                    <span class="marks">[1 Mark]</span>
+                </div>
+                <div class="options-grid">
+                    
+                <div class="option">
+                    <span class="option-label">(A)</span> Objects absorbing light
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(B)</span> Objects reflecting light
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(C)</span> Objects transmitting light
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(D)</span> Objects diffracting light
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="question-block">
+                <div class="question-text">
+                    <span class="q-num">2.</span> What is the effect known as when light has a tendency to bend around a very small opaque object?
+                    <span class="marks">[1 Mark]</span>
+                </div>
+                <div class="options-grid">
+                    
+                <div class="option">
+                    <span class="option-label">(A)</span> Reflection
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(B)</span> Refraction
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(C)</span> Diffraction
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(D)</span> Dispersion
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="question-block">
+                <div class="question-text">
+                    <span class="q-num">3.</span> According to the modern quantum theory of light, what is the nature of light?
+                    <span class="marks">[1 Mark]</span>
+                </div>
+                <div class="options-grid">
+                    
+                <div class="option">
+                    <span class="option-label">(A)</span> Purely a wave
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(B)</span> Purely a particle
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(C)</span> Neither a wave nor a particle
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(D)</span> Only a stream of photons
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="question-block">
+                <div class="question-text">
+                    <span class="q-num">4.</span> Which type of surface reflects most of the light falling on it?
+                    <span class="marks">[1 Mark]</span>
+                </div>
+                <div class="options-grid">
+                    
+                <div class="option">
+                    <span class="option-label">(A)</span> A rough surface
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(B)</span> A transparent surface
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(C)</span> A highly polished surface
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(D)</span> An opaque surface
+                </div>
+                
+                </div>
+            </div>
+            
+            <div class="question-block">
+                <div class="question-text">
+                    <span class="q-num">5.</span> What is the name given to the straight line passing through the pole and the centre of curvature of a spherical mirror?
+                    <span class="marks">[1 Mark]</span>
+                </div>
+                <div class="options-grid">
+                    
+                <div class="option">
+                    <span class="option-label">(A)</span> Focal length
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(B)</span> Radius of curvature
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(C)</span> Principal axis
+                </div>
+                
+                <div class="option">
+                    <span class="option-label">(D)</span> Aperture
+                </div>
+                
+                </div>
+            </div>
+            
+            </div>
+            
+            <div class="footer">
+                Generated by ExamReady AI
+            </div>
+        </body>
+        </html>
+        

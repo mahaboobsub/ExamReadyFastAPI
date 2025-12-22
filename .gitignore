@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Environments
+env/
+venv/
+.venv/
+ENV/
+
+# Secrets (CRITICAL)
+.env
+
+# Local Data (Teammate should generate their own)
+data/bm25/
+data/chromadb/
+data/pdfs/
+data/textbooks/
+
+# Logs & System
+*.log
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+
+
+
+## RAG Quality Notes & Known Gaps
+
+Current known limitations and planned fixes:
+
+### 1. No Confidence Threshold
+- Issue: Low-quality chunks may be used
+- Fix: Reject if top_score < 0.5
+- Impact: Prevents weak grounding
+
+### 2. No Bloom’s Taxonomy Filtering
+- Issue: Context mismatch for question difficulty
+- Fix: Add blooms_level metadata + filter
+- Impact: Exam correctness
+
+### 3. No Question Quality Validation
+- Issue: Possible malformed outputs
+- Fix: Validate MCQ structure + answer clarity
