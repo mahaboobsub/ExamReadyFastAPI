@@ -28,6 +28,14 @@ Thumbs.db
 .DS_Store
 
 
+# RAG / Vector DB / Runtime data
+.data/
+data/
+*.sqlite3
+
+# Generated files
+*.pdf
+*.png
 
 
 ## RAG Quality Notes & Known Gaps
