@@ -1,46 +1,94 @@
-# Core Framework
+# # Core Framework
+# fastapi==0.109.0
+# uvicorn[standard]==0.27.0
+# pydantic==2.5.3
+# pydantic-settings==2.1.0
+# python-multipart==0.0.6
+# requests==2.31.0
+# json-repair
+
+# # AI & Machine Learning
+# google-generativeai==0.3.2
+# chromadb==0.4.22
+# sentence-transformers==2.3.1
+# rank-bm25==0.2.2
+
+# # PyTorch (CPU-only version recommended for AMD/Non-NVIDIA)
+# torch==2.1.2
+
+# # PDF Processing
+# pymupdf==1.23.8
+# Pillow==10.2.0
+# weasyprint==60.2
+# pytesseract==0.3.10
+# pix2text>=1.0
+# onnxruntime>=1.16.0
+
+# # Utilities
+# redis==5.0.1
+# python-dotenv==1.0.1
+
+# # Development & Testing
+# pytest==7.4.3
+# pytest-asyncio==0.21.1
+# black==24.1.1
+# pylint==3.0.3
+
+# # Specific Version Constraints
+# numpy==1.26.4
+# #pip install "numpy<2.0.0"
+
+# #testing
+# pytest pytest-asyncio requests  
+
+# # Fix protobuf (for google-generativelanguage)
+# pip install protobuf==4.25.5
+
+# # Fix urllib3 (for kubernetes)
+# pip install urllib3==2.2.3
+
+# # Fix transformers dependencies
+# pip install huggingface-hub==0.26.5 tokenizers==0.20.3
+
+# --- Web ---
 fastapi==0.109.0
-uvicorn[standard]==0.27.0
-pydantic==2.5.3
+starlette==0.35.1
+uvicorn==0.27.0
+
+# --- Config ---
+pydantic==2.12.5
 pydantic-settings==2.1.0
-python-multipart==0.0.6
-requests==2.31.0
-json-repair
-
-# AI & Machine Learning
-google-generativeai==0.3.2
-chromadb==0.4.22
-sentence-transformers==2.3.1
-rank-bm25==0.2.2
-
-
-# PyTorch (CPU-only version recommended for AMD/Non-NVIDIA)
-torch==2.1.2
-
-# PDF Processing
-pymupdf==1.23.8
-Pillow==10.2.0
-weasyprint==60.2
-pytesseract==0.3.10
-pix2text>=1.0
-onnxruntime>=1.16.0
-
-
-# Utilities
-redis==5.0.1
 python-dotenv==1.0.1
 
+# --- HTTP ---
+requests==2.31.0
 
-# Development & Testing
-pytest==7.4.3
-pytest-asyncio==0.21.1
-black==24.1.1
-pylint==3.0.3
+# --- AI / LLM ---
+google-generativeai==0.3.2
+sentence-transformers==2.3.1
+# rank-bm25==0.2.2
 
-# Specific Version Constraints
+# --- Vector DB ---
+# chromadb==0.4.22
+qdrant-client==1.12.1
+fastembed==0.7.4
+
+
+# --- OCR / Document AI ---
+pix2text==1.1.4
+pytesseract==0.3.13
+onnxruntime==1.23.2
+albumentations==2.0.8
+
+# --- ML Core ---
+torch==2.9.1
 numpy==1.26.4
-#pip install "numpy<2.0.0"
+scipy==1.16.3
 
+# --- PDF / Rendering ---
+weasyprint==60.2
+PyMuPDF==1.23.8
+Pillow==10.2.0
 
-#testing
-pytest pytest-asyncio requests  
+# --- Infra ---
+redis==5.0.1

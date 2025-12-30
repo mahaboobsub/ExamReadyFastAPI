@@ -108,3 +108,40 @@ Notes & next steps
   - Add example API usage and sample requests.
   - Add environment and setup instructions (virtualenv, env vars).
   - Expand service docs (how to run indexing, run RAG workflows).
+
+
+
+
+
+
+| Old System             | New System                     |
+| ---------------------- | ------------------------------ |
+| HybridRAGService()     | qdrant_service (singleton)     |
+| rag_service.search()   | qdrant_service.hybrid_search() |
+| ChromaDB + BM25 pickle | Qdrant Cloud (dense + sparse)  |
+| Manual RRF fusion      | Automatic RRF fusion           |
+| Local storage (350MB)  | Cloud storage (0MB local)      |
+| 3 separate services    | 1 unified service              |
+
+📊 PERFORMANCE COMPARISON
+Before (ChromaDB + BM25):
+
+- Cold start: 10-15 seconds (load pickle)
+- Search latency: ~300ms (local)
+- Storage: 350MB RAM/disk
+- Deployment: Requires persistent storage
+
+After (Qdrant Cloud):
+
+- Cold start: 1-2 seconds ✅
+- Search latency: ~450ms (cloud) ⚠️ (acceptable)
+- Storage: 0MB local ✅
+- Deployment: Serverless-ready ✅
+
+
+❌ app/services/ragservice.py           (replaced by qdrant_service)
+❌ app/services/chromaservice.py         (replaced by qdrant_service)
+❌ app/services/bm25service.py           (replaced by qdrant_service)
+❌ app/utils/bm25_indexer.py            (no longer needed)
+❌ .data/chromadb/                       (old local storage)
+❌ .data/bm25_index.pkl                  (old BM25 pickle)

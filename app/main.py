@@ -1,31 +1,34 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-import google.generativeai as genai
-import chromadb
+from fastapi.middleware.gzip import GZipMiddleware
 import redis
 from app.config.settings import settings
-from fastapi.middleware.gzip import GZipMiddleware
+from app.middleware.logging import PerformanceLogger
 
 # Import Routers
 from app.routers import exam
 from app.routers import quiz 
 from app.routers import flashcards, tutor
-from app.middleware.logging import PerformanceLogger
 
+# Import Services
+from app.services.qdrant_service import qdrant_service
 
-# Configure Gemini once on startup
-genai.configure(api_key=settings.GEMINI_API_KEY)
+# NOTE: We DO NOT configure genai here anymore. 
+# GeminiService handles its own configuration and rotation internally.
 
 app = FastAPI(
     title="ExamReady AI Service",
     version="1.0.0",
-    description="AI Backend for Exam Generation, RAG, and Tutoring"
+    description="AI Backend for Exam Generation, RAG, and Tutoring (Qdrant Cloud)"
 )
 
 # --- MIDDLEWARE ---
 
-# 1. CORS (Allow requests from Node.js)
+# 1. Logging (First to capture everything)
+app.add_middleware(PerformanceLogger)
+
+# 2. CORS (Allow requests from Node.js)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],  # In production, change to your Node.js server URL
@@ -34,10 +37,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# 3. Compression
 app.add_middleware(GZipMiddleware, minimum_size=1000)
 
-
-# 2. Security (Check X-Internal-Key)
+# 4. Security (Check X-Internal-Key)
 @app.middleware("http")
 async def verify_internal_key(request: Request, call_next):
     # Allow health checks and documentation without key
@@ -55,8 +58,20 @@ async def verify_internal_key(request: Request, call_next):
         
     return await call_next(request)
 
+# --- STARTUP EVENTS ---
+@app.on_event("startup")
+async def startup_event():
+    """Verify Qdrant connection on startup"""
+    try:
+        # Check if collection exists
+        qdrant_service.client.get_collection(settings.QDRANT_COLLECTION_NAME)
+        print(f"✅ Connected to Qdrant Cloud: Collection '{settings.QDRANT_COLLECTION_NAME}' exists")
+    except Exception as e:
+        print(f"⚠️ Qdrant Warning: Collection '{settings.QDRANT_COLLECTION_NAME}' not found or connection failed.")
+        print(f"   Error details: {e}")
+        print("   Run 'python scripts/migrate_to_qdrant.py' to initialize data.")
+
 # --- REGISTER ROUTERS ---
-app.add_middleware(PerformanceLogger)
 app.include_router(exam.router) 
 app.include_router(quiz.router)
 app.include_router(flashcards.router)
@@ -70,42 +85,40 @@ def read_root():
         "status": "active",
         "service": "ExamReady AI",
         "environment": settings.ENVIRONMENT,
-        "system": "CPU-Optimized + Upstash"
+        "system": "Qdrant Cloud + Gemini (Rotation Enabled)"
     }
 
 @app.get("/health")
 def health_check():
     """Verify connections to Critical Infrastructure"""
     health_status = {
-        "redis": "unknown",
-        "gemini": "unknown",
-        "chroma": "unknown"
+        "status": "healthy",
+        "services": {
+            "redis": "unknown",
+            "qdrant": "unknown"
+            # Gemini is not checked here to avoid burning tokens/rate limits on frequent health pings
+        }
     }
 
     # 1. Test Redis (Upstash)
     try:
         r = redis.from_url(settings.REDIS_URL, decode_responses=True)
         if r.ping():
-            health_status["redis"] = "connected"
+            health_status["services"]["redis"] = "connected"
     except Exception as e:
-        health_status["redis"] = f"error: {str(e)}"
+        health_status["services"]["redis"] = f"error: {str(e)}"
+        health_status["status"] = "degraded"
 
-    # 2. Test Gemini API
+    # 2. Test Qdrant Cloud
     try:
-        model = genai.GenerativeModel(settings.GEMINI_MODEL)
-        # Generate a tiny response to prove auth works
-        response = model.generate_content("Say OK", generation_config={"max_output_tokens": 5})
-        if response.text:
-            health_status["gemini"] = "connected"
+        info = qdrant_service.client.get_collection(settings.QDRANT_COLLECTION_NAME)
+        health_status["services"]["qdrant"] = {
+            "status": "connected",
+            "vectors_count": info.points_count,
+            "status": str(info.status)
+        }
     except Exception as e:
-        health_status["gemini"] = f"error: {str(e)}"
-
-    # 3. Test ChromaDB (Local)
-    try:
-        client = chromadb.PersistentClient(path=settings.CHROMA_PATH)
-        client.heartbeat()
-        health_status["chroma"] = "ready"
-    except Exception as e:
-        health_status["chroma"] = f"error: {str(e)}"
+        health_status["services"]["qdrant"] = {"status": "error", "detail": str(e)}
+        health_status["status"] = "degraded"
 
     return health_status

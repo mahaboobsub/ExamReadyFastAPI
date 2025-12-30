@@ -28,11 +28,11 @@ def get_exam_prompt(context: str, blooms_level: str, count: int, difficulty: str
     Target Level: {blooms_level} ({guide}).
     Difficulty: {difficulty}.
     
-    RULES:
-    1. Return VALID JSON Array.
-    2. "options" must be a list of 4 separate strings.
-    3. "correctAnswer" must match one option exactly.
-    4. Do NOT merge options into a single string.
+    CRITICAL JSON FORMATTING RULES:
+    1. Output MUST be a valid JSON Array.
+    2. "options" MUST be a list of 4 separate strings.
+    3. Do NOT merge options into one string.
+    4. "correctAnswer" must match exactly one of the strings in "options".
     
     ### EXAMPLE JSON OUTPUT (Follow this format exactly):
     [
@@ -55,7 +55,7 @@ def get_exam_prompt(context: str, blooms_level: str, count: int, difficulty: str
       }}
     ]
     
-    Generate {count} questions now:
+    Generate {count} questions now. Return ONLY JSON.
     """
     return prompt
 
@@ -130,6 +130,45 @@ def get_flashcard_prompt(context: str, count: int) -> str:
     """
     return prompt
 
+# def get_tutor_prompt(query: str, context: str, history: list, mode: str) -> str:
+#     # Build conversation context
+#     history_text = ""
+#     if history:
+#         history_text = "\n**PREVIOUS CONVERSATION:**\n"
+#         for msg in history[-3:]:  # Last 3 messages only
+#             # Handle Pydantic model access vs dict access
+#             role = getattr(msg, 'role', 'user') if hasattr(msg, 'role') else msg.get('role', 'user')
+#             text = getattr(msg, 'text', '') if hasattr(msg, 'text') else msg.get('text', '')
+#             history_text += f"{role}: {text}\n"
+
+#     role_desc = "You are a helpful, encouraging Tutor."
+#     extra_instructions = "Be simple, direct, use analogies."
+    
+#     if mode == "teacher_sme":
+#         role_desc = "You are a Pedagogical Expert assisting a teacher."
+#         extra_instructions = """
+#         1. Concept Clarification: Explain depth.
+#         2. Teaching Strategy: Suggest how to teach it.
+#         3. Common Misconceptions: List student pitfalls.
+#         """
+        
+#     prompt = f"""
+#     {role_desc}
+    
+#     {history_text}
+    
+#     CONTEXT from Textbook:
+#     {context}
+    
+#     USER QUESTION: {query}
+    
+#     INSTRUCTIONS:
+#     1. Answer based ONLY on the context.
+#     2. {extra_instructions}
+    
+#     Answer:
+#     """
+#     return prompt
 def get_tutor_prompt(query: str, context: str, history: list, mode: str) -> str:
     # Build conversation context
     history_text = ""
@@ -141,15 +180,22 @@ def get_tutor_prompt(query: str, context: str, history: list, mode: str) -> str:
             text = getattr(msg, 'text', '') if hasattr(msg, 'text') else msg.get('text', '')
             history_text += f"{role}: {text}\n"
 
-    role_desc = "You are a helpful, encouraging Tutor."
-    extra_instructions = "Be simple, direct, use analogies."
+    # Default Student Mode Configuration
+    role_desc = "You are a helpful, encouraging AI Tutor for a student."
+    mode_instructions = """
+    1. Be simple, direct, and use analogies suitable for a student.
+    2. Break down complex concepts into step-by-step explanations.
+    3. Encourage the student to ask follow-up questions.
+    """
     
+    # Teacher SME Mode Override
     if mode == "teacher_sme":
         role_desc = "You are a Pedagogical Expert assisting a teacher."
-        extra_instructions = """
-        1. Concept Clarification: Explain depth.
-        2. Teaching Strategy: Suggest how to teach it.
-        3. Common Misconceptions: List student pitfalls.
+        mode_instructions = """
+    1. Concept Clarification: Explain the concept in depth.
+    2. Teaching Strategy: Suggest specific ways to teach this to students.
+    3. Common Misconceptions: List pitfalls students often fall into.
+    4. Curriculum Context: Mention how this connects to future topics.
         """
         
     prompt = f"""
@@ -157,14 +203,19 @@ def get_tutor_prompt(query: str, context: str, history: list, mode: str) -> str:
     
     {history_text}
     
-    CONTEXT from Textbook:
+    **CONTEXT from Textbook:**
     {context}
     
-    USER QUESTION: {query}
+    **USER QUESTION:** {query}
     
-    INSTRUCTIONS:
-    1. Answer based ONLY on the context.
-    2. {extra_instructions}
+    **INSTRUCTIONS:**
+    {mode_instructions}
+    
+    **CRITICAL GUARDRAILS:**
+    1. Answer based **ONLY** on the provided CONTEXT. 
+    2. If the context does not contain sufficient information to answer the question, explicitly state: "This topic is not covered in the current chapter context." 
+    3. Do NOT hallucinate information not present in the text.
+    4. Use LaTeX for all mathematical formulas (e.g., \( E = mc^2 \)).
     
     Answer:
     """
