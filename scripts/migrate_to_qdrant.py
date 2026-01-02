@@ -47,6 +47,7 @@ BOOKS_TO_INDEX = [
     #     }
     # },
     # 📐 MATHS (Class 10)
+    # 📐 MATHS (Class 10)
     {
         "path": "data/textbooks/cbse/class_10_maths_ch1.pdf",
         "metadata": {
@@ -66,7 +67,7 @@ BOOKS_TO_INDEX = [
             "chapter": "Polynomials",
             "textbook": "NCERT Class 10 Maths"
         }
-    },
+    }
 ]
 
 def main():

@@ -145,3 +145,8 @@ After (Qdrant Cloud):
 ❌ app/utils/bm25_indexer.py            (no longer needed)
 ❌ .data/chromadb/                       (old local storage)
 ❌ .data/bm25_index.pkl                  (old BM25 pickle)
+
+
+
+
+update requirements.txt pip install weasyprint==59.0 pydyf==0.6.0

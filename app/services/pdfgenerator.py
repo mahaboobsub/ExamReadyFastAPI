@@ -1,149 +1,42 @@
-from weasyprint import HTML, CSS
-from typing import List, Dict, Any
+from weasyprint import HTML
+from jinja2 import Environment, FileSystemLoader
+from typing import Dict, Tuple
 import os
-import time
+import uuid
 from app.config.settings import settings
 
 class PDFGenerator:
-    """Generate exam PDFs with LaTeX rendering"""
-
+    """Generate exam PDFs using Jinja2 templates and WeasyPrint"""
+    
     def __init__(self):
         self.output_path = settings.OUTPUT_PDF_PATH
+        self.template_env = Environment(loader=FileSystemLoader("app/templates"))
         os.makedirs(self.output_path, exist_ok=True)
-        os.makedirs(f"{self.output_path}/exams", exist_ok=True)
 
-    def generate_exam_pdf(self, exam_id: str, exam_data: Dict[str, Any]) -> str:
+    def generate_dual_pdfs(self, exam_data: Dict) -> Tuple[str, str]:
         """
-        Generate exam paper PDF with robust error handling
+        Generates both Student Exam PDF and Teacher Answer Key PDF.
+        Returns: Tuple[str, str]: (student_filename, teacher_filename)
         """
-        # 1. Initialize fallback content to prevent UnboundLocalError
-        html_content = "<html><body><h1>Error generating exam content</h1></body></html>"
+        exam_id = exam_data.get("exam_id", str(uuid.uuid4()))
         
-        try:
-            # 2. Build HTML (Pure Python - Should rarely fail)
-            html_content = self._build_exam_html(exam_data)
-            
-            # 3. Define Paths
-            pdf_filename = f"{exam_id}.pdf"
-            pdf_path = os.path.join(self.output_path, "exams", pdf_filename)
-            
-            # 4. Render PDF (External Lib - May fail on Windows without GTK)
-            print(f"   📄 Rendering PDF: {pdf_path}")
-            html_obj = HTML(string=html_content)
-            html_obj.write_pdf(
-                target=pdf_path,
-                stylesheets=[CSS(string=self._get_exam_css())]
-            )
-            
-            return pdf_path
-            
-        except Exception as e:
-            print(f"⚠️ PDF Engine Failed: {e}")
-            
-            # 5. FALLBACK: Save HTML so the user gets *something*
-            # This is critical for Windows dev where WeasyPrint might lack DLLs
-            html_filename = f"{exam_id}.html"
-            html_path = os.path.join(self.output_path, "exams", html_filename)
-            
-            with open(html_path, "w", encoding="utf-8") as f:
-                f.write(html_content)
-                
-            print(f"✅ Saved HTML fallback instead: {html_path}")
-            return html_path
+        # 1. Student PDF
+        student_template = self.template_env.get_template("exam_pdf.html")
+        student_html = student_template.render(exam=exam_data)
+        student_filename = f"{exam_id}_student.pdf"
+        student_path = os.path.join(self.output_path, student_filename)
+        HTML(string=student_html).write_pdf(student_path)
+        print(f"[PDF] ✅ Generated Student Exam: {student_path}")
 
-    def _build_exam_html(self, data: Dict[str, Any]) -> str:
-        """Build HTML for exam paper using safe data access"""
-        
-        # Safe access to keys with defaults to prevent KeyErrors
-        title = data.get('title', 'Exam Paper')
-        board = data.get('board', 'General')
-        class_name = data.get('class', 'N/A')
-        subject = data.get('subject', 'General')
-        chapters = data.get('chapters', [])
-        if isinstance(chapters, list):
-            chapters_str = ', '.join(chapters)
-        else:
-            chapters_str = str(chapters)
-            
-        time_limit = data.get('timeLimit', 60)
-        total_marks = data.get('totalMarks', 0)
-        questions = data.get('questions', [])
+        # 2. Answer Key PDF
+        teacher_template = self.template_env.get_template("answer_key_pdf.html")
+        teacher_html = teacher_template.render(exam=exam_data)
+        teacher_filename = f"{exam_id}_teacher_key.pdf"
+        teacher_path = os.path.join(self.output_path, teacher_filename)
+        HTML(string=teacher_html).write_pdf(teacher_path)
+        print(f"[PDF] ✅ Generated Answer Key: {teacher_path}")
 
-        # Build Questions HTML
-        questions_html = ""
-        for i, q in enumerate(questions):
-            options_html = ""
-            options = q.get('options', [])
-            
-            for j, opt in enumerate(options):
-                letter = chr(65 + j) # A, B, C, D
-                options_html += f"""
-                <div class="option">
-                    <span class="option-label">({letter})</span> {opt}
-                </div>
-                """
-            
-            questions_html += f"""
-            <div class="question-block">
-                <div class="question-text">
-                    <span class="q-num">{i+1}.</span> {q.get('text', '')}
-                    <span class="marks">[{q.get('marks', 1)} Mark{'s' if q.get('marks', 1) > 1 else ''}]</span>
-                </div>
-                <div class="options-grid">
-                    {options_html}
-                </div>
-            </div>
-            """
+        # ✅ Return FILENAMES ONLY
+        return student_filename, teacher_filename
 
-        return f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>{title}</title>
-        </head>
-        <body>
-            <div class="header">
-                <h1>{board} Class {class_name} - {subject}</h1>
-                <h2>Chapters: {chapters_str}</h2>
-                <div class="meta">
-                    <span>Time: {time_limit} mins</span>
-                    <span>Max Marks: {total_marks}</span>
-                </div>
-            </div>
-            
-            <div class="instructions">
-                <strong>General Instructions:</strong>
-                <ol>
-                    <li>All questions are compulsory.</li>
-                    <li>The question paper consists of {len(questions)} questions.</li>
-                </ol>
-            </div>
-            
-            <div class="questions">
-                {questions_html}
-            </div>
-            
-            <div class="footer">
-                Generated by ExamReady AI
-            </div>
-        </body>
-        </html>
-        """
-
-    def _get_exam_css(self) -> str:
-        return """
-        @page { size: A4; margin: 2cm; }
-        body { font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.4; }
-        .header { text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 20px; }
-        .header h1 { font-size: 18pt; margin: 0; }
-        .header h2 { font-size: 14pt; margin: 5px 0; font-weight: normal; }
-        .meta { display: flex; justify-content: space-between; margin-top: 10px; font-weight: bold; }
-        .instructions { background: #f9f9f9; padding: 10px; border: 1px solid #ddd; margin-bottom: 20px; font-size: 10pt; }
-        .question-block { margin-bottom: 15px; page-break-inside: avoid; }
-        .question-text { font-weight: bold; margin-bottom: 5px; }
-        .marks { float: right; font-size: 10pt; font-weight: normal; }
-        .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; margin-left: 20px; }
-        .option { font-size: 11pt; }
-        .footer { position: fixed; bottom: 0; width: 100%; text-align: center; font-size: 9pt; color: #666; border-top: 1px solid #ccc; padding-top: 5px; }
-        """
+pdf_generator = PDFGenerator()

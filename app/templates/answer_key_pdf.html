@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Answer Key</title>
+    <style>
+        @page { size: A4; margin: 2cm; }
+        body { font-family: 'Arial', sans-serif; font-size: 11pt; line-height: 1.4; }
+        .header { text-align: center; border-bottom: 2px solid red; padding-bottom: 10px; margin-bottom: 20px; color: red; }
+        .section-header { background: #eee; padding: 5px; font-weight: bold; margin-top: 15px; }
+        .question-block { margin-bottom: 15px; border-bottom: 1px dashed #ccc; padding-bottom: 10px; page-break-inside: avoid; }
+        .correct-ans { color: green; font-weight: bold; }
+        .explanation { background: #f0f8ff; padding: 8px; font-size: 10pt; margin-top: 5px; border-left: 3px solid #2196F3; }
+        .meta-tag { font-size: 8pt; background: #ddd; padding: 2px 4px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>CONFIDENTIAL - ANSWER KEY</h1>
+        <p>{{ exam.get('template_id') }}</p>
+    </div>
+
+    {% for section_code, questions in exam.sections.items() %}
+        {% if questions %}
+        <div class="section-header">Section {{ section_code }}</div>
+        {% for q in questions %}
+        <div class="question-block">
+            <div><strong>Q{{ loop.index }}.</strong> {{ q.text }} <span class="meta-tag">{{ q.bloomsLevel }}</span></div>
+            
+            {% if q.type == 'MCQ' %}
+            <div style="margin: 5px 0;">
+                <em>Options:</em> {{ q.options | join(', ') }}
+            </div>
+            <div class="correct-ans">✓ Answer: {{ q.correctAnswer }}</div>
+            {% else %}
+            <div class="correct-ans">Expected Answer/Key Points: {{ q.correctAnswer }}</div>
+            {% endif %}
+
+            {% if q.explanation %}
+            <div class="explanation">
+                <strong>Explanation:</strong> {{ q.explanation }}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
