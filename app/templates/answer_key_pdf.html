@@ -1,49 +1,285 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Answer Key</title>
+    <title>CBSE Board Exam - Answer Key</title>
     <style>
-        @page { size: A4; margin: 2cm; }
-        body { font-family: 'Arial', sans-serif; font-size: 11pt; line-height: 1.4; }
-        .header { text-align: center; border-bottom: 2px solid red; padding-bottom: 10px; margin-bottom: 20px; color: red; }
-        .section-header { background: #eee; padding: 5px; font-weight: bold; margin-top: 15px; }
-        .question-block { margin-bottom: 15px; border-bottom: 1px dashed #ccc; padding-bottom: 10px; page-break-inside: avoid; }
-        .correct-ans { color: green; font-weight: bold; }
-        .explanation { background: #f0f8ff; padding: 8px; font-size: 10pt; margin-top: 5px; border-left: 3px solid #2196F3; }
-        .meta-tag { font-size: 8pt; background: #ddd; padding: 2px 4px; border-radius: 3px; }
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #d32f2f;
+            padding-bottom: 15px;
+            background: #ffebee;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 16pt;
+            color: #c62828;
+        }
+
+        .header h2 {
+            margin: 0 0 5px 0;
+            font-size: 13pt;
+        }
+
+        .confidential {
+            background: #d32f2f;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 5px;
+            font-size: 10pt;
+        }
+
+        .section {
+            margin: 25px 0;
+        }
+
+        .section-header {
+            background: #e8f5e9;
+            padding: 10px 15px;
+            margin: 20px 0 12px 0;
+            font-weight: bold;
+            font-size: 12pt;
+            border-left: 5px solid #2e7d32;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .question {
+            margin: 15px 0;
+            padding: 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background: #fff;
+            page-break-inside: avoid;
+        }
+
+        .q-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .q-number {
+            font-weight: bold;
+            color: #1976d2;
+        }
+
+        .q-meta {
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .q-meta span {
+            margin-left: 10px;
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        .bloom {
+            background: #e3f2fd;
+            color: #1565c0;
+        }
+
+        .difficulty {
+            background: #fff3e0;
+            color: #e65100;
+        }
+
+        .chapter {
+            background: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .marks-badge {
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+
+        .q-text {
+            margin: 10px 0;
+            padding: 8px;
+            background: #fafafa;
+            border-radius: 5px;
+        }
+
+        .options {
+            margin: 10px 0 10px 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+
+        .option {
+            padding: 6px 10px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            font-size: 10pt;
+        }
+
+        .correct-answer {
+            margin: 12px 0;
+            padding: 12px;
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+            border-radius: 8px;
+        }
+
+        .correct-answer strong {
+            color: #2e7d32;
+        }
+
+        .explanation {
+            margin: 10px 0;
+            padding: 12px;
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            border-radius: 0 5px 5px 0;
+            font-size: 10pt;
+        }
+
+        .explanation-title {
+            font-weight: bold;
+            color: #f57c00;
+            margin-bottom: 5px;
+        }
+
+        .key-steps {
+            margin: 10px 0;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 5px;
+        }
+
+        .key-steps ul {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 9pt;
+            border-top: 2px solid #d32f2f;
+            padding-top: 15px;
+        }
     </style>
 </head>
+
 <body>
     <div class="header">
-        <h1>CONFIDENTIAL - ANSWER KEY</h1>
-        <p>{{ exam.get('template_id') }}</p>
+        <h1>📋 TEACHER'S ANSWER KEY & MARKING SCHEME</h1>
+        <h2>Class {{ exam.metadata.class if exam.metadata else '10' }} - {{ exam.metadata.subject if exam.metadata else
+            'Mathematics' }}</h2>
+        <p>Board Examination 2025-26</p>
+        <div class="confidential">🔒 CONFIDENTIAL - FOR TEACHERS ONLY</div>
     </div>
 
-    {% for section_code, questions in exam.sections.items() %}
-        {% if questions %}
-        <div class="section-header">Section {{ section_code }}</div>
-        {% for q in questions %}
-        <div class="question-block">
-            <div><strong>Q{{ loop.index }}.</strong> {{ q.text }} <span class="meta-tag">{{ q.bloomsLevel }}</span></div>
-            
-            {% if q.type == 'MCQ' %}
-            <div style="margin: 5px 0;">
-                <em>Options:</em> {{ q.options | join(', ') }}
-            </div>
-            <div class="correct-ans">✓ Answer: {{ q.correctAnswer }}</div>
-            {% else %}
-            <div class="correct-ans">Expected Answer/Key Points: {{ q.correctAnswer }}</div>
-            {% endif %}
+    <div class="meta">
+        <span>Total Questions: {{ exam.metadata.totalQuestions if exam.metadata else 38 }}</span>
+        <span>Total Marks: {{ exam.metadata.totalMarks if exam.metadata else 80 }}</span>
+        <span>Generation: {{ exam.metadata.generationMethod if exam.metadata else 'RAG+LLM' }}</span>
+    </div>
 
-            {% if q.explanation %}
-            <div class="explanation">
-                <strong>Explanation:</strong> {{ q.explanation }}
-            </div>
-            {% endif %}
+    {% for section_id in ['A', 'B', 'C', 'D', 'E'] %}
+    {% if section_id in exam.sections %}
+    {% set section = exam.sections[section_id] %}
+    <div class="section">
+        <div class="section-header">
+            📖 Section {{ section_id }}: {{ section.name }} ({{ section.marks }} Marks)
         </div>
-        {% endfor %}
+
+        {% for question in section.questions %}
+        <div class="question">
+            <div class="q-header">
+                <span class="q-number">Q{{ loop.index }}. [{{ question.type }}]</span>
+                <div class="q-meta">
+                    <span class="bloom">{{ question.bloomsLevel }}</span>
+                    <span class="difficulty">{{ question.difficulty }}</span>
+                    <span class="chapter">{{ question.chapter }}</span>
+                    <span class="marks-badge">{{ question.marks }} Mark{% if question.marks > 1 %}s{% endif %}</span>
+                </div>
+            </div>
+
+            <div class="q-text">{{ question.text | safe }}</div>
+
+            {% if question.type in ['MCQ', 'AR'] and question.options and question.options|length > 0 %}
+            <div class="options">
+                {% for option in question.options %}
+                <div class="option">
+                    ({{ ['a', 'b', 'c', 'd'][loop.index0] if loop.index0 < 4 else loop.index }}) {{ option | safe }}
+                        </div>
+                        {% endfor %}
+                </div>
+                {% endif %}
+
+                <div class="correct-answer">
+                    <strong>✅ Correct Answer:</strong> {{ question.correctAnswer | safe }}
+                </div>
+
+                {% if question.explanation %}
+                <div class="explanation">
+                    <div class="explanation-title">📝 Solution & Explanation:</div>
+                    {{ question.explanation | safe }}
+                </div>
+                {% endif %}
+
+                {% if question.keySteps and question.keySteps|length > 0 %}
+                <div class="key-steps">
+                    <strong>🔑 Key Steps for Marking:</strong>
+                    <ul>
+                        {% for step in question.keySteps %}
+                        <li>{{ step }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
         {% endif %}
-    {% endfor %}
+        {% endfor %}
+
+        <div class="footer">
+            <p>--- END OF ANSWER KEY ---</p>
+            <p>🔒 This document is confidential and intended for authorized personnel only.</p>
+            <p>Generated by ExamReady AI</p>
+        </div>
 </body>
+
 </html>

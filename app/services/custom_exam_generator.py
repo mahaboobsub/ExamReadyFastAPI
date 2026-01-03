@@ -93,6 +93,7 @@ class CustomExamGenerator:
             "sections": assigned_sections,
             "total_marks": template.total_marks,
             "chapters_covered": chapters,
+            "total_questions": len(unique_qs),
             "generation_method": "real-time" if llm_used else "pre-generated",
             "latency_ms": int((time.time() - start_time) * 1000),
             "cache_key": cache_key
@@ -119,10 +120,10 @@ class CustomExamGenerator:
         # ✅ FIX: Use class_num
         filters = {
             "board": template.board,
-            "class_num": template.class_num,
+            "class": template.class_num,
             "subject": template.subject,
             "chapter": chapter,
-            "qualityScore": {"$gte": self.quality_threshold}
+            # "qualityScore": {"$gte": self.quality_threshold} # Relaxed for now
         }
         if difficulty != "Mixed":
             filters["difficulty"] = difficulty
@@ -158,6 +159,7 @@ class CustomExamGenerator:
         prompt = f"""
         Role: CBSE Exam Setter.
         Context: {context_text}
+        
         Task: Create {count} questions for Class {template.class_num} {template.subject}, Chapter: {chapter}.
         Difficulty: {difficulty}.
         

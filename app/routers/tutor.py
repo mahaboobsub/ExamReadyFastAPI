@@ -72,8 +72,8 @@ async def tutor_answer(request: TutorRequest):
         last_text = last_msg.text if hasattr(last_msg, 'text') else last_msg.get('text', '')
         full_query = f"{last_text} {request.query}"
         
-    # ✅ QDRANT SEARCH
-    rag_result = qdrant_service.hybrid_search(full_query, request.filters, top_k=5)
+    # ✅ QDRANT SEARCH (FIXED: Added await)
+    rag_result = await qdrant_service.hybrid_search(full_query, request.filters, top_k=5)
     
     prompt = get_tutor_prompt(
         query=request.query,

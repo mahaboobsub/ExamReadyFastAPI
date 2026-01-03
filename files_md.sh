@@ -16,7 +16,7 @@ IGNORE_DIRS=("node_modules" "assets" "backup_assets" ".git" ".vscode" "dist" "bu
 IGNORE_FILES=("vocab.txt" "special_tokens.txt")  # Added more files if needed
 
 # File extensions to include
-INCLUDE_EXTENSIONS=("py" "sql" "js" "jsx" "ts" "tsx" "css" "scss" "html" "txt" "env"  )
+INCLUDE_EXTENSIONS=("py" "sql" "js" "jsx" "ts" "tsx" "css" "scss" "html" "txt" "env"  "json" "md")
 
 # Line filters → regex patterns of lines to remove
 FILTER_PATTERNS=(

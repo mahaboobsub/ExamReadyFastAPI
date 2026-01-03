@@ -29,7 +29,7 @@ class PracticeExamRequest(BaseModel):
 
 class CustomExamRequest(BaseModel):
     template_id: str
-    chapters: List[str] = Field(..., min_items=3, max_items=5)
+    chapters: List[str] = Field(..., min_items=1, max_items=5)
     chapter_weightage: Dict[str, float]
     difficulty: Difficulty = Difficulty.MIXED
     focus_topics: Optional[List[str]] = []

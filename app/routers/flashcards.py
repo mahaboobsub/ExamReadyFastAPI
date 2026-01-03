@@ -98,8 +98,8 @@ async def generate_flashcards(request: FlashcardRequest):
     query = f"{request.subject} {request.chapter} definitions formulas key concepts"
     filters = {"board": request.board, "class": request.class_num, "subject": request.subject}
     
-    # ✅ QDRANT SEARCH
-    rag_result = qdrant_service.hybrid_search(query, filters, top_k=8)
+    # ✅ QDRANT SEARCH (FIXED: Added await)
+    rag_result = await qdrant_service.hybrid_search(query, filters, top_k=8)
     
     prompt = get_flashcard_prompt(rag_result['context'], request.cardCount)
     

@@ -15,26 +15,23 @@ from qdrant_client import models
 from json_repair import repair_json 
 
 # ========================================
-# 🎯 CONFIGURATION: CBSE 2025-26 TARGETS
-# Format: (Board Subject, Chapter Name, Textbook Subject)
-# ========================================
 TARGETS = [
     # --- MATHEMATICS (Class 10) ---
     # Ensure you have downloaded and indexed these PDFs first!
-    ("Mathematics", "Real Numbers", "Maths"),
-    ("Mathematics", "Polynomials", "Maths"),
-    ("Mathematics", "Pair of Linear Equations in Two Variables", "Maths"),
-    ("Mathematics", "Quadratic Equations", "Maths"),
-    ("Mathematics", "Arithmetic Progressions", "Maths"),
-    ("Mathematics", "Triangles", "Maths"),
-    ("Mathematics", "Coordinate Geometry", "Maths"),
-    ("Mathematics", "Introduction to Trigonometry", "Maths"),
-    ("Mathematics", "Some Applications of Trigonometry", "Maths"),
-    ("Mathematics", "Circles", "Maths"),
-    ("Mathematics", "Areas Related to Circles", "Maths"),
-    ("Mathematics", "Surface Areas and Volumes", "Maths"),
-    ("Mathematics", "Statistics", "Maths"),
-    ("Mathematics", "Probability", "Maths"),
+    ("Mathematics", "Real Numbers", "Mathematics"),
+    ("Mathematics", "Polynomials", "Mathematics"),
+    ("Mathematics", "Pair of Linear Equations in Two Variables", "Mathematics"),
+    ("Mathematics", "Quadratic Equations", "Mathematics"),
+    ("Mathematics", "Arithmetic Progressions", "Mathematics"),
+    ("Mathematics", "Triangles", "Mathematics"),
+    ("Mathematics", "Coordinate Geometry", "Mathematics"),
+    ("Mathematics", "Introduction to Trigonometry", "Mathematics"),
+    ("Mathematics", "Some Applications of Trigonometry", "Mathematics"),
+    ("Mathematics", "Circles", "Mathematics"),
+    ("Mathematics", "Areas Related to Circles", "Mathematics"),
+    ("Mathematics", "Surface Areas and Volumes", "Mathematics"),
+    ("Mathematics", "Statistics", "Mathematics"),
+    ("Mathematics", "Probability", "Mathematics"),
 
     # --- SCIENCE (Physics) ---
     ("Science", "Light", "Physics"), # Adjust name based on your PDF index (e.g. "Light - Reflection...")

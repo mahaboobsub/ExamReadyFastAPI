@@ -29,8 +29,9 @@ class BoardExamGenerator:
     """
     
     def __init__(self):
-        self.quality_threshold = BOARD_QUALITY_THRESHOLD
-        self.over_fetch_ratio = 2.0  # Fetch 2x needed for deduplication buffer
+        # ✅ RELAXED for MVP: Accept all questions, improve quality later
+        self.quality_threshold = 0.0  # Was: BOARD_QUALITY_THRESHOLD (0.85)
+        self.over_fetch_ratio = 5.0   # Was: 2.0 - Fetch more to ensure enough
     
     async def generate(self, template_id: str) -> Dict:
         start_time = time.time()
@@ -57,39 +58,31 @@ class BoardExamGenerator:
         
         print(f"[BOARD] Querying for subject: '{target_subject}'")
 
+        # ✅ SIMPLIFIED: One query per section type (not per Bloom's level)
+        # This ensures we get enough questions even if Bloom's metadata is sparse
         for section in template.sections:
             section_type = section["question_type"]  
             section_count = section["question_count"]
             
-            # Distribute Bloom's taxonomy levels for this section
-            blooms_dist = self._calculate_section_blooms(
-                section, template.overall_blooms, section_count
-            )
+            # Fetch extra to account for deduplication
+            fetch_limit = int(section_count * self.over_fetch_ratio)
             
-            # Create one query per Bloom's level
-            for blooms_level, count in blooms_dist.items():
-                if count == 0: 
-                    continue
-                
-                # Fetch extra to account for deduplication
-                fetch_limit = int(count * self.over_fetch_ratio)
-                
-                # Build filter criteria
-                filters = {
-                    "board": template.board,              # "CBSE"
-                    "class_num": template.class_num,      # 10
-                    "subject": target_subject,            # "Science" (direct match)
-                    "question_type": section_type,        # "MCQ", "VSA", etc.
-                    "bloomsLevel": blooms_level,          # "Remember", "Understand", etc.
-                    "qualityScore": {"$gte": self.quality_threshold},  # 0.85+
-                }
-                
-                # Semantic query text (helps with vector search)
-                query_text = f"{template.board} {template.class_num} {target_subject} {section_type} {blooms_level} questions"
-                
-                # Create async task
-                tasks.append(qdrant_service.search_questions(query_text, filters, fetch_limit))
-                task_metadata.append(f"{blooms_level} ({section['code']})")
+            # ✅ RELAXED FILTER: Only filter by type, not Bloom's or quality
+            filters = {
+                "board": template.board,              # "CBSE"
+                "class": template.class_num,      # 10
+                "subject": target_subject,            # "Mathematics" or "Science"
+                "question_type": section_type,        # "MCQ", "VSA", etc.
+                # Removed: bloomsLevel filter (sparse metadata)
+                # Removed: qualityScore filter (relax for MVP)
+            }
+            
+            # Semantic query text (helps with vector search)
+            query_text = f"{template.board} Class {template.class_num} {target_subject} {section_type} questions"
+            
+            # Create async task
+            tasks.append(qdrant_service.search_questions(query_text, filters, fetch_limit))
+            task_metadata.append(f"{section_type} ({section['code']})")
 
         # ========================================
         # 3. EXECUTE QUERIES IN PARALLEL
@@ -250,6 +243,7 @@ class BoardExamGenerator:
             "sections": assigned_sections,
             "questions": questions_flat_list,
             "total_marks": template.total_marks,
+            "total_questions": len(questions_flat_list),
             "duration": template.duration_minutes,
             "chapters_covered": template.applicable_chapters,
             "generation_method": "pre-generated",

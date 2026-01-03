@@ -154,9 +154,15 @@ class QdrantService:
         
         # ✅ B. Sparse Embedding (CPU bound - run in thread)
         # FastEmbed is CPU intensive, good to offload
-        sparse_vec = await asyncio.to_thread(
-            lambda: list(self.sparse_model.embed([query]))[0]
-        )
+        # FIXED: Added error handling for sparse embedding failure
+        sparse_vec = None
+        try:
+            sparse_vec = await asyncio.to_thread(
+                lambda: list(self.sparse_model.embed([query]))[0]
+            )
+        except Exception as e:
+            logger.error(f"Sparse embedding failed: {e}")
+            # Continue with dense-only search
         
         # C. Build Filters
         must_conditions = []
@@ -185,16 +191,19 @@ class QdrantService:
         
         q_filter = models.Filter(must=must_conditions) if must_conditions else None
         
-        # ✅ D. Execute Async Query
-        results = await self.client.query_points(
-            collection_name=target_collection,
-            prefetch=[
-                models.Prefetch(
-                    query=dense_vec,
-                    using="text-dense",
-                    filter=q_filter,
-                    limit=settings.SEMANTIC_TOP_K
-                ),
+        # ✅ D. Build Prefetch (conditional sparse)
+        prefetch = [
+            models.Prefetch(
+                query=dense_vec,
+                using="text-dense",
+                filter=q_filter,
+                limit=settings.SEMANTIC_TOP_K
+            )
+        ]
+        
+        # Only add sparse prefetch if sparse embedding succeeded
+        if sparse_vec is not None:
+            prefetch.append(
                 models.Prefetch(
                     query=models.SparseVector(
                         indices=sparse_vec.indices.tolist(),
@@ -204,7 +213,12 @@ class QdrantService:
                     filter=q_filter,
                     limit=settings.BM25_TOP_K
                 )
-            ],
+            )
+        
+        # ✅ E. Execute Async Query
+        results = await self.client.query_points(
+            collection_name=target_collection,
+            prefetch=prefetch,
             query=models.FusionQuery(fusion=models.Fusion.RRF),
             limit=top_k,
             with_payload=True
