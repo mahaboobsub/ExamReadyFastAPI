@@ -1,0 +1,810 @@
+{
+  "sections": {
+    "A": {
+      "name": "Section A (MCQ & AR)",
+      "questions": [
+        {
+          "text": "A bookseller has 120 mathematics books and 90 science books. He wants to stack them in such a way that each stack has the same number of books, and each stack contains books of only one subject. What is the maximum number of books that can be placed in each stack?",
+          "type": "MCQ",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "40"
+          ],
+          "correctAnswer": "30",
+          "explanation": "To find the maximum number of books that can be placed in each stack",
+          "number": "n\nPrime factorization of 120:\n120 = 2 × 60\n120 = 2 × 2 × 30\n120 = 2 × 2 × 2 × 15\n120 = 2³ × 3¹ × 5¹\n\nPrime factorization of 90:\n90 = 2 × 45\n90 = 2 × 3 × 15\n90 = 2 × 3 × 3 × 5\n90 = 2¹ × 3² × 5¹\n\nTo find the HCF",
+          "each": "nCommon prime factors are 2, 3, and 5.\nLowest power of 2 is 2¹.\nLowest power of 3 is 3¹.\nLowest power of 5 is 5¹.\n\nHCF(120, 90) = 2¹ × 3¹ × 5¹ = 2 × 3 × 5 = 30\n\nTherefore, the maximum number of books that can be placed in each stack is",
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Mathematics"
+        },
+        {
+          "text": "Two bells ring at intervals of 12 minutes and 18 minutes respectively. If they both ring together at 7:00 AM, at what time will they next ring together?",
+          "type": "MCQ",
+          "options": [
+            "A) 7:12 AM",
+            "B) 7:18 AM",
+            "C) 7:30 AM",
+            "D) 7:36 AM"
+          ],
+          "correctAnswer": "D) 7:36 AM",
+          "explanation": "To find when the bells will next ring together, we need to find the Least Common Multiple (LCM) of their ringing intervals, 12 minutes and 18 minutes.\n\n1.  **Prime factorization of 12:**\n    12 = 2 × 6 = 2 × 2 × 3 = 2^2 × 3^1\n\n2.  **Prime factorization of 18:**\n    18 = 2 × 9 = 2 × 3 × 3 = 2^1 × 3^2\n\n3.  **Calculate LCM:** The LCM is found by taking the highest power of all prime factors present in the factorizations.\n    LCM(12, 18) = 2^2 × 3^2 = 4 × 9 = 36.\n\nSo, the bells will ring together again after 36 minutes.\n\nSince they last rang together at 7:00 AM, they will next ring together at 7:00 AM + 36 minutes = 7:36 AM.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": false,
+          "keySteps": [
+            "Find prime factorization of 12.",
+            "Find prime factorization of 18.",
+            "Calculate LCM of 12 and 18.",
+            "Add the LCM to the initial time to find the next common ringing time."
+          ]
+        },
+        {
+          "text": "<b>Assertion (A):</b> The decimal expansion of the rational number $\\frac{17}{8}$ terminates after three decimal places.<br><b>Reason (R):</b> A rational number has a terminating decimal expansion if the prime factorization of its denominator is of the form $2^m \\cdot 5^n$, where $m$ and $n$ are non-negative integers.<br><br>Choose the correct option:",
+          "type": "AR",
+          "options": [
+            "Both A and R are true and R is the correct explanation of A.",
+            "Both A and R are true but R is not the correct explanation of A.",
+            "A is true but R is false.",
+            "A is false but R is true."
+          ],
+          "correctAnswer": "Both A and R are true and R is the correct explanation of A.",
+          "explanation": "<b>Analysis of Assertion (A):</b>\nThe given rational number is $\\frac{17}{8}$.\nTo find its decimal expansion, we can write the denominator in the form $2^m \\cdot 5^n$. The denominator $8$ can be written as $2^3$. \nTo make the denominator a power of $10$, we multiply the numerator and denominator by $5^3$:\n$\\frac{17}{8} = \\frac{17}{2^3} = \\frac{17 \\times 5^3}{2^3 \\times 5^3} = \\frac{17 \\times 125}{(2 \\times 5)^3} = \\frac{2125}{10^3} = \\frac{2125}{1000} = 2.125$.\nThe decimal expansion $2.125$ clearly terminates after three decimal places. Thus, Assertion (A) is true.\n\n<b>Analysis of Reason (R):</b>\nThe statement in Reason (R) is a fundamental theorem from the chapter Real Numbers, which states the condition for a rational number to have a terminating decimal expansion. This theorem is mathematically correct. Thus, Reason (R) is true.\n\n<b>Checking if R is the correct explanation of A:</b>\nAccording to Reason (R), a rational number has a terminating decimal expansion if the prime factorization of its denominator is of the form $2^m \\cdot 5^n$. In Assertion (A), the denominator is $8 = 2^3$, which is of the form $2^m \\cdot 5^n$ (with $m=3$ and $n=0$). This condition is met, explaining why the decimal expansion terminates. Furthermore, the number of decimal places after which the expansion terminates is determined by the highest power of either $2$ or $5$ in the denominator's prime factorization. In this case, the highest power is $3$ (from $2^3$), which means it terminates after $3$ decimal places. Therefore, Reason (R) correctly explains Assertion (A).\n\n<b>Conclusion:</b> Both Assertion (A) and Reason (R) are true, and Reason (R) is the correct explanation of Assertion (A).",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Evaluate the decimal expansion of 17/8 to verify Assertion (A).",
+            "Recall the theorem for terminating decimal expansions to verify Reason (R).",
+            "Check if the condition in Reason (R) applies to the denominator of 17/8 and explains the number of decimal places."
+          ]
+        },
+        {
+          "text": "If one zero of the quadratic polynomial `p(x) = 2x^2 - 7x + 3k` is the reciprocal of the other, what is the value of `k`?",
+          "type": "MCQ",
+          "options": [
+            "A) 2/3",
+            "B) 3/2",
+            "C) -7/3",
+            "D) 7/2"
+          ],
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Polynomials"
+        },
+        {
+          "text": "If \\(\\alpha\\) and \\(\\beta\\) are the zeroes of the quadratic polynomial \\(p(x) = x^2 - 5x + k\\), and it is given that \\(\\alpha + \\beta = \\alpha\\beta + 1\\), find the value of \\(k\\).",
+          "type": "MCQ",
+          "options": [
+            "A) 4",
+            "B) 3",
+            "C) -4",
+            "D) -3"
+          ],
+          "correctAnswer": "A) 4",
+          "explanation": "For a quadratic polynomial of the form \\(ax^2 + bx + c\\), the sum of the zeroes (\\(\\alpha + \\beta\\)) is given by \\(-b/a\\) and the product of the zeroes (\\(\\alpha\\beta\\)) is given by \\(c/a\\).\n\nGiven polynomial: \\(p(x) = x^2 - 5x + k\\)\nHere, \\(a = 1\\), \\(b = -5\\), and \\(c = k\\).\n\n1.  Sum of the zeroes: \\(\\alpha + \\beta = -(-5)/1 = 5\\)\n2.  Product of the zeroes: \\(\\alpha\\beta = k/1 = k\\)\n\nWe are given the condition: \\(\\alpha + \\beta = \\alpha\\beta + 1\\)\nSubstitute the values we found:\n\\(5 = k + 1\\)\n\nTo find \\(k\\), subtract 1 from both sides:\n\\(k = 5 - 1\\)\n\\(k = 4\\)\n\nThus, the value of \\(k\\) is 4.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients a, b, c from the given polynomial.",
+            "Calculate the sum of zeroes (\\(\\alpha + \\beta\\)) using the formula \\(-b/a\\).",
+            "Calculate the product of zeroes (\\(\\alpha\\beta\\)) using the formula \\(c/a\\).",
+            "Substitute the calculated sum and product into the given condition.",
+            "Solve the resulting equation for \\(k\\)."
+          ]
+        },
+        {
+          "text": "Assertion (A): If α and β are the zeroes of the quadratic polynomial p(x) = x² - 5x + 6, then α² + β² = 13.\nReason (R): For a quadratic polynomial ax² + bx + c (a ≠ 0), the sum of its zeroes is α + β = -b/a and the product of its zeroes is αβ = c/a.",
+          "type": "AR",
+          "options": [
+            "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+            "Both Assertion (A) and Reason (R) are true but Reason (R) is not the correct explanation of Assertion (A).",
+            "Assertion (A) is true but Reason (R) is false.",
+            "Assertion (A) is false but Reason (R) is true."
+          ],
+          "correctAnswer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "explanation": "Given quadratic polynomial is p(x) = x² - 5x + 6.\nComparing with the standard form ax² + bx + c, we have a = 1, b = -5, c = 6.\n\nAccording to Reason (R), for a quadratic polynomial ax² + bx + c, the sum of its zeroes (α + β) = -b/a and the product of its zeroes (αβ) = c/a.\n\nSo, for p(x) = x² - 5x + 6:\nSum of zeroes (α + β) = -(-5)/1 = 5\nProduct of zeroes (αβ) = 6/1 = 6\n\nNow, to verify Assertion (A), we need to find α² + β².\nWe know the algebraic identity: α² + β² = (α + β)² - 2αβ\nSubstitute the values of (α + β) and (αβ):\nα² + β² = (5)² - 2(6)\nα² + β² = 25 - 12\nα² + β² = 13\n\nThus, Assertion (A) is true.\nReason (R) states the correct formulas for the sum and product of zeroes, which are directly used to prove Assertion (A). Therefore, Reason (R) is the correct explanation of Assertion (A).",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients a, b, c from the polynomial p(x) = x² - 5x + 6.",
+            "Apply the formulas for sum of zeroes (α + β = -b/a) and product of zeroes (αβ = c/a) to find α + β = 5 and αβ = 6.",
+            "Use the algebraic identity α² + β² = (α + β)² - 2αβ.",
+            "Substitute the calculated values into the identity: α² + β² = (5)² - 2(6) = 25 - 12 = 13, verifying Assertion (A)."
+          ]
+        },
+        {
+          "text": "A pair of linear equations in two variables whose graphical representation consists of two lines that intersect at a single point is known as a:",
+          "type": "MCQ",
+          "options": [
+            "A) Inconsistent pair of equations",
+            "B) Dependent pair of equations",
+            "C) Consistent pair of equations",
+            "D) Parallel pair of equations"
+          ],
+          "correctAnswer": "C) Consistent pair of equations",
+          "explanation": "According to NCERT Class 10 Mathematics, Chapter 3, page 25-26 (Chunk 5 and 6), if the lines representing a pair of linear equations intersect in a single point, then the pair of equations has a unique solution and is called a consistent pair of equations. Inconsistent pairs have no solution (parallel lines), and dependent pairs have infinitely many solutions (coincident lines).",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of a consistent pair of linear equations based on their graphical representation."
+          ]
+        },
+        {
+          "text": "For a pair of linear equations $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$, what is the condition for the equations to have infinitely many solutions?",
+          "type": "MCQ",
+          "options": [
+            "A) $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$",
+            "B) $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$",
+            "C) $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$",
+            "D) $\\frac{a_1}{a_2} = \\frac{c_1}{c_2}$"
+          ],
+          "correctAnswer": "C) $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$",
+          "explanation": "As per NCERT Class 10 Mathematics, Chapter 3, page 26 (Chunk 6), the conditions for the number of solutions of a pair of linear equations are:\n1.  Unique solution: $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$ (intersecting lines)\n2.  No solution: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$ (parallel lines)\n3.  Infinitely many solutions: $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$ (coincident lines)\nTherefore, for infinitely many solutions, the correct condition is $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the conditions for infinitely many solutions of a pair of linear equations based on the ratios of their coefficients."
+          ]
+        },
+        {
+          "text": "Which of the following equations is a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "A) $x(x+3) = x^2 - 5$",
+            "B) $(x-2)^2 + 1 = 2x - 3$",
+            "C) $x^3 + 2x = x^3 + 1$",
+            "D) $x^2 + \\frac{1}{x} ="
+          ],
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations"
+        },
+        {
+          "text": "Which of the following equations, after simplification, represents a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "A) (x + 1)^2 = x^2 + 4",
+            "B) x(x + 2) = x^3 + 1",
+            "C) (x - 2)(x + 3) = x(x + 1)",
+            "D) x + 1/x ="
+          ],
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations"
+        },
+        {
+          "text": "What is the common difference of the Arithmetic Progression (AP): 100, 70, 40, 10, ...?",
+          "type": "MCQ",
+          "options": [
+            "A) 30",
+            "B) -30",
+            "C) 70",
+            "D) -70"
+          ],
+          "correctAnswer": "B) -30",
+          "explanation": "An Arithmetic Progression (AP) is a list of numbers where each term is obtained by adding a fixed number to the preceding term, except the first term. This fixed number is called the common difference (d).\nTo find the common difference, we subtract any term from its succeeding term.\nGiven AP: 100, 70, 40, 10, ...\nFirst term (a₁) = 100\nSecond term (a₂) = 70\nCommon difference (d) = a₂ - a₁ = 70 - 100 = -30.\nWe can verify this with other terms:\nThird term (a₃) = 40\nd = a₃ - a₂ = 40 - 70 = -30.\nThus, the common difference of the given AP is -30.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of common difference (d = a₂ - a₁).",
+            "Identify the first two terms of the given AP.",
+            "Calculate the difference between the second and first term."
+          ]
+        },
+        {
+          "text": "In triangle ABC, a line DE is drawn parallel to BC, intersecting side AB at D and side AC at E. If $\\frac{AD}{DB} = \\frac{2}{3}$, what is the ratio $\\frac{AE}{EC}$?",
+          "type": "MCQ",
+          "options": [
+            "A) $\\frac{3}{2}$",
+            "B) $\\frac{2}{3}$",
+            "C) $\\frac{1}{2}$",
+            "D) $\\frac{1}{3}$"
+          ],
+          "correctAnswer": "B) $\\frac{2}{3}$",
+          "explanation": "According to the Basic Proportionality Theorem (BPT), also known as Thales Theorem, if a line is drawn parallel to one side of a triangle intersecting the other two sides in distinct points, then the other two sides are divided in the same ratio.\nGiven that DE is parallel to BC (DE || BC) and it intersects AB at D and AC at E.\nBy the Basic Proportionality Theorem:\n$\\frac{AD}{DB} = \\frac{AE}{EC}$\nWe are given that $\\frac{AD}{DB} = \\frac{2}{3}$.\nTherefore, $\\frac{AE}{EC} = \\frac{2}{3}$.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Triangles",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the Basic Proportionality Theorem (BPT).",
+            "Apply BPT to the given triangle and parallel line.",
+            "Equate the ratios of the divided sides."
+          ]
+        },
+        {
+          "text": "What are the coordinates of the mid-point of the line segment joining the points A(4, -6) and B(-2, 10)?",
+          "type": "MCQ",
+          "options": [
+            "A) (1, 2)",
+            "B) (3, 2)",
+            "C) (2, 1)",
+            "D) (-1, 8)"
+          ],
+          "correctAnswer": "A) (1, 2)",
+          "explanation": "The coordinates of the mid-point P(x, y) of the line segment joining points A(x₁, y₁) and B(x₂, y₂) are given by the mid-point formula:\nP = ((x₁ + x₂)/2, (y₁ + y₂)/2)\n\nGiven points are A(4, -6) and B(-2, 10).\nHere, x₁ = 4, y₁ = -6, x₂ = -2, y₂ = 10.\n\nx-coordinate of the mid-point = (4 + (-2))/2 = (4 - 2)/2 = 2/2 = 1\ny-coordinate of the mid-point = (-6 + 10)/2 = 4/2 = 2\n\nTherefore, the coordinates of the mid-point are (1, 2).",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Coordinate Geometry",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the mid-point formula: P = ((x₁ + x₂)/2, (y₁ + y₂)/2)",
+            "Substitute the given coordinates A(4, -6) and B(-2, 10) into the formula",
+            "Calculate the x-coordinate: (4 + (-2))/2 = 1",
+            "Calculate the y-coordinate: (-6 + 10)/2 = 2",
+            "State the final coordinates of the mid-point (1, 2)"
+          ]
+        },
+        {
+          "text": "A ladder of length 10 m leans against a vertical wall. If the base of the ladder is 6 m away from the wall on the ground, what is the cosine of the angle formed by the ladder with the ground?",
+          "type": "MCQ",
+          "options": [
+            "4/5",
+            "3/5",
+            "3/4",
+            "5/3"
+          ],
+          "correctAnswer": "3/5",
+          "explanation": "Let the ladder be represented by the hypotenuse of a right-angled triangle. The vertical wall and the ground form the other two sides, with the right angle at the base of the wall.\n\n1.  **Identify the sides**: \n    *   The length of the ladder is the hypotenuse (H) = 10 m.\n    *   The distance of the base of the ladder from the wall is the side adjacent (A) to the angle the ladder makes with the ground = 6 m.\n    *   Let 'θ' be the angle the ladder makes with the ground.\n\n2.  **Recall the definition of cosine**: \n    In a right-angled triangle, the cosine of an acute angle is defined as the ratio of the length of the side adjacent to the angle to the length of the hypotenuse.\n    `cos θ = Adjacent / Hypotenuse`\n\n3.  **Substitute the given values**: \n    `cos θ = 6 m / 10 m`\n\n4.  **Simplify the ratio**: \n    `cos θ = 3/5`\n\nThus, the cosine of the angle formed by the ladder with the ground is 3/5.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Introduction to Trigonometry",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify the hypotenuse and the adjacent side relative to the angle with the ground.",
+            "Recall the definition of cosine (Adjacent/Hypotenuse).",
+            "Substitute the given values into the cosine ratio.",
+            "Simplify the resulting fraction."
+          ]
+        },
+        {
+          "text": "A ladder, 15 m long, leans against a vertical wall. If the foot of the ladder is 7.5 m away from the base of the wall on the ground, what is the angle of elevation (to the nearest degree) of the top of the ladder from the ground?",
+          "type": "MCQ",
+          "options": [
+            "A) 30°",
+            "B) 45°",
+            "C) 60°",
+            "D) 90°"
+          ],
+          "correctAnswer": "C) 60°",
+          "explanation": "Let the ladder be AC, the wall be AB, and the ground be BC. This forms a right-angled triangle ABC, right-angled at B.\nGiven:\nLength of the ladder (hypotenuse AC) = 15 m\nDistance of the foot of the ladder from the wall (base BC) = 7.5 m\nWe need to find the angle of elevation, which is ∠ACB.\n\nIn right-angled triangle ABC:\ncos(∠ACB) = Adjacent side / Hypotenuse\ncos(∠ACB) = BC / AC\ncos(∠ACB) = 7.5 / 15\ncos(∠ACB) = 1/2\n\nWe know that cos(60°) = 1/2.\nTherefore, ∠ACB = 60°.\n\nThe angle of elevation of the top of the ladder from the ground is 60°.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Some Applications of Trigonometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the components of the right-angled triangle (ladder as hypotenuse, distance from wall as adjacent side).",
+            "Choose the appropriate trigonometric ratio (cosine) relating the adjacent side and hypotenuse to the angle of elevation.",
+            "Substitute the given values into the trigonometric ratio.",
+            "Solve for the angle of elevation using known trigonometric values for standard angles."
+          ]
+        },
+        {
+          "text": "What is the angle between a tangent to a circle and the radius drawn to the point of contact?",
+          "type": "MCQ",
+          "options": [
+            "A) 0°",
+            "B) 30°",
+            "C) 60°",
+            "D) 90°"
+          ],
+          "correctAnswer": "D) 90°",
+          "explanation": "According to a fundamental theorem in the 'Circles' chapter of Class 10 NCERT Mathematics, the tangent at any point of a circle is perpendicular to the radius through the point of contact. Therefore, the angle between them is always 90 degrees.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Circles",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the theorem regarding the relationship between a tangent and the radius at the point of contact."
+          ]
+        },
+        {
+          "text": "A sector of a circle has an angle 'θ' (in degrees) and a radius 'r'. If the radius of the circle is doubled to '2r' and the angle of the sector is halved to 'θ/2', how does the new area of the sector compare to the original area?",
+          "type": "MCQ",
+          "options": [
+            "The new area is the same as the original area.",
+            "The new area is half of the original area.",
+            "The new area is twice the original area.",
+            "The new area is four times the original area."
+          ],
+          "correctAnswer": "The new area is twice the original area.",
+          "explanation": "Let the original radius be 'r' and the original angle be 'θ'.\nThe formula for the area of a sector is given by:\n$A_{original} = \\frac{\\theta}{360} \\times \\pi r^2$\n\nNow, the radius is doubled to '2r' and the angle is halved to 'θ/2'.\nLet the new radius be $r' = 2r$.\nLet the new angle be $\\theta' = \\frac{\\theta}{2}$.\n\nThe new area of the sector ($A_{new}$) will be:\n$A_{new} = \\frac{\\theta'}{360} \\times \\pi (r')^2$\nSubstitute the new values for $r'$ and $\\theta'$:\n$A_{new} = \\frac{\\frac{\\theta}{2}}{360} \\times \\pi (2r)^2$\n$A_{new} = \\frac{\\theta}{720} \\times \\pi (4r^2)$\n$A_{new} = \\frac{4\\theta}{720} \\times \\pi r^2$\n$A_{new} = \\frac{\\theta}{180} \\times \\pi r^2$\n\nTo compare $A_{new}$ with $A_{original}$, we can rewrite $A_{new}$:\n$A_{new} = 2 \\times \\left( \\frac{\\theta}{360} \\times \\pi r^2 \\right)$\nSince $A_{original} = \\frac{\\theta}{360} \\times \\pi r^2$,\nWe can conclude that $A_{new} = 2 \\times A_{original}$.\n\nTherefore, the new area is twice the original area.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Areas Related to Circles",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the formula for the area of a sector: $A = (\\theta/360) \\times \\pi r^2$.",
+            "Identify the changes in radius ($r' = 2r$) and angle ($\\theta' = \\theta/2$)."
+          ]
+        },
+        {
+          "text": "A solid toy is in the form of a hemisphere surmounted by a right circular cone. The height of the cone is 4 cm and the diameter of the base is 6 cm. Find the volume of the toy. (Use $\\pi$ = 3.14)",
+          "type": "MCQ",
+          "options": [
+            "56.52 cm³",
+            "37.68 cm³",
+            "94.20 cm³",
+            "113.04 cm³"
+          ],
+          "correctAnswer": "94.20 cm³",
+          "explanation": "The toy is a combination of two basic solids: a hemisphere and a cone.\n\nFirst, identify the dimensions:\nDiameter of the base = 6 cm, so the radius (r) = 6/2 = 3 cm.\nHeight of the cone (h) = 4 cm.\nFor the hemisphere, the radius is also 3 cm.\n\nNext, calculate the volume of each part:\n1. Volume of the hemisphere ($V_{\\text{hemisphere}}$):\n   Formula: $V_{\\text{hemisphere}} = \\frac{2}{3} \\pi r^3$\n   $V_{\\text{hemisphere}} = \\frac{2}{3} \\times 3.14 \\times (3)^3$\n   $V_{\\text{hemisphere}} = \\frac{2}{3} \\times 3.14 \\times 27$\n   $V_{\\text{hemisphere}} = 2 \\times 3.14 \\times 9$\n   $V_{\\text{hemisphere}} = 18 \\times 3.14 = 56.52 \\text{ cm}^3$\n\n2. Volume of the cone ($V_{\\text{cone}}$):\n   Formula: $V_{\\text{cone}} = \\frac{1}{3} \\pi r^2 h$\n   $V_{\\text{cone}} = \\frac{1}{3} \\times 3.14 \\times (3)^2 \\times 4$\n   $V_{\\text{cone}} = \\frac{1}{3} \\times 3.14 \\times 9 \\times 4$\n   $V_{\\text{cone}} = 3.14 \\times 3 \\times 4$\n   $V_{\\text{cone}} = 3.14 \\times 12 = 37.68 \\text{ cm}^3$\n\nFinally, calculate the total volume of the toy:\nTotal Volume ($V_{\\text{toy}}$) = $V_{\\text{hemisphere}} + V_{\\text{cone}}$\n$V_{\\text{toy}} = 56.52 + 37.68 = 94.20 \\text{ cm}^3$\n\nThus, the volume of the toy is 94.20 cm³.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Surface Areas and Volumes",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the constituent solids (hemisphere and cone) and their dimensions (radius, height).",
+            "Apply the formula for the volume of a hemisphere.",
+            "Apply the formula for the volume of a cone.",
+            "Sum the individual volumes to find the total volume of the toy."
+          ]
+        },
+        {
+          "text": "In the formula used to calculate the mode of grouped data, $l + \\frac{f_1 - f_0}{2f_1 - f_0 - f_2} \\times h$, what does 'l' represent?",
+          "type": "MCQ",
+          "options": [
+            "Upper limit of the modal class",
+            "Lower limit of the modal class",
+            "Frequency of the modal class",
+            "Class size"
+          ],
+          "correctAnswer": "Lower limit of the modal class",
+          "explanation": "The formula for the mode of grouped data is given by Mode = $l + \\frac{f_1 - f_0}{2f_1 - f_0 - f_2} \\times h$. In this formula:\n- 'l' represents the lower limit of the modal class.\n- 'h' represents the class size.\n- '$f_1$' represents the frequency of the modal class.\n- '$f_0$' represents the frequency of the class preceding the modal class.\n- '$f_2$' represents the frequency of the class succeeding the modal class.\nTherefore, 'l' specifically stands for the lower limit of the modal class.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Statistics",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the formula for mode of grouped data.",
+            "Identify the meaning of each symbol in the formula."
+          ]
+        },
+        {
+          "text": "A box contains cards numbered from 1 to 20. A card is drawn at random from the box. What is the probability that the number on the drawn card is a prime number?",
+          "type": "MCQ",
+          "options": [
+            "A) 1/5",
+            "B) 2/5",
+            "C) 3/5",
+            "D) 4/5"
+          ],
+          "correctAnswer": "B) 2/5",
+          "explanation": "To find the probability, we first need to determine the total number of possible outcomes and the number of favorable outcomes.\n\n1.  **Total number of outcomes**: The cards are numbered from 1 to 20. So, there are 20 possible numbers that can be drawn.\n    Total number of outcomes = 20.\n\n2.  **Number of favorable outcomes**: We are interested in the event that the number on the drawn card is a prime number. A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.\n    The prime numbers between 1 and 20 are: 2, 3, 5, 7, 11, 13, 17, 19.\n    Counting these, we find there are 8 prime numbers.\n    Number of favorable outcomes = 8.\n\n3.  **Calculate the probability**: The probability of an event E is given by the formula:\n    P(E) = (Number of favorable outcomes) / (Total number of outcomes)\n    P(Prime number) = 8 / 20\n    Simplifying the fraction by dividing both the numerator and the denominator by their greatest common divisor (which is 4):\n    P(Prime number) = (8 ÷ 4) / (20 ÷ 4) = 2 / 5\n\nThus, the probability that the number on the drawn card is a prime number is $\\frac{2}{5}$.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Probability",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the total number of possible outcomes.",
+            "Identify the favorable outcomes by listing prime numbers within the given range.",
+            "Apply the probability formula: P(E) = (Favorable Outcomes) / (Total Outcomes) and simplify the fraction."
+          ]
+        }
+      ],
+      "marks": 20
+    },
+    "B": {
+      "name": "Section B (VSA)",
+      "questions": [
+        {
+          "text": "State the condition for a rational number to have a terminating decimal expansion.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "A rational number `x` whose decimal expansion terminates can be expressed in the form `p/q`, where `p` and `q` are coprime integers and the prime factorization of `q` is of the form `2^n * 5^m`, where `n` and `m` are non-negative integers.",
+          "explanation": "According to the theorem on decimal expansions of rational numbers, a rational number `x = p/q` (where `p` and `q` are coprime) has a terminating decimal expansion if and only if the prime factorization of its denominator `q` is of the form `2^n * 5^m`, where `n` and `m` are non-negative integers. If the denominator `q` has any prime factor other than 2 or 5, the decimal expansion will be non-terminating repeating.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the theorem regarding terminating decimal expansions of rational numbers.",
+            "State the required form of the prime factorization of the denominator."
+          ]
+        },
+        {
+          "text": "What is a polynomial of degree 1 called?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "Linear polynomial",
+          "explanation": "According to the NCERT textbook, a polynomial of degree 1 is defined as a linear polynomial.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Polynomials",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of a polynomial based on its degree."
+          ]
+        },
+        {
+          "text": "State the condition for a pair of linear equations a₁x + b₁y + c₁ = 0 and a₂x + b₂y + c₂ = 0 to be inconsistent.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "a₁/a₂ = b₁/b₂ ≠ c₁/c₂",
+          "explanation": "A pair of linear equations is said to be inconsistent if it has no solution. Graphically, this means the lines represented by the equations are parallel and do not intersect. The algebraic condition for this scenario is when the ratio of the coefficients of x is equal to the ratio of the coefficients of y, but not equal to the ratio of the constant terms.\nThus, the condition for an inconsistent pair of linear equations is a₁/a₂ = b₁/b₂ ≠ c₁/c₂.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the definition of an inconsistent pair of linear equations (no solution).",
+            "Recall the algebraic condition for no solution based on the ratios of coefficients."
+          ]
+        },
+        {
+          "text": "Find the value(s) of 'k' for which the quadratic equation $3x^2 - kx + 4 = 0$ has equal roots.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "k = $4\\sqrt{3}$ or k = $-4\\sqrt{3}$",
+          "explanation": "For a quadratic equation of the form $ax^2 + bx + c = 0$ to have equal roots, its discriminant (D) must be equal to zero. The discriminant is given by the formula $D = b^2 - 4ac$.\n\nGiven quadratic equation: $3x^2 - kx + 4 = 0$\n\nComparing this with the standard form $ax^2 + bx + c = 0$, we identify the coefficients:\n$a = 3$\n$b = -k$\n$c = 4$\n\nSet the discriminant to zero for equal roots:\n$D = b^2 - 4ac = 0$\n$(-k)^2 - 4(3)(4) = 0$\n$k^2 - 48 = 0$\n$k^2 = 48$\n\nTake the square root of both sides:\n$k = \\pm\\sqrt{48}$\n\nSimplify the square root:\n$k = \\pm\\sqrt{16 \\times 3}$\n$k = \\pm 4\\sqrt{3}$\n\nThus, the values of k for which the equation has equal roots are $4\\sqrt{3}$ and $-4\\sqrt{3}$.",
+          "bloomsLevel": "Apply",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a, b, and c from the given quadratic equation.",
+            "Apply the condition for equal roots, which states that the discriminant ($D = b^2 - 4ac$) must be equal to zero.",
+            "Substitute the values of a, b, and c into the discriminant formula and solve the resulting equation for k."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "Find the common difference of the Arithmetic Progression (AP): 12, 18, 24, 30, ...",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "6",
+          "explanation": "An arithmetic progression (AP) is a list of numbers in which each term is obtained by adding a fixed number to the preceding term, except the first term. This fixed number is called the common difference (d).\nTo find the common difference, subtract any term from its succeeding term.\nGiven AP: 12, 18, 24, 30, ...\nCommon difference (d) = Second term - First term = 18 - 12 = 6.\nAlternatively, d = Third term - Second term = 24 - 18 = 6.\nOr, d = Fourth term - Third term = 30 - 24 = 6.\nThus, the common difference is 6.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify any two consecutive terms in the given AP.",
+            "Subtract the preceding term from the succeeding term to find the common difference."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 10
+    },
+    "C": {
+      "name": "Section C (SA)",
+      "questions": [
+        {
+          "text": "Let A and B be two positive integers. Their prime factorizations are given as A = 2^x * 3^y * 5^z and B = 2^p * 3^q * 5^r, where x, y, z, p, q, r are non-negative integers. It is known that HCF(A, B) = 2^2 * 3^1 * 5^1 and LCM(A, B) = 2^4 * 3^3 * 5^2. Determine the possible sets of values for (x, y, z) and (p, q, r). Justify your answer by explaining the relationship between the exponents in the HCF, LCM, and the original numbers.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "See explanation for detailed derivation.",
+          "explanation": "To determine the possible sets of values for (x, y, z) and (p, q, r), we use the fundamental properties of HCF (Highest Common Factor) and LCM (Least Common Multiple) in terms of prime factorization.\n\nFor any prime factor (say 'k'), if the exponents in the prime factorization of two numbers A and B are 'a_k' and 'b_k' respectively, then:\n1.  The exponent of 'k' in HCF(A, B) is min(a_k, b_k).\n2.  The exponent of 'k' in LCM(A, B) is max(a_k, b_k).\n\nApplying these rules to the given prime factors:\n\n**For prime factor 2:**\nGiven HCF(A, B) has 2^2, so min(x, p) = 2.\nGiven LCM(A, B) has 2^4, so max(x, p) = 4.\nThis implies that one of the exponents (x or p) must be 2 and the other must be 4. \nTherefore, the possible pairs for (x, p) are (2, 4) or (4, 2).\n\n**For prime factor 3:**\nGiven HCF(A, B) has 3^1, so min(y, q) = 1.\nGiven LCM(A, B) has 3^3, so max(y, q) = 3.\nThis implies that one of the exponents (y or q) must be 1 and the other must be 3. \nTherefore, the possible pairs for (y, q) are (1, 3) or (3, 1).\n\n**For prime factor 5:**\nGiven HCF(A, B) has 5^1, so min(z, r) = 1.\nGiven LCM(A, B) has 5^2, so max(z, r) = 2.\nThis implies that one of the exponents (z or r) must be 1 and the other must be 2. \nTherefore, the possible pairs for (z, r) are (1, 2) or (2, 1).\n\n**Possible Sets of Values:**\nThe values (x, y, z) and (p, q, r) are determined by combining these possibilities. For each prime factor, we have two choices for the assignment of exponents. \n\nFor example, one possible set of values could be:\nIf (x, p) = (2, 4),\nIf (y, q) = (1, 3),\nIf (z, r) = (1, 2).\nThen, (x, y, z) = (2, 1, 1) and (p, q, r) = (4, 3, 2).\n\nAnother possible set of values could be:\nIf (x, p) = (4, 2),\nIf (y, q) = (3, 1),\nIf (z, r) = (2, 1).\nThen, (x, y, z) = (4, 3, 2) and (p, q, r) = (2, 1, 1).\n\nIn general, for each prime factor, the exponent for A and B must be the minimum and maximum value as derived from the HCF and LCM, in some order. There are 2 x 2 x 2 = 8 such unique combinations for the sets [(x,y,z), (p,q,r)].\n\n**Justification:**\nThe relationship HCF(A, B) * LCM(A, B) = A * B holds true. Let's verify this using the exponents:\nFor prime 2: min(x,p) + max(x,p) = 2 + 4 = 6. Also, x + p = 6. This confirms the property for exponents.\nSimilarly for prime 3: min(y,q) + max(y,q) = 1 + 3 = 4. Also, y + q = 4.\nAnd for prime 5: min(z,r) + max(z,r) = 1 + 2 = 3. Also, z + r = 3.\n\nThis confirms that for each prime factor, the sum of the exponents in A and B must be equal to the sum of the exponents in their HCF and LCM. This fundamental relationship allows us to deduce the possible pairs of exponents for each prime factor in A and B.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the definitions of HCF and LCM in terms of prime factor exponents: HCF uses minimum exponents, LCM uses maximum exponents.",
+            "Apply these rules to each prime factor (2, 3, 5) separately based on the given HCF and LCM values.",
+            "For each prime factor, determine the two possible assignments for the exponents (e.g., for prime 2, (x,p) can be (2,4) or (4,2)).",
+            "Explain how these individual possibilities combine to form the possible sets for (x, y, z) and (p, q, r).",
+            "Justify the reasoning by referring to the property that for any prime factor, the sum of its exponents in A and B equals the sum of its exponents in HCF(A,B) and LCM(A,B)."
+          ]
+        },
+        {
+          "text": "If one zero of the quadratic polynomial $f(x) = (k^2 + 4)x^2 + 13x + 4k$ is the reciprocal of the other, find the value of $k$.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "k = 2",
+          "explanation": "Let the given quadratic polynomial be $f(x) = (k^2 + 4)x^2 + 13x + 4k$.\nComparing this with the standard form of a quadratic polynomial $ax^2 + bx + c$, we have:\n$a = k^2 + 4$\n$b = 13$\n$c = 4k$\n\nLet the zeroes of the polynomial be $\\alpha$ and $\\beta$.\nAccording to the problem statement, one zero is the reciprocal of the other. So, we can assume $\\beta = \\frac{1}{\\alpha}$.\n\nThe product of the zeroes of a quadratic polynomial is given by the formula $\\alpha \\beta = \\frac{c}{a}$.\n\nSubstitute the values:\n$\\alpha \\times \\frac{1}{\\alpha} = \\frac{4k}{k^2 + 4}$\n\n$1 = \\frac{4k}{k^2 + 4}$\n\nNow, we solve for $k$:\n$k^2 + 4 = 4k$\n$k^2 - 4k + 4 = 0$\n\nThis is a perfect square trinomial, which can be factored as:\n$(k - 2)^2 = 0$\n\nTaking the square root of both sides:\n$k - 2 = 0$\n$k = 2$\n\nThus, the value of $k$ is 2.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a, b, and c from the given quadratic polynomial.",
+            "State the relationship between the zeroes (one zero is the reciprocal of the other).",
+            "Apply the formula for the product of zeroes (αβ = c/a).",
+            "Substitute the identified coefficients and the relationship between zeroes into the formula.",
+            "Solve the resulting equation for k."
+          ]
+        },
+        {
+          "text": "A two-digit number is such that the sum of its digits is 9. Also, nine times this number is twice the number obtained by reversing the order of its digits. Find the number.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "18",
+          "explanation": "Let the tens digit of the two-digit number be $x$ and the units digit be $y$.\n\nThe original two-digit number can be represented as $10x + y$.\nThe number obtained by reversing the order of its digits will be $10y + x$.\n\nAccording to the first condition:\nThe sum of its digits is 9.\n$x + y = 9$  (Equation 1)\n\nAccording to the second condition:\nNine times this number is twice the number obtained by reversing the order of its digits.\n$9(10x + y) = 2(10y + x)$\n$90x + 9y = 20y + 2x$\nNow, rearrange the terms to form a linear equation:\n$90x - 2x + 9y - 20y = 0$\n$88x - 11y = 0$\nDivide the entire equation by 11 to simplify:\n$8x - y = 0$  (Equation 2)\n\nNow we have a pair of linear equations:\n1) $x + y = 9$\n2) $8x - y = 0$\n\nWe can solve this system using the elimination method. Add Equation 1 and Equation 2:\n$(x + y) + (8x - y) = 9 + 0$\n$x + 8x + y - y = 9$\n$9x = 9$\n$x = 1$\n\nSubstitute the value of $x = 1$ into Equation 1:\n$1 + y = 9$\n$y = 9 - 1$\n$y = 8$\n\nSo, the tens digit is 1 and the units digit is 8.\nThe two-digit number is $10x + y = 10(1) + 8 = 10 + 8 = 18$.\n\nThus, the required two-digit number is 18.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Represent the two-digit number and the number formed by reversing its digits using variables.",
+            "Formulate two linear equations based on the given conditions.",
+            "Solve the system of linear equations using an algebraic method (e.g., elimination or substitution) to find the values of the digits.",
+            "Construct the original two-digit number using the found digit values."
+          ]
+        },
+        {
+          "text": "The area of a rectangular plot is $528 \\text{ m}^2$. The length of the plot (in metres) is one more than twice its breadth. Find the length and breadth of the plot.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Length = 33 m, Breadth = 16 m",
+          "explanation": "Let the breadth of the rectangular plot be $x$ metres.\nAccording to the problem statement, the length of the plot is one more than twice its breadth.\nSo, the length of the plot will be $(2x + 1)$ metres.\n\nThe area of a rectangle is given by the formula: Area = Length $\\times$ Breadth.\nWe are given that the area of the plot is $528 \\text{ m}^2$.\nTherefore, we can set up the equation:\n$x \\times (2x + 1) = 528$\n$2x^2 + x = 528$\nRearranging this into the standard quadratic equation form $ax^2 + bx + c = 0$:\n$2x^2 + x - 528 = 0$\n\nHere, the coefficients are $a = 2$, $b = 1$, and $c = -528$.\nWe can solve this quadratic equation using the quadratic formula: $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$\n\nFirst, let's calculate the discriminant, $D = b^2 - 4ac$:\n$D = (1)^2 - 4(2)(-528)$\n$D = 1 - (-4224)$\n$D = 1 + 4224$\n$D = 4225$\n\nNow, substitute the values of $a, b,$ and $D$ into the quadratic formula:\n$x = \\frac{-1 \\pm \\sqrt{4225}}{2(2)}$\n$x = \\frac{-1 \\pm 65}{4}$\n\nThis gives us two possible values for $x$:\n1.  $x_1 = \\frac{-1 + 65}{4} = \\frac{64}{4} = 16$\n2.  $x_2 = \\frac{-1 - 65}{4} = \\frac{-66}{4} = -16.5$\n\nSince $x$ represents the breadth of a physical plot, its value cannot be negative. Therefore, we discard $x_2 = -16.5$.\nSo, the breadth of the plot is $x = 16$ metres.\n\nNow, we can find the length using the expression for length:\nLength $= 2x + 1 = 2(16) + 1 = 32 + 1 = 33$ metres.\n\nThus, the length of the plot is $33$ metres and the breadth of the plot is $16$ metres.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for length and breadth based on the given relationship.",
+            "Formulate the quadratic equation using the area information.",
+            "Solve the quadratic equation using the quadratic formula (or factorization).",
+            "Discard the negative root (as breadth cannot be negative) and calculate the dimensions."
+          ]
+        },
+        {
+          "text": "A toy factory produced 600 toys in its first month of operation. Due to increasing demand, the factory increased its production by 25 toys every subsequent month. Calculate the number of toys produced in the 12th month and the total number of toys produced in the first year (12 months).",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Toys produced in 12th month: 875, Total toys in first year: 8850",
+          "explanation": "Let 'a' be the production in the first month and 'd' be the increase in production each subsequent month. The production forms an Arithmetic Progression (AP).\n\nGiven:\nFirst term (a) = 600 toys\nCommon difference (d) = 25 toys\n\nPart 1: Number of toys produced in the 12th month.\nTo find the number of toys produced in the 12th month, we use the formula for the nth term of an AP: $a_n = a + (n-1)d$\nHere, n = 12.\n$a_{12} = 600 + (12-1) \\times 25$\n$a_{12} = 600 + 11 \\times 25$\n$a_{12} = 600 + 275$\n$a_{12} = 875$\nSo, the factory produced 875 toys in the 12th month.\n\nPart 2: Total number of toys produced in the first year (12 months).\nTo find the total number of toys produced in the first year, we use the formula for the sum of the first n terms of an AP: $S_n = \\frac{n}{2}[2a + (n-1)d]$\nHere, n = 12.\n$S_{12} = \\frac{12}{2}[2 \\times 600 + (12-1) \\times 25]$\n$S_{12} = 6[1200 + 11 \\times 25]$\n$S_{12} = 6[1200 + 275]$\n$S_{12} = 6[1475]$\n$S_{12} = 8850$\nSo, the total number of toys produced in the first year is 8850.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the first term (a) and common difference (d) from the problem statement.",
+            "Use the formula for the nth term, $a_n = a + (n-1)d$, to find the production in the 12th month.",
+            "Use the formula for the sum of the first n terms, $S_n = \\frac{n}{2}[2a + (n-1)d]$, to find the total production in the first 12 months."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "In a right-angled triangle ABC, the right angle is at B. An altitude BD is drawn from vertex B to the hypotenuse AC. If the lengths of the segments AD and CD are 4 cm and 9 cm respectively, find the length of the altitude BD.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "6 cm",
+          "explanation": "Let ΔABC be a right-angled triangle, with the right angle at B. BD is the altitude drawn from B to the hypotenuse AC.\n\nAccording to the theorem, if a perpendicular is drawn from the vertex of the right angle of a right-angled triangle to the hypotenuse, then the triangles on both sides of the perpendicular are similar to the whole triangle and also to each other.\n\nThus, we have:\n1. ΔADB ~ ΔABC\n2. ΔBDC ~ ΔABC\n3. ΔADB ~ ΔBDC\n\nTo find the length of BD, we use the similarity between ΔADB and ΔBDC.\n\nIn ΔADB and ΔBDC:\n*   ∠BDA = ∠BDC = 90° (Since BD ⊥ AC)\n*   In ΔABC, ∠ABC = 90°. We know that ∠BAC + ∠BCA = 90°.\n*   In ΔADB, ∠BDA = 90°. So, ∠BAD + ∠ABD = 90°. This implies ∠ABD = 90° - ∠BAD = ∠BCA.\n*   In ΔBDC, ∠BDC = 90°. So, ∠BCD + ∠DBC = 90°. This implies ∠DBC = 90° - ∠BCD = ∠BAC.\n\nTherefore, by AAA similarity criterion, ΔADB ~ ΔBDC.\n\nSince the triangles are similar, the ratio of their corresponding sides is equal:\nAD / BD = DB / CD = AB / BC\n\nUsing the first part of the ratio:\nAD / BD = BD / CD\n\nGiven:\nAD = 4 cm\nCD = 9 cm\n\nSubstitute the values into the equation:\n4 / BD = BD / 9\n\nCross-multiply:\nBD × BD = 4 × 9\nBD² = 36\n\nTake the square root of both sides:\nBD = √36\nBD = 6 cm\n\nThus, the length of the altitude BD is 6 cm.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Triangles",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify that ΔADB is similar to ΔBDC due to the altitude to the hypotenuse in a right-angled triangle.",
+            "Write the ratio of corresponding sides: $\\frac{AD}{BD} = \\frac{BD}{CD}$.",
+            "Substitute the given values for AD and CD into the ratio.",
+            "Solve the equation for BD."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 18
+    },
+    "D": {
+      "name": "Section D (LA)",
+      "questions": [
+        {
+          "text": "A common misconception among students is that the relationship $\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b$ can be directly extended to three positive integers $a, b, c$. \n\n**Part (a):** A student makes the claim: 'For any three positive integers $a, b, c$, the product $a \\times b \\times c$ is always equal to $\\text{HCF}(a, b, c) \\times \\text{LCM}(a, b, c)$.' Evaluate the validity of this claim. Justify your answer with a suitable example or counterexample.\n\n**Part (b):** Consider three positive integers $X, Y, Z$. It is given that their HCF is 6 and their LCM is 2160. A teacher suggests that these three integers could be $X=36$, $Y=120$, and $Z=180$. Evaluate if the teacher's suggestion is consistent with the given HCF and LCM values. Provide a complete justification for your conclusion.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "See explanation for detailed evaluation and justification.",
+          "explanation": "**Part (a): Evaluating the claim about HCF and LCM of three numbers**\n\nThe student's claim is: For any three positive integers $a, b, c$, $a \\times b \\times c = \\text{HCF}(a, b, c) \\times \\text{LCM}(a, b, c)$.\n\nThis claim is **FALSE**.\n\n**Justification with a Counterexample:**\nLet's consider three positive integers: $a=4$, $b=6$, and $c=8$.\n\n1.  **Calculate the product $a \\times b \\times c$:**\n    $4 \\times 6 \\times 8 = 24 \\times 8 = 192$.\n\n2.  **Calculate $\\text{HCF}(a, b, c)$:**\n    Prime factorization of each number:\n    $4 = 2^2$\n    $6 = 2^1 \\times 3^1$\n    $8 = 2^3$\n    To find the HCF, we take the minimum power of each common prime factor. The only common prime factor is 2. The minimum power of 2 is $2^1$.\n    So, $\\text{HCF}(4, 6, 8) = 2^1 = 2$.\n\n3.  **Calculate $\\text{LCM}(a, b, c)$:**\n    To find the LCM, we take the maximum power of all prime factors present in any of the numbers. The prime factors involved are 2 and 3.\n    Maximum power of 2: $\\max(2, 1, 3) = 3 \\Rightarrow 2^3$\n    Maximum power of 3: $\\max(0, 1, 0) = 1 \\Rightarrow 3^1$\n    So, $\\text{LCM}(4, 6, 8) = 2^3 \\times 3^1 = 8 \\times 3 = 24$.\n\n4.  **Calculate $\\text{HCF}(a, b, c) \\times \\text{LCM}(a, b, c)$:**\n    $2 \\times 24 = 48$.\n\n**Conclusion for Part (a):**\nComparing the results: $a \\times b \\times c = 192$, while $\\text{HCF}(a, b, c) \\times \\text{LCM}(a, b, c) = 48$.\nSince $192 \\neq 48$, the student's claim is false. The property $\\text{HCF} \\times \\text{LCM} = \\text{product of numbers}$ is generally true only for two positive integers and does not directly extend to three or more integers in the same simple form.\n\n**Part (b): Evaluating the consistency of the teacher's suggestion**\n\nGiven: $\\text{HCF}(X, Y, Z) = 6$ and $\\text{LCM}(X, Y, Z) = 2160$.\nTeacher's suggestion: $X=36$, $Y=120$, $Z=180$.\nWe need to evaluate if these suggested values are consistent with the given HCF and LCM.\n\n1.  **Find the prime factorization of the suggested integers:**\n    $X = 36 = 2 \\times 18 = 2 \\times 2 \\times 9 = 2^2 \\times 3^2$\n    $Y = 120 = 10 \\times 12 = (2 \\times 5) \\times (2^2 \\times 3) = 2^3 \\times 3^1 \\times 5^1$\n    $Z = 180 = 10 \\times 18 = (2 \\times 5) \\times (2 \\times 3^2) = 2^2 \\times 3^2 \\times 5^1$\n\n2.  **Calculate $\\text{HCF}(36, 120, 180)$:**\n    To find the HCF, we take the minimum power of each common prime factor present in all three numbers.\n    Common prime factors are 2 and 3.\n    Minimum power of 2: $\\min(2, 3, 2) = 2 \\Rightarrow 2^2$\n    Minimum power of 3: $\\min(2, 1, 2) = 1 \\Rightarrow 3^1$\n    HCF($36, 120, 180$) = $2^2 \\times 3^1 = 4 \\times 3 = 12$.\n\n3.  **Compare calculated HCF with the given HCF:**\n    The calculated HCF is 12. The given HCF is 6.\n    Since $12 \\neq 6$, the teacher's suggestion is **not consistent** with the given HCF.\n\n**(Optional, for complete justification): Calculate $\\text{LCM}(36, 120, 180)$:**\n    To find the LCM, we take the maximum power of all prime factors present in any of the numbers.\n    Prime factors involved are 2, 3, and 5.\n    Maximum power of 2: $\\max(2, 3, 2) = 3 \\Rightarrow 2^3$\n    Maximum power of 3: $\\max(2, 1, 2) = 2 \\Rightarrow 3^2$\n    Maximum power of 5: $\\max(0, 1, 1) = 1 \\Rightarrow 5^1$\n    LCM($36, 120, 180$) = $2^3 \\times 3^2 \\times 5^1 = 8 \\times 9 \\times 5 = 72 \\times 5 = 360$.\n\n4.  **Compare calculated LCM with the given LCM:**\n    The calculated LCM is 360. The given LCM is 2160.\n    Since $360 \\neq 2160$, the teacher's suggestion is also not consistent with the given LCM.\n\n**Conclusion for Part (b):**\nBased on the calculations, the HCF of $36, 120, 180$ is 12 (not 6) and their LCM is 360 (not 2160). Therefore, the teacher's suggestion that $X=36, Y=120, Z=180$ could be the three integers is **not consistent** with the given HCF and LCM values.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Part (a): State the claim and identify its validity.",
+            "Part (a): Choose suitable integers (e.g., 4, 6, 8) as a counterexample.",
+            "Part (a): Calculate the product of the chosen integers.",
+            "Part (a): Find the HCF of the chosen integers using prime factorization.",
+            "Part (a): Find the LCM of the chosen integers using prime factorization.",
+            "Part (a): Compare the product with the product of HCF and LCM to justify the conclusion.",
+            "Part (b): State the given HCF and LCM and the teacher's suggested integers.",
+            "Part (b): Find the prime factorization of each suggested integer (36, 120, 180).",
+            "Part (b): Calculate the HCF of the suggested integers using prime factorization.",
+            "Part (b): Compare the calculated HCF with the given HCF to evaluate consistency.",
+            "Part (b): (Optional but recommended for full justification) Calculate the LCM of the suggested integers.",
+            "Part (b): Compare the calculated LCM with the given LCM.",
+            "Part (b): Conclude whether the teacher's suggestion is consistent or not."
+          ]
+        },
+        {
+          "text": "A quadratic polynomial $p(x) = ax^2 + bx + c$ has zeroes $\\alpha$ and $\\beta$. It is given that $\\alpha - \\beta = 1$ and $\\alpha^3 - \\beta^3 = 19$. Furthermore, the polynomial passes through the point $(1, -6)$. Evaluate the values of $a$, $b$, and $c$.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Case 1: a = -3, b = 15, c = -18. Case 2: a = -1/2, b = -5/2, c = -3.",
+          "explanation": "Let the quadratic polynomial be $p(x) = ax^2 + bx + c$",
+          "conditions": "n1. $\\alpha - \\beta = 1$\n2. $\\alpha^3 - \\beta^3 = 19$\n3. The polynomial passes through $(1",
+          "1": "Use the given conditions on the zeroes to find $\\alpha\\beta$ and $\\alpha + \\beta$.**\nWe know the algebraic identity: $\\alpha^3 - \\beta^3 = (\\alpha - \\beta)(\\alpha^2 + \\alpha\\beta + \\beta^2)$.\nSubstitute the given values:\n$19 = (1)(\\alpha^2 + \\alpha\\beta + \\beta^2)$\n$\\alpha^2 + \\alpha\\beta + \\beta^2 = 19$  (Equation 1)\n\nWe also know: $(\\alpha - \\beta)^2 = \\alpha^2 - 2\\alpha\\beta + \\beta^2$.\nSubstitute $\\alpha - \\beta = 1$:\n$1^2 = \\alpha^2 - 2\\alpha\\beta + \\beta^2$\n$1 = \\alpha^2 - 2\\alpha\\beta + \\beta^2$  (Equation 2)\n\nSubtract Equation 2 from Equation 1:\n$(\\alpha^2 + \\alpha\\beta + \\beta^2) - (\\alpha^2 - 2\\alpha\\beta + \\beta^2) = 19 - 1$\n$3\\alpha\\beta = 18$\n$\\alpha\\beta = 6$\n\nNow",
+          "alpha\\beta$": "n$(\\alpha + \\beta)^2 = (\\alpha - \\beta)^2 + 4\\alpha\\beta$\n$(\\alpha + \\beta)^2 = (1)^2 + 4(6)$\n$(\\alpha + \\beta)^2 = 1 + 24$\n$(\\alpha + \\beta)^2 = 25$\n$\\alpha + \\beta = \\pm 5$\n\nWe have two possibilities for $(\\alpha + \\beta)$: $5$ or $-5$. And $\\alpha\\beta = 6$.\n\n**Step 2: Relate zeroes to coefficients.**\nFor a quadratic polynomial $ax^2 + bx + c$",
+          "know": "n$\\alpha + \\beta = -\\frac{b",
+          "marks": 5,
+          "bloomsLevel": "Analyze",
+          "difficulty": "Hard",
+          "chapter": "Polynomials"
+        },
+        {
+          "text": "A transport company charges a fixed rental for a truck plus an additional charge per kilometer. \n\n**Part 1:** A customer pays ₹2500 for a journey of 200 km. Another customer pays ₹3250 for a journey of 350 km. Determine the fixed charge and the charge per kilometer.\n\n**Part 2:** The company plans to introduce a new pricing scheme for long-distance routes. For journeys exceeding `L` kilometers, the fixed charge remains the same (as determined in Part 1), but the per-kilometer charge is reduced by `₹k` for the distance *beyond* `L` kilometers. The charge for the first `L` kilometers remains as per the original rate (determined in Part 1).\n\nUnder this new scheme, a customer travels 500 km and is charged ₹3400. Another customer travels 650 km and is charged ₹3850.\n\nGiven that `L` is an integer and `k` is a positive integer, determine the values of `L` and `k`.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "L = 200 km, k = ₹2",
+          "explanation": "**Part 1: Determining Fixed Charge and Original Per-kilometer Charge**\n\n**Step 1: Define variables and set up initial equations.**\nLet the fixed charge be `₹x` and the charge per kilometer be `₹y`.\nFrom the given information:\nFor a 200 km journey: `x + 200y = 2500` (Equation 1)\nFor a 350 km journey: `x + 350y = 3250` (Equation 2)\n\n**Step 2: Solve the system of linear equations.**\nSubtract Equation 1 from Equation 2:\n`(x + 350y) - (x + 200y) = 3250 - 2500`\n`150y = 750`\n`y = 750 / 150`\n`y = 5`\n\nSubstitute the value of `y` into Equation 1:\n`x + 200(5) = 2500`\n`x + 1000 = 2500`\n`x = 2500 - 1000`\n`x = 1500`\n\nSo, the fixed charge is `₹1500` and the original charge per kilometer is `₹5`.\n\n**Part 2: Determining `L` and `k` for the New Scheme**\n\n**Step 3: Formulate the total charge expression for the new scheme.**\nFrom Part 1, we have `x = 1500` and `y = 5`.\nFor a journey of `D` km, where `D > L`, the total charge is calculated as:\nTotal Charge = Fixed charge + (Charge for first `L` km at original rate `y`) + (Charge for `(D-L)` km at reduced rate `(y-k)`)\nTotal Charge = `x + L*y + (D-L)*(y-k)`\nSubstituting `x = 1500` and `y = 5`:\nTotal Charge = `1500 + L*5 + (D-L)*(5-k)`\n\n**Step 4: Set up new equations based on the new scheme.**\nLet `A = (5-k)` to simplify the equations.\nThe total charge expression becomes: `1500 + 5L + (D-L)A = Total Charge`\n\nFor `D = 500 km`, Total Charge = `₹3400`:\n`1500 + 5L + (500-L)A = 3400`\n`5L + (500-L)A = 3400 - 1500`\n`5L + (500-L)A = 1900` (Equation 3)\n\nFor `D = 650 km`, Total Charge = `₹3850`:\n`1500 + 5L + (650-L)A = 3850`\n`5L + (650-L)A = 3850 - 1500`\n`5L + (650-L)A = 2350` (Equation 4)\n\n**Step 5: Solve the new system of linear equations for `L` and `A`.**\nSubtract Equation 3 from Equation 4:\n`(5L + (650-L)A) - (5L + (500-L)A) = 2350 - 1900`\n`(650-L)A - (500-L)A = 450`\n`650A - LA - 500A + LA = 450`\n`150A = 450`\n`A = 450 / 150`\n`A = 3`\n\nSubstitute the value of `A = 3` into Equation 3:\n`5L + (500-L)(3) = 1900`\n`5L + 1500 - 3L = 1900`\n`2L = 1900 - 1500`\n`2L = 400`\n`L = 400 / 2`\n`L = 200`\n\n**Step 6: Calculate `k` and verify conditions.**\nWe defined `A = 5 - k`.\n`3 = 5 - k`\n`k = 5 - 3`\n`k = 2`\n\nVerify the given conditions:\n`L = 200` is an integer.\n`k = 2` is a positive integer.\nBoth conditions are satisfied.\n\nThus, `L = 200` km and `k = ₹2`.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for fixed charge and per-km charge (x, y).",
+            "Formulate and solve the initial pair of linear equations to find x and y.",
+            "Formulate the total charge equation for the new scheme, correctly interpreting the piecewise charging structure using L and k.",
+            "Set up a new pair of linear equations using the calculated x, y, and the given charges for 500 km and 650 km.",
+            "Solve this new system of equations for L and the effective reduced rate (5-k).",
+            "Calculate the value of k and verify that L is an integer and k is a positive integer."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A group of students planned a picnic. The budget for food was fixed at ₹480. However, 8 students failed to turn up, which resulted in the cost of food for each participating student increasing by ₹10. Find the original number of students who planned to attend the picnic.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "24 students",
+          "explanation": "Let the original number of students who planned to attend the picnic be \\(x\\).\n\n1.  **Calculate the original cost per student:**\n    Total budget for food = ₹480.\n    Original cost of food per student = \\(\\frac{480}{x}\\) rupees.\n\n2.  **Calculate the new number of students:**\n    Since 8 students failed to turn up, the new number of students = \\(x - 8\\).\n\n3.  **Calculate the new cost per student:**\n    New cost of food per student = \\(\\frac{480}{x - 8}\\) rupees.\n\n4.  **Formulate the equation based on the given condition:**\n    According to the problem, the cost of food for each participating student increased by ₹10.\n    So, New cost per student - Original cost per student = ₹10.\n    \\(\\frac{480}{x - 8} - \\frac{480}{x} = 10\\)\n\n5.  **Solve the equation:**\n    To clear the denominators, multiply both sides by \\(x(x - 8)\\), which is the Least Common Multiple (LCM) of the denominators:\n    \\(480x - 480(x - 8) = 10x(x - 8)\\)\n    Expand the terms:\n    \\(480x - 480x + 3840 = 10(x^2 - 8x)\\)\n    Simplify:\n    \\(3840 = 10x^2 - 80x\\)\n    Divide the entire equation by 10 to simplify:\n    \\(384 = x^2 - 8x\\)\n    Rearrange into the standard quadratic form \\(ax^2 + bx + c = 0\\):\n    \\(x^2 - 8x - 384 = 0\\)\n\n6.  **Solve the quadratic equation:**\n    We can solve this quadratic equation by factorization. We need two numbers whose product is -384 and whose sum is -8.\n    By inspection, the numbers are -24 and 16.\n    \\(x^2 - 24x + 16x - 384 = 0\\)\n    Factor by grouping:\n    \\(x(x - 24) + 16(x - 24) = 0\\)\n    \\((x - 24)(x + 16) = 0\\)\n\n    This gives two possible solutions for \\(x\\):\n    \\(x - 24 = 0 \\implies x = 24\\)\n    \\(x + 16 = 0 \\implies x = -16\\)\n\n7.  **Validate the solution:**\n    Since the number of students cannot be negative, \\(x = -16\\) is not a valid solution.\n    Therefore, the original number of students who planned to attend the picnic was 24.\n\n**Verification:**\nOriginal number of students = 24\nOriginal cost per student = \\(\\frac{480}{24} = \\text{₹}20\\)\nNew number of students = \\(24 - 8 = 16\\)\nNew cost per student = \\(\\frac{480}{16} = \\text{₹}30\\)\nIncrease in cost = \\(30 - 20 = \\text{₹}10\\), which matches the condition given in the problem.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variable for original number of students.",
+            "Formulate expressions for original and new cost per student.",
+            "Set up the quadratic equation based on the given condition.",
+            "Simplify the equation to standard form \\(ax^2 + bx + c = 0\\).",
+            "Solve the quadratic equation using factorization or quadratic formula.",
+            "Reject invalid roots and state the final answer."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 20
+    },
+    "E": {
+      "name": "Section E (Case-Study)",
+      "questions": [
+        {
+          "text": "Mr. Gupta, a confectioner, is preparing a special gift box for an upcoming festival. He has three types of sweets: Kaju Katli, Badam Barfi, and Pista Roll. He has 324 Kaju Katli, 252 Badam Barfi, and 180 Pista Rolls. He wants to pack them into identical boxes, such that each box contains the same number of sweets of *only one type*. He wants to use the minimum number of boxes possible.\n\nAnswer the following questions based on the given information:\n\n(i) What is the maximum number of sweets Mr. Gupta can place in each box?\n(ii) How many boxes of each type of sweet (Kaju Katli, Badam Barfi, Pista Roll) will be required?\n(iii) If Mr. Gupta also sells a special 'fusion' sweet whose weight, when expressed in grams, has a decimal expansion that terminates. What can you say about the prime factors of the denominator of its fractional representation (in simplest form)? Justify your answer.\n(iv) Mr. Gupta claims that the total number of sweets, when divided by the maximum number of sweets per box, will result in a rational number. Is his claim correct? Provide a brief justification.",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for detailed answers to sub-parts.",
+          "explanation": "**(i) Finding the maximum number of sweets in each box:**\nTo find the maximum number of sweets that can be placed in each box, such that each box has the same number of sweets and contains only one type, we need to find the Highest Common Factor (HCF) of the number of Kaju Katli, Badam Barfi, and Pista Rolls.\n\nNumber of Kaju Katli = 324\nNumber of Badam Barfi = 252\nNumber of Pista Rolls = 180\n\nFirst, find the prime factorization of each number:\n$324 = 2 \\times 162 = 2 \\times 2 \\times 81 = 2^2 \\times 3^4$\n$252 = 2 \\times 126 = 2 \\times 2 \\times 63 = 2^2 \\times 3^2 \\times 7^1$\n$180 = 2 \\times 90 = 2 \\times 2 \\times 45 = 2^2 \\times 3^2 \\times 5^1$\n\nThe HCF is the product of the lowest powers of the common prime factors.\nCommon prime factors are 2 and 3.\nHighest Common Factor (HCF) = $2^2 \\times 3^2 = 4 \\times 9 = 36$\nTherefore, the maximum number of sweets Mr. Gupta can place in each box is **36**.\n\n**(ii) Number of boxes required for each type of sweet:**\nNumber of Kaju Katli boxes = Total Kaju Katli / Sweets per box = $324 / 36 = 9$ boxes\nNumber of Badam Barfi boxes = Total Badam Barfi / Sweets per box = $252 / 36 = 7$ boxes\nNumber of Pista Roll boxes = Total Pista Rolls / Sweets per box = $180 / 36 = 5$ boxes\n\nSo, **9 boxes of Kaju Katli, 7 boxes of Badam Barfi, and 5 boxes of Pista Roll** will be required.\n\n**(iii) Prime factors of the denominator for a terminating decimal expansion:**\nIf a rational number has a terminating decimal expansion, then its denominator (when the fraction is expressed in its simplest form, i.e., reduced form) must have **only prime factors of 2 or 5, or both**. No other prime factors should be present in the denominator. This is a direct consequence of the theorem on decimal expansions of rational numbers.\n\n**(iv) Mr. Gupta's claim about the total number of sweets divided by the maximum number of sweets per box:**\nTotal number of sweets = $324 + 252 + 180 = 756$\nMaximum number of sweets per box = 36 (from part i)\n\nThe division result = $756 / 36 = 21$\n\n21 is an integer. All integers are rational numbers because they can be expressed in the form $p/q$, where $q \\neq 0$ (e.g., $21 = 21/1$).\nTherefore, **Mr. Gupta's claim is correct**. The result is a rational number.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Find the HCF of the quantities of the three types of sweets using prime factorization.",
+            "Calculate the number of boxes needed for each sweet type by dividing its total quantity by the HCF.",
+            "Recall and state the condition for a rational number to have a terminating decimal expansion, specifically regarding the prime factors of its denominator.",
+            "Calculate the total number of sweets and divide it by the maximum sweets per box (HCF).",
+            "Determine if the result of the division is a rational number and provide justification based on the definition of rational numbers."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A drone's flight path can be modeled by a polynomial function. The altitude of the drone, $h(x)$ (in meters), at a horizontal distance $x$ (in meters) from its launch point, is given by the function $h(x) = -x^2 + 7x - 10$. The drone takes off from the ground and lands back on the ground.\n\nBased on the given information, answer the following questions:\n\n(a) At what horizontal distances does the drone take off and land?\n(b) What is the maximum altitude reached by the drone during its flight?\n(c) The drone's operator wants to adjust the flight path so that it lands 1 meter further away from its original landing point, while maintaining the same take-off point and the same parabolic shape (i.e., the same leading coefficient). What would be the new polynomial equation for the drone's path?",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for sub-parts.",
+          "explanation": "(a) The drone takes off and lands when its altitude $h(x)$ is 0. So, we need to find the zeroes of the polynomial $h(x) = -x^2 + 7x - 10$.\nSet $h(x) = 0$:\n$-x^2 + 7x - 10 = 0$\nMultiply by -1:\n$x^2 - 7x + 10 = 0$\nFactor the quadratic equation:\n$x^2 - 5x - 2x + 10 = 0$\n$x(x - 5) - 2(x - 5) = 0$\n$(x - 2)(x - 5) = 0$\nSo, $x = 2$ or $x = 5$.\nThus, the drone takes off at a horizontal distance of 2 meters and lands at a horizontal distance of 5 meters.\n\n(b) The maximum altitude for a quadratic polynomial $ax^2 + bx + c$ (where $a < 0$) occurs at the vertex, whose x-coordinate is given by $x = -b/(2a)$.\nFor $h(x) = -x^2 + 7x - 10$, we have $a = -1$, $b = 7$, $c = -10$.\nx-coordinate of the vertex: $x = -7 / (2 \\times -1) = -7 / -2 = 3.5$ meters.\nNow, substitute $x = 3.5$ into the altitude function to find the maximum altitude:\n$h(3.5) = -(3.5)^2 + 7(3.5) - 10$\n$h(3.5) = -12.25 + 24.5 - 10$\n$h(3.5) = 12.25 - 10$\n$h(3.5) = 2.25$ meters.\nThe maximum altitude reached by the drone is 2.25 meters.\n\n(c) From part (a), the original take-off point is $x=2$ and the landing point is $x=5$.\nThe operator wants to maintain the same take-off point ($x=2$) but the drone lands 1 meter further away from its original landing point. So, the new landing point will be $5 + 1 = 6$ meters.\nThe new zeroes of the polynomial will be $\\alpha = 2$ and $\\beta = 6$.\nThe leading coefficient remains the same, which is $a = -1$.\nThe new polynomial equation, $P(x)$, can be written in factored form as $P(x) = a(x - \\alpha)(x - \\beta)$.\n$P(x) = -1(x - 2)(x - 6)$\n$P(x) = -(x^2 - 6x - 2x + 12)$\n$P(x) = -(x^2 - 8x + 12)$\n$P(x) = -x^2 + 8x - 12$\nThe new polynomial equation for the drone's path is $P(x) = -x^2 + 8x - 12$.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "For (a), set $h(x) = 0$ and solve the quadratic equation to find the zeroes.",
+            "For (b), find the x-coordinate of the vertex using $x = -b/(2a)$ and substitute it into $h(x)$ to find the maximum altitude.",
+            "For (c), identify the new zeroes (one original, one shifted). Use the factored form $P(x) = a(x - \\alpha)(x - \\beta)$ with the given leading coefficient $a=-1$ and the new zeroes, then expand to get the polynomial in standard form."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A public library charges a fixed amount for the first three days and an additional charge for each day thereafter. Preeti paid ₹27 for a book kept for seven days, while Richa paid ₹21 for the book kept for five days.\n\n**(a) Based on the given information, formulate a pair of linear equations representing the situation. (1 mark)**\n**(b) Determine the fixed charge and the additional charge per day. (1 mark)**\n**(c) If the library were to offer a fixed charge of ₹18 and an additional charge of ₹2 per day, would this new scheme result in the same total payments for Preeti (7 days) and Richa (5 days) as in the original problem? Justify your answer. (1 mark)**\n**(d) Suppose the library decides to implement a new policy where the fixed charge for the first three days is ₹F and the additional charge per day thereafter is ₹A. If this new policy leads to a situation where the equations formed from Preeti's and Richa's payments are F + 4A = 27 and F + 4A = 21, what can you conclude about the consistency of this new system? What does this imply graphically? (1 mark)**",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for detailed answers to all sub-parts.",
+          "explanation": "**(a) Formulation of Linear Equations:**\nLet the fixed charge for the first three days be ₹x.\nLet the additional charge for each day thereafter be ₹y.\n\nFor Preeti, who kept the book for 7 days:\nNumber of days for additional charge = 7 - 3 = 4 days.\nTotal charge = Fixed charge + (Additional days × Additional charge per day)\n₹27 = x + 4y.\nSo, the first equation is $x + 4y = 27$.\n\nFor Richa, who kept the book for 5 days:\nNumber of days for additional charge = 5 - 3 = 2 days.\nTotal charge = Fixed charge + (Additional days × Additional charge per day)\n₹21 = x + 2y.\nSo, the second equation is $x + 2y = 21$.\n\nThe pair of linear equations representing the situation is:\n1) $x + 4y = 27$\n2) $x + 2y = 21$\n\n**(b) Determination of Fixed and Additional Charges:**\nWe have the system of equations:\n1) $x + 4y = 27$\n2) $x + 2y = 21$\n\nSubtract Equation (2) from Equation (1):\n$(x + 4y) - (x + 2y) = 27 - 21$\n$x + 4y - x - 2y = 6$\n$2y = 6$\n$y = 3$\n\nSubstitute the value of y = 3 into Equation (2):\n$x + 2(3) = 21$\n$x + 6 = 21$\n$x = 21 - 6$\n$x = 15$\n\nSo, the fixed charge is ₹15 and the additional charge per day is ₹3.\n\n**(c) Analysis of a New Scheme:**\nNew scheme: Fixed charge = ₹18, Additional charge per day = ₹2.\n\nLet's calculate the payments for Preeti and Richa under this new scheme:\nFor Preeti (7 days): Payment = Fixed charge + (7-3) × Additional charge per day\nPayment = $18 + 4 \times 2 = 18 + 8 = ₹26$.\nOriginal payment for Preeti was ₹27. Since ₹26 $\neq$ ₹27, the new scheme does not result in the same payment for Preeti.\n\nFor Richa (5 days): Payment = Fixed charge + (5-3) × Additional charge per day\nPayment = $18 + 2 \times 2 = 18 + 4 = ₹22$.\nOriginal payment for Richa was ₹21. Since ₹22 $\neq$ ₹21, the new scheme does not result in the same payment for Richa.\n\nConclusion: No, this new scheme would not result in the same total payments for Preeti and Richa as in the original problem.\nJustification: The calculated payments under the new scheme (₹26 for Preeti and ₹22 for Richa) do not match their original payments (₹27 for Preeti and ₹21 for Richa).\n\n**(d) Consistency of a New System and Graphical Implication:**\nThe new policy leads to the equations:\n1) $F + 4A = 27$\n2) $F + 4A = 21$\n\nTo check the consistency of this system, we can subtract Equation (2) from Equation (1):\n$(F + 4A) - (F + 4A) = 27 - 21$\n$0 = 6$\n\nThis is a false statement, as 0 cannot be equal to 6.\nConclusion: Since we obtain a false statement involving no variables, the system of equations is **inconsistent**.\nGraphically: An inconsistent system of linear equations implies that the lines representing the two equations are **parallel** and do not intersect at any point. Therefore, there is no common solution that satisfies both equations simultaneously.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for fixed and additional charges.",
+            "Formulate two linear equations based on the given conditions (Preeti's and Richa's payments).",
+            "Solve the system of equations to find the values of fixed and additional charges.",
+            "Evaluate a proposed new scheme by calculating payments for the original conditions and comparing them to the original payments, providing justification.",
+            "Analyze a hypothetical system of equations (F + 4A = 27 and F + 4A = 21) to determine its consistency.",
+            "State the graphical implication (parallel lines) for an inconsistent system."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 12
+    }
+  },
+  "metadata": {
+    "board": "CBSE",
+    "class": 10,
+    "subject": "Mathematics",
+    "totalQuestions": 38,
+    "totalMarks": 80,
+    "duration": 180,
+    "generationMethod": "RAG+LLM",
+    "llmModel": "gemini-2.5-flash",
+    "chaptersUsed": [
+      "Real Numbers",
+      "Polynomials",
+      "Pair of Linear Equations in Two Variables",
+      "Quadratic Equations",
+      "Arithmetic Progressions",
+      "Triangles",
+      "Coordinate Geometry",
+      "Introduction to Trigonometry",
+      "Some Applications of Trigonometry",
+      "Circles",
+      "Areas Related to Circles",
+      "Surface Areas and Volumes",
+      "Statistics",
+      "Probability"
+    ],
+    "generationTimeMs": 481752
+  }
+}

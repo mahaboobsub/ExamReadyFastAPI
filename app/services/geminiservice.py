@@ -18,6 +18,10 @@ class GeminiService:
     """
     
     def __init__(self):
+        # Ensure .env is loaded for additional keys
+        from dotenv import load_dotenv
+        load_dotenv()
+        
         # 1. Load all available keys from Environment
         self.api_keys = [
             settings.GEMINI_API_KEY,

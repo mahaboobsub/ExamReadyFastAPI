@@ -1,0 +1,826 @@
+{
+  "sections": {
+    "A": {
+      "name": "Section A (MCQ & AR)",
+      "questions": [
+        {
+          "text": "The HCF of two positive integers is 12 and their product is 2160. What is the LCM of these two integers?",
+          "type": "MCQ",
+          "options": [
+            "A) 180",
+            "B) 240",
+            "C) 360",
+            "D) 480"
+          ],
+          "correctAnswer": "A) 180",
+          "explanation": "Let the two positive integers be 'a' and 'b'.\nGiven HCF(a, b) = 12.\nGiven Product (a × b) = 2160.\nWe know that for any two positive integers 'a' and 'b', the product of their HCF and LCM is equal to the product of the numbers themselves.\nThat is, HCF(a, b) × LCM(a, b) = a × b\nSubstituting the given values:\n12 × LCM(a, b) = 2160\nLCM(a, b) = 2160 / 12\nLCM(a, b) = 180\nTherefore, the LCM of the two integers is 180.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the relationship between HCF, LCM, and the product of two numbers (HCF × LCM = product of numbers).",
+            "Substitute the given HCF and product into the formula.",
+            "Solve the equation to find the LCM."
+          ]
+        },
+        {
+          "text": "Without actually performing the long division, determine which of the following rational numbers will have a terminating decimal expansion.",
+          "type": "MCQ",
+          "options": [
+            "A) $\\frac{17}{30}$",
+            "B) $\\frac{23}{24}$",
+            "C) $\\frac{15}{1600}$",
+            "D) $\\frac{19}{70}$"
+          ],
+          "correctAnswer": "C) $\\frac{15}{1600}$",
+          "explanation": "A rational number $\\frac{p}{q}$ (in simplest form) has a terminating decimal expansion if and only if the prime factorization of the denominator $q$ is of the form $2^n \\times 5^m$, where $n$ and $m$ are non-negative integers.\n\nLet's check each option:\nA) $\\frac{17}{30}$: The denominator is $30 = 2 \\times 3 \\times 5$. Since 3 is a prime factor other than 2 or 5, $\\frac{17}{30}$ has a non-terminating repeating decimal expansion.\nB) $\\frac{23}{24}$: The denominator is $24 = 2^3 \\times 3$. Since 3 is a prime factor other than 2 or 5, $\\frac{23}{24}$ has a non-terminating repeating decimal expansion.\nC) $\\frac{15}{1600}$: First, simplify the fraction. $\\frac{15}{1600} = \\frac{3 \\times 5}{2^6 \\times 5^2} = \\frac{3}{2^6 \\times 5^1}$.\n   The denominator is $2^6 \\times 5^1$, which is of the form $2^n \\times 5^m$. Therefore, $\\frac{15}{1600}$ has a terminating decimal expansion.\nD) $\\frac{19}{70}$: The denominator is $70 = 2 \\times 5 \\times 7$. Since 7 is a prime factor other than 2 or 5, $\\frac{19}{70}$ has a non-terminating repeating decimal expansion.\n\nThus, $\\frac{15}{1600}$ has a terminating decimal expansion.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers"
+        },
+        {
+          "text": "<b>Assertion (A):</b> The HCF of two positive integers is 145 and their LCM is 2175. If one of the integers is 725, then the other integer is 435.\n\n<b>Reason (R):</b> For any two positive integers 'a' and 'b', HCF(a, b) × LCM(a, b) = a × b.",
+          "type": "AR",
+          "options": [
+            "Both A and R are true and R is the correct explanation of A.",
+            "Both A and R are true but R is not the correct explanation of A.",
+            "A is true but R is false.",
+            "A is false but R is true."
+          ],
+          "correctAnswer": "Both A and R are true and R is the correct explanation of A.",
+          "explanation": "<b>Step 1: Evaluate Assertion (A)</b>\nGiven HCF = 145, LCM = 2175, one integer = 725. Let the other integer be 'x'.\nUsing the property: Product of two numbers = HCF × LCM\n725 × x = 145 × 2175\nx = (145 × 2175) / 725\nx = (145 × 2175) / (5 × 145)  (Since 725 = 5 × 145)\nx = 2175 / 5\nx = 435\nThus, the other integer is 435. So, Assertion (A) is true.\n\n<b>Step 2: Evaluate Reason (R)</b>\nThe statement 'For any two positive integers 'a' and 'b', HCF(a, b) × LCM(a, b) = a × b' is a fundamental property related to HCF and LCM, which is derived from the Fundamental Theorem of Arithmetic. This statement is true.\n\n<b>Step 3: Determine if R is the correct explanation of A</b>\nReason (R) provides the exact mathematical property that is used to verify the statement in Assertion (A). Without this property, we would not be able to calculate the second number. Therefore, Reason (R) is the correct explanation for Assertion (A).\n\n<b>Conclusion:</b> Both Assertion (A) and Reason (R) are true, and Reason (R) is the correct explanation of Assertion (A).",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the relationship: Product of two numbers = HCF × LCM.",
+            "Substitute the given values into the formula.",
+            "Solve for the unknown number.",
+            "Verify the truthfulness of Assertion (A) and Reason (R).",
+            "Determine if Reason (R) correctly explains Assertion (A)."
+          ]
+        },
+        {
+          "text": "If $\\alpha$ and $\\beta$ are the zeroes of the quadratic polynomial $p(x) = 3x^2 - 7x + 4$, then find the value of $\\alpha + \\beta + \\alpha\\beta$.",
+          "type": "MCQ",
+          "options": [
+            "A) 11/3",
+            "B) 1/3",
+            "C) -1/3",
+            "D) -11/3"
+          ],
+          "correctAnswer": "A) 11/3",
+          "explanation": "For a quadratic polynomial of the form $ax^2 + bx + c$, the sum of the zeroes ($\\alpha + \\beta$) is given by $-b/a$, and the product of the zeroes ($\\alpha\\beta$) is given by $c/a$.\n\nGiven polynomial: $p(x) = 3x^2 - 7x + 4$.\nComparing this with $ax^2 + bx + c$, we have:\n$a = 3$\n$b = -7$\n$c = 4$\n\nNow, calculate the sum of the zeroes:\n$\\alpha + \\beta = -b/a = -(-7)/3 = 7/3$\n\nNext, calculate the product of the zeroes:\n$\\alpha\\beta = c/a = 4/3$\n\nWe need to find the value of $\\alpha + \\beta + \\alpha\\beta$.\nSubstitute the calculated values:\n$\\alpha + \\beta + \\alpha\\beta = (7/3) + (4/3)$\n$= (7+4)/3$\n$= 11/3$\n\nThus, the value of $\\alpha + \\beta + \\alpha\\beta$ is $11/3$.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients a, b, c from the given quadratic polynomial.",
+            "Calculate the sum of zeroes ($\\alpha + \\beta$) using the formula $-b/a$.",
+            "Calculate the product of zeroes ($\\alpha\\beta$) using the formula $c/a$.",
+            "Substitute the calculated values into the expression $\\alpha + \\beta + \\alpha\\beta$ and simplify."
+          ]
+        },
+        {
+          "text": "If -2 is one of the zeroes of the polynomial $p(x) = x^2 + kx - 6$, then the value of k is:",
+          "type": "MCQ",
+          "options": [
+            "A) -3",
+            "B) -1",
+            "C) 1",
+            "D) 3"
+          ],
+          "correctAnswer": "B) -1",
+          "explanation": "According to the definition of a zero of a polynomial, if 'a' is a zero of a polynomial $p",
+          "marks": 1
+        },
+        {
+          "text": "<b>Assertion (A):</b> For the quadratic polynomial \\(p(x) = 2x^2 - 7x + 3\\), the sum of its zeroes is 3.5.\n\n<b>Reason (R):</b> If \\(\\alpha\\) and \\(\\beta\\) are the zeroes of the quadratic polynomial \\(ax^2 + bx + c\\) (where \\(a \\neq 0\\)), then the sum of the zeroes is given by \\(\\alpha + \\beta = -\\frac{b}{a}\\).",
+          "type": "AR",
+          "options": [
+            "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+            "Both Assertion (A) and Reason (R) are true but Reason (R) is not the correct explanation of Assertion (A).",
+            "Assertion (A) is true but Reason (R) is false.",
+            "Assertion (A) is false but Reason (R) is true."
+          ],
+          "correctAnswer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "explanation": "<b>Step 1: Analyze Assertion (A)</b>\nThe given quadratic polynomial is \\(p(x) = 2x^2 - 7x + 3\\).\nComparing this with the standard form \\(ax^2 + bx + c\\), we have \\(a = 2\\), \\(b = -7\\), and \\(c = 3\\).\nAccording to the relationship between zeroes and coefficients, the sum of the zeroes (let's say \\(\\alpha\\) and \\(\\beta\\)) is given by \\(\\alpha + \\beta = -\\frac{b}{a}\\).\nSubstituting the values, \\(\\alpha + \\beta = -\\frac{(-7)}{2} = \\frac{7}{2} = 3.5\\).\nThus, Assertion (A) is true.\n\n<b>Step 2: Analyze Reason (R)</b>\nReason (R) states: \"If \\(\\alpha\\) and \\(\\beta\\) are the zeroes of the quadratic polynomial \\(ax^2 + bx + c\\) (where \\(a \\neq 0\\)), then the sum of the zeroes is given by \\(\\alpha + \\beta = -\\frac{b}{a}\\).\"\nThis statement is a fundamental property of quadratic polynomials, as described in the NCERT textbook. Therefore, Reason (R) is true.\n\n<b>Step 3: Determine the relationship between Assertion (A) and Reason (R)</b>\nAssertion (A) calculates the sum of zeroes for a specific polynomial. Reason (R) provides the general formula that is used to perform this calculation. Hence, Reason (R) is the correct explanation for Assertion (A).\n\nTherefore, both Assertion (A) and Reason (R) are true, and Reason (R) is the correct explanation of Assertion (A).",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a, b, c from the given quadratic polynomial.",
+            "Apply the formula for the sum of zeroes (\\(\\alpha + \\beta = -\\frac{b}{a}\\)) to verify Assertion (A).",
+            "Evaluate the truthfulness of Reason (R) as a general mathematical statement.",
+            "Determine if Reason (R) correctly explains Assertion (A)."
+          ]
+        },
+        {
+          "text": "What is a pair of linear equations called if it has at least one solution?",
+          "type": "MCQ",
+          "options": [
+            "A) Inconsistent pair",
+            "B) Dependent pair",
+            "C) Consistent pair",
+            "D) Parallel pair"
+          ],
+          "correctAnswer": "C) Consistent pair",
+          "explanation": "According to the NCERT definition, a pair of linear equations in two variables which has a solution (either a unique solution or infinitely many solutions) is called a consistent pair of linear equations. A dependent pair is a special type of consistent pair with infinitely many solutions.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of a consistent pair of linear equations from the chapter."
+          ]
+        },
+        {
+          "text": "When does a pair of linear equations in two variables have no solution?",
+          "type": "MCQ",
+          "options": [
+            "A) When the lines intersect at a single point.",
+            "B) When the lines are coincident.",
+            "C) When the lines are parallel.",
+            "D) When the equations are dependent."
+          ],
+          "correctAnswer": "C) When the lines are parallel.",
+          "explanation": "A pair of linear equations in two variables has no solution when the lines representing the equations are parallel. In this case, the lines never intersect, indicating no common point that satisfies both equations. Such a pair is also called an inconsistent pair of equations.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the graphical representation condition for a pair of linear equations to have no solution."
+          ]
+        },
+        {
+          "text": "Which of the following equations is a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "(x+2)² = x² + 4",
+            "x(x+3) = x³ - 1",
+            "x(x+1) + 8 = (x+2)(x-2)",
+            "x + 1/x = 5"
+          ],
+          "correctAnswer": "x + 1/x = 5",
+          "explanation": "A quadratic equation is an equation of the form ax² + bx + c = 0, where a, b, c are real numbers and a ≠ 0. We need to simplify each option to check its form:\n\nOption A: (x+2)² = x² + 4\nExpanding the left side: x² + 4x + 4 = x² + 4\nSubtracting x² + 4 from both sides: 4x = 0\nThis is a linear equation, not quadratic.\n\nOption B: x(x+3) = x³ - 1\nExpanding the left side: x² + 3x = x³ - 1\nRearranging terms: x³ - x² - 3x - 1 = 0\nThis is a cubic equation (degree 3), not quadratic.\n\nOption C: x(x+1) + 8 = (x+2)(x-2)\nExpanding both sides: x² + x + 8 = x² - 4\nSubtracting x² from both sides: x + 8 = -4\nRearranging terms: x + 12 = 0\nThis is a linear equation, not quadratic.\n\nOption D: x + 1/x = 5\nMultiply the entire equation by x (assuming x ≠ 0) to clear the denominator:\nx² + 1 = 5x\nRearranging terms: x² - 5x + 1 = 0\nThis equation is of the form ax² + bx + c = 0, where a=1, b=-5, and c=1. Since a ≠ 0, this is a quadratic equation.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Simplify each given equation into its standard form.",
+            "Identify the highest power of the variable (degree) in each simplified equation.",
+            "An equation is quadratic if its highest degree is exactly 2."
+          ]
+        },
+        {
+          "text": "For the equation (k-1)x² + 2x + 3 = 0 to be a quadratic equation, the value of k must NOT be:",
+          "type": "MCQ",
+          "options": [
+            "1",
+            "2",
+            "0",
+            "-1"
+          ],
+          "correctAnswer": "1",
+          "marks": 1
+        },
+        {
+          "text": "Which of the following statements correctly defines an Arithmetic Progression (AP)?",
+          "type": "MCQ",
+          "options": [
+            "Each term is obtained by multiplying the preceding term by a fixed non-zero number.",
+            "Each term is obtained by adding a fixed number to the preceding term (except the first term).",
+            "Each term is obtained by squaring the preceding term.",
+            "The ratio of any two consecutive terms is constant."
+          ],
+          "correctAnswer": "Each term is obtained by adding a fixed number to the preceding term (except the first term).",
+          "explanation": "According to the definition of an Arithmetic Progression (AP) from the NCERT textbook, an AP is a list of numbers in which each term is obtained by adding a fixed number (called the common difference) to the preceding term, except for the first term. This fixed number can be positive, negative, or zero.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the fundamental definition of an Arithmetic Progression (AP)."
+          ]
+        },
+        {
+          "text": "In triangle ABC, points D and E are on sides AB and AC respectively. If the line segment DE divides sides AB and AC such that AD/DB = AE/EC, which of the following statements is true?",
+          "type": "MCQ",
+          "options": [
+            "A) Triangle ADE is congruent to Triangle ABC.",
+            "B) DE is parallel to BC.",
+            "C) Angle ADE is equal to Angle BAC.",
+            "D) Area of triangle ADE is equal to Area of triangle ABC."
+          ],
+          "correctAnswer": "B) DE is parallel to BC.",
+          "explanation": "According to the Converse of Basic Proportionality Theorem (also known as Thales Theorem), if a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side.\nGiven that in triangle ABC, points D and E are on sides AB and AC respectively, and the ratio AD/DB is equal to AE/EC. This condition perfectly matches the premise of the Converse of Basic Proportionality Theorem.\nTherefore, the line segment DE must be parallel to the third side BC.\n\n*   Option A is incorrect because the given condition implies similarity (ΔADE ~ ΔABC), not congruence. Congruent triangles have equal corresponding sides and angles.\n*   Option C is incorrect. Angle ADE is equal to Angle ABC (corresponding angles if DE || BC), not Angle BAC. Angle BAC is common to both triangles ADE and ABC.\n*   Option D is incorrect. The areas of similar triangles are in the ratio of the squares of their corresponding sides, not necessarily equal.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Triangles",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify the given condition: a line segment divides two sides of a triangle in the same ratio.",
+            "Recall the Converse of Basic Proportionality Theorem (BPT).",
+            "Apply the theorem to conclude the relationship between the line segment and the third side of the triangle."
+          ]
+        },
+        {
+          "text": "What are the coordinates of the mid-point of the line segment joining the points A(3, 5) and B(7, 9)?",
+          "type": "MCQ",
+          "options": [
+            "A) (4, 4)",
+            "B) (5, 7)",
+            "C) (10, 14)",
+            "D) (6, 8)"
+          ],
+          "correctAnswer": "B) (5, 7)",
+          "explanation": "The coordinates of the mid-point of a line segment joining two points (x₁, y₁) and (x₂, y₂) are given by the formula:\nMid-point = ((x₁ + x₂)/2, (y₁ + y₂)/2)\n\nGiven points are A(3, 5) and B(7, 9).\nHere, x₁ = 3, y₁ = 5, x₂ = 7, y₂ = 9.\n\nCalculate the x-coordinate of the mid-point:\nx-coordinate = (3 + 7)/2 = 10/2 = 5\n\nCalculate the y-coordinate of the mid-point:\ny-coordinate = (5 + 9)/2 = 14/2 = 7\n\nTherefore, the coordinates of the mid-point are (5, 7).",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Coordinate Geometry",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the mid-point formula: ((x₁ + x₂)/2, (y₁ + y₂)/2).",
+            "Identify the coordinates of the given points A(3, 5) and B(7, 9).",
+            "Substitute the x-coordinates into the formula to find the x-coordinate of the mid-point: (3 + 7)/2 = 5.",
+            "Substitute the y-coordinates into the formula to find the y-coordinate of the mid-point: (5 + 9)/2 = 7.",
+            "Combine the calculated coordinates to state the mid-point: (5, 7)."
+          ]
+        },
+        {
+          "text": "A 5-meter long ladder is leaning against a vertical wall, making a right-angled triangle with the wall and the ground. If the top of the ladder reaches a height of 4 meters on the wall, what is the value of the sine of the angle the ladder makes with the ground?",
+          "type": "MCQ",
+          "options": [
+            "A) 3/5",
+            "B) 4/5",
+            "C) 3/4",
+            "D) 4/3"
+          ],
+          "correctAnswer": "B) 4/5",
+          "explanation": "Let the ladder be AC, the wall be AB, and the ground be BC. The triangle ABC is right-angled at B.\nGiven:\nLength of the ladder (hypotenuse AC) = 5 meters\nHeight reached on the wall (side opposite to the angle with the ground, AB) = 4 meters\nLet \\(\\theta\\) be the angle the ladder makes with the ground (\\(\\angle ACB\\)).\nAccording to the definition of sine in a right-angled triangle:\n\\( \\sin \\theta = \\frac{\\text{Side opposite to angle } \\theta}{\\text{Hypotenuse}} \\)\nIn \\(\\triangle ABC\\):\nSide opposite to \\(\\angle C\\) is AB = 4 meters.\nHypotenuse is AC = 5 meters.\nTherefore, \\( \\sin \\theta = \\frac{AB}{AC} = \\frac{4}{5} \\).",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Introduction to Trigonometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the right-angled triangle formed by the ladder, wall, and ground.",
+            "Identify the hypotenuse and the side opposite to the angle the ladder makes with the ground.",
+            "Apply the definition of sine (opposite side / hypotenuse) to find the value."
+          ]
+        },
+        {
+          "text": "A ladder 15 m long leans against a vertical wall, making an angle of 60° with the ground. What is the height on the wall reached by the ladder?",
+          "type": "MCQ",
+          "options": [
+            "7.5 m",
+            "7.5√3 m",
+            "15 m",
+            "15√3 m"
+          ],
+          "correctAnswer": "7.5√3 m",
+          "explanation": "Let the height on the wall reached by the ladder be 'h' meters.\nLet the length of the ladder be 'L' = 15 m.\nThe angle made by the ladder with the ground is θ = 60°.\n\nWe can form a right-angled triangle where:\n1. The ladder is the hypotenuse.\n2. The height on the wall is the side opposite to the angle θ.\n3. The distance from the foot of the ladder to the wall is the side adjacent to the angle θ.\n\nWe need to find the height (opposite side) and we know the hypotenuse and the angle. The trigonometric ratio that relates the opposite side and the hypotenuse is sine (sin).\n\nsin(θ) = Opposite / Hypotenuse\nsin(60°) = h / L\nsin(60°) = h / 15\n\nWe know that sin(60°) = √3 / 2.\n\nSo, √3 / 2 = h / 15\n\nTo find h, multiply both sides by 15:\nh = 15 * (√3 / 2)\nh = (15√3) / 2\nh = 7.5√3 m\n\nThus, the height on the wall reached by the ladder is 7.5√3 meters.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Some Applications of Trigonometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Draw a right-angled triangle representing the situation.",
+            "Identify the knowns (ladder length as hypotenuse, angle with ground).",
+            "Identify the unknown (height on the wall as opposite side).",
+            "Choose the appropriate trigonometric ratio (sine) that relates opposite side and hypotenuse.",
+            "Substitute the given values and the value of sin(60°).",
+            "Solve the equation to find the height."
+          ]
+        },
+        {
+          "text": "What is the angle formed between a tangent to a circle and the radius drawn to the point of contact?",
+          "type": "MCQ",
+          "options": [
+            "A. 0°",
+            "B. 30°",
+            "C. 60°",
+            "D. 90°"
+          ],
+          "correctAnswer": "D. 90°",
+          "explanation": "According to Theorem 10.1 of NCERT Class 10 Mathematics 'Circles' chapter, the tangent at any point of a circle is perpendicular to the radius through the point of contact. Perpendicular lines form an angle of 90 degrees. Therefore, the angle formed between a tangent and the radius at the point of contact is always 90°.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Circles",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall Theorem 10.1 from the 'Circles' chapter.",
+            "Identify that a tangent is perpendicular to the radius at the point of contact.",
+            "State the angle formed by perpendicular lines."
+          ]
+        },
+        {
+          "text": "A sector of a circle has a radius of 7 cm and an angle of 60° at the centre. Find the area of this sector. (Use \\(\\pi = 22/7\\))",
+          "type": "MCQ",
+          "options": [
+            "77/3 cm²",
+            "22/3 cm²",
+            "154/3 cm²",
+            "385/3 cm²"
+          ],
+          "correctAnswer": "77/3 cm²",
+          "explanation": "To find the area of a sector, we use the formula: Area of sector \\( = \\frac{\\theta}{360°} \\times \\pi r^2 \\)\nGiven:\nRadius (r) = 7 cm\nAngle (\\(\\theta\\)) = 60°\n\\(\\pi\\) = 22/7\n\nSubstitute the values into the formula:\nArea \\( = \\frac{60°}{360°} \\times \\frac{22}{7} \\times (7 \\text{ cm})^2 \\)\nArea \\( = \\frac{1}{6} \\times \\frac{22}{7} \\times 49 \\text{ cm}^2 \\)\nArea \\( = \\frac{1}{6} \\times 22 \\times \\frac{49}{7} \\text{ cm}^2 \\)\nArea \\( = \\frac{1}{6} \\times 22 \\times 7 \\text{ cm}^2 \\)\nArea \\( = \\frac{154}{6} \\text{ cm}^2 \\)\nSimplify the fraction:\nArea \\( = \\frac{77}{3} \\text{ cm}^2 \\)\n\nThus, the area of the sector is \\(77/3\\) cm².",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Areas Related to Circles",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the given radius and central angle.",
+            "Recall the formula for the area of a sector: \\( \\frac{\\theta}{360°} \\times \\pi r^2 \\).",
+            "Substitute the given values into the formula.",
+            "Perform the necessary calculations to find the area."
+          ]
+        },
+        {
+          "text": "A toy is in the form of a cone mounted on a hemisphere. The radius of the hemisphere and the cone is 3.5 cm. The total height of the toy from the base of the hemisphere to the tip of the cone is 12.5 cm. Find the volume of the toy. (Use $\\pi = \\frac{22}{7}$)",
+          "type": "MCQ",
+          "options": [
+            "A) $115.5 \\text{ cm}^3$",
+            "B) $89.83 \\text{ cm}^3$",
+            "C) $205.33 \\text{ cm}^3$",
+            "D) $231 \\text{ cm}^3$"
+          ],
+          "correctAnswer": "C) $205.33 \\text{ cm}^3$",
+          "explanation": "Let 'r' be the radius of the hemisphere and the cone",
+          "h": "e the height of the cone.\nGiven:\nRadius",
+          "V_H$)**": "n    $V_H = \\frac{2",
+          "marks": 1
+        },
+        {
+          "text": "In the formula used for calculating the mode of grouped data, $Mode = l + \\left(\\frac{f_1 - f_0}{2f_1 - f_0 - f_2}\\right) \\times h$, what does the term '$l$' represent?",
+          "type": "MCQ",
+          "options": [
+            "Upper limit of the modal class",
+            "Lower limit of the modal class",
+            "Frequency of the modal class",
+            "Class size"
+          ],
+          "correctAnswer": "Lower limit of the modal class",
+          "explanation": "The formula for the mode of grouped data is $Mode = l + \\left(\\frac{f_1 - f_0}{2f_1 - f_0 - f_2}\\right) \\times h$. In this formula:\n- $l$ represents the lower limit of the modal class.\n- $h$ represents the class size.\n- $f_1$ represents the frequency of the modal class.\n- $f_0$ represents the frequency of the class preceding the modal class.\n- $f_2$ represents the frequency of the class succeeding the modal class.\nTherefore, '$l$' stands for the lower limit of the modal class.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Statistics",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the components of the mode formula for grouped data.",
+            "Identify the meaning of 'l' in the formula."
+          ]
+        },
+        {
+          "text": "A box contains 5 red marbles, 8 white marbles, and 4 green marbles. One marble is taken out of the box at random. What is the probability that the marble taken out is white?",
+          "type": "MCQ",
+          "options": [
+            "A) 5/17",
+            "B) 8/17",
+            "C) 4/17",
+            "D) 1/3"
+          ],
+          "correctAnswer": "B) 8/17",
+          "explanation": "To find the probability of an event, we use the formula: P(E) = (Number of outcomes favourable to E) / (Number of all possible outcomes of the experiment).\n\nFirst, calculate the total number of marbles in the box:\nNumber of red marbles = 5\nNumber of white marbles = 8\nNumber of green marbles = 4\nTotal number of marbles = 5 + 8 + 4 = 17\n\nNext, identify the number of favourable outcomes for the event 'drawing a white marble':\nNumber of white marbles = 8\n\nNow, apply the probability formula:\nP(drawing a white marble) = (Number of white marbles) / (Total number of marbles)\nP(drawing a white marble) = 8 / 17",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Probability",
+          "hasLatex": false,
+          "keySteps": [
+            "Calculate the total number of possible outcomes.",
+            "Identify the number of favourable outcomes for the specific event.",
+            "Apply the probability formula: P(E) = Favourable Outcomes / Total Outcomes."
+          ]
+        }
+      ],
+      "marks": 20
+    },
+    "B": {
+      "name": "Section B (VSA)",
+      "questions": [
+        {
+          "text": "What type of decimal expansion does the rational number \\( \\frac{p}{q} \\) have, if the prime factorization of \\( q \\) is not of the form \\( 2^m 5^n \\), where \\( m \\) and \\( n \\) are non-negative integers?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "Non-terminating repeating decimal expansion",
+          "explanation": "According to the theorem on decimal expansions of rational numbers, if a rational number \\( x = \\frac{p}{q} \\) (where \\( p \\) and \\( q \\) are coprime integers, and \\( q \\neq 0 \\)) has a denominator \\( q \\) whose prime factorization is not of the form \\( 2^m 5^n \\) (where \\( m \\) and \\( n \\) are non-negative integers), then \\( x \\) has a non-terminating repeating decimal expansion.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the theorem regarding the nature of decimal expansions of rational numbers based on the prime factors of their denominator."
+          ]
+        },
+        {
+          "text": "What is a polynomial of degree 1 called?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "Linear polynomial",
+          "explanation": "According to the NCERT textbook (Chapter 2: Polynomials), a polynomial with the highest power of the variable as 1 is defined as a linear polynomial. For example, 2x - 3 is a linear polynomial.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Polynomials",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of polynomials based on their degree."
+          ]
+        },
+        {
+          "text": "What is the graphical representation of a pair of linear equations that has no solution?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "Parallel lines",
+          "explanation": "According to the NCERT curriculum, a pair of linear equations which has no solution is called an inconsistent pair of linear equations. Graphically, when a pair of linear equations has no solution, the lines representing these equations are parallel and do not intersect at any point.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of a pair of linear equations having no solution.",
+            "Relate the 'no solution' condition to its graphical interpretation."
+          ]
+        },
+        {
+          "text": "Determine if the equation $$(x - 2)(x + 3) = x^2 + 5$$ is a quadratic equation. Justify your answer.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "No, it is not a quadratic equation.",
+          "explanation": "To determine if the given equation is quadratic, we first simplify it to its standard form, $$ax^2 + bx + c = 0$$. \n\nGiven equation: $$(x - 2)(x + 3) = x^2 + 5$$\n\nExpand the left side using the distributive property (or FOIL method):\n$$x(x + 3) - 2(x + 3) = x^2 + 5$$\n$$x^2 + 3x - 2x - 6 = x^2 + 5$$\n\nCombine like terms on the left side:\n$$x^2 + x - 6 = x^2 + 5$$\n\nNow, move all terms to one side of the equation to check its standard form:\n$$x^2 + x - 6 - x^2 - 5 = 0$$\n\nCancel out the $$x^2$$ terms:\n$$x - 11 = 0$$\n\nThis equation is of the form $$bx + c = 0$$, which is a linear equation, not a quadratic equation. A quadratic equation must have a term with $$x^2$$ (i.e., the coefficient 'a' must not be zero). Since the $$x^2$$ term cancelled out, the equation is not quadratic.",
+          "bloomsLevel": "Apply",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Simplify the given algebraic expression by expanding products.",
+            "Rearrange the terms to bring the equation to the form $$ax^2 + bx + c = 0$$",
+            "Check the coefficient of $$x^2$$ (a) to determine if it is non-zero."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "What is the common difference of the Arithmetic Progression (AP): 7, 13, 19, 25, ...?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "6",
+          "explanation": "An Arithmetic Progression (AP) is a list of numbers in which each term is obtained by adding a fixed number to the preceding term, except the first term. This fixed number is called the common difference (d).\n\nTo find the common difference, subtract any term from its succeeding term.\n\nGiven AP: 7, 13, 19, 25, ...\nFirst term (a₁) = 7\nSecond term (a₂) = 13\nThird term (a₃) = 19\n\nCommon difference (d) = a₂ - a₁ = 13 - 7 = 6\n(Alternatively, d = a₃ - a₂ = 19 - 13 = 6)\n\nThus, the common difference of the given AP is 6.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify any two consecutive terms from the given AP.",
+            "Subtract the preceding term from the succeeding term to find the common difference."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 10
+    },
+    "C": {
+      "name": "Section C (SA)",
+      "questions": [
+        {
+          "text": "A positive integer 'M' when divided by 12, 15, and 20 leaves a remainder of 7 in each case. If 'M' is also a multiple of 11, find the smallest such number 'M'. Further, analyze and explain why any positive integer 'M' satisfying these conditions must necessarily be greater than 100.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "The smallest number M is 187. Any such number M must be greater than 100 because the smallest value satisfying all conditions is 187.",
+          "explanation": "Let 'M' be the positive integer.\n\n**Part 1: Finding the smallest number 'M'**\n1.  **Understand the remainder condition**: When M is divided by 12, 15, and 20, it leaves a remainder of 7. This means that (M - 7) must be a multiple of 12, 15, and 20. Therefore, (M - 7) is a common multiple of 12, 15, and 20.\n2.  **Find the LCM**: To find the smallest such M, we first find the Least Common Multiple (LCM) of 12, 15, and 20.\n    *   Prime factorization of 12 = $2^2 \\times 3$\n    *   Prime factorization of 15 = $3 \\times 5$\n    *   Prime factorization of 20 = $2^2 \\times 5$\n    *   LCM(12, 15, 20) = $2^2 \\times 3 \\times 5 = 4 \\times 3 \\times 5 = 60$.\n3.  **Formulate M**: So, (M - 7) must be a multiple of 60. This can be written as M - 7 = 60k, where k is a positive integer. Therefore, M = 60k + 7.\n4.  **Apply the multiple of 11 condition**: We are given that M is a multiple of 11. So, M = 11n for some integer n.\n    *   We need to find the smallest 'k' such that 60k + 7 is a multiple of 11.\n    *   Let's test values for k:\n        *   If k = 1, M = 60(1) + 7 = 67 (Not a multiple of 11, $67 = 6 \\times 11 + 1$)\n        *   If k = 2, M = 60(2) + 7 = 120 + 7 = 127 (Not a multiple of 11, $127 = 11 \\times 11 + 6$)\n        *   If k = 3, M = 60(3) + 7 = 180 + 7 = 187 (A multiple of 11, $187 = 11 \\times 17$)\n    *   The smallest value of k is 3, which gives the smallest M.\n    *   Thus, the smallest number M = 187.\n\n**Part 2: Analyze why M must be greater than 100**\n1.  **General form of M**: From the first part, we established that any number M satisfying the remainder conditions must be of the form M = 60k + 7, where k is a non-negative integer.\n2.  **Condition for M to be a multiple of 11**: We also know M must be a multiple of 11. So, $60k + 7$ must be divisible by 11.\n3.  **Modular arithmetic analysis**: We can write this as a congruence relation:\n    $60k + 7 \\equiv 0 \\pmod{11}$\n    Since $60 = 5 \\times 11 + 5$, we have $60 \\equiv 5 \\pmod{11}$.\n    So, the congruence becomes:\n    $5k + 7 \\equiv 0 \\pmod{11}$\n    Subtract 7 from both sides:\n    $5k \\equiv -7 \\pmod{11}$\n    Since $-7 \\equiv 4 \\pmod{11}$, we have:\n    $5k \\equiv 4 \\pmod{11}$\n    To solve for k, we can multiply by the modular inverse of 5 modulo 11. The inverse is 9, because $5 \\times 9 = 45$, and $45 = 4 \\times 11 + 1$, so $5 \\times 9 \\equiv 1 \\pmod{11}$.\n    $9 \\times (5k) \\equiv 9 \\times 4 \\pmod{11}$\n    $45k \\equiv 36 \\pmod{11}$\n    $k \\equiv 3 \\pmod{11}$ (Since $45 \\equiv 1 \\pmod{11}$ and $36 = 3 \\times 11 + 3$, so $36 \\equiv 3 \\pmod{11}$)\n4.  **Smallest value of k**: This congruence tells us that k must be of the form $11j + 3$ for some integer j. Since k must be a positive integer (because M is a positive integer greater than 7, so 60k must be positive), the smallest positive integer value for j is 0, which gives k = 3.\n5.  **Conclusion**: Substituting the smallest possible value of k (which is 3) back into the equation M = 60k + 7, we get:\n    M = 60(3) + 7 = 180 + 7 = 187.\n    Since the smallest possible integer M satisfying all the given conditions is 187, and 187 is clearly greater than 100, any positive integer M that fulfills these conditions must necessarily be greater than 100. There are no possible values of M less than or equal to 100 that satisfy all the given criteria.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify that M-7 is a multiple of LCM(12, 15, 20).",
+            "Calculate LCM(12, 15, 20) using prime factorization.",
+            "Formulate M as 60k + 7.",
+            "Use the condition that M is a multiple of 11 to find the smallest positive integer k.",
+            "Calculate the smallest M using the derived k.",
+            "For analysis, use modular arithmetic ($60k + 7 \\equiv 0 \\pmod{11}$) to deduce the smallest possible value of k.",
+            "Explain how the smallest k leads to the smallest M, which is greater than 100, thus proving the necessity."
+          ]
+        },
+        {
+          "text": "If $\\alpha$ and $\\beta$ are the zeroes of the quadratic polynomial $p(x) = 2x^2 - 5x + k$, and they satisfy the relation $\\alpha^2 + \\beta^2 + \\alpha\\beta = \\frac{21}{4}$, find the value of $k$.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "2",
+          "explanation": "Given the quadratic polynomial $p(x) = 2x^2 - 5x + k$.\nComparing this with the standard form $ax^2 + bx + c$, we have:\n$a = 2$\n$b = -5$\n$c = k$\n\nStep 1: Find the sum and product of the zeroes.\nSum of zeroes, $\\alpha + \\beta = -\\frac{b}{a} = -\\frac{(-5)}{2} = \\frac{5}{2}$.\nProduct of zeroes, $\\alpha\\beta = \\frac{c}{a} = \\frac{k}{2}$.\n\nStep 2: Manipulate the given relation in terms of $(\\alpha + \\beta)$ and $\\alpha\\beta$.\nThe given relation is $\\alpha^2 + \\beta^2 + \\alpha\\beta = \\frac{21}{4}$.\nWe know the algebraic identity: $\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta$.\nSubstitute this into the given relation:\n$(\\alpha + \\beta)^2 - 2\\alpha\\beta + \\alpha\\beta = \\frac{21}{4}$\n$(\\alpha + \\beta)^2 - \\alpha\\beta = \\frac{21}{4}$.\n\nStep 3: Substitute the values of sum and product of zeroes into the manipulated relation.\nUsing the values from Step 1:\n$\\left(\\frac{5}{2}\\right)^2 - \\left(\\frac{k}{2}\\right) = \\frac{21}{4}$\n$\\frac{25}{4} - \\frac{k}{2} = \\frac{21}{4}$.\n\nStep 4: Solve for $k$.\nTo isolate $k$, subtract $\\frac{25}{4}$ from both sides:\n$-\\frac{k}{2} = \\frac{21}{4} - \\frac{25}{4}$\n$-\\frac{k}{2} = \\frac{21 - 25}{4}$\n$-\\frac{k}{2} = \\frac{-4}{4}$\n$-\\frac{k}{2} = -1$\nMultiply both sides by $-2$:\n$k = (-1) \\times (-2)$\n$k = 2$.\n\nThus, the value of $k$ is 2.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Hard",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients and find sum/product of zeroes.",
+            "Manipulate the given relation using algebraic identity.",
+            "Substitute sum and product of zeroes into the relation.",
+            "Solve the resulting equation for k."
+          ]
+        },
+        {
+          "text": "A library has a fixed charge for the first three days and an additional charge for each day thereafter. Sarita paid ₹27 for a book kept for seven days, while Susy paid ₹21 for the book she kept for five days. Find the fixed charge and the additional charge for each extra day. Also, calculate the amount one would pay for keeping the book for ten days.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Fixed charge = ₹15, Additional charge per day = ₹3, Total charge for 10 days = ₹36.",
+          "explanation": "Let the fixed charge for the first three days be ₹x.\nLet the additional charge for each day thereafter be ₹y.\n\nAccording to the first condition:\nSarita kept the book for 7 days and paid ₹27.\nFor the first 3 days, the charge is ₹x.\nFor the remaining $(7 - 3) = 4$ days, the charge is $4y$.\nSo, the equation is: $x + 4y = 27$  (Equation 1)\n\nAccording to the second condition:\nSusy kept the book for 5 days and paid ₹21.\nFor the first 3 days, the charge is ₹x.\nFor the remaining $(5 - 3) = 2$ days, the charge is $2y$.\nSo, the equation is: $x + 2y = 21$  (Equation 2)\n\nNow we have a pair of linear equations:\n1. $x + 4y = 27$\n2. $x + 2y = 21$\n\nSubtract Equation 2 from Equation 1:\n$(x + 4y) - (x + 2y) = 27 - 21$\n$x + 4y - x - 2y = 6$\n$2y = 6$\n$y = 3$\n\nSubstitute the value of $y = 3$ into Equation 2:\n$x + 2(3) = 21$\n$x + 6 = 21$\n$x = 21 - 6$\n$x = 15$\n\nSo, the fixed charge for the first three days is ₹15.\nThe additional charge for each extra day is ₹3.\n\nNow, we need to calculate the amount one would pay for keeping the book for ten days:\nFixed charge for the first 3 days = ₹x = ₹15.\nNumber of extra days = $10 - 3 = 7$ days.\nAdditional charge for 7 days = $7 \\times y = 7 \\times 3 = ₹21$.\nTotal charge for 10 days = Fixed charge + Additional charge for 7 days = $15 + 21 = ₹36$.\n\nFinal Answer: The fixed charge is ₹15, the additional charge per day is ₹3, and the amount one would pay for keeping the book for ten days is ₹36.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Hard",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for the fixed charge and the additional daily charge.",
+            "Formulate two linear equations based on the given conditions from Sarita's and Susy's payments.",
+            "Solve the system of equations using an algebraic method (e.g., elimination or substitution) to find the values of the fixed charge (x) and the additional daily charge (y).",
+            "Use the determined values of x and y to calculate the total charge for keeping the book for ten days."
+          ]
+        },
+        {
+          "text": "The area of a rectangular plot is 528 m². The length of the plot (in metres) is one more than twice its breadth. Find the length and breadth of the plot.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Breadth = 16 m, Length = 33 m",
+          "explanation": "Let the breadth of the rectangular plot be 'x' metres.\nAccording to the problem, the length of the plot is one more than twice its breadth.\nSo, Length = (2x + 1) metres.\n\nThe area of a rectangle is given by Length × Breadth.\nGiven area = 528 m².\nTherefore, x * (2x + 1) = 528\n2x² + x = 528\n2x² + x - 528 = 0\n\nThis is a quadratic equation in the form ax² + bx + c = 0, where a=2, b=1, c=-528.\nWe can solve this using factorization or the quadratic formula.\nUsing the quadratic formula, x = [-b ± sqrt(b² - 4ac)] / 2a\nx = [-1 ± sqrt(1² - 4 * 2 * -528)] / (2 * 2)\nx = [-1 ± sqrt(1 + 4224)] / 4\nx = [-1 ± sqrt(4225)] / 4\n\nTo find sqrt(4225):\nWe know 60² = 3600 and 70² = 4900. The number ends in 5, so its square root must end in 5.\nSo, it could be 65.\nLet's check: 65 * 65 = 4225.\n\nx = [-1 ± 65] / 4\n\nTwo possible values for x:\n1) x = (-1 + 65) / 4 = 64 / 4 = 16\n2) x = (-1 - 65) / 4 = -66 / 4 = -33/2\n\nSince breadth cannot be negative, we discard x = -33/2.\nSo, the breadth of the plot, x = 16 metres.\n\nNow, calculate the length:\nLength = 2x + 1 = 2(16) + 1 = 32 + 1 = 33 metres.\n\nThus, the breadth of the plot is 16 m and the length of the plot is 33 m.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for breadth and length based on the given relationship.",
+            "Formulate the quadratic equation using the area formula (Length × Breadth = Area).",
+            "Solve the quadratic equation using factorization or the quadratic formula.",
+            "Choose the valid positive root for the dimension.",
+            "Calculate the length and breadth."
+          ]
+        },
+        {
+          "text": "The sum of the first $n$ terms of an arithmetic progression (AP) is given by the formula $S_n = 3n^2 - 2n$. Determine the first term, the common difference, and the 10th term of this AP.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "First term (a): 1, Common difference (d): 6, 10th term (a_10): 55",
+          "explanation": "Given the sum of the first $n$ terms of an AP is $S_n = 3n^2 - 2n$.\n\n**1. Find the first term ($a_1$):**\nThe first term of an AP is the sum of its first term, so $a_1 = S_1$.\nSubstitute $n=1$ into the formula for $S_n$:\n$S_1 = 3(1)^2 - 2(1) = 3(1) - 2 = 3 - 2 = 1$.\nTherefore, the first term $a_1 = 1$.\n\n**2. Find the common difference ($d$):**\nWe know that the $n$th term of an AP can be found using the relation $a_n = S_n - S_{n-1}$.\nLet's find the second term ($a_2$) using this relation.\n$a_2 = S_2 - S_1$\nFirst, calculate $S_2$:\n$S_2 = 3(2)^2 - 2(2) = 3(4) - 4 = 12 - 4 = 8$.\nNow, $a_2 = S_2 - S_1 = 8 - 1 = 7$.\n\nThe common difference $d$ is the difference between any two consecutive terms:\n$d = a_2 - a_1 = 7 - 1 = 6$.\nTherefore, the common difference $d = 6$.\n\n**(Alternatively, to find $a_n$ and then $d$):**\n$a_n = S_n - S_{n-1}$\n$a_n = (3n^2 - 2n) - [3(n-1)^2 - 2(n-1)]$\n$a_n = (3n^2 - 2n) - [3(n^2 - 2n + 1) - 2n + 2]$\n$a_n = (3n^2 - 2n) - [3n^2 - 6n + 3 - 2n + 2]$\n$a_n = (3n^2 - 2n) - [3n^2 - 8n + 5]$\n$a_n = 3n^2 - 2n - 3n^2 + 8n - 5$\n$a_n = 6n - 5$\nUsing this general formula for $a_n$: \n$a_1 = 6(1) - 5 = 1$\n$a_2 = 6(2) - 5 = 12 - 5 = 7$\n$d = a_2 - a_1 = 7 - 1 = 6$.\n\n**3. Find the 10th term ($a_{10}$):**\nUsing the formula for the $n$th term of an AP, $a_n = a + (n-1)d$, where $a$ is the first term and $d$ is the common difference.\n$a_{10} = a_1 + (10-1)d$\n$a_{10} = 1 + (9) \times 6$\n$a_{10} = 1 + 54$\n$a_{10} = 55$.\n\nThus, the first term is 1, the common difference is 6, and the 10th term is 55.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Hard",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": true,
+          "keySteps": [
+            "Calculate the first term ($a_1$) by finding $S_1$.",
+            "Calculate the second term ($a_2$) by finding $S_2$ and then $a_2 = S_2 - S_1$.",
+            "Determine the common difference ($d$) using $d = a_2 - a_1$.",
+            "Calculate the 10th term ($a_{10}$) using the formula $a_n = a + (n-1)d$."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "In a trapezium ABCD, AB is parallel to DC. The diagonals AC and BD intersect each other at the point O. Using appropriate similarity criterion, show that $\\frac{AO}{OC} = \\frac{BO}{OD}$.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "The proof is provided in the explanation.",
+          "explanation": "To show that $\\frac{AO}{OC} = \\frac{BO}{OD}$, we need to prove that $\\triangle AOB$ and $\\triangle COD$ are similar.\n\n**Step 1: Identify parallel lines and transversals.**\nGiven that ABCD is a trapezium with AB || DC. The diagonals AC and BD act as transversals intersecting these parallel lines.\n\n**Step 2: Identify equal angles using parallel line properties.**\n*   Consider transversal AC. Since AB || DC, the alternate interior angles are equal: $\\angle OAB = \\angle OCD$ (or $\\angle CAB = \\angle ACD$).\n*   Consider transversal BD. Since AB || DC, the alternate interior angles are equal: $\\angle OBA = \\angle ODC$ (or $\\angle DBA = \\angle BDC$).\n\n**Step 3: Identify vertically opposite angles.**\n*   The angles $\\angle AOB$ and $\\angle COD$ are vertically opposite angles formed by the intersection of diagonals AC and BD. Thus, $\\angle AOB = \\angle COD$.\n\n**Step 4: Apply similarity criterion.**\nIn $\\triangle AOB$ and $\\triangle COD$:\n*   $\\angle OAB = \\angle OCD$ (From Step 2)\n*   $\\angle OBA = \\angle ODC$ (From Step 2)\n*   $\\angle AOB = \\angle COD$ (From Step 3)\n\nTherefore, by AAA (Angle-Angle-Angle) similarity criterion, $\\triangle AOB \\sim \\triangle COD$.\n\n**Step 5: Conclude proportional sides.**\nWhen two triangles are similar, the ratio of their corresponding sides is equal. Thus, from $\\triangle AOB \\sim \\triangle COD$:\n$\\frac{AO}{CO} = \\frac{BO}{DO} = \\frac{AB}{CD}$\n\nFrom this proportionality, we can conclude that $\\frac{AO}{OC} = \\frac{BO}{OD}$.\n\nHence, it is shown that $\\frac{AO}{OC} = \\frac{BO}{OD}$.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Triangles",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify parallel lines and transversals.",
+            "Use alternate interior angles to find equal angles.",
+            "Identify vertically opposite angles.",
+            "Apply AAA similarity criterion to prove $\\triangle AOB \\sim \\triangle COD$.",
+            "Use the property of similar triangles that corresponding sides are proportional to derive the required ratio."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 18
+    },
+    "D": {
+      "name": "Section D (LA)",
+      "questions": [
+        {
+          "text": "A group of friends discusses the nature of numbers and their applications. \n\n**Part A:** Prove that $\\sqrt{7}$ is an irrational number. \n\n**Part B:** Using the result from Part A, prove that $5 + 2\\sqrt{7}$ is an irrational number. \n\n**Part C:** Later, they decide to jog around a circular track. Rohan takes 12 minutes to complete one round, Priya takes 15 minutes, and Sameer takes 20 minutes. They all start at the same point and at the same time, jogging in the same direction. The track is 1.8 km long.\n\n(i) After how many minutes will they all meet again at the starting point for the first time?\n\n(ii) Evaluate if Rohan would have completed an integer number of rounds when they meet again for the first time at the starting point. Also, compare the total distance covered by each friend until they meet again for the first time. Justify your comparison.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "See explanation for detailed proof and calculations.",
+          "explanation": "**Part A: Proof that $\\sqrt{7}$ is an irrational number.**\n1.  Assume, to the contrary, that $\\sqrt{7}$ is a rational number.\n2.  Therefore, we can find co-prime integers 'a' and 'b' (where b ≠ 0) such that $\\sqrt{7} = \\frac{a}{b}$.\n3.  Squaring both sides, we get $7 = \\frac{a^2}{b^2}$.\n4.  This implies $a^2 = 7b^2$. (Equation 1)\n5.  From Equation 1, we can infer that $a^2$ is divisible by 7. By the theorem that states if a prime number 'p' divides $a^2$, then 'p' divides 'a', we can conclude that 'a' is divisible by 7.\n6.  Since 'a' is divisible by 7, we can write $a = 7c$ for some integer 'c'.\n7.  Substituting this value of 'a' into Equation 1: $(7c)^2 = 7b^2$.\n8.  $49c^2 = 7b^2$.\n9.  Dividing by 7, we get $7c^2 = b^2$.\n10. From this, we can infer that $b^2$ is divisible by 7. Again, by the same theorem, 'b' is divisible by 7.\n11. Since 'a' and 'b' are both divisible by 7, they have a common factor of 7. This contradicts our initial assumption that 'a' and 'b' are co-prime.\n12. Therefore, our assumption that $\\sqrt{7}$ is rational is false. Hence, $\\sqrt{7}$ is an irrational number.\n\n**Part B: Proof that $5 + 2\\sqrt{7}$ is an irrational number.**\n1.  Assume, to the contrary, that $5 + 2\\sqrt{7}$ is a rational number.\n2.  Therefore, we can find co-prime integers 'p' and 'q' (where q ≠ 0) such that $5 + 2\\sqrt{7} = \\frac{p}{q}$.\n3.  Rearranging the equation to isolate $\\sqrt{7}$: $2\\sqrt{7} = \\frac{p}{q} - 5$.\n4.  $2\\sqrt{7} = \\frac{p - 5q}{q}$.\n5.  $\\sqrt{7} = \\frac{p - 5q}{2q}$.\n6.  Since 'p', 'q', 5, and 2 are integers, and q ≠ 0, then $\\frac{p - 5q}{2q}$ is a rational number.\n7.  This implies that $\\sqrt{7}$ is a rational number.\n8.  However, this contradicts the fact that $\\sqrt{7}$ is an irrational number (proven in Part A).\n9.  Therefore, our assumption that $5 + 2\\sqrt{7}$ is rational is false. Hence, $5 + 2\\sqrt{7}$ is an irrational number.\n\n**Part C:**\n(i) **Time to meet again at the starting point:**\nTo find when they will all meet again at the starting point for the first time, we need to find the Least Common Multiple (LCM) of the time taken by each friend to complete one round (12 minutes, 15 minutes, and 20 minutes).\n1.  Prime factorisation of the given times:\n    *   $12 = 2 \\times 2 \\times 3 = 2^2 \\times 3^1$\n    *   $15 = 3 \\times 5 = 3^1 \\times 5^1$\n    *   $20 = 2 \\times 2 \\times 5 = 2^2 \\times 5^1$\n2.  LCM is the product of the highest powers of all prime factors involved:\n    *   LCM($12, 15, 20$) = $2^2 \\times 3^1 \\times 5^1 = 4 \\times 3 \\times 5 = 60$.\n3.  They will all meet again at the starting point for the first time after **60 minutes**.\n\n(ii) **Evaluation of Rohan's rounds and comparison of distances:**\n1.  **Rohan's rounds:**\n    *   Time taken for them to meet again = 60 minutes.\n    *   Time Rohan takes for one round = 12 minutes.\n    *   Number of rounds completed by Rohan = $\\frac{\\text{Total time}}{\\text{Time per round}} = \\frac{60}{12} = 5$ rounds.\n    *   Yes, Rohan would have completed an integer number of rounds (5 rounds) when they meet again for the first time at the starting point.\n\n2.  **Comparison of total distance covered:**\n    *   Track length = 1.8 km.\n    *   **Distance covered by Rohan:**\n        *   Number of rounds by Rohan = 5.\n        *   Total distance = $5 \\times 1.8 \\text{ km} = 9.0 \\text{ km}$.\n    *   **Distance covered by Priya:**\n        *   Time Priya takes for one round = 15 minutes.\n        *   Number of rounds by Priya = $\\frac{60}{15} = 4$ rounds.\n        *   Total distance = $4 \\times 1.8 \\text{ km} = 7.2 \\text{ km}$.\n    *   **Distance covered by Sameer:**\n        *   Time Sameer takes for one round = 20 minutes.\n        *   Number of rounds by Sameer = $\\frac{60}{20} = 3$ rounds.\n        *   Total distance = $3 \\times 1.8 \\text{ km} = 5.4 \\text{ km}$.\n\n    *   **Justification of comparison:** Rohan covers the greatest distance (9.0 km), followed by Priya (7.2 km), and then Sameer (5.4 km). This is because Rohan takes the least amount of time to complete one round (12 minutes), meaning he is the fastest and completes the most number of rounds in the given 60 minutes, thus covering the longest total distance. Conversely, Sameer is the slowest, completing the fewest rounds and covering the shortest total distance.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Part A: Assume $\\sqrt{7}$ is rational, write as a/b (coprime), square, show a and b are both divisible by 7, leading to a contradiction.",
+            "Part B: Assume $5 + 2\\sqrt{7}$ is rational, write as p/q, isolate $\\sqrt{7}$, show that $\\sqrt{7}$ would be rational, contradicting Part A.",
+            "Part C (i): Find the prime factorization of 12, 15, and 20. Calculate their LCM.",
+            "Part C (ii): Divide the LCM (total time) by Rohan's time per round to check if it's an integer. Calculate the number of rounds for each friend. Multiply rounds by track length to find total distance for each. Compare the distances and justify based on their speeds/time per round."
+          ]
+        },
+        {
+          "text": "A cubic polynomial $P(x) = x^3 + px^2 + qx + r$ has three zeroes. It is known that two of its zeroes are additive inverses of each other (i.e., if one zero is $k$, the other is $-k$). The product of its zeroes is 12, and the sum of the products of its zeroes taken two at a time is -7. Evaluate the values of $p, q, r$ and find all the zeroes of the polynomial $P(x)$.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "p = 12/7, q = -7, r = -12. Zeroes are √7, -√7, -12/7.",
+          "explanation": "Let the three zeroes of the cubic polynomial $P(x) = x^3 + px^2 + qx + r$ be $\\alpha, \\beta, \\gamma$.\n\nFrom the given information:\n1. Two of its zeroes are additive inverses of each other. Let $\\alpha = k$ and $\\beta = -k$.\n2. The product of its zeroes is 12. So, $\\alpha\\beta\\gamma = 12$.\n3. The sum of the products of its zeroes taken two at a time is -7. So, $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = -7$.\n\nFrom the standard relations between zeroes and coefficients for a cubic polynomial $ax^3 + bx^2 + cx + d$:\nFor $P(x) = x^3 + px^2 + qx + r$ (where $a=1, b=p, c=q, d=r$):\n- Sum of zeroes: $\\alpha + \\beta + \\gamma = -p/1 = -p$\n- Sum of products of zeroes taken two at a time: $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = q/1 = q$\n- Product of zeroes: $\\alpha\\beta\\gamma = -r/1 = -r$\n\nNow, let's use the given conditions:\n\n**Step 1: Use the condition that two zeroes are additive inverses.**\nLet $\\alpha = k$ and $\\beta = -k$.\n\n**Step 2: Use the sum of products of zeroes taken two at a time.**\nWe are given $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = -7$.\nSubstitute $\\alpha = k$ and $\\beta = -k$:\n$(k)(-k) + (-k)\\gamma + \\gamma(k) = -7$\n$-k^2 - k\\gamma + k\\gamma = -7$\n$-k^2 = -7$\n$k^2 = 7$\nSo, $k = \\sqrt{7}$ or $k = -\\sqrt{7}$. We can choose $k = \\sqrt{7}$.\nThus, two of the zeroes are $\\sqrt{7}$ and $-\\sqrt{7}$.\n\n**Step 3: Use the product of zeroes.**\nWe are given $\\alpha\\beta\\gamma = 12$.\nSubstitute $\\alpha = k$ and $\\beta = -k$ (where $k^2 = 7$):\n$(k)(-k)\\gamma = 12$\n$-k^2\\gamma = 12$\nSubstitute $k^2 = 7$:\n$-(7)\\gamma = 12$\n$\\gamma = -12/7$\nSo, the third zero is $-12/7$.\n\n**Step 4: Determine all the zeroes.**\nThe three zeroes of the polynomial are $\\sqrt{7}$, $-\\sqrt{7}$, and $-12/7$.\n\n**Step 5: Evaluate the coefficients p, q, r.**\n- For $q$: $q = \\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = -k^2 = -7$. (This matches the given condition, confirming our value for $k^2$)\n- For $r$: $-r = \\alpha\\beta\\gamma = 12 \\Rightarrow r = -12$. (This matches the given condition)\n- For $p$: $-p = \\alpha + \\beta + \\gamma$\n$-p = k + (-k) + \\gamma$\n$-p = 0 + \\gamma$\n$-p = -12/7$\n$p = 12/7$\n\n**Conclusion:**\nThe values are $p = 12/7$, $q = -7$, and $r = -12$.\nThe zeroes of the polynomial $P(x)$ are $\\sqrt{7}$, $-\\sqrt{7}$, and $-12/7$.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the relationships between zeroes and coefficients for a cubic polynomial.",
+            "Apply the condition that two zeroes are additive inverses to simplify the sum of zeroes and sum of products of zeroes taken two at a time.",
+            "Use the given sum of products of zeroes taken two at a time condition to find the square of the common zero ($k^2$).",
+            "Use the given product of zeroes condition along with $k^2$ to find the third zero ($\\gamma$).",
+            "Calculate the values of coefficients $p, q, r$ using the determined zeroes and the relationships with coefficients.",
+            "State the final values of $p, q, r$ and all three zeroes."
+          ]
+        },
+        {
+          "text": "A factory manufactures two types of electronic gadgets, G1 and G2. Each unit of G1 requires 2 kg of a special alloy and 3 hours of intricate assembly time. Each unit of G2 requires 3 kg of the special alloy and 2 hours of intricate assembly time. The factory has a total of 130 kg of the special alloy and 150 hours of assembly time available per week.\n\n(a) If the factory aims to fully utilize both its special alloy and assembly time resources, formulate a system of linear equations to determine the number of units of G1 and G2 that can be manufactured in a week. Find the number of units of G1 and G2.\n\n(b) Due to a new urgent contract, the factory needs to produce at least 10 units of G2. To accommodate this, the factory decides to reduce the production of G1 by 5 units compared to the maximum possible G1 production if only G1 were produced (utilizing the available steel and assembly time). With the remaining resources after producing this reduced quantity of G1, how many units of G2 can be produced? Is this production strategy feasible considering the minimum G2 requirement of 10 units? Justify your answer.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Part (a): 38 units of G1 and 18 units of G2. Part (b): 7 units of G2 can be produced. No, this strategy is not feasible as 7 units < 10 units.",
+          "explanation": "Let x be the number of units of gadget G1 and y be the number of units of gadget G2 manufactured per week.\n\n**Part (a): Formulating and solving the system of linear equations**\n\nFrom the given information:\n\n*   **Special Alloy Constraint:** Each G1 uses 2 kg, each G2 uses 3 kg. Total available alloy is 130 kg.\n    Equation 1: `2x + 3y = 130`\n\n*   **Assembly Time Constraint:** Each G1 uses 3 hours, each G2 uses 2 hours. Total available time is 150 hours.\n    Equation 2: `3x + 2y = 150`\n\nNow, we solve this system of linear equations. We will use the elimination method.\n\nMultiply Equation 1 by 3: `6x + 9y = 390` (Equation 3)\nMultiply Equation 2 by 2: `6x + 4y = 300` (Equation 4)\n\nSubtract Equation 4 from Equation 3:\n`(6x - 6x) + (9y - 4y) = 390 - 300`\n`5y = 90`\n`y = 90 / 5`\n`y = 18`\n\nSubstitute `y = 18` into Equation 1:\n`2x + 3(18) = 130`\n`2x + 54 = 130`\n`2x = 130 - 54`\n`2x = 76`\n`x = 76 / 2`\n`x = 38`\n\nSo, if the factory fully utilizes both resources, it can produce **38 units of G1 and 18 units of G2**.\n\n**Part (b): Analyzing the new production strategy**\n\n**Step 1: Calculate maximum G1 if only G1 were produced.**\n*   Based on special alloy availability: `2x <= 130` => `x <= 65` units.\n*   Based on assembly time availability: `3x <= 150` => `x <= 50` units.\n    The maximum possible G1 production if only G1 were produced is **50 units** (limited by assembly time).\n\n**Step 2: Reduce G1 production by 5 units.**\n*   New G1 production quantity = `50 - 5 = 45` units.\n\n**Step 3: Calculate resources consumed by 45 units of G1.**\n*   Special alloy consumed = `45 units * 2 kg/unit = 90 kg`.\n*   Assembly time consumed = `45 units * 3 hours/unit = 135 hours`.\n\n**Step 4: Calculate remaining resources.**\n*   Remaining special alloy = `130 kg (total) - 90 kg (used) = 40 kg`.\n*   Remaining assembly time = `150 hours (total) - 135 hours (used) = 15 hours`.\n\n**Step 5: Calculate how many units of G2 can be produced with remaining resources.**\nLet y_new be the number of G2 units that can be produced.\n*   Based on remaining special alloy: Each G2 needs 3 kg.\n    `3 * y_new <= 40` => `y_new <= 40/3` => `y_new <= 13.33...`\n*   Based on remaining assembly time: Each G2 needs 2 hours.\n    `2 * y_new <= 15` => `y_new <= 15/2` => `y_new <= 7.5`\n\nSince units must be whole numbers, the maximum number of G2 units that can be produced with the remaining resources is **7 units** (limited by assembly time).\n\n**Step 6: Check feasibility against the minimum G2 requirement.**\n*   Minimum G2 required by contract = 10 units.\n*   Units of G2 produced with this strategy = 7 units.\n\nSince `7 < 10`, this production strategy is **not feasible** to meet the new contract requirement.\n",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Formulate two linear equations based on resource constraints for G1 and G2.",
+            "Solve the system of equations to find the number of units of G1 and G2 for full resource utilization.",
+            "Determine the maximum G1 production if only G1 were produced, considering both resource limits (alloy and assembly time) and taking the minimum.",
+            "Calculate the new G1 production quantity after the specified reduction.",
+            "Calculate the resources (special alloy and assembly time) consumed by this reduced G1 production.",
+            "Calculate the remaining available resources after G1 production.",
+            "Determine the maximum G2 production possible with the remaining resources, considering both remaining resource limits and taking the minimum whole number.",
+            "Compare the calculated G2 production with the minimum required G2 production to assess the feasibility of the strategy and justify the conclusion."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A rectangular park is to be designed such that its breadth is 3 meters less than its length. The area of this park is to be 4 square meters more than the area of an isosceles triangle whose base is equal to the park's breadth and height is 12 meters.\n\n(a) Formulate a quadratic equation with 'x' representing the length of the park.\n(b) Find the length and breadth of the park.\n(c) If the cost of fencing the park is ₹50 per meter, calculate the total cost of fencing the park.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Length = 7 meters, Breadth = 4 meters, Total Fencing Cost = ₹1100",
+          "explanation": "Let the length of the rectangular park be `x` meters.\nAccording to the problem statement, the breadth of the park is 3 meters less than its length.\nSo, Breadth = `(x - 3)` meters.\n\n(a) **Formulating the quadratic equation:**\nArea of the rectangular park (`A_park`) = Length × Breadth = `x(x - 3) = (x^2 - 3x)` square meters.\n\nThe isosceles triangle has its base equal to the park's breadth, which is `(x - 3)` meters.\nThe height of the triangle is given as 12 meters.\nArea of the isosceles triangle (`A_triangle`) = `(1/2) × Base × Height = (1/2) × (x - 3) × 12 = 6(x - 3) = (6x - 18)` square meters.\n\nThe problem states that the area of the park is 4 square meters more than the area of the triangle.\n`A_park = A_triangle + 4`\n`x^2 - 3x = (6x - 18) + 4`\n`x^2 - 3x = 6x - 14`\nTranspose all terms to one side to form a quadratic equation:\n`x^2 - 3x - 6x + 14 = 0`\n`x^2 - 9x + 14 = 0`\nThis is the required quadratic equation.\n\n(b) **Finding the length and breadth of the park:**\nWe need to solve the quadratic equation `x^2 - 9x + 14 = 0`.\nWe can solve this by factorization:\nWe look for two numbers whose product is 14 and whose sum is -9. These numbers are -7 and -2.\n`x^2 - 7x - 2x + 14 = 0`\n`x(x - 7) - 2(x - 7) = 0`\n`(x - 7)(x - 2) = 0`\nThis gives two possible values for `x`:\n`x - 7 = 0  => x = 7`\n`x - 2 = 0  => x = 2`\n\nNow, we need to check the validity of these solutions for the length `x`.\nIf `x = 2` meters (Length),\nThen Breadth = `x - 3 = 2 - 3 = -1` meter.\nA negative breadth is not possible for a physical dimension.\nTherefore, `x = 2` is an extraneous solution and must be rejected.\n\nIf `x = 7` meters (Length),\nThen Breadth = `x - 3 = 7 - 3 = 4` meters.\nBoth length and breadth are positive, which is a valid physical dimension.\nSo, the length of the park is 7 meters and the breadth of the park is 4 meters.\n\n(c) **Calculating the total cost of fencing:**\nFirst, calculate the perimeter of the rectangular park.\nPerimeter `P = 2 × (Length + Breadth)`\n`P = 2 × (7 + 4)`\n`P = 2 × 11`\n`P = 22` meters.\n\nThe cost of fencing is ₹50 per meter.\nTotal cost of fencing = Perimeter × Cost per meter\nTotal cost = `22 × 50 = ₹1100`.\n\nFinal Answer: The length of the park is 7 meters, the breadth is 4 meters, and the total cost of fencing is ₹1100.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for length and breadth of the park.",
+            "Formulate expressions for the area of the park and the area of the isosceles triangle.",
+            "Set up the quadratic equation based on the given area relationship.",
+            "Solve the quadratic equation to find possible values for the length.",
+            "Evaluate the validity of the roots in the context of the problem and determine the actual length and breadth.",
+            "Calculate the perimeter of the park.",
+            "Calculate the total cost of fencing based on the perimeter and given rate."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 20
+    },
+    "E": {
+      "name": "Section E (Case-Study)",
+      "questions": [
+        {
+          "text": "A software engineer is designing a module that processes pairs of positive integers for various computational tasks. The module needs to perform specific checks and computations based on the fundamental properties of these numbers, such as their prime factorization, HCF, LCM, and classification as rational or irrational. \n\nBased on this scenario, answer the following questions:\n\n(i) If two positive integers are x = 180 and y = 252, express each number as a product of its prime factors. (1 mark)\n\n(ii) Using the prime factorization from (i), find the HCF and LCM of x and y. (1 mark)\n\n(iii) The engineer needs to determine if a fraction, say 12/75, will have a terminating or non-terminating repeating decimal expansion. Explain the mathematical principle used to make this determination, and then apply it to classify the decimal expansion of 12/75. (1 mark)\n\n(iv) One critical part of the module involves calculating a value 'Z' defined as Z = (2 + √5)(2 - √5). The engineer needs to classify 'Z' as a rational or irrational number. Justify your answer by showing the calculation and applying the relevant definition. (1 mark)",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for sub-parts.",
+          "explanation": "(i) To express x = 180 and y = 252 as a product of their prime factors:\nFor x = 180:\n180 = 2 × 90\n    = 2 × 2 × 45\n    = 2 × 2 × 3 × 15\n    = 2 × 2 × 3 × 3 × 5\n    = 2² × 3² × 5\nFor y = 252:\n252 = 2 × 126\n    = 2 × 2 × 63\n    = 2 × 2 × 3 × 21\n    = 2 × 2 × 3 × 3 × 7\n    = 2² × 3² × 7\n\n(ii) To find the HCF and LCM of x and y using prime factorization:\nGiven x = 2² × 3² × 5 and y = 2² × 3² × 7\n\nHCF (Highest Common Factor): Product of the smallest power of each common prime factor.\nHCF(180, 252) = 2² × 3² = 4 × 9 = 36\n\nLCM (Least Common Multiple): Product of the greatest power of each prime factor involved in the numbers.\nLCM(180, 252) = 2² × 3² × 5 × 7 = 4 × 9 × 5 × 7 = 36 × 35 = 1260\n\n(iii) To determine the type of decimal expansion for 12/75:\nMathematical Principle: A rational number p/q (where p and q are coprime integers and q ≠ 0) has a terminating decimal expansion if and only if the prime factorization of its denominator 'q' is of the form 2ⁿ × 5ᵐ, where n and m are non-negative integers. If the prime factorization of 'q' contains any prime factor other than 2 or 5, then the decimal expansion is non-terminating repeating.\n\nApplying to 12/75:\nFirst, simplify the fraction to its simplest form (where numerator and denominator are coprime):\n12/75 = (3 × 4) / (3 × 25) = 4/25\nNow, the denominator is q = 25.\nPrime factorization of q = 25 = 5².\nThis can be written in the form 2ⁿ × 5ᵐ as 2⁰ × 5².\nSince the prime factors of the denominator are only 5 (or 2 and 5), the decimal expansion of 12/75 will be terminating.\n\n(iv) To classify Z = (2 + √5)(2 - √5) as rational or irrational:\nCalculate Z:\nZ = (2 + √5)(2 - √5)\nUsing the algebraic identity (a + b)(a - b) = a² - b²:\nZ = (2)² - (√5)²\nZ = 4 - 5\nZ = -1\n\nClassification:\nA rational number is any number that can be expressed in the form p/q, where p and q are integers and q ≠ 0.\nSince Z = -1, it can be written as -1/1. Here, p = -1 (an integer) and q = 1 (a non-zero integer).\nTherefore, Z = -1 is a rational number.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Prime factorize 180 and 252.",
+            "Calculate HCF and LCM using prime factorizations.",
+            "Simplify the fraction 12/75.",
+            "Identify the prime factors of the denominator of the simplified fraction.",
+            "Apply the theorem for terminating/non-terminating decimals.",
+            "Simplify the expression Z = (2 + √5)(2 - √5).",
+            "Classify the simplified value of Z based on the definition of rational numbers."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "Case Study: Robotic Arm Trajectory\n\nA robotics company is designing a new robotic arm that needs to follow precise trajectories. The path of the robotic arm is often modeled by polynomial functions to ensure smooth and accurate movement. An engineer is analyzing different polynomial models for the arm's movement in a 2D plane.\n\nThe horizontal distance covered by the arm is represented by 'x' (in meters), and the vertical height of the arm from the base is represented by 'y' (in meters).\n\nBased on the above information, answer the following questions:\n\n**(i)** The engineer models a specific trajectory of the arm using a quadratic polynomial $P(x)$. If the zeroes of this polynomial are -2 and 5, and the arm passes through the point (1, -18), determine the equation of the polynomial $P(x)$. (1 mark)\n\n**(ii)** For another trajectory, the sum of the zeroes of the quadratic polynomial $Q(x) = kx^2 - 8x - 10$ is 4, and the product of its zeroes is -5. Find the value of $k$. (1 mark)\n\n**(iii)** A more complex 3D movement is simplified to a 2D cubic trajectory modeled by $R(x) = x^3 - 4x^2 - 7x + 10$. If it is known that one of the zeroes of this polynomial is 1, find the other two zeroes. (2 marks)",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for sub-parts.",
+          "explanation": "**(i) Determine the equation of the polynomial P(x):**\nGiven zeroes are $\\alpha = -2$ and $\\beta = 5$.\nA quadratic polynomial with zeroes $\\alpha$ and $\\beta$ can be written in the form $P(x) = A(x - \\alpha)(x - \\beta)$.\nSubstituting the zeroes: $P(x) = A(x - (-2))(x - 5) = A(x + 2)(x - 5)$.\nWe are given that the arm passes through the point (1, -18). So, $P(1) = -18$.\nSubstitute $x = 1$ into the polynomial:\n$-18 = A(1 + 2)(1 - 5)$\n$-18 = A(3)(-4)$\n$-18 = -12A$\n$A = \\frac{-18}{-12} = \\frac{3}{2}$\nSo, the polynomial is $P(x) = \\frac{3}{2}(x + 2)(x - 5)$.\nExpanding this:\n$P(x) = \\frac{3}{2}(x^2 - 5x + 2x - 10)$\n$P(x) = \\frac{3}{2}(x^2 - 3x - 10)$\n$P(x) = \\frac{3}{2}x^2 - \\frac{9}{2}x - 15$\n\n**(ii) Find the value of k:**\nGiven quadratic polynomial $Q(x) = kx^2 - 8x - 10$.\nComparing with the standard form $ax^2 + bx + c$, we have $a = k$, $b = -8$, $c = -10$.\nSum of zeroes ($\\alpha + \\beta$) = $-\\frac{b}{a}$. We are given sum of zeroes = 4.\nSo, $4 = -\\frac{(-8)}{k} = \\frac{8}{k}$\n$4k = 8$\n$k = \\frac{8}{4} = 2$\n\nProduct of zeroes ($\\alpha\\beta$) = $\\frac{c}{a}$. We are given product of zeroes = -5.\nSo, $-5 = \\frac{-10}{k}$\n$-5k = -10$\n$k = \\frac{-10}{-5} = 2$\nBoth conditions consistently give $k = 2$.\n\n**(iii) Find the other two zeroes of R(x):**\nGiven cubic polynomial $R(x) = x^3 - 4x^2 - 7x + 10$.\nOne zero is given as 1. This means $(x - 1)$ is a factor of $R(x)$ by the Factor Theorem.\nWe can use polynomial division to find the other factors.\n\n\n        x^2 - 3x - 10\n      ________________\nx - 1 | x^3 - 4x^2 - 7x + 10\n        -(x^3 - x^2)\n        ____________\n              -3x^2 - 7x\n            -(-3x^2 + 3x)\n            ____________\n                    -10x + 10\n                  -(-10x + 10)\n                  ____________\n                          0\n\nSo, $R(x) = (x - 1)(x^2 - 3x - 10)$.\nNow, we need to find the zeroes of the quadratic factor $x^2 - 3x - 10$.\nFactor the quadratic by splitting the middle term: We look for two numbers that multiply to -10 and add to -3. These numbers are -5 and 2.\nSo, $x^2 - 3x - 10 = x^2 - 5x + 2x - 10 = x(x - 5) + 2(x - 5) = (x - 5)(x + 2)$.\nSetting the factors to zero to find the zeroes:\n$x - 5 = 0 \\implies x = 5$\n$x + 2 = 0 \\implies x = -2$\n\nTherefore, the other two zeroes of the polynomial $R(x)$ are 5 and -2.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Hard",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "(i) Use the general form of a quadratic polynomial with given zeroes: $P(x) = A(x - \\alpha)(x - \\beta)$.",
+            "(i) Substitute the given zeroes ( -2 and 5) into the polynomial form.",
+            "(i) Use the given point (1, -18) to find the value of the leading coefficient A.",
+            "(i) Expand the polynomial to get its final equation.",
+            "(ii) Identify the coefficients a, b, and c from the given quadratic polynomial $Q(x) = kx^2 - 8x - 10$.",
+            "(ii) Apply the relationship between the sum of zeroes and coefficients: Sum = $-b/a$. Substitute the given sum (4) and coefficients to form an equation for k.",
+            "(ii) (Optional, but good for verification) Apply the relationship between the product of zeroes and coefficients: Product = $c/a$. Substitute the given product (-5) and coefficients to verify the value of k.",
+            "(iii) Use the Factor Theorem: If 1 is a zero of $R(x)$, then $(x - 1)$ is a factor of $R(x)$.",
+            "(iii) Perform polynomial long division of $R(x) = x^3 - 4x^2 - 7x + 10$ by $(x - 1)$ to find the quadratic quotient.",
+            "(iii) Factorize the resulting quadratic polynomial (e.g., by splitting the middle term) to find its two zeroes.",
+            "(iii) State the other two zeroes of the polynomial $R(x)$."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "An artisan workshop specializes in creating two types of decorative lamps: 'Classic' and 'Modern'. Let 'x' represent the number of Classic lamps and 'y' represent the number of Modern lamps produced daily. The production process is subject to constraints based on available raw materials (brass) and skilled labor hours.\n\nThe following equations model the daily constraints:\n1.  **Brass Constraint:** $2x + 3y = 120$ (Each Classic lamp uses 2 kg brass, each Modern lamp uses 3 kg brass, total 120 kg available)\n2.  **Labor Constraint:** $4x + 6y = k$ (Each Classic lamp uses 4 hours of labor, each Modern lamp uses 6 hours of labor, total $k$ hours available)\n\nBased on this information, answer the following questions:\n\n**(a)** If the workshop has a daily availability of 240 hours of skilled labor (i.e., $k = 240$), describe the nature of the production plan (i.e., unique solution, no solution, or infinitely many solutions). Justify your answer. (1 Mark)\n\n**(b)** The workshop owner notices an inconsistency. If the daily skilled labor availability $k$ is set to 200 hours, what can be said about the feasibility of the production plan? (1 Mark)\n\n**(c)** The owner wants to modify the labor requirement for Classic lamps to ensure a *unique* production plan (a specific number of Classic and Modern lamps). If the labor required for a Classic lamp is changed to $p$ hours (while labor for Modern lamps remains 6 hours and total labor availability remains $k$ hours), what condition must $p$ satisfy to guarantee a unique solution? Also, if $k$ is fixed at 210 hours, can $p$ be 4 hours if the goal is a unique solution? Explain your reasoning. (2 Marks)",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "",
+          "explanation": "**(a) If k = 240:**\nThe given pair of linear equations is:\n1.  $2x + 3y = 120$\n2.  $4x + 6y = 240$\n\nComparing these with the standard form $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$:\n$a_1 = 2, b_1 = 3, c_1 = -120$\n$a_2 = 4, b_2 = 6, c_2 = -240$\n\nCalculate the ratios of coefficients:\n$\frac{a_1}{a_2} = \frac{2}{4} = \frac{1}{2}$\n$\frac{b_1}{b_2} = \frac{3}{6} = \frac{1}{2}$\n$\frac{c_1}{c_2} = \frac{-120}{-240} = \frac{1}{2}$\n\nSince $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$, the lines representing the equations are coincident. This means the system has infinitely many solutions. Therefore, the production plan allows for infinitely many combinations of Classic and Modern lamps that satisfy both constraints.\n\n**(b) If k = 200:**\nThe given pair of linear equations is:\n1.  $2x + 3y = 120$\n2.  $4x + 6y = 200$\n\nComparing these with the standard form:\n$a_1 = 2, b_1 = 3, c_1 = -120$\n$a_2 = 4, b_2 = 6, c_2 = -200$\n\nCalculate the ratios of coefficients:\n$\frac{a_1}{a_2} = \frac{2}{4} = \frac{1}{2}$\n$\frac{b_1}{b_2} = \frac{3}{6} = \frac{1}{2}$\n$\frac{c_1}{c_2} = \frac{-120}{-200} = \frac{120}{200} = \frac{3}{5}$\n\nSince $\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}$, the lines representing the equations are parallel. This means the system has no solution. Therefore, the production plan is infeasible; there is no combination of Classic and Modern lamps that can be produced daily to satisfy both the brass and labor constraints simultaneously.\n\n**(c) Condition for unique solution and analysis for p=4, k=210:**\nThe modified equations are:\n1.  $2x + 3y = 120$\n2.  $px + 6y = k$\n\nFor a unique solution, the lines representing the equations must intersect at a single point. This condition is given by $\frac{a_1}{a_2} \neq \frac{b_1}{b_2}$.\n\nFrom the equations:\n$a_1 = 2, b_1 = 3$\n$a_2 = p, b_2 = 6$\n\nApplying the condition for a unique solution:\n$\frac{2}{p} \neq \frac{3}{6}$\n$\frac{2}{p} \neq \frac{1}{2}$\n$2 \times 2 \neq 1 \times p$\n$4 \neq p$\n\nSo, to guarantee a unique solution, the labor required for a Classic lamp, $p$, must not be equal to 4 hours.\n\nNow, consider the case if $k = 210$ hours and $p = 4$ hours:\nThe equations become:\n1.  $2x + 3y = 120$\n2.  $4x + 6y = 210$\n\nCalculate the ratios of coefficients:\n$\frac{a_1}{a_2} = \frac{2}{4} = \frac{1}{2}$\n$\frac{b_1}{b_2} = \frac{3}{6} = \frac{1}{2}$\n$\frac{c_1}{c_2} = \frac{-120}{-210} = \frac{120}{210} = \frac{4}{7}$\n\nSince $\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}$, this system has no solution (parallel lines). Therefore, if $k = 210$ hours, $p$ *cannot* be 4 hours if the goal is to achieve a unique solution. Setting $p=4$ hours would lead to an inconsistent system with no feasible production plan, not a unique one.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Hard",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "**(a)** Identify coefficients $a_1, b_1, c_1, a_2, b_2, c_2$.",
+            "Calculate ratios $\frac{a_1}{a_2}$, $\frac{b_1}{b_2}$, $\frac{c_1}{c_2}$.",
+            "Compare ratios to determine solution type (infinitely many solutions).",
+            "**(b)** Identify coefficients $a_1, b_1, c_1, a_2, b_2, c_2$ for $k=200$.",
+            "Calculate ratios $\frac{a_1}{a_2}$, $\frac{b_1}{b_2}$, $\frac{c_1}{c_2}$.",
+            "Compare ratios to determine solution type (no solution) and feasibility.",
+            "**(c)** Set up new equations with parameter $p$.",
+            "Apply condition for unique solution: $\frac{a_1}{a_2} \neq \frac{b_1}{b_2}$ to find the condition for $p$.",
+            "Substitute $k=210$ and $p=4$ into the equations.",
+            "Calculate ratios $\frac{a_1}{a_2}$, $\frac{b_1}{b_2}$, $\frac{c_1}{c_2}$ for this specific case.",
+            "Determine the solution type for $p=4, k=210$ (no solution).",
+            "Explain why $p=4$ is not suitable for a unique solution."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 12
+    }
+  },
+  "metadata": {
+    "board": "CBSE",
+    "class": 10,
+    "subject": "Mathematics",
+    "totalQuestions": 38,
+    "totalMarks": 80,
+    "duration": 180,
+    "generationMethod": "RAG+LLM",
+    "llmModel": "gemini-2.5-flash",
+    "chaptersUsed": [
+      "Real Numbers",
+      "Polynomials",
+      "Pair of Linear Equations in Two Variables",
+      "Quadratic Equations",
+      "Arithmetic Progressions",
+      "Triangles",
+      "Coordinate Geometry",
+      "Introduction to Trigonometry",
+      "Some Applications of Trigonometry",
+      "Circles",
+      "Areas Related to Circles",
+      "Surface Areas and Volumes",
+      "Statistics",
+      "Probability"
+    ],
+    "generationTimeMs": 448005
+  }
+}

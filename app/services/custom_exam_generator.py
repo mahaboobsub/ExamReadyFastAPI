@@ -117,7 +117,7 @@ class CustomExamGenerator:
         return dist
 
     async def _fetch_from_qdrant(self, template, chapter, count, difficulty):
-        # ✅ FIX: Use class_num
+       
         filters = {
             "board": template.board,
             "class": template.class_num,

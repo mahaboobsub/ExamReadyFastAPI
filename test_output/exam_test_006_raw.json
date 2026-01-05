@@ -1,0 +1,829 @@
+{
+  "sections": {
+    "A": {
+      "name": "Section A (MCQ & AR)",
+      "questions": [
+        {
+          "text": "Two positive integers, 'p' and 'q', have an HCF of 18 and an LCM of 540. If one of the numbers, 'p', is 108, what is the value of the other number, 'q'?",
+          "type": "MCQ",
+          "options": [
+            "90",
+            "108",
+            "72",
+            "120"
+          ],
+          "correctAnswer": "90",
+          "explanation": "We know that for any two positive integers 'p' and 'q', the product of the numbers is equal to the product of their HCF and LCM.\nThat is, p × q = HCF(p, q) × LCM(p, q)\nGiven:\nHCF(p, q) = 18\nLCM(p, q) = 540\nOne number, p = 108\nLet the other number be q.\nSubstitute the given values into the formula:\n108 × q = 18 × 540\nq = (18 × 540) / 108\nq = (18 × 540) / (18 × 6)  (Since 108 = 18 × 6)\nq = 540 / 6\nq = 90\nThus, the value of the other number 'q' is 90.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the relationship: Product of two numbers = HCF × LCM",
+            "Substitute the given values into the formula",
+            "Solve the equation to find the unknown number"
+          ]
+        },
+        {
+          "text": "Without performing long division, determine whether the decimal expansion of the rational number $\\frac{29}{343}$ is terminating or non-terminating repeating.",
+          "type": "MCQ",
+          "options": [
+            "Terminating",
+            "Non-terminating repeating",
+            "Non-terminating non-repeating",
+            "Cannot be determined without actual division"
+          ],
+          "correctAnswer": "Non-terminating repeating",
+          "explanation": "A rational number $\\frac{p}{q}$ (where p and q are coprime and q \\neq 0) has a terminating decimal expansion if and only if the prime factorization of the denominator 'q' is of the form $2^m \\times 5^n$, where m and n are non-negative integers.\nIf the prime factorization of 'q' is not of this form, then the decimal expansion is non-terminating repeating.\nGiven number: $\\frac{29}{343}$\nFirst, check if the numerator and denominator are coprime. 29 is a prime number. $343 = 7^3$. Since 29 is not a factor of 343, 29 and 343 are coprime.\nNow, find the prime factorization of the denominator, q = 343.\n$343 = 7 \\times 7 \\times 7 = 7^3$\nThe prime factorization of the denominator 343 is $7^3$, which is not of the form $2^m \\times 5^n$. It contains a prime factor (7) other than 2 or 5.\nTherefore, the decimal expansion of $\\frac{29}{343}$ is non-terminating repeating.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the denominator of the rational number",
+            "Find the prime factorization of the denominator",
+            "Check if the prime factors are only 2s and/or 5s",
+            "Conclude based on the prime factorization rule for decimal expansions"
+          ]
+        },
+        {
+          "text": "Assertion (A): The decimal expansion of the rational number $\\frac{13}{1250}$ will terminate after 4 decimal places.\nReason (R): A rational number $\\frac{p}{q}$, where $p$ and $q$ are coprime, has a terminating decimal expansion if the prime factorization of $q$ is of the form $2^m 5^n$, where $m$ and $n$ are non-negative integers. The number of decimal places after which the expansion terminates is the maximum of $m$ and $n$.",
+          "type": "AR",
+          "options": [
+            "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+            "Both Assertion (A) and Reason (R) are true but Reason (R) is not the correct explanation of Assertion (A).",
+            "Assertion (A) is true but Reason (R) is false.",
+            "Assertion (A) is false but Reason (R) is true."
+          ],
+          "correctAnswer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "explanation": "Let the given rational number be $x = \\frac{13}{1250}$.\nFirst, we check if $p$ and $q$ are coprime. $13$ is a prime number. $1250 = 2 \\times 5^4$. Since $13$ is not a factor of $1250$, $13$ and $1250$ are coprime.\n\nNow, we find the prime factorization of the denominator $q = 1250$.\n$1250 = 125 \\times 10 = 5^3 \\times (2 \\times 5) = 2^1 \\times 5^4$.\n\nThe prime factorization of the denominator is of the form $2^m 5^n$, where $m=1$ and $n=4$. Since the denominator is of this form, the decimal expansion of $\\frac{13}{1250}$ is terminating.\n\nThe number of decimal places after which the expansion terminates is the maximum of the powers of 2 and 5 in the prime factorization of the denominator. Here, $\\max(m, n) = \\max(1, 4) = 4$.\n\nSo, the decimal expansion of $\\frac{13}{1250}$ will terminate after 4 decimal places. Thus, Assertion (A) is true.\n\nReason (R",
+          "marks": 1,
+          "bloomsLevel": "Understand",
+          "difficulty": "Medium",
+          "chapter": "Real Numbers"
+        },
+        {
+          "text": "Which of the following expressions is a polynomial?",
+          "type": "MCQ",
+          "options": [
+            "A) $x^2 + \\frac{2}{x} + 3$",
+            "B) $\\sqrt{x} + 5x - 1$",
+            "C) $x^3 - 4x + \\frac{1}{2}$",
+            "D) $x^{-1} + 2x + 7$"
+          ],
+          "correctAnswer": "C) $x^3 - 4x + \\frac{1}{2}$",
+          "explanation": "A polynomial is an expression consisting of variables and coefficients, involving only the operations of addition, subtraction, multiplication, and non-negative integer exponents of variables.\nOption A contains $\\frac{2}{x} = 2x^{-1}$, which has a negative exponent.\nOption B contains $\\sqrt{x} = x^{1/2}$, which has a fractional exponent.\nOption D contains $x^{-1}$, which has a negative exponent.\nOption C, $x^3 - 4x + \\frac{1}{2}$, has all terms with non-negative integer exponents (3, 1, and 0 for the constant term). Therefore, it is a polynomial.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the definition of a polynomial regarding exponents of variables.",
+            "Examine each option to check if all variable exponents are non-negative integers.",
+            "Identify the option that satisfies the polynomial definition."
+          ]
+        },
+        {
+          "text": "For a quadratic polynomial $ax^2 + bx + c$, where $a \\neq 0$, if $\\alpha$ and $\\beta$ are its zeros, what is the value of the sum of the zeros, $\\alpha + \\beta$?",
+          "type": "MCQ",
+          "options": [
+            "A) $c/a$",
+            "B) $-b/a$",
+            "C) $b/a$",
+            "D) $-c/a$"
+          ],
+          "correctAnswer": "B) $-b/a$",
+          "explanation": "For a quadratic polynomial of the form $ax^2 + bx + c$, the relationship between its zeros (say $\\alpha$ and $\\beta$) and its coefficients is defined as follows:\n1. Sum of the zeros: $\\alpha + \\beta = -\\frac{\\text{coefficient of x}}{\\text{coefficient of } x^2} = -\\frac{b}{a}$\n2. Product of the zeros: $\\alpha \\beta = \\frac{\\text{constant term}}{\\text{coefficient of } x^2} = \\frac{c}{a}$\nTherefore, the value of $\\alpha + \\beta$ is $-b/a$.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the standard form of a quadratic polynomial.",
+            "Recall the formula for the sum of the zeros of a quadratic polynomial.",
+            "Identify the correct option based on the formula."
+          ]
+        },
+        {
+          "text": "Assertion (A): If one zero of the polynomial $p(x) = ax^2 + bx + c$ is the reciprocal of the other, then $a=c$. \nReason (R): For a quadratic polynomial $ax^2 + bx + c$, the product of the zeros is $c/a$.",
+          "type": "AR",
+          "options": [
+            "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+            "Both Assertion (A) and Reason (R) are true but Reason (R) is not the correct explanation of Assertion (A).",
+            "Assertion (A) is true but Reason (R) is false.",
+            "Assertion (A) is false but Reason (R) is true."
+          ],
+          "correctAnswer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "explanation": "Let the two zeros of the quadratic polynomial $p(x) = ax^2 + bx + c$ be $\\alpha$ and $\beta$. \nAccording to the Assertion, one zero is the reciprocal of the other. So, we can assume $\beta = 1/\\alpha$. \n\nThe relationship between the zeros and coefficients states that the product of the zeros is given by $\\alpha \\times \\beta = c/a$. \nSubstituting $\\beta = 1/\\alpha$ into the product of zeros formula, we get: \n$\\alpha \\times (1/\\alpha) = c/a$ \n$1 = c/a$ \nThis implies $a=c$. \nTherefore, Assertion (A) is true. \n\nReason (R) states that for a quadratic polynomial $ax^2 + bx + c$, the product of the zeros is $c/a$. This is a fundamental and correct property (formula) relating the zeros and coefficients of a quadratic polynomial. \nTherefore, Reason (R) is true. \n\nSince the derivation of Assertion (A) directly uses the formula for the product of zeros, which is stated in Reason (R), Reason (R) is the correct explanation of Assertion (A). \nHence, the correct option is A.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Assume zeros are $\\alpha$ and $1/\\alpha$",
+            "Apply product of zeros formula: $\\alpha \\times (1/\\alpha) = c/a$",
+            "Simplify to $1 = c/a \\implies a=c$",
+            "Verify Reason (R) as a correct statement",
+            "Conclude if Reason (R) explains Assertion (A)"
+          ]
+        },
+        {
+          "text": "For what value of 'k' will the following pair of linear equations have infinitely many solutions?\n$2x + 3y = 7$\n$(k-1)x + (k+2)y = 3k$",
+          "type": "MCQ",
+          "options": [
+            "k = 7",
+            "k = 1",
+            "k = -1",
+            "k = 3"
+          ],
+          "correctAnswer": "k = 7",
+          "explanation": "For a pair of linear equations $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$ to have infinitely many solutions, the condition is $a_1/a_2 = b_1/b_2 = c_1/c_2$.\n\nGiven equations are:\n1) $2x + 3y = 7$\n2) $(k-1)x + (k+2)y = 3k$\n\nComparing with the general form, we have:\n$a_1 = 2, b_1 = 3, c_1 = 7$\n$a_2 = k-1, b_2 = k+2, c_2 = 3k$\n\nApplying the condition for infinitely many solutions:\n$2/(k-1) = 3/(k+2) = 7/(3k)$\n\nFirst, consider the equality of the first two ratios:\n$2/(k-1) = 3/(k+2)$\n$2(k+2) = 3(k-1)$\n$2k + 4 = 3k - 3$\n$4 + 3 = 3k - 2k$\n$k = 7$\n\nNow, we must verify this value of k with the second part of the condition, i.e., $3/(k+2) = 7/(3k)$:\nSubstitute k = 7 into this equality:\n$3/(7+2) = 7/(3 \\times 7)$\n$3/9 = 7/21$\n$1/3 = 1/3$\n\nSince both parts of the condition are satisfied for k = 7, this is the correct value. Therefore, for k = 7, the pair of linear equations will have infinitely many solutions.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients $a_1, b_1, c_1, a_2, b_2, c_2$.",
+            "Apply the condition for infinitely many solutions: $a_1/a_2 = b_1/b_2 = c_1/c_2$.",
+            "Solve the resulting equations for 'k'.",
+            "Verify the value of 'k' with all ratios."
+          ]
+        },
+        {
+          "text": "The pair of equations $x + 2y - 5 = 0$ and $-3x - 6y + 10 = 0$ has:",
+          "type": "MCQ",
+          "options": [
+            "A unique solution",
+            "Exactly two solutions",
+            "Infinitely many solutions",
+            "No solution"
+          ],
+          "correctAnswer": "No solution",
+          "explanation": "To determine the nature of solutions for a pair of linear equations $a_1x + b_1y + c_1 = 0$ and $a_2x + b_2y + c_2 = 0$, we compare the ratios of their coefficients.\n\nGiven equations are:\n1) $x + 2y - 5 = 0$\n2) $-3x - 6y + 10 = 0$\n\nComparing with the general form, we identify the coefficients:\nFor equation (1): $a_1 = 1, b_1 = 2, c_1 = -5$\nFor equation (2): $a_2 = -3, b_2 = -6, c_2 = 10$\n\nNow, we calculate the ratios of the coefficients:\n$a_1/a_2 = 1/(-3) = -1/3$\n$b_1/b_2 = 2/(-6) = -1/3$\n$c_1/c_2 = -5/10 = -1/2$\n\nComparing these ratios, we observe that $a_1/a_2 = b_1/b_2 \\neq c_1/c_2$. \n\nThis condition ($a_1/a_2 = b_1/b_2 \\neq c_1/c_2$) indicates that the lines represented by the given equations are parallel and distinct. Parallel lines never intersect, which means there is no common point satisfying both equations. Therefore, the system of equations has no solution.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients $a_1, b_1, c_1, a_2, b_2, c_2$.",
+            "Calculate the ratios $a_1/a_2$, $b_1/b_2$, and $c_1/c_2$.",
+            "Compare the ratios to determine the nature of the solutions (unique, no, or infinitely many)."
+          ]
+        },
+        {
+          "text": "Which of the following equations is a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "A) \\(x(x+3) = x^3 + 1\\)",
+            "B) \\((x+2)^3 = x^3 - 4\\)",
+            "C) \\(x^2 + \\frac{1}{x} = 5\\)",
+            "D) \\(x(x+1) + 8 = (x+2)(x-2)\\)"
+          ],
+          "correctAnswer": "B) \\((x+2)^3 = x^3 - 4\\)",
+          "explanation": "A quadratic equation is an equation of the form \\(ax^2 + bx + c = 0\\), where \\(a \\neq 0\\) and \\(a, b, c\\) are real numbers. Let's analyze each option:\n\nA) \\(x(x+3) = x^3 + 1\\)\n\\(x^2 + 3x = x^3 + 1\\)\n\\(x^3 - x^2 - 3x + 1 = 0\\)\nThis is a cubic equation, not quadratic.\n\nB) \\((x+2)^3 = x^3 - 4\\)\nUsing the identity \\((a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3\\):\n\\(x^3 + 3(x^2)(2) + 3(x)(2^2) + 2^3 = x^3 - 4\\)\n\\(x^3 + 6x^2 + 12x + 8 = x^3 - 4\\)\nSubtract \\(x^3\\) from both sides:\n\\(6x^2 + 12x + 8 = -4\\)\n\\(6x^2 + 12x + 12 = 0\\)\nThis is of the form \\(ax^2 + bx + c = 0\\) with \\(a=6 \\neq 0\\), so it is a quadratic equation.\n\nC) \\(x^2 + \\frac{1}{x} = 5\\)\nMultiply by \\(x\\) (assuming \\(x \\neq 0\\)): \n\\(x^3 + 1 = 5x\\)\n\\(x^3 - 5x + 1 = 0\\)\nThis is a cubic equation, not quadratic. Also, an equation involving \\(\\frac{1}{x}\\) is generally not considered a polynomial equation in its standard form.\n\nD) \\(x(x+1) + 8 = (x+2)(x-2)\\)\n\\(x^2 + x + 8 = x^2 - 4\\) (using \\((a+b)(a-b) = a^2 - b^2\\))\nSubtract \\(x^2\\) from both sides:\n\\(x + 8 = -4\\)\n\\(x + 12 = 0\\)\nThis is a linear equation, not quadratic.\n\nTherefore, option B is the correct answer.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the standard form of a quadratic equation: \\(ax^2 + bx + c = 0\\) where \\(a \\neq 0\\).",
+            "Expand and simplify each given equation.",
+            "Identify the equation that simplifies to the standard quadratic form."
+          ]
+        },
+        {
+          "text": "For what value of \\(k\\) does the quadratic equation \\(x^2 - 4x + k = 0\\) have real and equal roots?",
+          "type": "MCQ",
+          "options": [
+            "A) 1",
+            "B) 2",
+            "C) 3",
+            "D) 4"
+          ],
+          "correctAnswer": "D) 4",
+          "explanation": "For a quadratic equation \\(ax^2 + bx + c = 0\\) to have real and equal roots, its discriminant (D) must be equal to zero. The discriminant is given by the formula \\(D = b^2 - 4ac\\).\n\nIn the given equation, \\(x^2 - 4x + k = 0\\):\nComparing it with the standard form \\(ax^2 + bx + c = 0\\), we have:\n\\(a = 1\\)\n\\(b = -4\\)\n\\(c = k\\)\n\nSet the discriminant to zero:\n\\(b^2 - 4ac = 0\\)\n\\((-4)^2 - 4(1)(k) = 0\\)\n\\(16 - 4k = 0\\)\n\nNow, solve for \\(k\\):\n\\(16 = 4k\\)\n\\(k = \\frac{16}{4}\\)\n\\(k = 4\\)\n\nThus, for the quadratic equation \\(x^2 - 4x + k = 0\\) to have real and equal roots, the value of \\(k\\) must be 4.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the condition for real and equal roots: Discriminant \\(D = b^2 - 4ac = 0\\).",
+            "Identify the coefficients \\(a, b, c\\) from the given quadratic equation.",
+            "Substitute the coefficients into the discriminant formula and set it to zero.",
+            "Solve the resulting equation for \\(k\\)."
+          ]
+        },
+        {
+          "text": "What is the common difference of the Arithmetic Progression (AP): 2, 5, 8, 11, ...?",
+          "type": "MCQ",
+          "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+          ],
+          "correctAnswer": "3",
+          "explanation": "An Arithmetic Progression (AP) is a sequence of numbers such that the difference between any term and its preceding term is constant. This constant difference is known as the common difference (d).\n\nGiven the AP: 2, 5, 8, 11, ...\n\nTo find the common difference, we subtract any term from its succeeding term:\n\n1.  Subtract the first term from the second term: d = 5 - 2 = 3\n2.  Subtract the second term from the third term: d = 8 - 5 = 3\n3.  Subtract the third term from the fourth term: d = 11 - 8 = 3\n\nSince the difference is constant and equal to 3, the common difference of the given AP is 3.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify the terms of the given AP.",
+            "Subtract a term from its succeeding term to find the common difference."
+          ]
+        },
+        {
+          "text": "Two polygons of the same number of sides are similar if:",
+          "type": "MCQ",
+          "options": [
+            "A) their corresponding angles are equal and their corresponding sides are proportional.",
+            "B) their corresponding angles are equal and their corresponding sides are equal.",
+            "C) their corresponding angles are proportional and their corresponding sides are equal.",
+            "D) their corresponding angles are proportional and their corresponding sides are proportional."
+          ],
+          "correctAnswer": "A) their corresponding angles are equal and their corresponding sides are proportional.",
+          "explanation": "According to the definition of similar polygons, two polygons of the same number of sides are similar if two conditions are met:\n1. Their corresponding angles are equal.\n2. Their corresponding sides are in the same ratio (i.e., proportional).\nOption A correctly states both these conditions, which are fundamental to understanding similarity in triangles and other polygons as taught in NCERT Class 10 Mathematics.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Triangles",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of similar polygons from the NCERT textbook."
+          ]
+        },
+        {
+          "text": "What is the distance of the point P(3, 4) from the origin (0, 0)?",
+          "type": "MCQ",
+          "options": [
+            "3 units",
+            "4 units",
+            "5 units",
+            "7 units"
+          ],
+          "correctAnswer": "5 units",
+          "explanation": "To find the distance of a point P(x, y) from the origin O(0, 0), we use the distance formula:\nDistance = $\\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}$\nHere, the coordinates of the origin O are $(x_1, y_1) = (0, 0)$ and the coordinates of point P are $(x_2, y_2) = (3, 4)$.\nSubstituting these values into the distance formula:\nDistance OP = $\\sqrt{(3-0)^2 + (4-0)^2}$\nDistance OP = $\\sqrt{3^2 + 4^2}$\nDistance OP = $\\sqrt{9 + 16}$\nDistance OP = $\\sqrt{25}$\nDistance OP = 5 units.\nTherefore, the distance of the point P(3, 4) from the origin is 5 units.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Coordinate Geometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coordinates of the two points (P and Origin).",
+            "Apply the distance formula.",
+            "Calculate the final distance."
+          ]
+        },
+        {
+          "text": "A ladder leans against a vertical wall. The foot of the ladder is 4.6 m away from the wall, and the ladder makes an angle of 60° with the ground. What is the length of the ladder?",
+          "type": "MCQ",
+          "options": [
+            "9.2 m",
+            "2.3 m",
+            "$4.6\\sqrt{3}$ m",
+            "$\\frac{9.2}{\\sqrt{3}}$ m"
+          ],
+          "correctAnswer": "9.2 m",
+          "explanation": "Let the length of the ladder be 'L' and the distance of the foot of the ladder from the wall be 'd'.\nGiven, d = 4.6 m (this is the side adjacent to the angle with the ground).\nThe angle the ladder makes with the ground is $\\theta = 60^\\circ$.\nIn the right-angled triangle formed by the wall, the ground, and the ladder, the distance 'd' is the side adjacent to the angle $\\theta$, and 'L' is the hypotenuse.\nWe use the cosine ratio, which relates the adjacent side and the hypotenuse:\n$\\cos\\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}$\n$\\cos 60^\\circ = \\frac{d}{L}$\nWe know the value of $\\cos 60^\\circ = \\frac{1}{2}$.\nSubstitute the given values into the equation:\n$\\frac{1}{2} = \\frac{4.6}{L}$\nTo find L, we can cross-multiply:\n$L = 2 \\times 4.6$\n$L = 9.2$ m\nThus, the length of the ladder is 9.2 m.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Introduction to Trigonometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the given information (angle, adjacent side) and the unknown (hypotenuse).",
+            "Choose the appropriate trigonometric ratio (cosine) relating the adjacent side and hypotenuse.",
+            "Substitute the known values and solve for the unknown length of the ladder."
+          ]
+        },
+        {
+          "text": "An observer is looking at the top of a vertical pole. The angle formed by the observer's line of sight with the horizontal line drawn from the observer's eye level to the pole is known as the:",
+          "type": "MCQ",
+          "options": [
+            "Angle of depression",
+            "Angle of elevation",
+            "Right angle",
+            "Reflex angle"
+          ],
+          "correctAnswer": "Angle of elevation",
+          "explanation": "According to the definition in Applications of Trigonometry, when an observer looks at an object above the horizontal level, the angle formed by the line of sight with the horizontal line is called the angle of elevation. In this scenario, the observer is looking at the top of a vertical pole, which is an object above the observer's eye level. Thus, the angle formed is the angle of elevation.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Applications of Trigonometry",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of angle of elevation.",
+            "Identify that the object (top of pole) is above the horizontal line of sight."
+          ]
+        },
+        {
+          "text": "A tangent PQ at a point P of a circle with centre O and radius 5 cm meets a line through the centre O at a point Q such that OQ = 12 cm. The length of PQ is:",
+          "type": "MCQ",
+          "options": [
+            "A) 13 cm",
+            "B) $\\sqrt{119}$ cm",
+            "C) 7 cm",
+            "D) 17 cm"
+          ],
+          "correctAnswer": "B) $\\sqrt{119}$ cm",
+          "explanation": "According to Theorem 10.1 from NCERT, the tangent at any point of a circle is perpendicular to the radius through the point of contact. \nHere, OP is the radius and PQ is the tangent at point P. Therefore, OP $\\perp$ PQ.\nThis implies that $\\triangle OPQ$ is a right-angled triangle with the right angle at P.\nWe are given:\nRadius, OP = 5 cm\nDistance from centre to external point, OQ = 12 cm\nWe need to find the length of the tangent PQ.\nUsing the Pythagorean theorem in $\\triangle OPQ$: \n$OP^2 + PQ^2 = OQ^2$\nSubstituting the given values:\n$5^2 + PQ^2 = 12^2$\n$25 + PQ^2 = 144$\n$PQ^2 = 144 - 25$\n$PQ^2 = 119$\n$PQ = \\sqrt{119}$ cm\nThus, the length of PQ is $\\sqrt{119}$ cm.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Circles",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify that the radius is perpendicular to the tangent at the point of contact.",
+            "Recognize that $\\triangle OPQ$ is a right-angled triangle.",
+            "Apply the Pythagorean theorem.",
+            "Calculate the length of the tangent PQ."
+          ]
+        },
+        {
+          "text": "A chord of a circle with a radius of 10 cm subtends a right angle at the center. What is the area of the corresponding major segment? (Use $\\pi = 3.14$)",
+          "type": "MCQ",
+          "options": [
+            "285.5 $\\text{cm}^2$",
+            "235.5 $\\text{cm}^2$",
+            "78.5 $\\text{cm}^2"
+          ],
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Circles"
+        },
+        {
+          "text": "What is the formula for the volume of a right circular cylinder with radius 'r' and height 'h'?",
+          "type": "MCQ",
+          "options": [
+            "$\\pi r^2 h$",
+            "$2\\pi rh$",
+            "$\\frac{1}{3}\\pi r^2 h$",
+            "$2\\pi r(r+h)$"
+          ],
+          "correctAnswer": "$\\pi r^2 h$",
+          "explanation": "The volume of a right circular cylinder is calculated by multiplying the area of its circular base by its height. The area of a circle with radius 'r' is $\\pi r^2$. Therefore, for a cylinder with radius 'r' and height 'h', the volume (V) is given by the formula V = $\\pi r^2 h$.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Surface Areas and Volumes",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the formula for the volume of a right circular cylinder."
+          ]
+        },
+        {
+          "text": "In a survey conducted on the number of hours students spend on recreational activities per week, the mean number of hours was found to be 10.5 hours and the median was 11.2 hours. Using the empirical relationship between the three measures of central tendency, what is the approximate mode of the number of hours spent on recreational activities?",
+          "type": "MCQ",
+          "options": [
+            "12.6 hours",
+            "11.9 hours",
+            "10.8 hours",
+            "9.8 hours"
+          ],
+          "correctAnswer": "12.6 hours",
+          "explanation": "The empirical relationship between the three measures of central tendency is given by:\nMode = 3 Median - 2 Mean\n\nGiven:\nMean = 10.5 hours\nMedian = 11.2 hours\n\nSubstitute the values into the formula:\nMode = 3 * (11.2) - 2 * (10.5)\nMode = 33.6 - 21.0\nMode = 12.6 hours\n\nTherefore, the approximate mode of the number of hours spent on recreational activities is 12.6 hours.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Statistics",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the empirical relationship: Mode = 3 Median - 2 Mean.",
+            "Substitute the given values of Mean and Median into the formula.",
+            "Calculate the value of the Mode."
+          ]
+        },
+        {
+          "text": "From a well-shuffled deck of 52 playing cards, all the face cards (Jacks, Queens, Kings) of hearts are removed. What is the probability of drawing a red card from the remaining cards?",
+          "type": "MCQ",
+          "options": [
+            "$\\frac{23}{52}$",
+            "$\\frac{26}{49}$",
+            "$\\frac{23}{49}$",
+            "$\\frac{1}{2}$"
+          ],
+          "correctAnswer": "$\\frac{23}{49}$",
+          "explanation": "Initially, a standard deck has 52 playing cards.\n\nCards removed: All face cards of hearts.\nThese are: Jack of Hearts, Queen of Hearts, King of Hearts.\nNumber of cards removed = 3.\n\nRemaining number of cards in the deck = Total cards - Cards removed = 52 - 3 = 49.\nThis is the new total number of possible outcomes.\n\nNow, let's find the number of red cards remaining.\nInitially, there are 26 red cards in a deck:\n13 Hearts (red)\n13 Diamonds (red)\n\nThe cards removed were all face cards of hearts. These are red cards.\nNumber of red cards removed = 3.\n\nNumber of red cards remaining = Initial red cards - Red cards removed = 26 - 3 = 23.\nThis is the number of favorable outcomes (drawing a red card).\n\nProbability of drawing a red card = $\\frac{\\text{Number of favorable outcomes}}{\\text{Total number of possible outcomes}}$\nProbability = $\\frac{23}{49}$.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Probability",
+          "hasLatex": true,
+          "keySteps": [
+            "Calculate the total number of cards remaining after removal.",
+            "Calculate the number of red cards remaining after removal.",
+            "Apply the probability formula: P(E) = (Favorable Outcomes) / (Total Outcomes)."
+          ]
+        }
+      ],
+      "marks": 20
+    },
+    "B": {
+      "name": "Section B (VSA)",
+      "questions": [
+        {
+          "text": "Given that the HCF of two numbers 96 and 404 is 4, find their LCM.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "9696",
+          "explanation": "We know that for any two positive integers 'a' and 'b', the product of their HCF and LCM is equal to the product of the numbers themselves.\nThat is, HCF(a, b) × LCM(a, b) = a × b.\n\nGiven numbers are a = 96 and b = 404.\nGiven HCF(96, 404) = 4.\n\nWe need to find LCM(96, 404).\n\nUsing the formula:\n4 × LCM(96, 404) = 96 × 404\nLCM(96, 404) = (96 × 404) / 4\nLCM(96, 404) = 96 × (404 / 4)\nLCM(96, 404) = 96 × 101\nLCM(96, 404) = 9696\n\nThus, the LCM of 96 and 404 is 9696.",
+          "bloomsLevel": "Apply",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the relationship between HCF, LCM, and the product of two numbers: HCF(a, b) × LCM(a, b) = a × b.",
+            "Substitute the given values into the formula and solve for LCM."
+          ]
+        },
+        {
+          "text": "Find the value of the polynomial $P(x) = 2x^2 - 3x + 5$ when $x = -1$.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "10",
+          "explanation": "To find the value of the polynomial $P(x)$ when $x = -1$, substitute $x = -1$ into the given polynomial expression.\n\n$P(x) = 2x^2 - 3x + 5$\nSubstitute $x = -1$:\n$P(-1) = 2(-1)^2 - 3(-1) + 5$\n$P(-1) = 2(1) - (-3) + 5$\n$P(-1) = 2 + 3 + 5$\n$P(-1) = 10$\n\nThus, the value of the polynomial $P(x)$ at $x = -1$ is 10.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Substitute x = -1 into the polynomial expression.",
+            "Perform the arithmetic operations to simplify and find the final value."
+          ]
+        },
+        {
+          "text": "Determine whether the pair of linear equations x - 2y = 0 and 3x + 4y - 20 = 0 is consistent or inconsistent.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "Consistent",
+          "explanation": "For the given pair of linear equations:\nEquation 1: x - 2y = 0\nComparing with a₁x + b₁y + c₁ = 0, we have a₁ = 1, b₁ = -2, c₁ = 0.\n\nEquation 2: 3x + 4y - 20 = 0\nComparing with a₂x + b₂y + c₂ = 0, we have a₂ = 3, b₂ = 4, c₂ = -20.\n\nNow, we compare the ratios of the coefficients:\na₁/a₂ = 1/3\nb₁/b₂ = -2/4 = -1/2\nc₁/c₂ = 0/(-20) = 0\n\nSince a₁/a₂ ≠ b₁/b₂ (i.e., 1/3 ≠ -1/2), the pair of linear equations represents intersecting lines. Intersecting lines have a unique solution. A system of linear equations that has at least one solution is called a consistent system.\n\nTherefore, the given pair of linear equations is consistent.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients a₁, b₁, c₁ and a₂, b₂, c₂ from the given equations.",
+            "Compare the ratios a₁/a₂, b₁/b₂, and c₁/c₂.",
+            "Conclude based on the comparison (a₁/a₂ ≠ b₁/b₂ implies consistent system)."
+          ]
+        },
+        {
+          "text": "Write the values of a, b, and c for the quadratic equation $5x^2 - 3x + 8 = 0$.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "a = 5, b = -3, c = 8",
+          "explanation": "The standard form of a quadratic equation is $ax^2 + bx + c = 0$.\nBy comparing the given equation $5x^2 - 3x + 8 = 0$ with the standard form, we can identify the coefficients:\nCoefficient of $x^2$ is 'a', so $a = 5$.\nCoefficient of $x$ is 'b', so $b = -3$.\nConstant term is 'c', so $c = 8$.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the standard form of a quadratic equation.",
+            "Compare the given equation with the standard form to identify the coefficients."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "What is the common difference of the Arithmetic Progression (AP) whose first three terms are 7, 13, 19?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "6",
+          "explanation": "An Arithmetic Progression (AP) is a sequence of numbers such that the difference between consecutive terms is constant. This constant difference is known as the common difference (d).\n\nGiven the first three terms of the AP are 7, 13, 19.\nLet a₁ = 7 (first term)\nLet a₂ = 13 (second term)\nLet a₃ = 19 (third term)\n\nTo find the common difference (d), we can subtract any term from its succeeding term.\nUsing the first and second terms:\nd = a₂ - a₁\nd = 13 - 7\nd = 6\n\nAlternatively, using the second and third terms:\nd = a₃ - a₂\nd = 19 - 13\nd = 6\n\nSince the difference is constant, the common difference of the given AP is 6.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify the given terms of the AP.",
+            "Calculate the difference between consecutive terms."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 10
+    },
+    "C": {
+      "name": "Section C (SA)",
+      "questions": [
+        {
+          "text": "Prove that $3 + 2\\sqrt{5}$ is an irrational number.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "The proof demonstrates that $3 + 2\\sqrt{5}$ is an irrational number.",
+          "explanation": "To prove that $3 + 2\\sqrt{5}$ is an irrational number, we use the method of contradiction.\n\nStep 1: Assume that $3 + 2\\sqrt{5}$ is a rational number.\nIf $3 + 2\\sqrt{5}$ is rational, then it can be expressed in the form $\\frac{a}{b}$, where $a$ and $b$ are coprime integers and $b \\neq 0$.\nSo, $3 + 2\\sqrt{5} = \\frac{a}{b}$\n\nStep 2: Isolate the irrational term.\nSubtract 3 from both sides:\n$2\\sqrt{5} = \\frac{a}{b} - 3$\n$2\\sqrt{5} = \\frac{a - 3b}{b}$\n\nNow, divide by 2:\n$\\sqrt{5} = \\frac{a - 3b}{2b}$\n\nStep 3: Analyze the nature of the expression.\nSince $a$ and $b$ are integers, $a - 3b$ is an integer, and $2b$ is also a non-zero integer.\nTherefore, the expression $\\frac{a - 3b}{2b}$ is a rational number (as it is a ratio of two integers).\n\nStep 4: Formulate the contradiction.\nFrom the previous step, we have concluded that $\\sqrt{5}$ is a rational number.\nHowever, we know that $\\sqrt{5}$ is an irrational number. (This is a known fact, or can be proven separately if required).\nThis creates a contradiction: a number cannot be both rational and irrational simultaneously.\n\nStep 5: Conclude.\nThe contradiction arose because our initial assumption that $3 + 2\\sqrt{5}$ is rational was false.\nTherefore, $3 + 2\\sqrt{5}$ must be an irrational number.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Assume $3 + 2\\sqrt{5}$ is rational and express it as $a/b$.",
+            "Isolate the $\\sqrt{5}$ term on one side of the equation.",
+            "Show that the isolated $\\sqrt{5}$ term is equal to a rational expression.",
+            "State the contradiction with the known fact that $\\sqrt{5}$ is irrational.",
+            "Conclude that the initial assumption was false, proving $3 + 2\\sqrt{5}$ is irrational."
+          ]
+        },
+        {
+          "text": "If $\\alpha$ and $\\beta$ are the zeros of the quadratic polynomial $f(x) = x^2 - p(x+1) - c$, find the value of $(\\alpha+1)(\\beta+1)$.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "$1-c$",
+          "explanation": "Given polynomial is $f(x) = x^2 - p(x+1) - c$.\nFirst, rewrite the polynomial in the standard form $ax^2 + bx + c$:\n$f(x) = x^2 - px - p - c$\n$f(x) = x^2 - px - (p+c)$\nComparing this with $ax^2 + bx + c$, we have:\n$a = 1$\n$b = -p$\n$c_{constant} = -(p+c)$\n\nFor a quadratic polynomial, the sum of zeros ($\\alpha + \\beta$) and the product of zeros ($\\alpha \\beta$) are given by:\nSum of zeros: $\\alpha + \\beta = -b/a = -(-p)/1 = p$\nProduct of zeros: $\\alpha \\beta = c_{constant}/a = -(p+c)/1 = -(p+c)$\n\nNow, we need to find the value of $(\\alpha+1)(\\beta+1)$.\nExpand the expression:\n$(\\alpha+1)(\\beta+1) = \\alpha\\beta + \\alpha \\cdot 1 + 1 \\cdot \\beta + 1 \\cdot 1$\n$= \\alpha\\beta + \\alpha + \\beta + 1$\n\nSubstitute the values of $\\alpha + \\beta$ and $\\alpha \\beta$ we found:\n$= -(p+c) + p + 1$\n$= -p - c + p + 1$\n$= 1 - c$\n\nThus, the value of $(\\alpha+1)(\\beta+1)$ is $1-c$.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Rewrite the polynomial in standard form $ax^2+bx+c$.",
+            "Identify coefficients $a, b, c$ and find the sum ($\\alpha+\\beta$) and product ($\\alpha\\beta$) of zeros.",
+            "Expand the expression $(\\alpha+1)(\\beta+1)$.",
+            "Substitute the values of $\\alpha+\\beta$ and $\\alpha\\beta$ to find the final result."
+          ]
+        },
+        {
+          "text": "A fruit vendor sells apples and oranges. The total cost of 3 kg of apples and 4 kg of oranges is ₹180. The total cost of 5 kg of apples and 2 kg of oranges is ₹160. Find the cost of 1 kg of apples and 1 kg of oranges.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "The cost of 1 kg of apples is ₹20 and the cost of 1 kg of oranges is ₹30.",
+          "explanation": "Let the cost of 1 kg of apples be ₹x and the cost of 1 kg of oranges be ₹y.\n\nAccording to the first condition given in the problem:\n$3x + 4y = 180 \\quad \\ldots(1)$\n\nAccording to the second condition:\n$5x + 2y = 160 \\quad \\ldots(2)$\n\nWe will use the elimination method to solve this pair of linear equations.\nTo eliminate 'y', multiply Equation (2) by 2 to make the coefficient of 'y' equal to that in Equation (1):\n$2 \\times (5x + 2y) = 2 \\times 160$\n$10x + 4y = 320 \\quad \\ldots(3)$\n\nNow, subtract Equation (1) from Equation (3):\n$(10x + 4y) - (3x + 4y) = 320 - 180$\n$10x - 3x + 4y - 4y = 140$\n$7x = 140$\n$x = \\frac{140}{7}$\n$x = 20$\n\nNow, substitute the value of $x=20$ into Equation (1) to find the value of 'y':\n$3(20) + 4y = 180$\n$60 + 4y = 180$\n$4y = 180 - 60$\n$4y = 120$\n$y = \\frac{120}{4}$\n$y = 30$\n\nTherefore, the cost of 1 kg of apples is ₹20 and the cost of 1 kg of oranges is ₹30.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for the unknown quantities (cost of apples and oranges).",
+            "Formulate two linear equations based on the given conditions.",
+            "Solve the system of equations using an appropriate algebraic method (e.g., elimination or substitution).",
+            "Substitute the value of one variable back into an equation to find the other variable.",
+            "State the final answer with proper units."
+          ]
+        },
+        {
+          "text": "A cottage industry produces a certain number of ceramic pots in a day. On a particular day, it was observed that the cost of production of each pot (in rupees) was 3 more than twice the number of pots produced on that day. If the total cost of production on that day was Rs 90, find the number of pots produced and the cost of each pot.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Number of pots = 6, Cost of each pot = Rs 15",
+          "explanation": "Let the number of pots produced on that day be 'x'.\nAccording to the problem, the cost of production of each pot is 3 more than twice the number of pots produced.\nSo, the cost of each pot = Rs (2x + 3).\n\nThe total cost of production on that day is Rs 90.\nTotal Cost = (Number of pots) × (Cost of each pot)\n90 = x(2x + 3)\n90 = 2x² + 3x\nRearranging the terms, we get the quadratic equation:\n2x² + 3x - 90 = 0\n\nWe can solve this quadratic equation by factorization.\nWe need two numbers whose product is 2 × (-90) = -180 and whose sum is 3.\nThe numbers are 15 and -12 (since 15 × -12 = -180 and 15 - 12 = 3).\n\n2x² + 15x - 12x - 90 = 0\nx(2x + 15) - 6(2x + 15) = 0\n(2x + 15)(x - 6) = 0\n\nThis gives two possible values for x:\n2x + 15 = 0  =>  2x = -15  =>  x = -15/2\nx - 6 = 0    =>  x = 6\n\nSince the number of pots produced cannot be negative, we reject x = -15/2.\nTherefore, the number of pots produced, x = 6.\n\nNow, we find the cost of each pot:\nCost of each pot = 2x + 3 = 2(6) + 3 = 12 + 3 = Rs 15.\n\nThus, the number of pots produced is 6 and the cost of each pot is Rs 15.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for the number of pots and cost of each pot.",
+            "Formulate the quadratic equation based on the given total cost.",
+            "Solve the quadratic equation using factorization or quadratic formula.",
+            "Reject the negative solution and find the valid number of pots.",
+            "Calculate the cost of each pot using the valid number of pots."
+          ]
+        },
+        {
+          "text": "A bricklayer constructs a wall such that the number of bricks in each successive row from the bottom forms an arithmetic progression. The bottom row has 35 bricks and the top row has 17 bricks. If there are a total of 10 rows, find the total number of bricks used in the wall.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "260",
+          "explanation": "Let the number of bricks in the rows form an Arithmetic Progression (AP).\nGiven:\nFirst term (number of bricks in the bottom row), a = 35\nLast term (number of bricks in the top row), l = 17\nTotal number of rows, n = 10\n\nThe total number of bricks used in the wall is the sum of this AP.\nWe use the formula for the sum of n terms of an AP when the first and last terms are known:\nS_n = n/2 * (a + l)\n\nSubstitute the given values into the formula:\nS_10 = 10/2 * (35 + 17)\nS_10 = 5 * (52)\nS_10 = 260\n\nTherefore, the total number of bricks used in the wall is 260.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify the first term (a), last term (l), and number of terms (n) from the problem statement.",
+            "Apply the formula for the sum of an Arithmetic Progression, S_n = n/2 * (a + l).",
+            "Substitute the identified values into the formula and calculate the sum."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "In a trapezium ABCD, with AB parallel to DC, the diagonals AC and BD intersect each other at the point O. If AB = 2CD, find the ratio of the area of triangle AOB to the area of triangle COD.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "4:1",
+          "explanation": "Given: ABCD is a trapezium with AB || DC.\nDiagonals AC and BD intersect at O.\nAB = 2CD.\n\nTo find: Area(ΔAOB) : Area(ΔCOD)\n\nConsider ΔAOB and ΔCOD:\n1. Since AB || DC and AC is a transversal, ∠OAB = ∠OCD (Alternate interior angles).\n2. Since AB || DC and BD is a transversal, ∠OBA = ∠ODC (Alternate interior angles).\n(Alternatively, we could use vertically opposite angles: ∠AOB = ∠COD).\n\nTherefore, by AA similarity criterion, ΔAOB ~ ΔCOD.\n\nWe know that the ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides.\n\nSo, Area(ΔAOB) / Area(ΔCOD) = (AB/CD)²\n\nGiven AB = 2CD.\nSubstitute this into the ratio:\nArea(ΔAOB) / Area(ΔCOD) = (2CD / CD)²\nArea(ΔAOB) / Area(ΔCOD) = (2)²\nArea(ΔAOB) / Area(ΔCOD) = 4/1\n\nThus, the ratio of the area of triangle AOB to the area of triangle COD is 4:1.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Triangles",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify the triangles ΔAOB and ΔCOD for similarity.",
+            "Prove similarity using the AA criterion by identifying alternate interior angles due to AB || DC.",
+            "Apply the theorem stating that the ratio of the areas of two similar triangles is equal to the square of the ratio of their corresponding sides.",
+            "Substitute the given relationship AB = 2CD into the area ratio formula and calculate the final ratio."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 18
+    },
+    "D": {
+      "name": "Section D (LA)",
+      "questions": [
+        {
+          "text": "A mathematics teacher made the following statement to her Class 10 students: 'For any positive integer $n$, if $\\sqrt{n}$ is an irrational number, then $\\sqrt{n+1}$ must also be an irrational number.'\n\nEvaluate the validity of this statement. If the statement is true, provide a rigorous proof. If it is false, provide a counterexample and justify why it disproves the statement, using the definitions of rational and irrational numbers.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "The statement is false. A counterexample is $n=3$. For $n=3$, $\\sqrt{3}$ is an irrational number. However, $\\sqrt{3+1} = \\sqrt{4} = 2$, which is a rational number. This disproves the statement.",
+          "explanation": "To evaluate the validity of the statement, we need to determine if it holds true for all positive integers $n$ where $\\sqrt{n}$ is irrational, or if we can find even one case (a counterexample) where it fails.\n\n**Step 1: Understand the statement.**\nThe statement claims that if $\\sqrt{n}$ is irrational, then $\\sqrt{n+1}$ must also be irrational.\n\n**Step 2: Test some positive integer values of $n$ where $\\sqrt{n}$ is irrational.**\n*   Let's consider $n=2$. We know that $\\sqrt{2}$ is an irrational number. According to the statement, $\\sqrt{2+1} = \\sqrt{3}$ should also be irrational. Indeed, $\\sqrt{3}$ is an irrational number. This case supports the statement, but one supporting case does not prove it true for all $n$.\n\n*   Let's consider $n=3$. We know that $\\sqrt{3}$ is an irrational number. According to the statement, $\\sqrt{3+1}$ should also be irrational. Let's calculate $\\sqrt{3+1}$.\n    $\\sqrt{3+1} = \\sqrt{4} = 2$.\n\n**Step 3: Identify the counterexample.**\nIn the case of $n=3$, we found that $\\sqrt{n} = \\sqrt{3}$ is irrational, but $\\sqrt{n+1} = 2$ is a rational number. This contradicts the teacher's statement.\n\n**Step 4: Justify why this is a valid counterexample using definitions.**\n*   **Definition of an irrational number:** A number that cannot be expressed in the form $p/q$, where $p$ and $q$ are integers and $q \\neq 0$.\n*   **Definition of a rational number:** A number that can be expressed in the form $p/q$, where $p$ and $q$ are integers and $q \\neq 0$.\n\nWe accept that $\\sqrt{3}$ cannot be expressed as a fraction $p/q$ for integers $p,q$ ($q \\neq 0$), hence $\\sqrt{3}$ is an irrational number.\n\nHowever, $\\sqrt{3+1} = \\sqrt{4} = 2$. The number $2$ can be expressed as $2/1$, where $2$ and $1$ are integers and $1 \\neq 0$. Therefore, $2$ is a rational number.\n\n**Step 5: Conclusion.**\nSince we found a positive integer $n=3$ for which $\\sqrt{n}$ (i.e., $\\sqrt{3}$) is irrational, but $\\sqrt{n+1}$ (i.e., $\\sqrt{4}=2$) is rational, the teacher's statement is false. A single counterexample is sufficient to disprove a universal statement.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Understand the given mathematical statement.",
+            "Test the statement with various positive integer values for 'n' where $\\sqrt{n}$ is irrational.",
+            "Identify a counterexample where the condition '$\\sqrt{n}$ is irrational' is met but the conclusion '$\\sqrt{n+1}$ is irrational' is false.",
+            "Clearly state the counterexample (e.g., n=3).",
+            "Justify why $\\sqrt{n}$ for the chosen 'n' is irrational and why $\\sqrt{n+1}$ for the chosen 'n' is rational, using the definitions of rational and irrational numbers.",
+            "Conclude that the statement is false based on the counterexample."
+          ]
+        },
+        {
+          "text": "The polynomial $P(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ is divided by another polynomial $g(x) = x^2 - 2x + k$. The remainder obtained from this division is $x + a$.\n\n(A) Determine the values of $k$ and $a$.\n(B) Using the value of $k$ found in part (A), find all the real zeros of the divisor polynomial $g(x) = x^2 - 2x + k$. If there are no real zeros, state so.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "k = 5, a = -5, The divisor polynomial $x^2 - 2x + 5$ has no real zeros.",
+          "explanation": "Part (A): Determine the values of $k$ and $a$.\nWe perform polynomial long division of $P(x) = x^4 - 6x^3 + 16x^2 - 25x + 10$ by $g(x) = x^2 - 2x + k$.\n\nStep 1: Divide $x^4$ by $x^2$ to get $x^2$.\nMultiply $(x^2 - 2x + k)$ by $x^2$: $x^4 - 2x^3 + kx^2$\nSubtract this from $P(x)$: \n$(x^4 - 6x^3 + 16x^2 - 25x + 10) - (x^4 - 2x^3 + kx^2) = -4x^3 + (16-k)x^2 - 25x + 10$\n\nStep 2: Divide $-4x^3$ by $x^2$ to get $-4x$.\nMultiply $(x^2 - 2x + k)$ by $-4x$: $-4x^3 + 8x^2 - 4kx$\nSubtract this from the current remainder: \n$(-4x^3 + (16-k)x^2 - 25x + 10) - (-4x^3 + 8x^2 - 4kx) = (16-k-8)x^2 + (-25+4k)x + 10 = (8-k)x^2 + (4k-25)x + 10$\n\nStep 3: Divide $(8-k)x^2$ by $x^2$ to get $(8-k)$.\nMultiply $(x^2 - 2x + k)$ by $(8-k)$: $(8-k)x^2 - 2(8-k)x + k(8-k) = (8-k)x^2 - (16-2k)x + (8k-k^2)$\nSubtract this from the current remainder:\n$((8-k)x^2 + (4k-25)x + 10) - ((8-k)x^2 - (16-2k)x + (8k-k^2))$\n$= (4k-25 - (-(16-2k)))x + (10 - (8k-k^2))$\n$= (4k-25 + 16-2k)x + (10 - 8k + k^2)$\n$= (2k-9)x + (k^2 - 8k + 10)$\n\nThe remainder obtained from the division is $(2k-9)x + (k^2 - 8k + 10)$.\nWe are given that the remainder is $x + a$.\n\nComparing the coefficients of $x$:\n$2k - 9 = 1$\n$2k = 10$\n$k = 5$\n\nComparing the constant terms:\n$k^2 - 8k + 10 = a$\nSubstitute the value of $k=5$ into this equation:\n$a = (5)^2 - 8(5) + 10$\n$a = 25 - 40 + 10$\n$a = -15 + 10$\n$a = -5$\n\nSo, the values are $k=5$ and $a=-5$.\n\nPart (B): Find all the real zeros of the divisor polynomial $g(x) = x^2 - 2x + k$.\nSubstitute the value $k=5$ into $g(x)$: \n$g(x) = x^2 - 2x + 5$\n\nTo find the zeros of this quadratic polynomial, we use the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\nHere, $a=1$, $b=-2$, $c=5$.\n\nCalculate the discriminant $D = b^2 - 4ac$:\n$D = (-2)^2 - 4(1)(5)$\n$D = 4 - 20$\n$D = -16$\n\nSince the discriminant $D = -16$ is negative ($D < 0$), the quadratic polynomial $x^2 - 2x + 5$ has no real roots (zeros). The roots are complex conjugates.\n\nTherefore, the divisor polynomial $x^2 - 2x + 5$ has no real zeros.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Perform polynomial long division of P(x) by g(x).",
+            "Identify the remainder in terms of k.",
+            "Equate the coefficients of x and the constant term of the obtained remainder with the given remainder (x+a).",
+            "Solve the system of equations to find k and a.",
+            "Substitute the value of k into the divisor polynomial g(x).",
+            "Find the zeros of the resulting quadratic polynomial using the quadratic formula.",
+            "Determine if the zeros are real based on the discriminant."
+          ]
+        },
+        {
+          "text": "A motorboat can travel 30 km upstream and 28 km downstream in a total of 7 hours. It can also travel 21 km upstream and 21 km downstream in a total of 5 hours.\n\n(a) Determine the speed of the motorboat in still water and the speed of the stream.\n\n(b) If the motorboat has to travel 45 km upstream and 60 km downstream, calculate the total time taken. Also, if the speed of the stream were to increase by 1 km/h (while the boat's speed in still water remains unchanged), how much more time would it take to cover the same 45 km upstream and 60 km downstream?",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Speed of boat in still water: 10 km/h, Speed of stream: 4 km/h.\nTotal time taken for 45 km upstream and 60 km downstream (original speeds): 165/14 hours.\nExtra time taken due to increased stream speed: 17/14 hours.",
+          "explanation": "Let the speed of the motorboat in still water be $x$ km/h and the speed of the stream be $y$ km/h.\nThen, the speed of the boat upstream is $(x - y)$ km/h and the speed of the boat downstream is $(x + y)$ km/h.\n\nWe know that Time = Distance / Speed.\n\n**Part (a): Determine the speed of the motorboat in still water and the speed of the stream.**\n\nAccording to the first condition:\n$ \\frac{30}{x - y} + \\frac{28}{x + y} = 7 $  (Equation 1)\n\nAccording to the second condition:\n$ \\frac{21}{x - y} + \\frac{21}{x + y} = 5 $  (Equation 2)\n\nLet $ \\frac{1}{x - y} = u $ and $ \\frac{1}{x + y} = v $.\nSubstituting these into the equations:\n$ 30u + 28v = 7 $  (Equation 3)\n$ 21u + 21v = 5 $  (Equation 4)\n\nTo solve this system, we can use the elimination method. Multiply Equation 3 by 3 and Equation 4 by 4 to make the coefficient of $v$ the same (LCM of 28 and 21 is 84):\n\n$ 3 \\times (30u + 28v) = 3 \\times 7 \\implies 90u + 84v = 21 $  (Equation 5)\n$ 4 \\times (21u + 21v) = 4 \\times 5 \\implies 84u + 84v = 20 $  (Equation 6)\n\nSubtract Equation 6 from Equation 5:\n$ (90u + 84v) - (84u + 84v) = 21 - 20 $\n$ 6u = 1 $\n$ u = \\frac{1}{6} $\n\nSubstitute the value of $u$ into Equation 4:\n$ 21 \\left( \\frac{1}{6} \\right) + 21v = 5 $\n$ \\frac{7}{2} + 21v = 5 $\n$ 21v = 5 - \\frac{7}{2} $\n$ 21v = \\frac{10 - 7}{2} $\n$ 21v = \\frac{3}{2} $\n$ v = \\frac{3}{2 \\times 21} = \\frac{1}{14} $\n\nNow, substitute back the values of $u$ and $v$:\n$ \\frac{1}{x - y} = u \\implies \\frac{1}{x - y} = \\frac{1}{6} \\implies x - y = 6 $  (Equation 7)\n$ \\frac{1}{x + y} = v \\implies \\frac{1}{x + y} = \\frac{1}{14} \\implies x + y = 14 $  (Equation 8)\n\nAdd Equation 7 and Equation 8:\n$ (x - y) + (x + y) = 6 + 14 $\n$ 2x = 20 $\n$ x = 10 $\n\nSubstitute $x = 10$ into Equation 8:\n$ 10 + y = 14 $\n$ y = 14 - 10 $\n$ y = 4 $\n\nSo, the speed of the motorboat in still water is 10 km/h and the speed of the stream is 4 km/h.\n\n**Part (b): Calculate total time for 45 km upstream and 60 km downstream, and then find the extra time if stream speed increases by 1 km/h.**\n\nUsing the speeds found in part (a):\nSpeed of boat in still water ($x$) = 10 km/h\nSpeed of stream ($y$) = 4 km/h\n\nOriginal upstream speed = $x - y = 10 - 4 = 6$ km/h\nOriginal downstream speed = $x + y = 10 + 4 = 14$ km/h\n\nTime taken to travel 45 km upstream = $ \\frac{45}{6} = \\frac{15}{2} = 7.5 $ hours\nTime taken to travel 60 km downstream = $ \\frac{60}{14} = \\frac{30}{7} $ hours\n\nTotal time taken (T1) for 45 km upstream and 60 km downstream (original speeds):\n$ T_1 = 7.5 + \\frac{30}{7} = \\frac{15}{2} + \\frac{30}{7} = \\frac{15 \\times 7 + 30 \\times 2}{14} = \\frac{105 + 60}{14} = \\frac{165}{14} $ hours.\n\nNow, consider the case where the speed of the stream increases by 1 km/h.\nNew stream speed ($y'$) = $y + 1 = 4 + 1 = 5$ km/h\nSpeed of boat in still water ($x$) remains 10 km/h.\n\nNew upstream speed = $x - y' = 10 - 5 = 5$ km/h\nNew downstream speed = $x + y' = 10 + 5 = 15$ km/h\n\nTime taken to travel 45 km upstream with new speeds = $ \\frac{45}{5} = 9 $ hours\nTime taken to travel 60 km downstream with new speeds = $ \\frac{60}{15} = 4 $ hours\n\nTotal time taken (T2) for 45 km upstream and 60 km downstream (increased stream speed):\n$ T_2 = 9 + 4 = 13 $ hours.\n\nTo find how much more time it would take, calculate the difference $T_2 - T_1$:\nExtra time = $ T_2 - T_1 = 13 - \\frac{165}{14} = \\frac{13 \\times 14 - 165}{14} = \\frac{182 - 165}{14} = \\frac{17}{14} $ hours.\n\nFinal Answer:\n(a) Speed of boat in still water: 10 km/h, Speed of stream: 4 km/h.\n(b) Total time taken for 45 km upstream and 60 km downstream (original speeds): $ \\frac{165}{14} $ hours.\nExtra time taken due to increased stream speed: $ \\frac{17}{14} $ hours.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for boat speed, stream speed, and form expressions for upstream/downstream speeds.",
+            "Formulate the two linear equations in terms of reciprocal variables (e.g., u and v).",
+            "Solve the system of equations for u and v using elimination or substitution.",
+            "Convert u and v back to (x-y) and (x+y) and solve for x (boat speed) and y (stream speed).",
+            "Calculate the total time (T1) for the given distances (45 km upstream, 60 km downstream) using the original speeds.",
+            "Modify the stream speed as per the condition in part (b) and recalculate the new upstream and downstream speeds.",
+            "Calculate the total time (T2) for the same distances using the modified speeds.",
+            "Determine the difference (T2 - T1) to find the extra time taken."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "Two water pipes together can fill a large water tank in $11\\frac{1}{9}$ minutes. If one pipe takes 5 minutes more than the other to fill the tank separately, find the time each pipe would take to fill the tank alone.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "The faster pipe takes 20 minutes and the slower pipe takes 25 minutes to fill the tank separately.",
+          "explanation": "Let the time taken by the faster pipe to fill the tank alone be $x$ minutes.\nThen, the time taken by the slower pipe to fill the tank alone will be $(x+5)$ minutes.\n\nIn one minute:\nWork done by the faster pipe = $\\frac{1}{x}$ of the tank.\nWork done by the slower pipe = $\\frac{1}{x+5}$ of the tank.\n\nGiven that both pipes together can fill the tank in $11\\frac{1}{9}$ minutes.\n$11\\frac{1}{9} = \\frac{11 \\times 9 + 1}{9} = \\frac{99+1}{9} = \\frac{100}{9}$ minutes.\n\nIn one minute, the work done by both pipes together = $\\frac{1}{\\frac{100}{9}} = \\frac{9}{100}$ of the tank.\n\nAccording to the problem, the sum of their individual work rates equals their combined work rate:\n$\\frac{1}{x} + \\frac{1}{x+5} = \\frac{9}{100}$\n\nTo solve this equation, find a common denominator on the left side:\n$\\frac{(x+5) + x}{x(x+5)} = \\frac{9}{100}$\n\n$\\frac{2x+5}{x^2+5x} = \\frac{9}{100}$\n\nCross-multiply to eliminate the denominators:\n$100(2x+5) = 9(x^2+5x)$\n$200x + 500 = 9x^2 + 45x$\n\nRearrange the terms to form a standard quadratic equation ($ax^2 + bx + c = 0$):\n$9x^2 + 45x - 200x - 500 = 0$\n$9x^2 - 155x - 500 = 0$\n\nNow, solve this quadratic equation using the quadratic formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$.\nHere, $a=9$, $b=-155$, $c=-500$.\n\nDiscriminant $D = b^2 - 4ac = (-155)^2 - 4(9)(-500)$\n$D = 24025 + 18000$\n$D = 42025$\n\n$\\sqrt{D} = \\sqrt{42025} = 205$\n\nNow, find the values of $x$:\n$x = \\frac{-(-155) \\pm 205}{2(9)}$\n$x = \\frac{155 \\pm 205}{18}$\n\nTwo possible solutions for $x$:\n$x_1 = \\frac{155 + 205}{18} = \\frac{360}{18} = 20$\n$x_2 = \\frac{155 - 205}{18} = \\frac{-50}{18} = -\\frac{25}{9}$\n\nSince time cannot be negative, we reject $x = -\\frac{25}{9}$.\nTherefore, the time taken by the faster pipe to fill the tank alone is $x = 20$ minutes.\n\nThe time taken by the slower pipe to fill the tank alone is $x+5 = 20+5 = 25$ minutes.\n\nFinal Answer: The faster pipe takes 20 minutes and the slower pipe takes 25 minutes to fill the tank separately.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for the time taken by each pipe.",
+            "Express the individual work rates and combined work rate.",
+            "Formulate the quadratic equation based on the given information.",
+            "Solve the quadratic equation using the quadratic formula.",
+            "Interpret the solutions and reject the physically impossible value (negative time).",
+            "State the final time taken by each pipe."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 20
+    },
+    "E": {
+      "name": "Section E (Case-Study)",
+      "questions": [
+        {
+          "text": "A city planner is designing a new public park. They have 240 red rose bushes and 336 yellow rose bushes. They want to arrange these bushes in rows such that each row has the same number of bushes and contains only one type of rose. Also, the number of bushes in each row should be the maximum possible.\n\nBased on the above information, answer the following questions:\n\n(i) What is the maximum number of rose bushes that can be planted in each row? (1 Mark)\n(ii) If the park also has two fountains, one that sprays water every 18 seconds and another every 24 seconds. If they both start spraying at the same time, after how many seconds will they both spray together again for the first time? (1 Mark)\n(iii) The ratio of the length to the width of a special rectangular section of the park is given by \\(\\frac{13}{125}\\). Determine if its decimal expansion is terminating or non-terminating. Justify your answer. (2 Marks)",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "",
+          "explanation": "(i) To find the maximum number of rose bushes that can be planted in each row, we need to find the Highest Common Factor (HCF) of 240 and 336.\nPrime factorization of 240: \n240 = 2 × 120 = 2 × 2 × 60 = 2 × 2 × 2 × 30 = 2 × 2 × 2 × 2 × 15 = 2^4 × 3 × 5\nPrime factorization of 336: \n336 = 2 × 168 = 2 × 2 × 84 = 2 × 2 × 2 × 42 = 2 × 2 × 2 × 2 × 21 = 2^4 × 3 × 7\nHCF (240, 336) = Product of the smallest power of each common prime factor\nHCF (240, 336) = 2^4 × 3 = 16 × 3 = 48\nSo, the maximum number of rose bushes that can be planted in each row is 48.\n\n(ii) To find when both fountains will spray together again for the first time, we need to find the Least Common Multiple (LCM) of 18 and 24.\nPrime factorization of 18: 18 = 2 × 3^2\nPrime factorization of 24: 24 = 2^3 × 3\nLCM (18, 24) = Product of the greatest power of each prime factor involved\nLCM (18, 24) = 2^3 × 3^2 = 8 × 9 = 72\nSo, both fountains will spray together again after 72 seconds.\n\n(iii) To determine if the decimal expansion of \\(\\frac{13}{125}\\) is terminating or non-terminating, we examine the prime factors of the denominator.\nThe given fraction is \\(\\frac{13}{125}\\).\nThe denominator is 125.\nPrime factorization of 125: 125 = 5 × 25 = 5 × 5 × 5 = 5^3.\nSince the prime factorization of the denominator (125) is of the form \\(2^n \\times 5^m\\) (here, n=0 and m=3), the decimal expansion of \\(\\frac{13}{125}\\) is terminating.\nJustification: A rational number \\(\\frac{p}{q}\\) (where p and q are coprime integers and q \\(\\neq\\) 0) has a terminating decimal expansion if and only if the prime factorization of the denominator q is of the form \\(2^n \\times 5^m\\), where n and m are non-negative integers. In this case, the denominator 125 = \\(5^3\\), which fits the form \\(2^0 \\times 5^3\\). Therefore, its decimal expansion is terminating.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "For (i), find the prime factorization of 240 and 336.",
+            "Calculate the HCF of 240 and 336.",
+            "For (ii), find the prime factorization of 18 and 24.",
+            "Calculate the LCM of 18 and 24.",
+            "For (iii), find the prime factorization of the denominator 125.",
+            "Check if the prime factors of the denominator are only 2 and/or 5.",
+            "Conclude whether the decimal expansion is terminating or non-terminating based on the prime factors."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A company manufactures decorative parabolic arches for garden entrances. The shape of an arch can be modeled by a quadratic polynomial `p(x) = ax^2 + bx + c`. The designer has specified that a particular arch should be 6 meters wide at its base and 4.5 meters high at its center. The base of the arch rests on the ground, and for modeling purposes, the center of the base is considered the origin (0,0), making the vertex of the parabola at (0, 4.5).\n\nBased on the given information, answer the following questions:\n\n(i) What are the zeros of the polynomial that models this arch? (1 mark)\n(ii) Determine the equation of the quadratic polynomial that models the arch. (1 mark)\n(iii) The company wants to add a horizontal support beam at a height of 3 meters. What is the length of this support beam? (1 mark)\n(iv) If the arch was designed to be 8 meters wide but still 4.5 meters high at its center (vertex at (0, 4.5)), would the arch appear flatter or steeper than the original design? Justify your answer. (1 mark)",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for detailed answers to all sub-parts.",
+          "explanation": "(i) Zeros of the polynomial:\nSince the base of the arch is 6 meters wide and its center is at the origin (0,0), the arch meets the ground at x-coordinates that are 3 meters to the left and 3 meters to the right of the center. Therefore, the points where the arch meets the ground are (-3, 0) and (3, 0). These x-coordinates are the zeros of the polynomial.\nSo, the zeros are -3 and 3.\n\n(ii) Equation of the quadratic polynomial:\nIf the zeros of the polynomial are `\\alpha` and `\\beta`, the polynomial can be written in the form `p(x) = k(x - \\alpha)(x - \\beta)`.\nHere, `\\alpha = -3` and `\\beta = 3`.\nSo, `p(x) = k(x - (-3))(x - 3) = k(x + 3)(x - 3) = k(x^2 - 9)`.\nThe vertex of the arch is at (0, 4.5). This means `p(0) = 4.5`.\nSubstitute x = 0 into the equation: `p(0) = k(0^2 - 9) = k(-9)`.\nWe have `k(-9) = 4.5`.\n`k = \\frac{4.5}{-9} = -\\frac{1}{2}` or `-0.5`.\nTherefore, the equation of the quadratic polynomial is `p(x) = -0.5(x^2 - 9)` which simplifies to `p(x) = -0.5x^2 + 4.5`.\n\n(iii) Length of the horizontal support beam:\nThe support beam is at a height of 3 meters. So, we need to find the x-values for which `p(x) = 3`.\n`-0.5x^2 + 4.5 = 3`\n`-0.5x^2 = 3 - 4.5`\n`-0.5x^2 = -1.5`\n`x^2 = \\frac{-1.5}{-0.5}`\n`x^2 = 3`\n`x = \\pm \\sqrt{3}`\nThe x-coordinates where the beam meets the arch are `-\\sqrt{3}` and `\\sqrt{3}`.\nThe length of the support beam is the distance between these two points: `\\sqrt{3} - (-\\sqrt{3}) = 2\\sqrt{3}` meters.\n\n(iv) Comparison of arch flatness/steepness:\nOriginal design polynomial: `p(x) = -0.5x^2 + 4.5`. The leading coefficient is `a_1 = -0.5`.\nNew design: Arch is 8 meters wide and 4.5 meters high at its center (vertex at (0, 4.5)).\nThis means the zeros are at `\\pm 4`.\nThe polynomial for the new design would be `p_2(x) = k(x - 4)(x + 4) = k(x^2 - 16)`.\nSince `p_2(0) = 4.5`, we have `k(0^2 - 16) = 4.5`.\n`k(-16) = 4.5`\n`k = \\frac{4.5}{-16} = -\\frac{9}{32}`.\nSo, the new polynomial is `p_2(x) = -\\frac{9}{32}x^2 + 4.5`. The leading coefficient is `a_2 = -\\frac{9}{32} \\approx -0.28125`.\nThe absolute value of the leading coefficient `|a|` determines the width of the parabola. A smaller `|a|` means a wider (flatter) parabola, and a larger `|a|` means a narrower (steeper) parabola.\nComparing `|a_1| = |-0.5| = 0.5` and `|a_2| = |-\\frac{9}{32}| \\approx 0.28125`.\nSince `0.28125 < 0.5`, the absolute value of the leading coefficient for the new design is smaller.\nTherefore, the new arch would appear **flatter** than the original design.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify zeros from width and center.",
+            "Use zeros and vertex to form polynomial equation `p(x) = k(x-alpha)(x-beta)`.",
+            "Solve for 'k' using the vertex point.",
+            "Substitute height into the polynomial to find corresponding x-values.",
+            "Calculate the distance between x-values to find beam length.",
+            "Determine leading coefficient for both original and new designs.",
+            "Compare absolute values of leading coefficients to determine flatness/steepness."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A lending library has a fixed charge for the first three days and an additional charge for each day thereafter. Sarita paid ₹27 for a book kept for seven days, while Sushmita paid ₹21 for the book she kept for five days.\n\nBased on the above information, answer the following questions:\n\n(i) Formulate a pair of linear equations in two variables for this situation. (1 mark)\n(ii) Find the fixed charge and the additional charge for each day. (2 marks)\n(iii) How much would a student have to pay for a book kept for nine days? (1 mark)",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "(i) `x + 4y = 27`, `x + 2y = 21`\n(ii) Fixed charge = `₹15`, Additional charge = `₹3`\n(iii) Total cost for 9 days = `₹33`",
+          "explanation": "Let the fixed charge for the first three days be `₹x` and the additional charge for each day thereafter be `₹y`.\n\n(i) Formulation of linear equations:\nSarita kept the book for seven days. This means she paid the fixed charge for the first three days and an additional charge for `7 - 3 = 4` days. So, the equation for Sarita is:\n`x + 4y = 27`  (Equation 1)\n\nSushmita kept the book for five days. This means she paid the fixed charge for the first three days and an additional charge for `5 - 3 = 2` days. So, the equation for Sushmita is:\n`x + 2y = 21`  (Equation 2)\n\n(ii) Finding the fixed and additional charges:\nWe have the system of equations:\n1. `x + 4y = 27`\n2. `x + 2y = 21`\n\nSubtract Equation 2 from Equation 1:\n`(x + 4y) - (x + 2y) = 27 - 21`\n`x + 4y - x - 2y = 6`\n`2y = 6`\n`y = 3`\n\nSubstitute the value of `y = 3` into Equation 2:\n`x + 2(3) = 21`\n`x + 6 = 21`\n`x = 21 - 6`\n`x = 15`\n\nTherefore, the fixed charge is `₹15` and the additional charge for each day thereafter is `₹3`.\n\n(iii) Cost for keeping the book for nine days:\nFor nine days, the student would pay the fixed charge for the first three days and an additional charge for `9 - 3 = 6` days.\nTotal cost = Fixed charge + (Number of additional days $\\times$ Additional charge per day)\nTotal cost = `x + 6y`\nTotal cost = `15 + 6(3)`\nTotal cost = `15 + 18`\nTotal cost = `₹33`\n\nA student would have to pay `₹33` for a book kept for nine days.",
+          "bloomsLevel": "Apply",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for fixed and additional charges.",
+            "Formulate two linear equations based on the given information.",
+            "Solve the system of linear equations to find the values of the variables (fixed and additional charges).",
+            "Calculate the total cost for a new scenario (9 days) using the found charges."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 12
+    }
+  },
+  "metadata": {
+    "board": "CBSE",
+    "class": 10,
+    "subject": "Mathematics",
+    "totalQuestions": 38,
+    "totalMarks": 80,
+    "duration": 180,
+    "generationMethod": "RAG+LLM",
+    "llmModel": "gemini-2.5-flash",
+    "chaptersUsed": [
+      "Real Numbers",
+      "Polynomials",
+      "Pair of Linear Equations in Two Variables",
+      "Quadratic Equations",
+      "Arithmetic Progressions",
+      "Triangles",
+      "Coordinate Geometry",
+      "Introduction to Trigonometry",
+      "Applications of Trigonometry",
+      "Circles",
+      "Areas Related to Circles",
+      "Surface Areas and Volumes",
+      "Statistics",
+      "Probability"
+    ],
+    "generationTimeMs": 410489
+  }
+}

@@ -130,45 +130,6 @@ def get_flashcard_prompt(context: str, count: int) -> str:
     """
     return prompt
 
-# def get_tutor_prompt(query: str, context: str, history: list, mode: str) -> str:
-#     # Build conversation context
-#     history_text = ""
-#     if history:
-#         history_text = "\n**PREVIOUS CONVERSATION:**\n"
-#         for msg in history[-3:]:  # Last 3 messages only
-#             # Handle Pydantic model access vs dict access
-#             role = getattr(msg, 'role', 'user') if hasattr(msg, 'role') else msg.get('role', 'user')
-#             text = getattr(msg, 'text', '') if hasattr(msg, 'text') else msg.get('text', '')
-#             history_text += f"{role}: {text}\n"
-
-#     role_desc = "You are a helpful, encouraging Tutor."
-#     extra_instructions = "Be simple, direct, use analogies."
-    
-#     if mode == "teacher_sme":
-#         role_desc = "You are a Pedagogical Expert assisting a teacher."
-#         extra_instructions = """
-#         1. Concept Clarification: Explain depth.
-#         2. Teaching Strategy: Suggest how to teach it.
-#         3. Common Misconceptions: List student pitfalls.
-#         """
-        
-#     prompt = f"""
-#     {role_desc}
-    
-#     {history_text}
-    
-#     CONTEXT from Textbook:
-#     {context}
-    
-#     USER QUESTION: {query}
-    
-#     INSTRUCTIONS:
-#     1. Answer based ONLY on the context.
-#     2. {extra_instructions}
-    
-#     Answer:
-#     """
-#     return prompt
 def get_tutor_prompt(query: str, context: str, history: list, mode: str) -> str:
     # Build conversation context
     history_text = ""

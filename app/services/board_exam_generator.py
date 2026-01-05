@@ -29,9 +29,9 @@ class BoardExamGenerator:
     """
     
     def __init__(self):
-        # ✅ RELAXED for MVP: Accept all questions, improve quality later
-        self.quality_threshold = 0.0  # Was: BOARD_QUALITY_THRESHOLD (0.85)
-        self.over_fetch_ratio = 5.0   # Was: 2.0 - Fetch more to ensure enough
+        # ✅ FIXED: Restored quality threshold for production
+        self.quality_threshold = 0.75  # Accept questions with 75%+ quality score
+        self.over_fetch_ratio = 1.5    # 50% extra for deduplication/quality filtering
     
     async def generate(self, template_id: str) -> Dict:
         start_time = time.time()
@@ -252,30 +252,81 @@ class BoardExamGenerator:
 
     def _calculate_section_blooms(self, section: Dict, overall_blooms: Dict, count: int) -> Dict[str, int]:
         """
-        Distributes questions across Bloom's taxonomy levels.
+        Section-specific Bloom's taxonomy distribution.
+        Different question types require different cognitive levels.
         
         Args:
-            section: Section configuration
-            overall_blooms: Template-level Bloom's distribution (percentages)
+            section: Section configuration with question_type
+            overall_blooms: Template-level Bloom's distribution (fallback)
             count: Number of questions in this section
             
         Returns:
             Dictionary mapping Bloom's level to question count
         """
+        section_type = section.get("question_type", "MCQ")
+        
+        # Section-specific Bloom's distribution percentages
+        if section_type == "MCQ" or section_type == "AR":
+            # Objective questions favor lower-order thinking
+            percentages = {
+                "Remember": 60,
+                "Understand": 30,
+                "Apply": 10,
+                "Analyze": 0,
+                "Evaluate": 0
+            }
+        elif section_type == "VSA":
+            # Very Short Answer - mixed lower/mid level
+            percentages = {
+                "Remember": 30,
+                "Understand": 40,
+                "Apply": 20,
+                "Analyze": 10,
+                "Evaluate": 0
+            }
+        elif section_type == "SA":
+            # Short Answer - mid level thinking
+            percentages = {
+                "Remember": 10,
+                "Understand": 25,
+                "Apply": 40,
+                "Analyze": 20,
+                "Evaluate": 5
+            }
+        elif section_type == "LA":
+            # Long Answer - higher-order thinking
+            percentages = {
+                "Remember": 0,
+                "Understand": 10,
+                "Apply": 35,
+                "Analyze": 45,
+                "Evaluate": 10
+            }
+        elif section_type == "CASE_BASED" or section_type == "CASE":
+            # Case-based - application and analysis
+            percentages = {
+                "Remember": 0,
+                "Understand": 15,
+                "Apply": 35,
+                "Analyze": 40,
+                "Evaluate": 10
+            }
+        else:
+            # Fallback to overall_blooms
+            percentages = overall_blooms
+        
+        # Convert percentages to counts
         dist = {}
         total_assigned = 0
+        sorted_items = sorted(percentages.items(), key=lambda x: x[1], reverse=True)
         
-        # Sort by percentage (descending) to handle largest chunks first
-        sorted_blooms = sorted(overall_blooms.items(), key=lambda x: x[1], reverse=True)
-        
-        # Assign proportional counts to each level
-        for level, pct in sorted_blooms[:-1]:
+        for level, pct in sorted_items[:-1]:
             num = round((pct / 100) * count)
             dist[level] = num
             total_assigned += num
         
-        # Assign remainder to last level (ensures sum matches exactly)
-        last_level = sorted_blooms[-1][0]
+        # Assign remainder to last level
+        last_level = sorted_items[-1][0]
         dist[last_level] = max(0, count - total_assigned)
         
         return dist

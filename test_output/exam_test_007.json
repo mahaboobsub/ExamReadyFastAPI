@@ -1,0 +1,799 @@
+{
+  "sections": {
+    "A": {
+      "name": "Section A (MCQ & AR)",
+      "questions": [
+        {
+          "text": "A rational number has a terminating decimal expansion if the prime factorization of its denominator (when the fraction is in its simplest form) is of the form 2ᵐ × 5ⁿ, where m and n are non-negative integers. Based on this, which of the following rational numbers has a non-terminating repeating decimal expansion?",
+          "type": "MCQ",
+          "options": [
+            "A) (13/320)",
+            "B) (17/625)",
+            "C) (23/200)",
+            "D) (11/150)"
+          ],
+          "correctAnswer": "D) (11/150)",
+          "explanation": "To determine if a rational number has a terminating or non-terminating repeating decimal expansion, we need to examine the prime factorization of its denominator when the fraction is in its simplest form.\n\n1.  **Option A) (13/320)**: The denominator is 320. Prime factorization of 320 is 2⁶ × 5¹. Since the denominator is of the form 2ᵐ × 5ⁿ, this fraction has a terminating decimal expansion.\n2.  **Option B) (17/625)**: The denominator is 625. Prime factorization of 625 is 5⁴. Since the denominator is of the form 2ᵐ × 5ⁿ (here m=0), this fraction has a terminating decimal expansion.\n3.  **Option C) (23/200)**: The denominator is 200. Prime factorization of 200 is 2³ × 5². Since the denominator is of the form 2ᵐ × 5ⁿ, this fraction has a terminating decimal expansion.\n4.  **Option D) (11/150)**: The denominator is 150. Prime factorization of 150 is 2 × 3 × 5². Since the prime factorization of the denominator includes a prime factor (3) other than 2 or 5, this fraction has a non-terminating repeating decimal expansion.\n\nTherefore, (11/150) has a non-terminating repeating decimal expansion.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Understand the condition for terminating decimal expansions.",
+            "Find the prime factorization of the denominator for each option.",
+            "Identify the fraction whose denominator contains prime factors other than 2 or 5."
+          ]
+        },
+        {
+          "text": "If the product of two positive integers is 576 and their Least Common Multiple (LCM) is 144, what is their Highest Common Factor (HCF)?",
+          "type": "MCQ",
+          "options": [
+            "A) 2",
+            "B) 4",
+            "C) 8",
+            "D) 12"
+          ],
+          "correctAnswer": "B) 4",
+          "explanation": "For any two positive integers, say 'a' and 'b', the product of the numbers is equal to the product of their HCF and LCM.\nThat is, a × b = text{HCF}(a,b) × text{LCM}(a,b).\n\nGiven:\nProduct of two positive integers (a × b) = 576\nLeast Common Multiple (LCM) = 144\n\nWe need to find the Highest Common Factor (HCF).\n\nUsing the formula:\n576 = text{HCF} × 144\n\nTo find HCF, we divide the product by the LCM:\ntext{HCF} = (576/144)\n\nPerforming the division:\n576 ÷ 144 = 4\n\nSo, the HCF of the two positive integers is 4.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the relationship between product of two numbers, their HCF, and LCM.",
+            "Substitute the given values into the formula.",
+            "Solve for the unknown HCF."
+          ]
+        },
+        {
+          "text": "Assertion (A): The number 6ⁿ, where n is a natural number, can never end with the digit 0.\nReason (R): A number ends with the digit 0 if and only if its prime factorization contains both 2 and 5.",
+          "type": "AR",
+          "options": [
+            "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+            "Both Assertion (A) and Reason (R) are true but Reason (R) is not the correct explanation of Assertion (A).",
+            "Assertion (A) is true but Reason (R) is false.",
+            "Assertion (A) is false but Reason (R) is true."
+          ],
+          "correctAnswer": "Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "explanation": "Assertion (A): For a number to end with the digit 0, it must be divisible by 10, which means its prime factorization must contain both 2 and 5. The prime factorization of 6ⁿ is (2 × 3)^n = 2ⁿ × 3ⁿ. This factorization contains the prime factor 2 but not the prime factor 5. Therefore, according to the Fundamental Theorem of Arithmetic, 6ⁿ cannot have 5 as a factor, and thus can never end with the digit 0. So, Assertion (A) is true.\n\nReason (R): This statement is a fundamental property derived from the Fundamental Theorem of Arithmetic. If a number ends with 0, it is divisible by 10, meaning it has prime factors 2 and 5. Conversely, if a number's prime factorization includes both 2 and 5, it is divisible by 10, and therefore ends with 0. So, Reason (R) is true.\n\nSince the Reason (R) correctly explains why 6ⁿ cannot end with the digit 0 by stating the necessary condition for a number to end with 0, Reason (R) is the correct explanation for Assertion (A).",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Analyze the prime factorization of 6ⁿ.",
+            "Determine the condition for a number to end with the digit 0.",
+            "Compare the prime factors of 6ⁿ with the required condition.",
+            "Evaluate the truthfulness of Assertion (A) and Reason (R).",
+            "Determine if Reason (R) correctly explains Assertion (A)."
+          ]
+        },
+        {
+          "text": "For the quadratic polynomial p(x) = 3x² - 5x + 7, what is the sum of its zeroes?",
+          "type": "MCQ",
+          "options": [
+            "A) 7/3",
+            "B) -7/3",
+            "C) 5/3",
+            "D) -5/3"
+          ],
+          "correctAnswer": "C) 5/3",
+          "explanation": "For a quadratic polynomial of the form ax² + bx + c, the sum of its zeroes (α + β) is given by the formula -b/a. \nIn the given polynomial p(x) = 3x² - 5x + 7, we can identify the coefficients as: \na = 3 (coefficient of x²)\nb = -5 (coefficient of x)\nc = 7 (constant term)\nSubstituting these values into the formula for the sum of zeroes:\nSum of zeroes = -b/a = -(-5)/3 = 5/3.\nThus, the sum of the zeroes of the polynomial 3x² - 5x + 7 is 5/3.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a, b, and c from the given quadratic polynomial.",
+            "Apply the formula for the sum of zeroes of a quadratic polynomial, which is -b/a."
+          ]
+        },
+        {
+          "text": "A quadratic polynomial has the sum of its zeroes as 4 and the product of its zeroes as -5. Which of the following represents the quadratic polynomial?",
+          "type": "MCQ",
+          "options": [
+            "A) x² + 4x - 5",
+            "B) x² - 4x + 5",
+            "C) x² - 4x - 5",
+            "D) x² + 4x + 5"
+          ],
+          "correctAnswer": "C) x² - 4x - 5",
+          "explanation": "If α and β are the zeroes of a quadratic polynomial, then the polynomial can be expressed in the form k(x² - (α+β)x + αβ), where k is any non-zero real number. \nGiven values:\nSum of zeroes (α+β) = 4\nProduct of zeroes (αβ) = -5\nSubstitute these values into the general form of the quadratic polynomial:\nPolynomial = k(x² - (4)x + (-5))\nPolynomial = k(x² - 4x - 5)\nFor simplicity, we can take k=1 to find the standard form of the polynomial.\nTherefore, the quadratic polynomial is x² - 4x - 5.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the general formula for a quadratic polynomial given the sum and product of its zeroes: k(x² - (text{sum of zeroes})x + (text{product of zeroes})).",
+            "Substitute the given sum of zeroes (4) and product of zeroes (-5) into the formula.",
+            "Simplify the expression, usually by taking k=1, to find the specific polynomial."
+          ]
+        },
+        {
+          "text": "Assertion (A): If the sum of the zeroes of the quadratic polynomial p(x) = 2x² - 7x + 3 is 3.5, then the product of its zeroes is 1.5. \n\nReason (R): For a quadratic polynomial ax² + bx + c, the sum of the zeroes is (-b/a) and the product of the zeroes is (c/a).",
+          "type": "AR",
+          "options": [
+            "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+            "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is not the correct explanation of Assertion (A).",
+            "(C) Assertion (A) is true but Reason (R) is false.",
+            "(D) Assertion (A) is false but Reason (R) is true."
+          ],
+          "correctAnswer": "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+          "explanation": "For the given quadratic polynomial p(x) = 2x² - 7x + 3, we have coefficients a=2, b=-7, and c=3.\n\nAccording to the formulas for the sum and product of zeroes of a quadratic polynomial ax² + bx + c, as stated in Reason (R):\nSum of zeroes (α + β) = (-b/a)\nProduct of zeroes (α β) = (c/a)\n\nLet's verify the Assertion (A):\nSum of zeroes for p(x) = (-(-7)/2) = (7/2) = 3.5.\nProduct of zeroes for p(x) = (3/2) = 1.5.\n\nThe Assertion states that if the sum of zeroes is 3.5, then the product of zeroes is 1.5. Both conditions (sum = 3.5 and product = 1.5) are true for the given polynomial based on our calculations. Therefore, Assertion (A) is true.\n\nReason (R) correctly states the general formulas for the sum and product of zeroes of a quadratic polynomial ax² + bx + c. This general statement is mathematically correct and provides the theoretical basis for calculating the sum and product of zeroes, which were used to verify Assertion (A).\n\nSince Reason (R) provides the correct formulas that directly explain how the values in Assertion (A) are derived, Reason (R) is the correct explanation for Assertion (A).\n\nThus, both Assertion (A) and Reason (R) are true, and Reason (R) is the correct explanation of Assertion (A).",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients a, b, c from the given polynomial.",
+            "Apply the formula for the sum of zeroes (-b/a).",
+            "Apply the formula for the product of zeroes (c/a).",
+            "Verify if the values calculated match the statement in Assertion (A).",
+            "Evaluate the correctness of Reason (R) as a general mathematical statement.",
+            "Determine if Reason (R) correctly explains Assertion (A)."
+          ]
+        },
+        {
+          "text": "What is an inconsistent pair of linear equations?",
+          "type": "MCQ",
+          "options": [
+            "A pair of equations with a unique solution.",
+            "A pair of equations with infinitely many solutions.",
+            "A pair of equations with no solution.",
+            "A pair of equations where the lines coincide."
+          ],
+          "correctAnswer": "A pair of equations with no solution.",
+          "explanation": "According to the NCERT definition, a pair of linear equations which has no solution, is called an inconsistent pair of linear equations. Graphically, the lines representing such a pair of equations are parallel.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of an inconsistent pair of linear equations."
+          ]
+        },
+        {
+          "text": "If a pair of linear equations in two variables has a unique solution, what can be concluded about the lines representing these equations graphically?",
+          "type": "MCQ",
+          "options": [
+            "The lines are parallel.",
+            "The lines coincide.",
+            "The lines intersect at a single point.",
+            "The lines are perpendicular."
+          ],
+          "correctAnswer": "The lines intersect at a single point.",
+          "explanation": "For a pair of linear equations in two variables, if the lines representing the equations intersect at a single point, then that point gives the unique solution of the two equations. In this case, the pair of equations is consistent.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the graphical interpretation of a unique solution for a pair of linear equations."
+          ]
+        },
+        {
+          "text": "Which of the following equations, after simplification, represents a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "(x + 1)(2x - 3) = x(x - 5)",
+            "x(x + 3) + 7 = x² - 2x + 1",
+            "(x + 2)² = x² + 4x + 4",
+            "x³ - 4 = (x -"
+          ],
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations"
+        },
+        {
+          "text": "Which of the following equations, when simplified, represents a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "A) x(x + 3) = x² + 5",
+            "B) (x + 2)^2 = x² - 5",
+            "C) (x - 1)^2 = x² - 4x + 3",
+            "D) x(2x + 1) = (x + 1)(x - 2)"
+          ],
+          "correctAnswer": "D) x(2x + 1) = (x + 1)(x - 2)",
+          "explanation": "To determine which equation is quadratic, we need to simplify each option and check if it can be written in the standard form ax² + bx + c = 0, where a ≠ 0.\n\nA) x(x + 3) = x² + 5\n   x² + 3x = x² + 5\n   3x = 5\n   3x - 5 = 0\n   This is a linear equation, not quadratic.\n\nB) (x + 2)^2 = x² - 5\n   x² + 4x + 4 = x² - 5\n   4x + 4 = -5\n   4x + 9 = 0\n   This is a linear equation, not quadratic.\n\nC) (x - 1)^2 = x² - 4x + 3\n   x² - 2x + 1 = x² - 4x + 3\n   -2x + 1 = -4x + 3\n   -2x + 4x + 1 - 3 = 0\n   2x - 2 = 0\n   This is a linear equation, not quadratic.\n\nD) x(2x + 1) = (x + 1)(x - 2)\n   2x² + x = x² - 2x + x - 2\n   2x² + x = x² - x - 2\n   2x² - x² + x + x + 2 = 0\n   x² + 2x + 2 = 0\n   This equation is of the form ax² + bx + c = 0 with a=1 ≠ 0, so it is a quadratic equation.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Simplify each given equation by expanding and combining like terms.",
+            "Check if the simplified equation is of the form ax^"
+          ]
+        },
+        {
+          "text": "What is the common difference of the Arithmetic Progression (AP): 5, 9, 13, 17, ...?",
+          "type": "MCQ",
+          "options": [
+            "3",
+            "4",
+            "5",
+            "9"
+          ],
+          "correctAnswer": "4",
+          "explanation": "An arithmetic progression (AP) is a list of numbers in which each term is obtained by adding a fixed number to the preceding term. This fixed number is called the common difference (d).\nTo find the common difference, we subtract any term from its succeeding term.\nFor the given AP: 5, 9, 13, 17, ...\nCommon difference (d) = Second term - First term = 9 - 5 = 4.\nAlternatively, d = Third term - Second term = 13 - 9 = 4.\nAnd, d = Fourth term - Third term = 17 - 13 = 4.\nSince the difference between consecutive terms is constant, the common difference of the given AP is 4.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of common difference.",
+            "Calculate the difference between any term and its preceding term."
+          ]
+        },
+        {
+          "text": "Which of the following conditions must be satisfied for two triangles to be similar?",
+          "type": "MCQ",
+          "options": [
+            "A) Their corresponding angles are equal and their corresponding sides are equal.",
+            "B) Their corresponding angles are equal and their corresponding sides are proportional.",
+            "C) Their corresponding angles are proportional and their corresponding sides are equal.",
+            "D) Their corresponding angles are proportional and their corresponding sides are proportional."
+          ],
+          "correctAnswer": "B) Their corresponding angles are equal and their corresponding sides are proportional.",
+          "explanation": "For two triangles to be similar, two conditions must be met:\n1. Their corresponding angles must be equal.\n2. Their corresponding sides must be in the same ratio (proportional).\nOption B correctly states both of these fundamental conditions for similarity of triangles.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Triangles",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of similar triangles."
+          ]
+        },
+        {
+          "text": "The point P(4, 1) divides the line segment joining the points A(2, -3) and B(x, 7) in the ratio 2:3. Find the value of x.",
+          "type": "MCQ",
+          "options": [
+            "A) 5",
+            "B) 6",
+            "C) 7",
+            "D) 8"
+          ],
+          "correctAnswer": "C) 7",
+          "explanation": "Let the coordinates of point A be (x₁, y₁) = (2, -3) and point B be (x₂, y₂) = (x, 7).\nThe coordinates of the point P are (X, Y) = (4, 1).\nThe ratio in which P divides AB is m₁:m₂ = 2:3.\n\nUsing the section formula for the x-coordinate:\nX = (m₁x₂ + m₂x₁/m₁ + m₂)\n\nSubstitute the given values into the formula:\n4 = (2(x) + 3(2)/2 + 3)\n4 = (2x + 6/5)\n\nNow, solve for x:\n4 × 5 = 2x + 6\n20 = 2x + 6\n20 - 6 = 2x\n14 = 2x\nx = (14/2)\nx = 7\n\nThus, the value of x is 7.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Coordinate Geometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coordinates of A, B, P and the ratio.",
+            "Apply the section formula for the x-coordinate.",
+            "Substitute the given values into the formula.",
+            "Solve the resulting linear equation for x."
+          ]
+        },
+        {
+          "text": "If cot θ = (p/q), then the value of ((1+sin θ)(1-sin θ)/(1+cos θ)(1-cos θ)) is:",
+          "type": "MCQ",
+          "options": [
+            "(q²/p²)",
+            "(p²+q²/p²)",
+            "(p²/q²)",
+            "(q²/p²+q²)"
+          ],
+          "correctAnswer": "(p²/q²)",
+          "explanation": "The given expression is ((1+sin θ)(1-sin θ)/(1+cos θ)(1-cos θ)).\nWe use the algebraic identity (a+b)(a-b) = a² - b².\nFor the numerator: (1+sin θ)(1-sin θ) = 1² - sin² θ = 1 - sin² θ.\nFrom the fundamental trigonometric identity sin² θ + cos² θ = 1, we know that 1 - sin² θ = cos² θ.\nFor the denominator: (1+cos θ)(1-cos θ) = 1² - cos² θ = 1 - cos² θ.\nFrom the fundamental trigonometric identity sin² θ + cos² θ = 1, we we know that 1 - cos² θ = sin² θ.\nSubstituting these simplified forms back into the expression:\n((1+sin θ)(1-sin θ)/(1+cos θ)(1-cos θ)) = (1 - sin² θ/1 - cos² θ) = (cos² θ/sin² θ).\nWe know that cot θ = (cos θ/sin θ).\nTherefore, (cos² θ/sin² θ) = left((cos θ/sin θ)right)^2 = cot² θ.\nGiven that cot θ = (p/q).\nSubstituting this value, we get cot² θ = left((p/q)right)^2 = (p²/q²).\nThus, the value of the expression is (p²/q²).",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Hard",
+          "chapter": "Introduction to Trigonometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Apply the algebraic identity (a+b)(a-b) = a² - b² to the numerator and denominator.",
+            "Use the fundamental trigonometric identity sin² θ + cos² θ = 1 to simplify 1-sin² θ and 1-cos² θ.",
+            "Recognize the resulting ratio as cot² θ.",
+            "Substitute the given value of cot θ to find the final answer."
+          ]
+        },
+        {
+          "text": "When an observer looks from a point on the ground at the top of a tower, the angle formed by the line of sight with the horizontal is called the:",
+          "type": "MCQ",
+          "options": [
+            "Angle of depression",
+            "Angle of elevation",
+            "Right angle",
+            "Straight angle"
+          ],
+          "correctAnswer": "Angle of elevation",
+          "explanation": "The angle of elevation is defined as the angle formed by the line of sight with the horizontal when an observer looks upwards at an object. In this given scenario, looking at the top of a tower from the ground involves looking upwards.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Applications of Trigonometry",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of angle of elevation.",
+            "Identify the correct term for looking upwards from a horizontal line."
+          ]
+        },
+        {
+          "text": "From an external point P, the length of the tangent to a circle is 12 cm. The distance of P from the centre of the circle is 13 cm. What is the radius of the circle?",
+          "type": "MCQ",
+          "options": [
+            "5 cm",
+            "7 cm",
+            "10 cm",
+            "13 cm"
+          ],
+          "correctAnswer": "5 cm",
+          "explanation": "Let O be the centre of the circle and T be the point of contact of the tangent from the external point P. According to Theorem 10.1 from NCERT, the tangent at any point of a circle is perpendicular to the radius through the point of contact. Therefore, the triangle formed by the centre O, the point of contact T, and the external point P (i.e.,  △ OTP ) is a right-angled triangle with the right angle at T.\n\nGiven:\nLength of the tangent, PT = 12 cm\nDistance of P from the centre, OP = 13 cm (This is the hypotenuse of the right-angled triangle  △ OTP )\nLet the radius of the circle be r = OT.\n\nBy applying the Pythagoras Theorem in  △ OTP :\n OT² + PT² = OP² \n r² + 12² = 13² \n r² + 144 = 169 \nTo find  r² , subtract 144 from 169:\n r² = 169 - 144 \n r² = 25 \nTo find r, take the square root of 25:\n r = √{25} \n r = 5  cm\n\nThus, the radius of the circle is 5 cm.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Circles",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify that the radius and tangent at the point of contact are perpendicular, forming a right-angled triangle.",
+            "Apply the Pythagoras Theorem to find the unknown side (radius)."
+          ]
+        },
+        {
+          "text": "A circular glass window of a historical building has a radius of 14 cm. A decorative segment is formed by a chord that subtends an angle of 120 degrees at the centre of the window. This segment is to be replaced with a special stained glass. Calculate the area of this stained glass segment. (Use π = (22/7) and √{3} = 1.732).",
+          "type": "MCQ",
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Mathematics"
+        },
+        {
+          "text": "When two or more basic solids are combined to form a new solid, what is the general principle for calculating the volume of the resulting combined solid?",
+          "type": "MCQ",
+          "options": [
+            "A. The difference of the volumes of the constituent solids.",
+            "B. The sum of the volumes of the constituent solids.",
+            "C. The product of the volumes of the constituent solids.",
+            "D. The average of the volumes of the constituent solids."
+          ],
+          "correctAnswer": "B. The sum of the volumes of the constituent solids.",
+          "explanation": "According to NCERT Class 10 Mathematics, Chapter 'Surface Areas and Volumes', Section 12.3, 'Volume of a Combination of Solids', it is stated that 'The volume of the solid formed by joining two basic solids will actually be the sum of the volumes of the constituents'. This is a fundamental principle, as unlike surface area, no volume is lost or gained when solids are combined; their individual volumes simply add up to form the total volume of the new solid.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Surface Areas and Volumes",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition and principle for calculating the volume of combined solids."
+          ]
+        },
+        {
+          "text": "If the mean and median of a certain frequency distribution are 26 and 27 respectively, what is the approximate value of its mode?",
+          "type": "MCQ",
+          "options": [
+            "28",
+            "29",
+            "30",
+            "27"
+          ],
+          "correctAnswer": "29",
+          "explanation": "The empirical relationship between the three measures of central tendency (Mean, Median, and Mode) is given by the formula:\n3 Median = Mode + 2 Mean\nGiven values:\nMean = 26\nMedian = 27\nSubstitute these values into the formula:\n3 * 27 = Mode + 2 * 26\n81 = Mode + 52\nTo find the mode, subtract 52 from 81:\nMode = 81 - 52\nMode = 29\nTherefore, the approximate value of the mode is 29.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Statistics",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the empirical relationship formula: 3 Median = Mode + 2 Mean.",
+            "Substitute the given values of Mean and Median into the formula.",
+            "Solve the equation to find the value of Mode."
+          ]
+        },
+        {
+          "text": "Two fair dice are rolled simultaneously. What is the probability that the sum of the numbers appearing on the two dice is a prime number, given that at least one die shows an even number?",
+          "type": "MCQ",
+          "options": [
+            " (13/27) ",
+            " (14/36) ",
+            " (14/27) ",
+            " (15/27) "
+          ],
+          "correctAnswer": " (14/27) ",
+          "explanation": "When two fair dice are rolled",
+          "condition": "at least one die shows an even number.\"\nLet E be the event that at least one die shows an even number.\nThe complement of E",
+          "are": "1,1",
+          "at least one die shows an even number\":\n1.  **Sum = 2**": "1,1",
+          "3**": "1,2",
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Probability"
+        }
+      ],
+      "marks": 20
+    },
+    "B": {
+      "name": "Section B (VSA)",
+      "questions": [
+        {
+          "text": "Without actually performing the long division, determine whether the rational number (7/80) will have a terminating or non-terminating repeating decimal expansion. Also, find the number of decimal places after which the decimal expansion terminates.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "Terminating decimal expansion, terminating after 4 decimal places.",
+          "explanation": "To determine the nature of the decimal expansion of a rational number, we need to examine the prime factorization of its denominator.\n\nThe given rational number is (7/80).\nFirst, find the prime factorization of the denominator, 80.\n80 = 8 × 10 = 2³ × 2 × 5 = 2⁴ × 5¹.\n\nSince the denominator 80 is of the form 2ᵐ × 5ⁿ (where m=4 and n=1), the decimal expansion of (7/80) is terminating.\n\nTo find the number of decimal places after which it terminates, we look at the powers of 2 and 5 in the prime factorization of the denominator. The number of decimal places is the maximum of the powers of 2 and 5.\nHere, the power of 2 is 4 and the power of 5 is 1. The maximum of (4, 1) is 4.\n\nTherefore, the decimal expansion of (7/80) will terminate after 4 decimal places.",
+          "bloomsLevel": "Apply",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Find the prime factorization of the denominator.",
+            "Check if the denominator is of the form 2ᵐ × 5ⁿ.",
+            "If it is, the decimal expansion is terminating.",
+            "The number of decimal places is the maximum of m and n."
+          ]
+        },
+        {
+          "text": "Find the sum of the zeroes of the quadratic polynomial P(x) = 3x² - 5x + 2.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "5/3",
+          "explanation": "For a quadratic polynomial of the form ax² + bx + c, the sum of the zeroes (let's denote them as α and β) is given by the formula α + β = -b/a.\n\nGiven the quadratic polynomial P(x) = 3x² - 5x + 2.\nComparing this with the standard form ax² + bx + c, we identify the coefficients:\na = 3\nb = -5\nc = 2\n\nNow, applying the formula for the sum of the zeroes:\nSum of zeroes = -b/a = -(-5)/3 = 5/3.\n\nTherefore, the sum of the zeroes of the given polynomial is 5/3.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a, b, and c from the given quadratic polynomial.",
+            "Apply the formula for the sum of zeroes of a quadratic polynomial, which is -b/a."
+          ]
+        },
+        {
+          "text": "Determine whether the following pair of linear equations is consistent or inconsistent:\nx + 2y - 4 = 0\n2x + 4y - 12 = 0",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "The pair of linear equations is inconsistent.",
+          "explanation": "Given the pair of linear equations:\n1) x + 2y - 4 = 0\n2) 2x + 4y - 12 = 0\n\nTo determine if the pair of equations is consistent or inconsistent, we compare the ratios of their coefficients a₁/a₂, b₁/b₂, and c₁/c₂.\n\nFrom equation (1), we have: a₁ = 1, b₁ = 2, c₁ = -4\nFrom equation (2), we have: a₂ = 2, b₂ = 4, c₂ = -12\n\nNow, let's calculate the ratios:\na₁/a₂ = 1/2\nb₁/b₂ = 2/4 = 1/2\nc₁/c₂ = -4/(-12) = 1/3\n\nComparing the ratios, we find that a₁/a₂ = b₁/b₂ ≠ c₁/c₂ (i.e., 1/2 = 1/2 ≠ 1/3).\n\nAccording to the conditions for the solvability of a pair of linear equations, if a₁/a₂ = b₁/b₂ ≠ c₁/c₂, the lines representing the equations are parallel and do not intersect. This implies that there is no solution to the pair of equations.\n\nA pair of linear equations that has no solution is defined as an inconsistent pair of linear equations.\n\nTherefore, the given pair of linear equations is inconsistent.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a₁, b₁, c₁ and a₂, b₂, c₂ from the given equations.",
+            "Calculate the ratios a₁/a₂, b₁/b₂, and c₁/c₂.",
+            "Compare the ratios to determine the condition (a₁/a₂ = b₁/b₂ ≠ c₁/c₂).",
+            "Conclude whether the pair of equations is consistent or inconsistent based on the condition."
+          ]
+        },
+        {
+          "text": "For what value of 'k' is the equation (k-3)x² + 2x - 5 = 0 not a quadratic equation?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "k = 3",
+          "explanation": "A quadratic equation in the variable x is defined as an equation of the form ax² + bx + c = 0, where a, b, c are real numbers and the coefficient 'a' must not be equal to 0. \nIn the given equation, (k-3)x² + 2x - 5 = 0, the coefficient of x² is (k-3). \nFor the equation to NOT be a quadratic equation, the coefficient of x² must be zero. \nTherefore, we set k - 3 = 0. \nSolving for k, we get k = 3.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the definition of a quadratic equation (a ≠ 0).",
+            "Set the coefficient of x² to zero for the equation to not be quadratic.",
+            "Solve the resulting linear equation for k."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "The first term of an Arithmetic Progression (AP) is 7 and its common difference is -2. What is the 4th term of this AP?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "1",
+          "explanation": "To find the nth term of an Arithmetic Progression (AP), we use the formula: aₙ = a + (n-1)d, where aₙ is the nth term, a is the first term, n is the term number, and d is the common difference.\n\nGiven values:\nFirst term (a) = 7\nCommon difference (d) = -2\nTerm number (n) = 4 (since we need to find the 4th term)\n\nSubstitute these values into the formula:\na₄ = 7 + (4-1)(-2)\na₄ = 7 + (3)(-2)\na₄ = 7 - 6\na₄ = 1\n\nTherefore, the 4th term of the AP is 1.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the given first term (a) and common difference (d).",
+            "Recall and apply the formula for the nth term of an AP: aₙ = a + (n-1)d.",
+            "Substitute the values a=7, d=-2, and n=4 into the formula and calculate the 4th term."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 10
+    },
+    "C": {
+      "name": "Section C (SA)",
+      "questions": [
+        {
+          "text": "Consider two real numbers, x and y. If x is a rational number and y is an irrational number, analyze and prove whether their sum (x + y) is always an irrational number. Justify each step of your proof.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Yes, the sum (x + y) is always an irrational number.",
+          "explanation": "Let x be a rational number and y be an irrational number.\nWe want to prove that (x + y) is always an irrational number.\n\nProof by contradiction:\nStep 1: Assume, for the sake of contradiction, that (x + y) is a rational number.\n\nStep 2: By the definition of a rational number, x can be expressed as (a/b), where a and b are integers and b ≠ 0.\n\nStep 3: If we assume (x + y) is rational, then (x + y) can be expressed as (p/q), where p and q are integers and q ≠ 0.\n\nStep 4: Now, we can write y = (x + y) - x.\nSubstitute the rational forms:\ny = (p/q) - (a/b)\n\nStep 5: To subtract these fractions, we find a common denominator:\ny = (pb - qa/qb)\n\nStep 6: Since p, b, q, and a are all integers, the numerator (pb - qa) is an integer. Also, since q ≠ 0 and b ≠ 0, the denominator (qb) is a non-zero integer.\n\nStep 7: Therefore, y can be expressed in the form frac{text{integer}}{text{non-zero integer}}, which means y is a rational number.\n\nStep 8: This conclusion (that y is rational) contradicts our initial given statement that y is an irrational number.\n\nStep 9: Our initial assumption that (x + y) is rational must be false.\n\nConclusion: Hence, the sum of a rational number and an irrational number is always an irrational number.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Assume (x + y) is rational.",
+            "Express x as a/b and (x + y) as p/q.",
+            "Show y = (x + y) - x leads to y being rational.",
+            "Identify the contradiction and conclude (x + y) is irrational."
+          ]
+        },
+        {
+          "text": "If one zero of the quadratic polynomial p(x) = x² - 8x + k is three times the other, find the value of k and the zeroes of the polynomial.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "The value of k is 12 and the zeroes of the polynomial are 2 and 6.",
+          "explanation": "Let the zeroes of the quadratic polynomial p(x) = x² - 8x + k be α and β. \nAccording to the problem, one zero is three times the other. So, let β = 3α. \nFor a quadratic polynomial ax² + bx + c, the sum of zeroes is -b/a and the product of zeroes is c/a. \nIn the given polynomial x² - 8x + k, we have a=1, b=-8, and c=k. \n\nStep 1: Use the sum of zeroes formula.\nSum of zeroes: α + β = -(-8)/1 \nSubstitute β = 3α: α + 3α = 8 \n4α = 8 \nα = 8/4 \nα = 2 \n\nStep 2: Find the other zero.\nSince β = 3α, we have β = 3 × 2 = 6. \nSo, the zeroes of the polynomial are 2 and 6. \n\nStep 3: Use the product of zeroes formula to find k.\nProduct of zeroes: α × β = k/1 \nSubstitute the values of α and β: 2 × 6 = k \nk = 12 \n\nThus, the value of k is 12 and the zeroes of the polynomial are 2 and 6.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Define the zeroes based on the given condition and identify coefficients.",
+            "Apply the sum of zeroes formula to find the individual zeroes.",
+            "Apply the product of zeroes formula to find the unknown constant 'k'."
+          ]
+        },
+        {
+          "text": "A stationery shop sold 5 pens and 3 notebooks for ₹210. On another day, they sold 4 pens and 7 notebooks for ₹260. Find the cost of one pen and one notebook.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Cost of one pen = ₹30, Cost of one notebook = ₹20",
+          "explanation": "Let the cost of one pen be ₹x and the cost of one notebook be ₹y.\n\nAccording to the first condition:\n5x + 3y = 210  (Equation 1)\n\nAccording to the second condition:\n4x + 7y = 260  (Equation 2)\n\nWe will use the elimination method to solve this pair of linear equations.\nTo eliminate y, we multiply Equation 1 by 7 and Equation 2 by 3:\n\nMultiply Equation 1 by 7:\n7 * (5x + 3y) = 7 * 210\n35x + 21y = 1470  (Equation 3)\n\nMultiply Equation 2 by 3:\n3 * (4x + 7y) = 3 * 260\n12x + 21y = 780  (Equation 4)\n\nNow, subtract Equation 4 from Equation 3:\n(35x + 21y) - (12x + 21y) = 1470 - 780\n35x - 12x + 21y - 21y = 690\n23x = 690\nx = 690 / 23\nx = 30\n\nNow, substitute the value of x = 30 into Equation 1:\n5(30) + 3y = 210\n150 + 3y = 210\n3y = 210 - 150\n3y = 60\ny = 60 / 3\ny = 20\n\nThus, the cost of one pen is ₹30 and the cost of one notebook is ₹20.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Define variables for the cost of a pen and a notebook.",
+            "Formulate two linear equations based on the given information.",
+            "Solve the system of equations using an appropriate algebraic method (e.g., elimination or substitution).",
+            "State the final cost of one pen and one notebook."
+          ]
+        },
+        {
+          "text": "A rectangular park has an area of 108 square meters. Its breadth is 3 meters less than its length. Find the dimensions (length and breadth) of the park.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Length = 12 meters, Breadth = 9 meters",
+          "explanation": "Let the length of the rectangular park be `x` meters.\nAccording to the problem, the breadth is 3 meters less than its length, so the breadth will be `(x - 3)` meters.\nThe area of a rectangle is given by Length × Breadth.\nWe are given that the area of the park is 108 square meters.\nSo, we can write the equation: `x * (x - 3) = 108`\nExpand the equation: `x² - 3x = 108`\nRearrange it into the standard quadratic equation form `ax² + bx + c = 0`:\n`x² - 3x - 108 = 0`\nNow, we solve this quadratic equation by factorization.\nWe need two numbers whose product is -108 and whose sum is -3. These numbers are -12 and 9.\nSo, we can rewrite the middle term:\n`x² - 12x + 9x - 108 = 0`\nFactor by grouping:\n`x(x - 12) + 9(x - 12) = 0`\n`(x - 12)(x + 9) = 0`\nThis gives two possible values for `x`:\n`x - 12 = 0`  => `x = 12`\nor\n`x + 9 = 0`    => `x = -9`\nSince the length of a park cannot be negative, we discard `x = -9`.\nTherefore, the length of the park, `x = 12` meters.\nNow, calculate the breadth using the relation `breadth = x - 3`:\nBreadth = `12 - 3 = 9` meters.\nThus, the length of the park is 12 meters and the breadth is 9 meters.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for length and breadth.",
+            "Formulate the quadratic equation based on the given conditions.",
+            "Solve the quadratic equation for the unknown variable.",
+            "Interpret the valid root and find the dimensions of the park."
+          ]
+        },
+        {
+          "text": "A company produces a certain number of bicycles uniformly every year. If the production in the 3rd year was 6000 units and in the 7th year was 8000 units, find the total production in the first 10 years.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "72500 units",
+          "explanation": "Let the production in the first year be 'a' and the uniform increase in production each year be 'd'.\nThis scenario forms an Arithmetic Progression (AP).\n\nGiven:\nProduction in the 3rd year (a₃) = 6000 units\nProduction in the 7th year (a₇) = 8000 units\n\nWe use the formula for the nth term of an AP: aₙ = a + (n-1)d\n\nFor the 3rd year:\na₃ = a + (3-1)d\n6000 = a + 2d  (Equation 1)\n\nFor the 7th year:\na₇ = a + (7-1)d\n8000 = a + 6d  (Equation 2)\n\nSubtract Equation 1 from Equation 2:\n(a + 6d) - (a + 2d) = 8000 - 6000\n4d = 2000\nd = (2000/4)\nd = 500\n\nSubstitute the value of 'd' back into Equation 1:\n6000 = a + 2(500)\n6000 = a + 1000\na = 6000 - 1000\na = 5000\n\nSo, the production in the first year was 5000 units, and the production increases by 500 units each year.\n\nNow, we need to find the total production in the first 10 years (S_{10}). We use the formula for the sum of the first n terms of an AP:\nSₙ = (n/2)[2a + (n-1)d]\n\nFor n=10, a=5000, d=500:\nS_{10} = (10/2)[2(5000) + (10-1)500]\nS_{10} = 5[10000 + (9)500]\nS_{10} = 5[10000 + 4500]\nS_{10} = 5[14500]\nS_{10} = 72500\n\nTherefore, the total production in the first 10 years is 72500 units.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the given information as terms of an AP.",
+            "Formulate linear equations using the nth term formula (aₙ = a + (n-1)d).",
+            "Solve the system of equations to find the first term 'a' and common difference 'd'.",
+            "Use the sum of n terms formula (Sₙ = (n/2)[2a + (n-1)d]) to calculate the total production for the specified number of years."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "In triangle ABC, a line segment DE is drawn parallel to BC, intersecting sides AB and AC at D and E respectively. Another line segment EF is drawn parallel to CD, intersecting AD at F. If AD:DB = 3:2, find the ratio AF:AB.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "9/25",
+          "explanation": "1. **Apply Basic Proportionality Theorem (BPT) in triangle ABC:**\nGiven that DE || BC, by the Basic Proportionality Theorem, the line DE divides the sides AB and AC in the same ratio.\nSo, AD/DB = AE/EC.\nGiven AD:DB = 3:2, which means AD/DB = 3/2.\nTherefore, AE/EC = 3/2.  (Equation 1)\n\n2. **Apply Basic Proportionality Theorem (BPT) in triangle ADC:**\nGiven that EF || CD, by the Basic Proportionality Theorem, the line EF divides the sides AD and AC in the same ratio.\nSo, AF/FD = AE/EC.  (Equation 2)\n\n3. **Equate the ratios from Equation 1 and Equation 2:**\nFrom (1) and (2), we have AF/FD = AD/DB.\nSubstitute the given ratio AD/DB = 3/2 into this equality:\nAF/FD = 3/2.\n\n4. **Express AF and FD in terms of a common variable:**\nLet AF = 3x and FD = 2x for some positive value x.\nThen, AD = AF + FD = 3x + 2x = 5x.\n\n5. **Use the given ratio AD:DB to find DB in terms of x:**\nWe have AD/DB = 3/2.\nSubstitute AD = 5x into this ratio:\n(5x) / DB = 3/2.\nCross-multiply to solve for DB:\n3 * DB = 10x\nDB = (10x)/3.\n\n6. **Calculate AB and then the required ratio AF:AB:**\nWe know that AB = AD + DB.\nSubstitute the expressions for AD and DB in terms of x:\nAB = 5x + (10x)/3\nTo add these, find a common denominator:\nAB = (15x)/3 + (10x)/3 = (15x + 10x)/3 = (25x)/3.\n\nNow, calculate the ratio AF:AB:\nAF/AB = (3x) / ((25x)/3)\nAF/AB = 3x * (3 / (25x))\nAF/AB = 9/25.\n\nThe final ratio AF:AB is 9/25.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Hard",
+          "chapter": "Triangles",
+          "hasLatex": true,
+          "keySteps": [
+            "Apply BPT in ΔABC to establish AD/DB = AE/EC.",
+            "Apply BPT in ΔADC to establish AF/FD = AE/EC.",
+            "Equate the two ratios to find AF/FD in terms of AD/DB.",
+            "Express AF, FD, AD, and DB in terms of a single variable.",
+            "Calculate AB as the sum of AD and DB.",
+            "Compute the final ratio AF:AB."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 18
+    },
+    "D": {
+      "name": "Section D (LA)",
+      "questions": [
+        {
+          "text": "A renowned mathematician, Dr. Arya, makes the following two statements regarding real numbers:\n\nStatement 1: \"If 'a' is a non-zero rational number and 'b' is an irrational number, then their sum (a + b) is always irrational.\"\n\nStatement 2: \"If 'a' is a non-zero rational number and 'b' is an irrational number, then their product (a × b) is always irrational.\"\n\n(a) Evaluate Statement 1. If you find it correct, prove it rigorously.\n(b) Evaluate Statement 2. If you find it correct, prove it rigorously.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Both statements are correct and proven rigorously as follows:\n\n(a) Evaluation and Proof of Statement 1:\nStatement 1 is correct. We will prove it by the method of contradiction.\n\nStep 1: Assume, to the contrary, that the sum (a + b) is a rational number. Let a + b = r, where r is a rational number.\nStep 2: We are given that 'a' is a non-zero rational number. We know that the difference between two rational numbers is always a rational number. So, r - a must be rational.\nStep 3: From our initial assumption (a + b = r), we can express 'b' as b = r - a.\nStep 4: Since r is rational and a is rational, their difference (r - a) is rational. This implies that b is rational.\nStep 5: This conclusion (b is rational) directly contradicts the given condition that 'b' is an irrational number.\nStep 6: Therefore, our initial assumption that (a + b) is rational must be false. Hence, the sum of a non-zero rational number and an irrational number is always irrational.\n\n(b) Evaluation and Proof of Statement 2:\nStatement 2 is correct. We will also prove this by the method of contradiction.\n\nStep 1: Assume, to the contrary, that the product (a × b) is a rational number. Let a × b = p, where p is a rational number.\nStep 2: We are given that 'a' is a non-zero rational number (a ≠ 0). We know that the reciprocal of any non-zero rational number is also a non-zero rational number. So, (1/a) is rational.\nStep 3: We also know that the product of two rational numbers is always a rational number. So, p × (1/a) must be rational.\nStep 4: From our initial assumption (a × b = p), we can express 'b' as b = p × (1/a) = (a × b) × (1/a).\nStep 5: Since p is rational and (1/a) is rational, their product p × (1/a) is rational. This implies that b is rational.\nStep 6: This conclusion (b is rational) directly contradicts the given condition that 'b' is an irrational number.\nStep 7: Therefore, our initial assumption that (a × b) is rational must be false. Hence, the product of a non-zero rational number and an irrational number is always irrational.",
+          "explanation": "(a) Evaluation and Proof of Statement 1:\nStatement 1 is correct. To prove this, we use the method of contradiction.\nStep 1: Assume, to the contrary, that the sum (a + b) is a rational number. Let a + b = r, where r is a rational number.\nStep 2: We are given that 'a' is a non-zero rational number. We know that the difference between two rational numbers is always rational. So, r - a must be rational.\nStep 3: From our assumption, we can write b = r - a.\nStep 4: Since r is rational and a is rational, their difference (r - a) is rational. This implies that b is rational.\nStep 5: This conclusion (b is rational) contradicts the given condition that 'b' is an irrational number.\nStep 6: Therefore, our initial assumption that (a + b) is rational must be false. Hence, the sum of a non-zero rational number and an irrational number is always irrational.\n\n(b) Evaluation and Proof of Statement 2:\nStatement 2 is correct. To prove this, we also use the method of contradiction.\nStep 1: Assume, to the contrary, that the product (a × b) is a rational number. Let a × b = p, where p is a rational number.\nStep 2: We are given that 'a' is a non-zero rational number (a ≠ 0). We know that the reciprocal of a non-zero rational number is also rational. So, (1/a) is rational.\nStep 3: We also know that the product of two rational numbers is always rational. So, p × (1/a) must be rational.\nStep 4: From our assumption, we can write b = (a × b) × (1/a) = p × (1/a).\nStep 5: Since p is rational and (1/a) is rational, their product p × (1/a) is rational. This implies that b is rational.\nStep 6: This conclusion (b is rational) contradicts the given condition that 'b' is an irrational number.\nStep 7: Therefore, our initial assumption that (a × b) is rational must be false. Hence, the product of a non-zero rational number and an irrational number is always irrational.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": false,
+          "keySteps": [
+            "Part (a): Assume the sum (a+b) is rational, then show it leads to a contradiction that 'b' is rational.",
+            "Part (b): Assume the product (a×b) is rational, then show it leads to a contradiction that 'b' is rational."
+          ]
+        },
+        {
+          "text": "Consider a cubic polynomial P(x) = x³ + Ax² + Bx + C whose zeroes α, β, γ are in an arithmetic progression (AP).\n\nGiven that the sum of the zeroes is 6 and the sum of the products of its zeroes taken two at a time is 11:\n\n(a) Evaluate the zeroes of the polynomial.\n(b) Determine the values of the coefficients A, B, C.\n(c) Justify whether P(x) can have a negative zero under these given conditions.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "The zeroes of the polynomial are 1, 2, 3. The coefficients are A = -6, B = 11, C = -6. The polynomial cannot have a negative zero under these conditions because all derived zeroes are positive.",
+          "explanation": "Let the zeroes of the cubic polynomial P(x) = x³ + Ax² + Bx + C be α, β, γ.\nSince the zeroes are in an arithmetic progression (AP), we can represent them as a-d, a, a+d.\n\n(a) Evaluate the zeroes of the polynomial:\n1. Sum of zeroes: α + β + γ = (a-d) + a + (a+d) = 3a.\nGiven that the sum of the zeroes is 6, we have 3a = 6, which implies a = 2.\nSo, the middle zero is 2.\n\n2. Sum of the products of zeroes taken two at a time: αβ + βγ + γα = (a-d)a + a(a+d) + (a-d)(a+d).\nThis expands to a² - ad + a² + ad + a² - d² = 3a² - d².\nGiven that this sum is 11, we have 3a² - d² = 11.\nSubstitute a=2 into this equation: 3(2)^2 - d² = 11 Rightarrow 3(4) - d² = 11 Rightarrow 12 - d² = 11.\nTherefore, d² = 12 - 11 = 1, which gives d = ± 1.\n\nCase 1: If d = 1.\nThe zeroes are a-d = 2-1 = 1, a = 2, a+d = 2+1 = 3.\nSo, the zeroes are 1, 2, 3.\n\nCase 2: If d = -1.\nThe zeroes are a-d = 2-(-1) = 3, a = 2, a+d = 2+(-1) = 1.\nSo, the zeroes are 3, 2, 1.\n\nIn both cases, the set of zeroes for the polynomial is {1, 2, 3}.\n\n(b) Determine the values of the coefficients A, B, C:\nFor a cubic polynomial x³ + Ax² + Bx + C, the relationships between zeroes and coefficients are:\n- Sum of zeroes: α + β + γ = -A\n- Sum of products of zeroes taken two at a time: αβ + βγ + γα = B\n- Product of zeroes: αβγ = -C\n\nUsing the zeroes {1, 2, 3}:\n1. Sum of zeroes: 1 + 2 + 3 = 6.\nSo, -A = 6 Rightarrow A = -6.\n\n2. Sum of products of zeroes taken two at a time: (1)(2) + (2)(3) + (3)(1) = 2 + 6 + 3 = 11.\nSo, B = 11.\n\n3. Product of zeroes: (1)(2)(3) = 6.\nSo, -C = 6 Rightarrow C = -6.\n\nThus, the coefficients are A = -6, B = 11, and C = -6.\nThe polynomial is P(x) = x³ - 6x² + 11x - 6.\n\n(c) Justify whether P(x) can have a negative zero under these given conditions:\nBased on the given conditions (zeroes in AP, sum of zeroes is 6, and sum of products of zeroes taken two at a time is 11), we uniquely determined the zeroes of the polynomial to be 1, 2, and 3.\nAll these zeroes (1, 2, 3) are positive numbers.\nSince the identity of the zeroes is uniquely established as {1, 2, 3} based on the given conditions, and none of these zeroes are negative, it can be concluded that the polynomial P(x) cannot have a negative zero under these specific conditions.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Represent zeroes in AP as a-d, a, a+d.",
+            "Use sum of zeroes to find 'a'.",
+            "Use sum of products of zeroes taken two at a time to find 'd'.",
+            "Determine the actual zeroes of the polynomial.",
+            "Apply relationships between zeroes and coefficients to find A, B, C.",
+            "Justify the possibility of a negative zero based on the derived zeroes."
+          ]
+        },
+        {
+          "text": "A small bakery makes two types of muffins: Blueberry (B) and Chocolate Chip (C).\nTo make one Blueberry muffin, it requires 20g of flour and 15g of sugar.\nTo make one Chocolate Chip muffin, it requires 25g of flour and 10g of sugar.\n\n(a) On Monday, the bakery used a total of 1.95 kg of flour and 1.2 kg of sugar to make a certain number of Blueberry and Chocolate Chip muffins. Let 'b' be the number of Blueberry muffins and 'c' be the number of Chocolate Chip muffins made on Monday. Formulate a pair of linear equations representing this situation and find the values of 'b' and 'c'.\n\n(b) On Tuesday, due to a special order, the bakery decided to make 25% more Blueberry muffins and 20% fewer Chocolate Chip muffins than on Monday. Calculate the total quantity of flour and sugar consumed by the bakery on Tuesday.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "On Monday: b = 60 Blueberry muffins, c = 30 Chocolate Chip muffins. \nOn Tuesday: Total flour = 2.1 kg, Total sugar = 1.365 kg.",
+          "explanation": "Part (a): Formulating and solving the linear equations\nLet 'b' be the number of Blueberry muffins and 'c' be the number of Chocolate Chip muffins made on Monday.\n\nStep 1: Convert total ingredient quantities from kg to grams.\nTotal flour used on Monday = 1.95 kg = 1.95 × 1000 text{ g} = 1950 text{ g}.\nTotal sugar used on Monday = 1.2 kg = 1.2 × 1000 text{ g} = 1200 text{ g}.\n\nStep 2: Formulate the linear equations based on flour and sugar consumption.\nFor flour: Each Blueberry muffin uses 20g, and each Chocolate Chip muffin uses 25g.\nEquation (1): 20b + 25c = 1950\nDividing by 5, we get: 4b + 5c = 390 (Equation A)\n\nFor sugar: Each Blueberry muffin uses 15g, and each Chocolate Chip muffin uses 10g.\nEquation (2): 15b + 10c = 1200\nDividing by 5, we get: 3b + 2c = 240 (Equation B)\n\nStep 3: Solve the system of linear equations (Equation A and Equation B) using the elimination method.\nTo eliminate 'c', multiply Equation A by 2 and Equation B by 5:\nMultiply Equation A by 2: 2 × (4b + 5c) = 2 × 390 implies 8b + 10c = 780 (Equation A')\nMultiply Equation B by 5: 5 × (3b + 2c) = 5 × 240 implies 15b + 10c = 1200 (Equation B')\n\nSubtract Equation A' from Equation B':\n(15b + 10c) - (8b + 10c) = 1200 - 780\n7b = 420\nb = (420/7)\nb = 60\n\nStep 4: Substitute the value of 'b' into Equation B to find 'c'.\n3(60) + 2c = 240\n180 + 2c = 240\n2c = 240 - 180\n2c = 60\nc = (60/2)\nc = 30\n\nSo, on Monday, the bakery made 60 Blueberry muffins and 30 Chocolate Chip muffins.\n\nPart (b): Calculating ingredient consumption for Tuesday\nStep 5: Calculate the number of muffins made on Tuesday.\nNumber of Blueberry muffins on Tuesday (b_{text{Tuesday}}):\nb_{text{Tuesday}} = b + 25% text{ of } b = 60 + 0.25 × 60 = 60 + 15 = 75 muffins.\n\nNumber of Chocolate Chip muffins on Tuesday (c_{text{Tuesday}}):\nc_{text{Tuesday}} = c - 20% text{ of } c = 30 - 0.20 × 30 = 30 - 6 = 24 muffins.\n\nStep 6: Calculate the total flour consumed on Tuesday.\nFlour for Blueberry muffins = 75 × 20 text{ g} = 1500 text{ g}\nFlour for Chocolate Chip muffins = 24 × 25 text{ g} = 600 text{ g}\nTotal flour on Tuesday = 1500 text{ g} + 600 text{ g} = 2100 text{ g} = 2.1 text{ kg}.\n\nStep 7: Calculate the total sugar consumed on Tuesday.\nSugar for Blueberry muffins = 75 × 15 text{ g} = 1125 text{ g}\nSugar for Chocolate Chip muffins = 24 × 10 text{ g} = 240 text{ g}\nTotal sugar on Tuesday = 1125 text{ g} + 240 text{ g} = 1365 text{ g} = 1.365 text{ kg}.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables and convert total ingredient quantities from kg to grams for Monday.",
+            "Formulate a pair of linear equations based on the total flour and sugar used on Monday.",
+            "Solve the system of linear equations (using elimination or substitution) to find the number of Blueberry (b) and Chocolate Chip (c) muffins made on Monday.",
+            "Calculate the number of Blueberry and Chocolate Chip muffins made on Tuesday using the given percentage changes.",
+            "Calculate the total quantity of flour consumed on Tuesday based on the new muffin counts.",
+            "Calculate the total quantity of sugar consumed on Tuesday based on the new muffin counts."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A rectangular garden has an area of 300 square meters. Its length is 5 meters more than its breadth.\n(i) Find the dimensions of the garden.\n(ii) If a path of uniform width 'w' meters is built around the garden (outside), and the area of the path is 200 square meters, formulate a quadratic equation in 'w' that represents this situation.\n(iii) Determine the width of the path.\n(iv) For a different rectangular plot, the length and breadth are 'p' meters and 'q' meters respectively. It is given that 'p' and 'q' are the roots of the quadratic equation x² - (2w+3)x + (k+1) = 0, where 'w' is the width of the path found in part (iii). If the area of this new plot is 50 square meters, find the value of 'k'.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Length = 20 meters, Breadth = 15 meters; 2w² + 35w - 100 = 0; w = 2.5 meters; k = 49.",
+          "explanation": "**(i) Finding the dimensions of the garden:**\nLet the breadth of the rectangular garden be b meters.\nAccording to the problem",
+          "it": "n\\(b^2 + 20b - 15b - 300 = 0\\)\n\\(b(b+20) - 15(b+20) = 0\\)\n\\((b-15)(b+20) = 0\\)\nThis gives two possible values for \\(b\\): \\(b = 15\\) or \\(b = -20\\).\nSince breadth cannot be negative",
+          "width": "nOriginal length = 20 m, Original breadth = 15 m.\nA path of uniform width 'w' meters is built around the garden (outside).\nNew length (including the path) = Original Length + \\(2w = 20 + 2w\\) meters.\nNew breadth (including the path) = Original Breadth + \\(2w = 15 + 2w",
+          "marks": 5,
+          "internalChoice": true,
+          "bloomsLevel": "Analyze",
+          "difficulty": "Hard",
+          "chapter": "Quadratic Equations"
+        }
+      ],
+      "marks": 20
+    },
+    "E": {
+      "name": "Section E (Case-Study)",
+      "questions": [
+        {
+          "text": "A school canteen is preparing fruit baskets for a special event. They have 252 apples and 324 bananas. The canteen manager wants to pack these fruits into identical baskets such that:\n*   Each basket contains only one type of fruit (either apples or bananas).\n*   Each basket has the same number of fruits.\n*   The number of fruits in each basket is the maximum possible.\n\nBased on this information, answer the following questions:\n\n**(a)** Find the prime factorization of 252 and 324.\n**(b)** What is the maximum number of fruits that can be placed in each basket?\n**(c)** How many baskets of apples and bananas will be formed, respectively?\n**(d)** If the canteen manager also wants to buy two types of juice boxes, 'Apple Juice' and 'Banana Juice', for the event. Apple juice boxes come in packs of 252, and Banana juice boxes come in packs of 324. To ensure an equal total number of 'Apple Juice' boxes and 'Banana Juice' boxes are purchased, what is the minimum total number of juice boxes of each type the manager must buy?",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for detailed answers to sub-parts.",
+          "explanation": "**(a) Prime factorization:**\nFor 252:\n252 = 2 × 126\n126 = 2 × 63\n63 = 3 × 21\n21 = 3 × 7\nSo, 252 = 2 × 2 × 3 × 3 × 7 = 2² × 3² × 7¹\n\nFor 324:\n324 = 2 × 162\n162 = 2 × 81\n81 = 3 × 27\n27 = 3 × 9\n9 = 3 × 3\nSo, 324 = 2 × 2 × 3 × 3 × 3 × 3 = 2² × 3⁴\n\n**(b) Maximum number of fruits in each basket:**\nThe maximum number of fruits that can be placed in each basket is the Highest Common Factor (HCF) of 252 and 324.\nUsing the prime factorizations from part (a):\n252 = 2² × 3² × 7¹\n324 = 2² × 3⁴\nTo find HCF, we take the common prime factors with the lowest powers:\nHCF(252, 324) = 2² × 3² = 4 × 9 = 36\nTherefore, the maximum number of fruits that can be placed in each basket is 36.\n\n**(c) Number of baskets formed:**\nNumber of apple baskets = Total apples / Fruits per basket = 252 / 36 = 7\nNumber of banana baskets = Total bananas / Fruits per basket = 324 / 36 = 9\nSo, 7 baskets of apples and 9 baskets of bananas will be formed.\n\n**(d) Minimum total number of juice boxes of each type:**\nTo ensure an equal total number of 'Apple Juice' boxes and 'Banana Juice' boxes are purchased, the manager must buy a quantity that is a multiple of both 252 and 324. The minimum such quantity is the Least Common Multiple (LCM) of 252 and 324.\nUsing the prime factorizations:\n252 = 2² × 3² × 7¹\n324 = 2² × 3⁴\nTo find LCM, we take all prime factors with the highest powers:\nLCM(252, 324) = 2² × 3⁴ × 7¹ = 4 × 81 × 7 = 324 × 7 = 2268\nTherefore, the minimum total number of juice boxes of each type the manager must buy is 2268.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Prime factorize 252 and 324.",
+            "Calculate HCF(252, 324) to determine the maximum number of fruits per basket.",
+            "Divide the total number of apples/bananas by the HCF to find the number of baskets for each type.",
+            "Calculate LCM(252, 324) to find the minimum equal total number of juice boxes."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "An architect is designing a pedestrian bridge whose main arch has a parabolic shape. The height, h(x) (in meters), of the arch from the ground at a horizontal distance x (in meters) from one end of the bridge can be modeled by the polynomial h(x) = -x² + 8x - 12.\n\nBased on this information, answer the following questions:\n\n(i) At what horizontal distances from the reference point does the arch meet the ground?\n(ii) What is the maximum height of the arch?\n(iii) If the architect decides to design a a new arch with zeroes that are double the zeroes of the original arch, find the new quadratic polynomial representing this arch. (Assume the leading coefficient remains -1).\n(iv) What is the total horizontal span (width) of the arch?",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for sub-parts (i), (ii), (iii), (iv).",
+          "explanation": "(i) To find where the arch meets the ground, we need to find the zeroes of the polynomial h(x). Set h(x) = 0:\n   -x² + 8x - 12 = 0\n   Multiply by -1 to simplify:\n   x² - 8x + 12 = 0\n   Factor the quadratic equation:\n   (x - 2)(x - 6) = 0\n   So, x = 2 or x = 6.\n   The arch meets the ground at horizontal distances of 2 meters and 6 meters from the reference point.\n\n(ii) The maximum height of a parabolic arch represented by ax² + bx + c occurs at its vertex. The x-coordinate of the vertex is given by -b/(2a).\n   For h(x) = -x² + 8x - 12, we have a = -1 and b = 8.\n   x-coordinate of vertex = -8 / (2 × -1) = -8 / -2 = 4.\n   Now, substitute x = 4 into the polynomial to find the maximum height:\n   h(4) = -(4)^2 + 8(4) - 12\n   h(4) = -16 + 32 - 12\n   h(4) = 16 - 12 = 4\n   The maximum height of the arch is 4 meters.\n\n(iii) From part (i), the zeroes of the original arch are α = 2 and β = 6.\n   New zeroes are double the original zeroes: α' = 2 × 2 = 4 and β' = 2 × 6 = 12.\n   Sum of new zeroes: α' + β' = 4 + 12 = 16.\n   Product of new zeroes: α' β' = 4 × 12 = 48.\n   A quadratic polynomial with zeroes α' and β' and leading coefficient k is given by P'(x) = k(x² - (α' + β')x + α'β').\n   Given that the leading coefficient remains -1 (i.e., k = -1), the new polynomial is:\n   P'(x) = -1(x² - 16x + 48)\n   P'(x) = -x² + 16x - 48.\n\n(iv) The total horizontal span of the arch is the distance between the points where it meets the ground. These points are the zeroes of the polynomial, which are x = 2 and x = 6.\n   Horizontal span = |6 - 2| = 4 meters.\n   The total horizontal span (width) of the arch is 4 meters.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Set h(x) = 0 and solve for x to find zeroes.",
+            "Use formula x = -b/(2a) for vertex x-coordinate, then substitute into h(x) for maximum height.",
+            "Calculate new zeroes by doubling original zeroes.",
+            "Form new polynomial using sum and product of new zeroes with given leading coefficient.",
+            "Calculate the difference between the zeroes to find the horizontal span."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A local school organized an annual fair to raise funds for charity. They sold two types of entry tickets: student tickets and adult tickets. The prices for these tickets were fixed.\n\nOn the first day of the fair, 20 student tickets and 10 adult tickets were sold, and the total revenue collected was ₹1000.\n\nOn the second day, 15 student tickets and 20 adult tickets were sold, and the total revenue collected was ₹1350.\n\nBased on the information given, answer the following questions:\n\n(i) Formulate a pair of linear equations in two variables to represent the situation.\n(ii) Find the price of one student ticket and one adult ticket.\n(iii) If a family consisting of 2 adults and 3 students attends the fair, what would be the total cost for their tickets?",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for sub-parts.",
+          "explanation": "(i) Let 'x' be the price of one student ticket and 'y' be the price of one adult ticket.\n\nFrom the information of the first day:\n20 student tickets + 10 adult tickets = ₹1000\nSo, the first equation is: 20x + 10y = 1000\nThis can be simplified by dividing by 10: 2x + y = 100  (Equation 1)\n\nFrom the information of the second day:\n15 student tickets + 20 adult tickets = ₹1350\nSo, the second equation is: 15x + 20y = 1350  (Equation 2)\n\n(ii) To find the price of one student ticket (x) and one adult ticket (y), we solve the system of equations:\n1. 2x + y = 100\n2. 15x + 20y = 1350\n\nFrom Equation 1, we can express y in terms of x:\ny = 100 - 2x  (Equation 3)\n\nSubstitute the value of y from Equation 3 into Equation 2:\n15x + 20(100 - 2x) = 1350\n15x + 2000 - 40x = 1350\n-25x = 1350 - 2000\n-25x = -650\nx = -650 / -25\nx = 26\n\nNow, substitute the value of x back into Equation 3 to find y:\ny = 100 - 2(26)\ny = 100 - 52\ny = 48\n\nTherefore, the price of one student ticket is ₹26 and the price of one adult ticket is ₹48.\n\n(iii) For a family consisting of 2 adults and 3 students:\nCost = (Number of adults × Price of one adult ticket) + (Number of students × Price of one student ticket)\nCost = (2 × ₹48) + (3 × ₹26)\nCost = ₹96 + ₹78\nCost = ₹174\n\nThe total cost for their tickets would be ₹174.",
+          "bloomsLevel": "Apply",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Define variables for the prices of student and adult tickets.",
+            "Formulate two linear equations based on the given information from the two days' sales.",
+            "Solve the system of linear equations (e.g., using substitution or elimination method) to find the individual prices of student and adult tickets.",
+            "Calculate the total cost for a family of 2 adults and 3 students using the determined ticket prices."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 12
+    }
+  },
+  "metadata": {
+    "board": "CBSE",
+    "class": 10,
+    "subject": "Mathematics",
+    "totalQuestions": 38,
+    "totalMarks": 80,
+    "duration": 180,
+    "generationMethod": "RAG+LLM",
+    "llmModel": "gemini-2.5-flash",
+    "chaptersUsed": [
+      "Real Numbers",
+      "Polynomials",
+      "Pair of Linear Equations in Two Variables",
+      "Quadratic Equations",
+      "Arithmetic Progressions",
+      "Triangles",
+      "Coordinate Geometry",
+      "Introduction to Trigonometry",
+      "Applications of Trigonometry",
+      "Circles",
+      "Areas Related to Circles",
+      "Surface Areas and Volumes",
+      "Statistics",
+      "Probability"
+    ],
+    "generationTimeMs": 506474
+  }
+}

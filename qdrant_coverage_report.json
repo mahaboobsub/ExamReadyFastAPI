@@ -1,0 +1,83 @@
+{
+  "total_chapters": 14,
+  "chapters_with_data": 14,
+  "coverage_percentage": 100.0,
+  "total_chunks": 481,
+  "good_coverage": 14,
+  "sparse_coverage": 0,
+  "missing_coverage": 0,
+  "results": [
+    {
+      "chapter": "Real Numbers",
+      "count": 25,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Polynomials",
+      "count": 16,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Pair of Linear Equations in Two Variables",
+      "count": 30,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Quadratic Equations",
+      "count": 19,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Arithmetic Progressions",
+      "count": 44,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Triangles",
+      "count": 49,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Coordinate Geometry",
+      "count": 26,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Introduction to Trigonometry",
+      "count": 51,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Applications of Trigonometry",
+      "count": 51,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Circles",
+      "count": 30,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Areas Related to Circles",
+      "count": 27,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Surface Areas and Volumes",
+      "count": 22,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Statistics",
+      "count": 47,
+      "status": "\u2705 GOOD"
+    },
+    {
+      "chapter": "Probability",
+      "count": 44,
+      "status": "\u2705 GOOD"
+    }
+  ],
+  "recommendation": "\u2705 PROCEED - Excellent coverage, can generate full exam",
+  "action": "Generate full 14-chapter exam with confidence"
+}

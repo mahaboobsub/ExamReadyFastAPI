@@ -1,0 +1,808 @@
+{
+  "sections": {
+    "A": {
+      "name": "Section A (MCQ & AR)",
+      "questions": [
+        {
+          "text": "Which of the following statements about real numbers is true?",
+          "type": "MCQ",
+          "options": [
+            "A) The product of two irrational numbers is always irrational.",
+            "B) The sum of a rational number and an irrational number is always rational.",
+            "C) The product of a non-zero rational number and an irrational number is always irrational.",
+            "D) The sum of two rational numbers is sometimes irrational."
+          ],
+          "correctAnswer": "C) The product of a non-zero rational number and an irrational number is always irrational.",
+          "explanation": "Let's analyze each statement:\n\nA) The product of two irrational numbers is not always irrational. For example, √{2} is irrational, and √{2} is irrational, but their product √{2} × √{2} = 2, which is a rational number.\n\nB) The sum of a rational number and an irrational number is always irrational, not rational. For example, 3 (rational) + √{5} (irrational) = 3 + √{5}, which is irrational.\n\nC) This statement is true. If r is a non-zero rational number and s is an irrational number, assume their product rs is rational. Then s = (rs/r). Since r is a non-zero rational and rs is rational, (rs/r) would be rational, which implies s is rational. This contradicts our initial assumption that s is irrational. Therefore, the product of a non-zero rational number and an irrational number must be irrational.\n\nD) The sum of two rational numbers is always rational. For example, (1/2) (rational) + (1/3) (rational) = (5/6), which is rational. It can never be irrational.\n\nThus, option C is the correct statement.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall definitions of rational and irrational numbers.",
+            "Test each statement with examples or fundamental properties of real numbers."
+          ]
+        },
+        {
+          "text": "If the HCF (Highest Common Factor) of two numbers is 12 and their product is 2160, what is their LCM (Lowest Common Multiple)?",
+          "type": "MCQ",
+          "options": [
+            "A) 180",
+            "B) 240",
+            "C) 120",
+            "D) 360"
+          ],
+          "correctAnswer": "A) 180",
+          "explanation": "For any two positive integers, the product of their HCF and LCM is equal to the product of the numbers themselves.\n\nLet the two numbers be 'a' and 'b'.\nWe know the formula: HCF(a, b) × LCM(a, b) = a × b.\n\nGiven:\nHCF = 12\nProduct of the numbers (a × b) = 2160\n\nSubstitute the given values into the formula:\n12 × LCM = 2160\n\nTo find the LCM, divide the product by the HCF:\nLCM = (2160/12)\nLCM = 180\n\nTherefore, the LCM of the two numbers is 180.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the fundamental relationship: HCF × LCM = Product of two numbers.",
+            "Substitute the given HCF and product into the formula.",
+            "Solve the equation for the LCM."
+          ]
+        },
+        {
+          "text": "Assertion (A): The number 14ⁿ, where n is a natural number, cannot end with the digit zero.\nReason (R): A number ends with the digit zero if and only if its prime factorization contains both 2 and 5.",
+          "type": "AR",
+          "options": [
+            "Both A and R are true and R is the correct explanation of A.",
+            "Both A and R are true but R is not the correct explanation of A.",
+            "A is true but R is false.",
+            "A is false but R is true."
+          ],
+          "correctAnswer": "Both A and R are true and R is the correct explanation of A.",
+          "explanation": "For a number to end with the digit zero, its prime factorization must contain at least one 2 and at least one 5. This is because ending in zero implies divisibility by 10, and 10 = 2 × 5.\n\nAssertion (A): The given number is 14ⁿ. The prime factorization of 14 is 2 × 7. Therefore, 14ⁿ = (2 × 7)^n = 2ⁿ × 7ⁿ.\nIn the prime factorization of 14ⁿ, the only prime factors are 2 and 7. There is no factor of 5.\nAccording to the condition stated above, since 5 is not a prime factor of 14ⁿ, it cannot end with the digit zero for any natural number n. So, Assertion (A) is true.\n\nReason (R): The statement 'A number ends with the digit zero if and only if its prime factorization contains both 2 and 5' is a fundamental concept derived from the Fundamental Theorem of Arithmetic. This condition is necessary and sufficient for a number to have 0 at its unit's place. So, Reason (R) is true.\n\nSince Reason (R) provides the exact condition which is used to justify why 14ⁿ cannot end with the digit zero (due to the absence of the prime factor 5), Reason (R) is the correct explanation for Assertion (A).",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Determine the prime factorization of the base number (14).",
+            "Recall the condition for a number to end with the digit zero.",
+            "Check if the prime factors of 14ⁿ satisfy the condition.",
+            "Evaluate the truthfulness of both Assertion and Reason.",
+            "Determine if the Reason correctly explains the Assertion."
+          ]
+        },
+        {
+          "text": "Identify the type of polynomial p(x) = 4x³ - 7x + 2.",
+          "type": "MCQ",
+          "options": [
+            "A) Linear polynomial",
+            "B) Quadratic polynomial",
+            "C) Cubic polynomial",
+            "D) Biquadratic polynomial"
+          ],
+          "correctAnswer": "C) Cubic polynomial",
+          "explanation": "The degree of a polynomial is the highest power of the variable in it. In the given polynomial p(x) = 4x³ - 7x + 2, the highest power of x is 3. A polynomial with degree 3 is called a cubic polynomial. A linear polynomial has degree 1, a quadratic polynomial has degree 2, and a biquadratic polynomial (not explicitly mentioned in NCERT Class 10 but generally refers to degree 4) has degree 4.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the highest power of the variable in the polynomial.",
+            "Classify the polynomial based on its degree."
+          ]
+        },
+        {
+          "text": "What is the sum of the zeroes of the quadratic polynomial p(x) = x² - 9x + 14?",
+          "type": "MCQ",
+          "options": [
+            "A) -9",
+            "B) 9",
+            "C) 14",
+            "D) -14"
+          ],
+          "correctAnswer": "B) 9",
+          "explanation": "For a quadratic polynomial of the form ax² + bx + c, the sum of the zeroes (α + \beta) is given by the formula -b/a.\nIn the given polynomial p(x) = x² - 9x + 14, we compare it with the standard form ax² + bx + c.\nHere, the coefficients are a=1, b=-9, and c=14.\nTherefore, the sum of the zeroes = -b/a = -(-9)/1 = 9/1 = 9.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a, b, and c from the given quadratic polynomial.",
+            "Apply the formula for the sum of zeroes (α + \beta = -b/a)."
+          ]
+        },
+        {
+          "text": "Assertion (A): If the sum of the zeroes of the quadratic polynomial p(x) = kx² - 3x + 5 is 1, then the value of k is 3.\nReason (R): The sum of the zeroes of a quadratic polynomial ax² + bx + c is given by -(b/a).",
+          "type": "AR",
+          "options": [
+            "Both A and R are true and R is the correct explanation for A.",
+            "Both A and R are true but R is not the correct explanation for A.",
+            "A is true but R is false.",
+            "A is false but R is true."
+          ],
+          "correctAnswer": "Both A and R are true and R is the correct explanation for A.",
+          "explanation": "To check Assertion (A):\nGiven quadratic polynomial is p(x) = kx² - 3x + 5.\nComparing this with the general form ax² + bx + c, we have a=k, b=-3, and c=5.\nAccording to the Reason (R), the sum of the zeroes of a quadratic polynomial is given by -(b/a).\nSo, the sum of the zeroes for p(x) is -(-3/k) = (3/k).\nGiven that the sum of the zeroes is 1.\nTherefore, (3/k) = 1.\nSolving for k, we get k=3.\nThus, Assertion (A) is true.\n\nTo check Reason (R):\nThe statement 'The sum of the zeroes of a quadratic polynomial ax² + bx + c is given by -(b/a)' is a fundamental property of quadratic polynomials, as stated in NCERT textbook (Chunk 4).\nThus, Reason (R) is true.\n\nSince the calculation in Assertion (A) directly uses the formula mentioned in Reason (R) to find the value of k, Reason (R) is the correct explanation for Assertion (A).\n\nHence, both A and R are true and R is the correct explanation for A.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients a, b, c from the given polynomial.",
+            "Apply the formula for the sum of zeroes to the given polynomial.",
+            "Equate the sum of zeroes to the given value and solve for k.",
+            "Verify the truthfulness of the Reason statement.",
+            "Determine if the Reason correctly explains the Assertion."
+          ]
+        },
+        {
+          "text": "Which of the following statements correctly defines an inconsistent pair of linear equations?",
+          "type": "MCQ",
+          "options": [
+            "A) A pair of equations that has exactly one solution.",
+            "B) A pair of equations that has infinitely many solutions.",
+            "C) A pair of equations that has no solution.",
+            "D) A pair of equations that has at least one solution."
+          ],
+          "correctAnswer": "C) A pair of equations that has no solution.",
+          "explanation": "According to the NCERT textbook, a pair of linear equations which has no solution is called an inconsistent pair of linear equations. This is a fundamental definition in the chapter 'Pair of Linear Equations in Two Variables'.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of an inconsistent pair of linear equations."
+          ]
+        },
+        {
+          "text": "If the graph of a pair of linear equations in two variables represents coincident lines, what can be concluded about the number of solutions?",
+          "type": "MCQ",
+          "options": [
+            "A) The pair of equations has a unique solution.",
+            "B) The pair of equations has no solution.",
+            "C) The pair of equations has infinitely many solutions.",
+            "D) The pair of equations has exactly two solutions."
+          ],
+          "correctAnswer": "C) The pair of equations has infinitely many solutions.",
+          "explanation": "As per the graphical method of solving a pair of linear equations, if the lines representing the equations are coincident, it means every point on the line is a common solution. Therefore, the pair of equations has infinitely many solutions. This type of pair is also called a dependent (consistent) pair of equations.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the relationship between coincident lines and the number of solutions for a pair of linear equations."
+          ]
+        },
+        {
+          "text": "Which of the following equations is a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "A) (x + 2)^2 = 2x(x - 3)",
+            "B) (x - 1)(x + 3) = x² + 2x - 3",
+            "C) x(x + 5) = x² + 5x + 1"
+          ],
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations"
+        },
+        {
+          "text": "Which of the following equations, upon simplification, represents a quadratic equation?",
+          "type": "MCQ",
+          "options": [
+            "Option A:  x(x + 5) = x² + 3x - 1 ",
+            "Option B:  (x - 1)(x + 2) = x² + 4 ",
+            "Option C:  (2x + 1)^2 = 4x²"
+          ],
+          "marks": 1,
+          "bloomsLevel": "Remember",
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations"
+        },
+        {
+          "text": "A list of numbers in which each term is obtained by adding a fixed number to the preceding term (except the first term) is called a/an:",
+          "type": "MCQ",
+          "options": [
+            "Geometric Progression",
+            "Arithmetic Progression",
+            "Harmonic Progression",
+            "Quadratic Sequence"
+          ],
+          "correctAnswer": "Arithmetic Progression",
+          "explanation": "According to the NCERT definition, an arithmetic progression (AP) is a list of numbers in which each term is obtained by adding a fixed number to the preceding term, except the first term. This fixed number is known as the common difference.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of an Arithmetic Progression."
+          ]
+        },
+        {
+          "text": "Identify the theorem: \"If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side.\"",
+          "type": "MCQ",
+          "options": [
+            "A) Pythagoras Theorem",
+            "B) Basic Proportionality Theorem",
+            "C) Converse of Basic Proportionality Theorem",
+            "D) Mid-point Theorem"
+          ],
+          "correctAnswer": "C) Converse of Basic Proportionality Theorem",
+          "explanation": "The given statement is the definition of the Converse of Basic Proportionality Theorem (also known as the Converse of Thales Theorem). This theorem states that if a line intersects two sides of a triangle and divides these sides proportionally, then the line is parallel to the third side.\n\n- Pythagoras Theorem relates the sides of a right-angled triangle (a² + b² = c²).\n- Basic Proportionality Theorem (BPT) states that if a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, then the other two sides are divided in the same ratio.\n- Mid-point Theorem states that the line segment connecting the midpoints of two sides of a triangle is parallel to the third side and is half the length of the third side.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Triangles",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the statement of the Converse of Basic Proportionality Theorem.",
+            "Compare the given statement with the known theorems related to triangles."
+          ]
+        },
+        {
+          "text": "The midpoint of a line segment connecting points P(x, 7) and Q(4, y) is M(-1, 5). What are the values of x and y?",
+          "type": "MCQ",
+          "options": [
+            "A) x = -6, y = 3",
+            "B) x = 6, y = 3",
+            "C) x = -6, y = -3",
+            "D) x = 6, y = -3"
+          ],
+          "correctAnswer": "A) x = -6, y = 3",
+          "explanation": "Let the coordinates of point P be (x₁, y₁) = (x, 7) and point Q be (x₂, y₂) = (4, y).\nLet the coordinates of the midpoint M be (X, Y) = (-1, 5).\n\nThe midpoint formula states that if M(X, Y) is the midpoint of the line segment joining P(x₁, y₁) and Q(x₂, y₂), then:\nX = (x₁ + x₂/2)\nY = (y₁ + y₂/2)\n\nSubstitute the given values into the formula for the x-coordinate:\n-1 = (x + 4/2)\nMultiply both sides by 2:\n-1 × 2 = x + 4\n-2 = x + 4\nSubtract 4 from both sides:\nx = -2 - 4\nx = -6\n\nNow substitute the given values into the formula for the y-coordinate:\n5 = (7 + y/2)\nMultiply both sides by 2:\n5 × 2 = 7 + y\n10 = 7 + y\nSubtract 7 from both sides:\ny = 10 - 7\ny = 3\n\nThus, the values are x = -6 and y = 3.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Coordinate Geometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the given coordinates of the endpoints and the midpoint.",
+            "Apply the midpoint formula for the x-coordinate to find x.",
+            "Apply the midpoint formula for the y-coordinate to find y."
+          ]
+        },
+        {
+          "text": "A student is observing a vertical pole. The student is standing 15 meters away from the base of the pole. If the angle of elevation of the top of the pole from the student's eyes is 60^° and the student's height is negligible, what is the height of the pole?",
+          "type": "MCQ",
+          "options": [
+            "A) 15√{3} meters",
+            "B) (15/√{3)} meters",
+            "C) 15 meters",
+            "D) 30 meters"
+          ],
+          "correctAnswer": "A) 15√{3} meters",
+          "explanation": "Let 'h' be the height of the pole and 'd' be the distance of the student from the base of the pole.\nGiven:\nDistance from the base of the pole (d) = 15 m\nAngle of elevation (θ) = 60^°\n\nIn the right-angled triangle formed by the pole, the ground, and the line of sight:\nWe use the trigonometric ratio tangent, which relates the opposite side (height of the pole) to the adjacent side (distance from the pole) with respect to the angle of elevation.\ntan θ = frac{text{Opposite side}}{text{Adjacent side}}\ntan θ = frac{text{Height of pole}}{text{Distance from pole}}\ntan 60^° = (h/15)\n\nWe know that the value of tan 60^° = √{3}.\nSo, √{3} = (h/15)\nMultiplying both sides by 15:\nh = 15√{3} meters.\n\nThus, the height of the pole is 15√{3} meters.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Introduction to Trigonometry",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the right-angled triangle formed by the pole, the ground, and the line of sight.",
+            "Choose the appropriate trigonometric ratio (tangent) based on the given information (opposite side 'h' and adjacent side '15 m' with respect to the angle 60^°).",
+            "Substitute the known values into the trigonometric ratio and solve for the unknown height 'h'."
+          ]
+        },
+        {
+          "text": "When an observer looks at an object located above their eye level, the angle formed between the line of sight and the horizontal line drawn from the observer's eye is known as the:",
+          "type": "MCQ",
+          "options": [
+            "Angle of depression",
+            "Angle of elevation",
+            "Right angle",
+            "Straight angle"
+          ],
+          "correctAnswer": "Angle of elevation",
+          "explanation": "The angle of elevation is defined as the angle formed by the line of sight with the horizontal when the observer is looking upwards at an object. Since the object is above the observer's eye level, the observer is looking up, which corresponds to the definition of the angle of elevation.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Applications of Trigonometry",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the definition of the angle of elevation.",
+            "Identify the correct term based on the description of the observer looking upwards."
+          ]
+        },
+        {
+          "text": "A tangent PQ at a point P of a circle with centre O and radius 5 cm meets a line through the centre O at a point Q, such that OQ = 13 cm. What is the length of the tangent PQ?",
+          "type": "MCQ",
+          "options": [
+            "8 cm",
+            "10 cm",
+            "12 cm",
+            "15 cm"
+          ],
+          "correctAnswer": "12 cm",
+          "explanation": "According to Theorem 10.1, the tangent at any point of a circle is perpendicular to the radius through the point of contact. \nTherefore, in the given scenario, the radius OP is perpendicular to the tangent PQ at point P. This forms a right-angled triangle △ OPQ with the right angle at P.\nGiven:\nRadius, OP = 5 cm\nDistance from the centre to point Q, OQ = 13 cm (this is the hypotenuse of △ OPQ)\nWe need to find the length of the tangent PQ.\n\nUsing the Pythagorean theorem in △ OPQ:\nOP² + PQ² = OQ²\n5² + PQ² = 13²\n25 + PQ² = 169\nPQ² = 169 - 25\nPQ² = 144\nPQ = √{144}\nPQ = 12 cm\n\nThus, the length of the tangent PQ is 12 cm.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Circles",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify that the radius is perpendicular to the tangent at the point of contact, forming a right-angled triangle.",
+            "Apply the Pythagorean theorem to find the length of the tangent."
+          ]
+        },
+        {
+          "text": "The minute hand of a circular clock is 14 cm long. What is the area swept by the minute hand in 5 minutes? (Use π = (22/7))",
+          "type": "MCQ",
+          "options": [
+            "(154/3) cm^2",
+            "(77/3) cm^2",
+            "(308/3) cm^2",
+            "154 cm^2"
+          ],
+          "correctAnswer": "(154/3) cm^2",
+          "explanation": "The length of the minute hand is the radius of the circle, so r = 14 cm.\nIn 60 minutes, the minute hand sweeps an angle of 360^{°}.\nTherefore, in 1 minute, the angle swept is frac{360^{°}}{60} = 6^{°}.\nIn 5 minutes, the angle swept (θ) is 5 × 6^{°} = 30^{°}.\nThe area swept by the minute hand in 5 minutes is the area of a sector with radius r = 14 cm and angle θ = 30^{°}.\nArea of the sector = (θ/360^{°)} × π r²\n= frac{30^{°}}{360^{°}} × (22/7) × (14)^2\n= (1/12) × (22/7) × 196\n= (1/12) × 22 × 28\n= (1/3) × 22 × 7 (by dividing 12 and 28 by 4)\n= (154/3) cm^2.",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Areas Related to Circles",
+          "hasLatex": true,
+          "keySteps": [
+            "Calculate the angle swept by the minute hand in 5 minutes.",
+            "Apply the formula for the area of a sector using the calculated angle and given radius."
+          ]
+        },
+        {
+          "text": "When two basic solids are joined together to form a new solid, how is the volume of the resulting combination of solids calculated?",
+          "type": "MCQ",
+          "options": [
+            "By subtracting the volume of the smaller solid from the larger one.",
+            "By taking the average of the volumes of the two solids.",
+            "By finding the sum of the volumes of the two constituent solids.",
+            "By multiplying the volumes of the two solids."
+          ],
+          "correctAnswer": "By finding the sum of the volumes of the two constituent solids.",
+          "explanation": "According to NCERT Class 10 Mathematics, Chapter 'Surface Areas and Volumes', when two basic solids are joined to form a new solid, the volume of the solid formed will actually be the sum of the volumes of the constituents. This is because no part of the volume disappears in the process of joining them, unlike surface areas where some parts might get hidden.",
+          "bloomsLevel": "Remember",
+          "marks": 1,
+          "difficulty": "Easy",
+          "chapter": "Surface Areas and Volumes",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the principle for calculating the volume of a combination of solids.",
+            "Identify that the volume of combined solids is the sum of their individual volumes."
+          ]
+        },
+        {
+          "text": "For a certain distribution, if the mode is 60 and the mean is 66, what is the approximate median of the distribution?",
+          "type": "MCQ",
+          "options": [
+            "62",
+            "64",
+            "66",
+            "68"
+          ],
+          "correctAnswer": "64",
+          "explanation": "To find the median when the mode and mean are given, we use the empirical relationship between the three measures of central tendency:\n3 Median = Mode + 2 Mean\n\nGiven:\nMode = 60\nMean = 66\n\nSubstitute these values into the formula:\n3 Median = 60 + 2 * 66\n3 Median = 60 + 132\n3 Median = 192\n\nNow, divide by 3 to find the Median:\nMedian = 192 / 3\nMedian = 64\n\nThus, the approximate median of the distribution is 64.",
+          "bloomsLevel": "Understand",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Statistics",
+          "hasLatex": false,
+          "keySteps": [
+            "Recall the empirical relationship: 3 Median = Mode + 2 Mean.",
+            "Substitute the given values of Mode and Mean into the formula.",
+            "Solve the equation for the Median."
+          ]
+        },
+        {
+          "text": "A quality control inspector checks a batch of 250 smartphones. It is found that 20 of them are defective. If one smartphone is randomly selected from the batch, what is the probability that it is *not* defective?",
+          "type": "MCQ",
+          "options": [
+            "(1/12)",
+            "(11/12)",
+            "(23/25)",
+            "(2/25)"
+          ],
+          "correctAnswer": "(23/25)",
+          "explanation": "To find the probability that a randomly selected smartphone is not defective, we first need to determine the total number of smartphones and the number of non-defective smartphones.\n\nTotal number of smartphones in the batch = 250.\nNumber of defective smartphones = 20.\n\nNumber of non-defective smartphones = Total number of smartphones - Number of defective smartphones\nNumber of non-defective smartphones = 250 - 20 = 230.\n\nThe probability of an event E is given by the formula:\nP(E) = (Number of outcomes favourable to E) / (Total number of all possible outcomes)\n\nIn this case, the event E is selecting a smartphone that is not defective.\nNumber of favourable outcomes (non-defective smartphones) = 230.\nTotal number of possible outcomes (total smartphones) = 250.\n\nP(Not defective) = (230/250)\n\nSimplifying the fraction:\nP(Not defective) = (23/25)\n\nThus, the probability that the randomly selected smartphone is not defective is (23/25).",
+          "bloomsLevel": "Apply",
+          "marks": 1,
+          "difficulty": "Medium",
+          "chapter": "Probability",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the total number of possible outcomes.",
+            "Calculate the number of favorable outcomes (non-defective smartphones).",
+            "Apply the classical probability formula P(E) = (Favorable Outcomes) / (Total Outcomes)."
+          ]
+        }
+      ],
+      "marks": 20
+    },
+    "B": {
+      "name": "Section B (VSA)",
+      "questions": [
+        {
+          "text": "Without actually performing the long division, determine whether the rational number (27/160) will have a terminating decimal expansion or a non-terminating repeating decimal expansion. Justify your answer.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "The rational number (27/160) will have a terminating decimal expansion. This is because the prime factorization of its denominator, 160, is 2⁵ × 5¹, which is of the form 2ᵐ × 5ⁿ, where m and n are non-negative integers.",
+          "explanation": "Step 1: Identify the denominator of the given rational number (27/160). The denominator is 160.\nStep 2: Find the prime factorization of the denominator.\n160 = 16 × 10 = 2⁴ × (2 × 5) = 2⁵ × 5¹.\nStep 3: Examine the prime factors of the denominator. The prime factorization of the denominator (160) is 2⁵ × 5¹. This factorization contains only prime factors 2 and 5.\nStep 4: Apply the theorem for decimal expansions of rational numbers. According to the theorem, a rational number (p/q) (where p and q are co-prime) has a terminating decimal expansion if the prime factorization of the denominator q is of the form 2ᵐ × 5ⁿ, where m and n are non-negative integers. Since 160 = 2⁵ × 5¹ fits this form, the rational number (27/160) will have a terminating decimal expansion.",
+          "bloomsLevel": "Apply",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the denominator.",
+            "Find the prime factorization of the denominator.",
+            "Check if the prime factors are only 2s and/or 5s.",
+            "Conclude based on the theorem about decimal expansions."
+          ]
+        },
+        {
+          "text": "Find the sum of the zeroes of the quadratic polynomial p(x) = 5x² - 12x + 18.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "12/5",
+          "explanation": "For a quadratic polynomial of the form ax² + bx + c, the sum of the zeroes is given by the formula -b/a. \nGiven the quadratic polynomial p(x) = 5x² - 12x + 18. \nComparing this with the standard form ax² + bx + c, we identify the coefficients:\na = 5\nb = -12\nc = 18\nNow, apply the formula for the sum of the zeroes:\nSum of the zeroes = -b/a = -(-12)/5 = 12/5.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a, b, and c from the given quadratic polynomial.",
+            "Apply the formula for the sum of zeroes: Sum = -b/a."
+          ]
+        },
+        {
+          "text": "For what value of 'k' does the pair of linear equations 3x + y = 1 and (2k-1)x + (k-1)y = 2k have no solution?",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "k = 2",
+          "explanation": "The given pair of linear equations can be written in the standard form a₁x + b₁y + c₁ = 0 and a₂x + b₂y + c₂ = 0 as:\n1) 3x + y - 1 = 0\n2) (2k-1)x + (k-1)y - 2k = 0\n\nComparing the coefficients, we have:\na₁ = 3, b₁ = 1, c₁ = -1\na₂ = (2k-1), b₂ = (k-1), c₂ = -2k\n\nFor a pair of linear equations to have no solution, the lines representing them must be parallel. The condition for parallel lines (no solution) is:\n\n(a₁/a₂) = (b₁/b₂) ≠ (c₁/c₂)\n\nFirst, let's use the equality part: (a₁/a₂) = (b₁/b₂)\n\n(3/2k-1) = (1/k-1)\n\nCross-multiply:\n3(k-1) = 1(2k-1)\n3k - 3 = 2k - 1\n3k - 2k = 3 - 1\nk = 2\n\nNow, we must verify that this value of 'k' also satisfies the inequality part: (b₁/b₂) ≠ (c₁/c₂)\n\nSubstitute k = 2 into the inequality:\n(1/k-1) ≠ (-1/-2k)\n(1/2-1) ≠ (-1/-2(2))\n(1/1) ≠ (-1/-4)\n1 ≠ (1/4)\n\nSince 1 ≠ (1/4) is a true statement, the value k = 2 satisfies both conditions for the pair of linear equations to have no solution.\nTherefore, the value of 'k' for which the given pair of linear equations has no solution is 2.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify the coefficients a₁, b₁, c₁, a₂, b₂, c₂ from the given equations.",
+            "Apply the condition for no solution: (a₁/a₂) = (b₁/b₂) ≠ (c₁/c₂).",
+            "Solve the equality (a₁/a₂) = (b₁/b₂) for the variable 'k'.",
+            "Verify that the obtained value of 'k' also satisfies the inequality (b₁/b₂) ≠ (c₁/c₂)."
+          ]
+        },
+        {
+          "text": "Write the standard form of a quadratic equation in the variable x and state the essential condition for its coefficients.",
+          "type": "VSA",
+          "options": [],
+          "correctAnswer": "The standard form is ax² + bx + c = 0. The essential condition is that a ≠ 0.",
+          "explanation": "According to the definition provided in the NCERT textbook, a quadratic equation in the variable x is an equation of the form ax² + bx + c = 0, where a, b, and c are real numbers. The essential condition for this equation to be truly quadratic is that the coefficient of the x² term, which is 'a', must not be zero. If a=0, the equation would reduce to bx + c = 0, which is a linear equation, not a quadratic one. Therefore, the standard form is ax² + bx + c = 0 and the condition is a ≠ 0.",
+          "bloomsLevel": "Remember",
+          "marks": 2,
+          "difficulty": "Easy",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Recall the standard form of a quadratic equation.",
+            "Identify the essential condition for the coefficient of the highest degree term."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "In an Arithmetic Progression (AP), the 7th term is 20 and the 10th term is 29. Find the common difference of the AP.",
+          "type": "VSA",
+          "correctAnswer": "3",
+          "explanation": "Let the first term of the AP be 'a' and the common difference be 'd'.\nThe formula for the nth term of an AP is given by `aₙ = a + (n-1)d`.\n\nGiven that the 7th term (`a₇`) is 20:\n`a₇ = a + (7-1)d`\n`a + 6d = 20`  (Equation 1)\n\nGiven that the 10th term (`a₁0`) is 29:\n`a₁0 = a + (10-1)d`\n`a + 9d = 29`  (Equation 2)\n\nTo find the common difference 'd', we can subtract Equation 1 from Equation 2:\n`(a + 9d) - (a + 6d) = 29 - 20`\n`a + 9d - a - 6d = 9`\n`3d = 9`\n`d = 9 / 3`\n`d = 3`\n\nThus, the common difference of the AP is 3.",
+          "bloomsLevel": "Understand",
+          "marks": 2,
+          "difficulty": "Medium",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": true,
+          "keySteps": [
+            "Write down the formula for the nth term of an AP.",
+            "Formulate two equations using the given 7th and 10th terms.",
+            "Solve the system of equations to find the common difference 'd'."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 10
+    },
+    "C": {
+      "name": "Section C (SA)",
+      "questions": [
+        {
+          "text": "Prove that 5 - 2√{3} is an irrational number, given that √{3} is an irrational number.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "The proof demonstrates by contradiction that 5 - 2√{3} is irrational.",
+          "explanation": "To prove that 5 - 2√{3} is an irrational number, we use the method of contradiction.\n\nStep 1: Assume, to the contrary, that 5 - 2√{3} is a rational number.\n\nStep 2: If 5 - 2√{3} is rational, then it can be expressed in the form (a/b), where a and b are integers, b ≠ 0, and a, b are coprime (have no common factors other than 1).\nSo, 5 - 2√{3} = (a/b)\n\nStep 3: Rearrange the equation to isolate √{3} on one side:\n5 - (a/b) = 2√{3}\n(5b - a/b) = 2√{3}\n(5b - a/2b) = √{3}\n\nStep 4: Analyze the expression on the left-hand side. Since a and b are integers, 5b - a is an integer, and 2b is a non-zero integer. Therefore, the expression (5b - a/2b) is a rational number (as it is a ratio of two integers with a non-zero denominator).\n\nStep 5: From Step 3, we have √{3} = (5b - a/2b). This implies that √{3} is a rational number.\n\nStep 6: However, we are given that √{3} is an irrational number. This creates a contradiction with our deduction in Step 5.\n\nStep 7: This contradiction arises because our initial assumption that 5 - 2√{3} is rational must be false.\n\nStep 8: Therefore, 5 - 2√{3} must be an irrational number.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Assume 5 - 2√{3} is rational and express it as (a/b) where a,b are coprime integers and b ≠ 0.",
+            "Rearrange the equation to isolate √{3}.",
+            "Show that the isolated expression for √{3} is rational.",
+            "Conclude a contradiction with the given fact that √{3} is irrational and state the final result."
+          ]
+        },
+        {
+          "text": "If α and β are the zeroes of the quadratic polynomial p(x) = x² - 5x + k, and it is given that α - β = 1, find the value of k.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "6",
+          "explanation": "Given the quadratic polynomial p(x) = x² - 5x + k.\nComparing this with the standard form ax² + bx + c, we have:\na = 1\nb = -5\nc = k\n\nLet α and β be the zeroes of the polynomial.\n\nFrom the relationship between zeroes and coefficients of a quadratic polynomial:\n1. Sum of zeroes: α + β = -b/a\n   α + β = -(-5)/1\n   α + β = 5  (Equation 1)\n\n2. Product of zeroes: α β = c/a\n   α β = k/1\n   α β = k  (Equation 2)\n\nWe are also given the condition:\nα - β = 1  (Equation 3)\n\nNow, we have a system of two linear equations with α and β:\n(1) α + β = 5\n(3) α - β = 1\n\nAdding Equation (1) and Equation (3):\n(α + β) + (α - β) = 5 + 1\n2α = 6\nα = 3\n\nSubstitute the value of α = 3 into Equation (1):\n3 + β = 5\nβ = 5 - 3\nβ = 2\n\nFinally, substitute the values of α = 3 and β = 2 into Equation (2) to find k:\nα β = k\n(3)(2) = k\nk = 6\n\nThus, the value of k is 6.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify coefficients a, b, c from the polynomial.",
+            "Write sum of zeroes and product of zeroes formulas.",
+            "Use the given condition to form a system of equations.",
+            "Solve for the individual zeroes α and β.",
+            "Substitute the zeroes into the product formula to find k."
+          ]
+        },
+        {
+          "text": "A stationery shop sold 5 pens and 3 notebooks for ₹105. On another day, they sold 4 pens and 7 notebooks for ₹130. Find the cost of one pen and one notebook.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Cost of one pen = ₹15, Cost of one notebook = ₹10",
+          "explanation": "Let the cost of one pen be ₹x and the cost of one notebook be ₹y.\n\nAccording to the first condition:\n5x + 3y = 105  (Equation 1)\n\nAccording to the second condition:\n4x + 7y = 130  (Equation 2)\n\nWe can use the elimination method to solve this system of equations.\nMultiply Equation (1) by 4 and Equation (2) by 5 to make the coefficients of x numerically equal:\n(5x + 3y = 105) * 4  =>  20x + 12y = 420  (Equation 3)\n(4x + 7y = 130) * 5  =>  20x + 35y = 650  (Equation 4)\n\nSubtract Equation (3) from Equation (4):\n(20x + 35y) - (20x + 12y) = 650 - 420\n20x + 35y - 20x - 12y = 230\n23y = 230\ny = 230 / 23\ny = 10\n\nNow, substitute the value of y = 10 into Equation (1):\n5x + 3(10) = 105\n5x + 30 = 105\n5x = 105 - 30\n5x = 75\nx = 75 / 5\nx = 15\n\nThus, the cost of one pen is ₹15 and the cost of one notebook is ₹10.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": false,
+          "keySteps": [
+            "Formulate two linear equations based on the given conditions.",
+            "Solve the system of equations using an appropriate algebraic method (elimination or substitution).",
+            "Substitute the value of one variable back into one of the original equations to find the other variable.",
+            "State the final answer clearly with units."
+          ]
+        },
+        {
+          "text": "The area of a rectangular plot is 528 m². The length of the plot (in metres) is one more than twice its breadth. Find the length and breadth of the plot.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "Length = 33 m, Breadth = 16 m",
+          "explanation": "Let the breadth of the rectangular plot be `x` metres.\nAccording to the problem, the length of the plot is one more than twice its breadth.\nSo, Length = `(2x + 1)` metres.\nArea of the rectangular plot = Length × Breadth\nGiven Area = 528 m².\nTherefore, `x(2x + 1) = 528`\n`2x² + x = 528`\n`2x² + x - 528 = 0`\nThis is a quadratic equation. We can solve it by factorization or by using the quadratic formula.\nUsing factorization:\nWe need two numbers whose product is `2 × (-528) = -1056` and whose sum is `1`.\nThe numbers are `33` and `-32`.\nSo, `2x² + 33x - 32x - 528 = 0`\n`x(2x + 33) - 16(2x + 33) = 0`\n`(x - 16)(2x + 33) = 0`\nThis gives two possible values for `x`:\n`x - 16 = 0  => x = 16`\n`2x + 33 = 0 => x = -33/2`\nSince breadth cannot be negative, we discard `x = -33/2`.\nSo, Breadth `(x) = 16` metres.\nLength = `2x + 1 = 2(16) + 1 = 32 + 1 = 33` metres.\nThus, the length of the plot is 33 m and the breadth is 16 m.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Formulate the quadratic equation from the given problem statement.",
+            "Solve the quadratic equation using an appropriate method (factorization or quadratic formula).",
+            "Interpret the valid solution(s) in the context of the problem and state the final answer."
+          ]
+        },
+        {
+          "text": "A manufacturing company's production of smartwatches increased uniformly by a fixed number every year. If the production in the 3rd year was 6000 units and in the 7th year was 9200 units, find the total production in the first 10 years.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "80000 units",
+          "explanation": "Let 'a' be the production in the first year and 'd' be the uniform increase in production each year. The production forms an Arithmetic Progression (AP).\nGiven:\nProduction in 3rd year (a₃) = 6000 units\nProduction in 7th year (a₇) = 9200 units\n\nUsing the formula for the nth term of an AP, aₙ = a + (n-1)d:\nFor the 3rd year: a₃ = a + (3-1)d = a + 2d\nSo, a + 2d = 6000  (Equation 1)\n\nFor the 7th year: a₇ = a + (7-1)d = a + 6d\nSo, a + 6d = 9200  (Equation 2)\n\nSubtract Equation 1 from Equation 2:\n(a + 6d) - (a + 2d) = 9200 - 6000\n4d = 3200\nd = 3200 / 4\nd = 800\n\nSubstitute the value of 'd' into Equation 1:\na + 2(800) = 6000\na + 1600 = 6000\na = 6000 - 1600\na = 4400\n\nSo, the production in the first year was 4400 units and the annual increase is 800 units.\n\nNow, we need to find the total production in the first 10 years. Using the formula for the sum of the first n terms of an AP, Sₙ = n/2 [2a + (n-1)d]:\nFor n = 10:\nS₁0 = 10/2 [2(4400) + (10-1)800]\nS₁0 = 5 [8800 + 9(800)]\nS₁0 = 5 [8800 + 7200]\nS₁0 = 5 [16000]\nS₁0 = 80000\n\nTherefore, the total production in the first 10 years was 80000 units.",
+          "bloomsLevel": "Apply",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Arithmetic Progressions",
+          "hasLatex": false,
+          "keySteps": [
+            "Identify the given information as terms of an AP.",
+            "Formulate simultaneous equations using the nth term formula aₙ = a + (n-1)d.",
+            "Solve the equations to find the first term (a) and common difference (d).",
+            "Use the sum of n terms formula Sₙ = n/2 [2a + (n-1)d] to find the total production."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "In △ PQR, points S and T are on sides PQ and PR respectively. If PS = x cm, SQ = (x-2) cm, PT = (x+2) cm, and TR = (x-1) cm, find the value of x for which ST is parallel to QR.",
+          "type": "SA",
+          "options": [],
+          "correctAnswer": "x = 4",
+          "explanation": "According to the Converse of Basic Proportionality Theorem (BPT), if a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side.\nFor ST to be parallel to QR, the ratios of the sides must be equal:\n(PS/SQ) = (PT/TR)\nSubstitute the given algebraic expressions:\n(x/x-2) = (x+2/x-1)\nCross-multiply the terms:\nx(x-1) = (x-2)(x+2)\nExpand both sides of the equation:\nx² - x = x² - 4\nSubtract x² from both sides of the equation:\n-x = -4\nMultiply both sides by -1 to solve for x:\nx = 4\n\nNow, we must verify if this value of x yields positive lengths for all segments, as lengths cannot be negative:\nPS = x = 4 cm (Positive)\nSQ = x-2 = 4-2 = 2 cm (Positive)\nPT = x+2 = 4+2 = 6 cm (Positive)\nTR = x-1 = 4-1 = 3 cm (Positive)\nSince all segment lengths are positive and valid, x=4 is the correct solution.\nThus, for x=4, ST is parallel to QR.",
+          "bloomsLevel": "Analyze",
+          "marks": 3,
+          "difficulty": "Medium",
+          "chapter": "Triangles",
+          "hasLatex": true,
+          "keySteps": [
+            "State the condition for ST || QR using the Converse of Basic Proportionality Theorem (BPT).",
+            "Set up the proportion using the given algebraic expressions for the segment lengths.",
+            "Solve the resulting algebraic equation for the variable x.",
+            "Verify the validity of the obtained value of x by ensuring all segment lengths are positive."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 18
+    },
+    "D": {
+      "name": "Section D (LA)",
+      "questions": [
+        {
+          "text": "The chapter Real Numbers deals with the properties of integers, rational, and irrational numbers, including the Fundamental Theorem of Arithmetic and the Euclidean Division Lemma. Apply these concepts to answer the following questions:\n\n**(A)** Prove that √{5} is an irrational number.\n**(B)** The HCF of two positive integers is 18 and their product is 12960. Find their LCM.\n**(C)** Three positive integers P, Q, R are expressed in terms of their prime factors as follows:\nP = 2ᵃ × 3³ × 5¹\nQ = 2⁴ × 3ᵇ × 7¹\nR = 2ᶜ × 3¹ × 5²\nIf the HCF of P, Q, R is 2² × 3¹ and the LCM of P, Q, R is 2⁵ × 3³ × 5² × 7¹, evaluate the minimum possible sum of a+b+c.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Part A: Proof as per NCERT.\nPart B: LCM = 720.\nPart C: Minimum sum a+b+c = 8.",
+          "explanation": "**(A) Proof that √{5} is an irrational number:**\nAssume, to the contrary, that √{5} is a rational number. \nThen, we can write √{5} = (p/q), where p and q are co-prime integers and q ≠ 0.\nSquaring both sides, we get 5 = (p²/q²), which implies p² = 5q². \nThis means p² is divisible by 5. By Theorem 1.3 (If a prime number p divides a², then p divides a), if 5 divides p², then 5 must divide p.\nSo, we can write p = 5k for some integer k.\nSubstitute p = 5k into the equation p² = 5q²:\n(5k)^2 = 5q²\n25k² = 5q²\n5k² = q²\nThis means q² is divisible by 5. Again, by Theorem 1.3, if 5 divides q², then 5 must divide q.\nSo, both p and q are divisible by 5. This contradicts our initial assumption that p and q are co-prime integers (i.e., they have no common factor other than 1).\nTherefore, our assumption that √{5} is rational is false. Hence, √{5} is an irrational number.\n\n**(B) Finding LCM of two positive integers:**\nGiven HCF = 18 and Product = 12960.\nFor two positive integers, we know that HCF × LCM = Product of the two numbers.\nSo, 18 × text{LCM} = 12960\ntext{LCM} = (12960/18)\ntext{LCM} = 720\n\n**(C) Evaluating the minimum possible sum of a+b+c:**\nGiven prime factorizations:\nP = 2ᵃ × 3³ × 5¹\nQ = 2⁴ × 3ᵇ × 7¹\nR = 2ᶜ × 3¹ × 5²\n\nGiven HCF(P, Q, R) = 2² × 3¹\nGiven LCM(P, Q, R) = 2⁵ × 3³ × 5² × 7¹\n\nWe know that for the HCF of numbers, we take the minimum power of each common prime factor. For the LCM, we take the maximum power of each prime factor present in any of the numbers.\n\n**1. For prime factor 2:**\nPowers in P, Q, R are a, 4, c.\nFrom HCF: min(a, 4, c) = 2. This implies a ge 2, c ge 2, and at least one of a or c must be 2.\nFrom LCM: max(a, 4, c) = 5. This implies at least one of a, 4, or c must be 5. Since 4 is not 5, either a=5 or c=5.\nTo minimize the sum a+b+c, we should choose the smallest possible values for a and c that satisfy these conditions. The pair (a, c) can be (2, 5) or (5, 2). In either case, a+c = 7.\nLet's choose a=2 and c=5 (or vice versa).\n\n**2. For prime factor 3:**\nPowers in P, Q, R are 3, b, 1.\nFrom HCF: min(3, b, 1) = 1. This implies b ge 1.\nFrom LCM: max(3, b, 1) = 3. This implies b le 3.\nSo, b can be 1, 2, or 3. To minimize a+b+c, we choose the minimum possible value for b, which is b=1.\n\n**3. For prime factor 5:**\nPowers in P, Q, R are 1, (not present in Q, so power is 0), 2.\nFrom HCF: min(1, 0, 2) = 0. (Consistent, as 5 is not a common factor in HCF 2² × 3¹)\nFrom LCM: max(1, 0, 2) = 2. (Consistent with 5² in LCM)\n\n**4. For prime factor 7:**\nPowers in P, Q, R are (not present in P, so power is 0), 1, (not present in R, so power is 0).\nFrom HCF: min(0, 1, 0) = 0. (Consistent, as 7 is not a common factor in HCF)\nFrom LCM: max(0, 1, 0) = 1. (Consistent with 7¹ in LCM)\n\nCombining the minimum values:\nWe found that minimum a+c = 7 (e.g., a=2, c=5).\nWe found that minimum b = 1.\n\nTherefore, the minimum possible sum of a+b+c = (a+c) + b = 7 + 1 = 8.",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Prove √{5} is irrational using contradiction method.",
+            "Apply HCF × LCM = Product for two numbers to find LCM.",
+            "Analyze prime factor powers (2, 3, 5, 7) in the given numbers P, Q, R.",
+            "Deduce possible ranges and minimum values for exponents a, b, c based on the provided HCF and LCM of P, Q, R.",
+            "Determine the specific minimum values for a, b, and c that satisfy all HCF and LCM conditions.",
+            "Calculate the minimum sum of a+b+c."
+          ]
+        },
+        {
+          "text": "A cubic polynomial p(x) = x³ - 3x² + x + 2 is divided by a quadratic polynomial g(x). The quotient obtained is x - 2 and the remainder is -2x + 4. \n\n(a) Determine the polynomial g(x). \n(b) If α and β are the zeroes of the polynomial g(x), evaluate the expression (α² + β²/αβ).",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "Part (a): g(x) = x² - x + 1\nPart (b): -1",
+          "explanation": "Part (a): Determination of g(x)\nAccording to the Division Algorithm for polynomials, we have:\np(x) = g(x) · q(x) + r(x)\nGiven:\np(x) = x³ - 3x² + x + 2\nq(x) = x - 2\nr(x) = -2x + 4\n\nSubstitute these into the division algorithm:\nx³ - 3x² + x + 2 = g(x) · (x - 2) + (-2x + 4)\n\nRearrange the equation to find g(x) · (x - 2):\ng(x) · (x - 2) = (x³ - 3x² + x + 2) - (-2x + 4)\ng(x) · (x - 2) = x³ - 3x² + x + 2 + 2x - 4\ng(x) · (x - 2) = x³ - 3x² + 3x - 2\n\nNow, to find g(x), we need to divide x³ - 3x² + 3x - 2 by x - 2.\nUsing polynomial long division:\n\n        x²  - x   + 1\n      ________________\nx - 2 | x³ - 3x² + 3x - 2\n        -(x³ - 2x²)\n        ___________ (Subtract)\n              -x² + 3x\n            -(-x² + 2x)\n            ___________ (Subtract)\n                    x - 2\n                  -(x - 2)\n                  _________ (Subtract)\n                        0\n\nTherefore, g(x) = x² - x + 1.\n\nPart (b): Evaluation of (α² + β²/αβ)\nThe polynomial g(x) is x² - x + 1.\nIf α and β are the zeroes of a quadratic polynomial ax² + bx + c, then:\nSum of zeroes: α + β = -b/a\nProduct of zeroes: αβ = c/a\n\nFor g(x) = x² - x + 1, we have a = 1, b = -1, c = 1.\nSo, Sum of zeroes: α + β = -(-1)/1 = 1\nAnd Product of zeroes: αβ = 1/1 = 1\n\nWe need to evaluate the expression (α² + β²/αβ).\nFirst, find α² + β². We know the algebraic identity: α² + β² = (α + β)^2 - 2αβ.\nSubstitute the values of α + β and αβ:\nα² + β² = (1)^2 - 2(1)\nα² + β² = 1 - 2\nα² + β² = -1\n\nNow, substitute the values into the given expression:\n(α² + β²/αβ) = (-1/1)\n(α² + β²/αβ) = -1\n\nFinal Answer: \n(a) g(x) = x² - x + 1\n(b) -1",
+          "bloomsLevel": "Evaluate",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Apply the Division Algorithm to find g(x) · q(x).",
+            "Perform polynomial long division to find g(x).",
+            "Identify coefficients of g(x) to find sum and product of its zeroes.",
+            "Use the identity α² + β² = (α + β)^2 - 2αβ.",
+            "Substitute calculated values into the expression (α² + β²/αβ)."
+          ]
+        },
+        {
+          "text": "A small workshop manufactures two types of handcrafted items: decorative lamps and wooden frames. Each decorative lamp requires 2 kg of wood and 3 hours of labor. Each wooden frame requires 3 kg of wood and 2 hours of labor. If the workshop has a total of 130 kg of wood and 120 hours of labor available each week, determine the number of decorative lamps and wooden frames the workshop can produce in a week if all available resources are fully utilized.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "The workshop can produce 20 decorative lamps and 30 wooden frames.",
+          "explanation": "Let x be the number of decorative lamps produced in a week.\nLet y be the number of wooden frames produced in a week.\n\nFrom the given information, we can form two linear equations:\n\n1.  **Based on wood consumption:**\n    Each lamp requires 2 kg of wood, so x lamps require 2x kg of wood.\n    Each frame requires 3 kg of wood, so y frames require 3y kg of wood.\n    The total wood available is 130 kg.\n    Equation (1): 2x + 3y = 130\n\n2.  **Based on labor hours:**\n    Each lamp requires 3 hours of labor, so x lamps require 3x hours of labor.\n    Each frame requires 2 hours of labor, so y frames require 2y hours of labor.\n    The total labor available is 120 hours.\n    Equation (2): 3x + 2y = 120\n\nNow we have a system of two linear equations:\n(1) 2x + 3y = 130\n(2) 3x + 2y = 120\n\nWe will use the elimination method to solve this system.\n\n**Step 1: Make the coefficients of one variable numerically equal.**\nTo eliminate x, we multiply Equation (1) by 3 and Equation (2) by 2.\nMultiplying Equation (1) by 3:\n3 × (2x + 3y) = 3 × 130\n6x + 9y = 390  (Equation 3)\n\nMultiplying Equation (2) by 2:\n2 × (3x + 2y) = 2 × 120\n6x + 4y = 240  (Equation 4)\n\n**Step 2: Subtract one equation from the other to eliminate one variable.**\nSubtract Equation (4) from Equation (3):\n(6x + 9y) - (6x + 4y) = 390 - 240\n6x - 6x + 9y - 4y = 150\n5y = 150\n\n**Step 3: Solve for the remaining variable.**\ny = (150/5)\ny = 30\n\n**Step 4: Substitute the value of y back into one of the original equations to find x.**\nSubstitute y = 30 into Equation (1):\n2x + 3(30) = 130\n2x + 90 = 130\n2x = 130 - 90\n2x = 40\nx = (40/2)\nx = 20\n\n**Conclusion:**\nTherefore, the workshop can produce 20 decorative lamps and 30 wooden frames in a week if all available wood and labor are fully utilized.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Identify variables for the number of lamps and frames.",
+            "Formulate two linear equations based on the constraints of wood and labor.",
+            "Apply the elimination method by multiplying equations to make coefficients equal.",
+            "Subtract the modified equations to eliminate one variable and solve for the other.",
+            "Substitute the value of the solved variable back into one of the original equations to find the value of the second variable.",
+            "State the final answer in the context of the problem."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A large water tank has two inlet pipes. The larger pipe can fill the tank 10 minutes faster than the smaller pipe. If both pipes are opened simultaneously, they can fill the tank completely in 12 minutes. Find the time taken by each pipe alone to fill the tank.",
+          "type": "LA",
+          "options": [],
+          "correctAnswer": "The smaller pipe takes 30 minutes and the larger pipe takes 20 minutes to fill the tank alone.",
+          "explanation": "Let the time taken by the smaller pipe alone to fill the tank be x minutes.\nSince the larger pipe can fill the tank 10 minutes faster than the smaller pipe, the time taken by the larger pipe alone to fill the tank will be (x - 10) minutes.\n\nIn 1 minute, the smaller pipe fills 1/x of the tank.\nIn 1 minute, the larger pipe fills 1/(x - 10) of the tank.\n\nWhen both pipes are opened simultaneously, they fill the tank completely in 12 minutes.\nTherefore, in 1 minute, both pipes together fill 1/12 of the tank.\n\nAccording to the problem, the sum of their individual rates is equal to their combined rate:\n(1/x) + (1/x - 10) = (1/12)\n\nTo solve this equation, we find a common denominator for the terms on the left side:\n((x - 10) + x/x(x - 10)) = (1/12)\n(2x - 10/x² - 10x) = (1/12)\n\nNow, cross-multiply to eliminate the denominators:\n12(2x - 10) = 1(x² - 10x)\n24x - 120 = x² - 10x\n\nRearrange the terms to form a standard quadratic equation (ax² + bx + c = 0):\nx² - 10x - 24x + 120 = 0\nx² - 34x + 120 = 0\n\nNow, we solve the quadratic equation x² - 34x + 120 = 0. We can use factorization or the quadratic formula. Using factorization, we look for two numbers whose product is 120 and whose sum is -34. These numbers are -4 and -30.\nx² - 4x - 30x + 120 = 0\nx(x - 4) - 30(x - 4) = 0\n(x - 4)(x - 30) = 0\n\nThis gives two possible values for x:\nx - 4 = 0 Rightarrow x = 4\nx - 30 = 0 Rightarrow x = 30\n\nNow, we must interpret these solutions in the context of the problem.\n\nCase 1: If x = 4 minutes (time taken by the smaller pipe).\nThen, the time taken by the larger pipe = x - 10 = 4 - 10 = -6 minutes.\nTime cannot be negative, so this solution is not physically possible and must be discarded.\n\nCase 2: If x = 30 minutes (time taken by the smaller pipe).\nThen, the time taken by the larger pipe = x - 10 = 30 - 10 = 20 minutes.\nBoth these times are positive, which makes this a valid solution.\n\nTherefore, the smaller pipe alone takes 30 minutes to fill the tank, and the larger pipe alone takes 20 minutes to fill the tank.",
+          "bloomsLevel": "Analyze",
+          "marks": 5,
+          "difficulty": "Hard",
+          "chapter": "Quadratic Equations",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for the time taken by each pipe.",
+            "Express the work rate of each pipe.",
+            "Formulate the combined work rate equation.",
+            "Simplify the equation to a standard quadratic form.",
+            "Solve the quadratic equation.",
+            "Interpret the roots and discard the extraneous solution.",
+            "State the time taken by each pipe alone."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 20
+    },
+    "E": {
+      "name": "Section E (Case-Study)",
+      "questions": [
+        {
+          "text": "A school librarian is organizing books for a new section. She has 360 Mathematics books and 480 Science books. She wants to stack them in such a way that each stack has the same number of books, and each stack contains books of only one subject.\n\n(i) What is the maximum number of books she can put in each stack?\n(ii) If she makes stacks of the maximum possible size, how many stacks will be there in total?\n(iii) The librarian notices that the number of Mathematics books (360) has a prime factorization of 2ᵃ × 3ᵇ × 5ᶜ and the number of Science books (480) has a prime factorization of 2ᵈ × 3ᵉ × 5^f. Based on the maximum number of books per stack found in part (i), analyze the relationship between the exponents of common prime factors in the HCF and the individual prime factorizations of 360 and 480.",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "See explanation for sub-parts.",
+          "explanation": "(i) To find the maximum number of books she can put in each stack, we need to find the HCF (Highest Common Factor) of 360 and 480.\nPrime factorization of 360:\n360 = 2 × 180 = 2 × 2 × 90 = 2 × 2 × 2 × 45 = 2³ × 3 × 15 = 2³ × 3² × 5¹\nPrime factorization of 480:\n480 = 2 × 240 = 2 × 2 × 120 = 2 × 2 × 2 × 60 = 2 × 2 × 2 × 2 × 30 = 2 × 2 × 2 × 2 × 2 × 15 = 2⁵ × 3¹ × 5¹\n\nTo find the HCF, we take the product of the smallest powers of each common prime factor:\nHCF(360, 480) = 2^{text{min}(3,5)} × 3^{text{min}(2,1)} × 5^{text{min}(1,1)}\nHCF(360, 480) = 2³ × 3¹ × 5¹ = 8 × 3 × 5 = 120.\nSo, the maximum number of books she can put in each stack is 120.\n\n(ii) Number of stacks for Mathematics books = Total Mathematics books / Books per stack = 360 / 120 = 3\nNumber of stacks for Science books = Total Science books / Books per stack = 480 / 120 = 4\nTotal number of stacks = 3 + 4 = 7.\n\n(iii) From part (i):\nPrime factorization of 360: 2³ × 3² × 5¹. Here, a=3, b=2, c=1.\nPrime factorization of 480: 2⁵ × 3¹ × 5¹. Here, d=5, e=1, f=1.\n\nThe maximum number of books per stack (HCF) is 120, and its prime factorization is 120 = 2³ × 3¹ × 5¹.\n\nAnalyzing the relationship between the exponents:\nFor the prime factor 2: The exponent in the HCF (2³) is 3. This is the minimum of the exponents of 2 in 360 (a=3) and 480 (d=5). So, 3 = text{min}(3,5).\nFor the prime factor 3: The exponent in the HCF (3¹) is 1. This is the minimum of the exponents of 3 in 360 (b=2) and 480 (e=1). So, 1 = text{min}(2,1).\nFor the prime factor 5: The exponent in the HCF (5¹) is 1. This is the minimum of the exponents of 5 in 360 (c=1) and 480 (f=1). So, 1 = text{min}(1,1).\n\nTherefore, the relationship is that for each common prime factor, the exponent in the prime factorization of the HCF is the minimum of its exponents in the prime factorizations of the individual numbers.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Real Numbers",
+          "hasLatex": true,
+          "keySteps": [
+            "Determine prime factorization for 360 and 480.",
+            "Calculate HCF by taking the product of the smallest powers of common prime factors.",
+            "Calculate the number of stacks for each subject and sum them.",
+            "Identify the exponents of common prime factors in 360, 480, and their HCF.",
+            "Analyze and state the relationship between these exponents, specifically that the HCF's exponents are the minimum of the corresponding individual number's exponents."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A craftsman designs decorative wall tiles. One particular design element is a curve whose height `h(x)` at a horizontal distance `x` (in cm) from the left edge of the tile is given by a polynomial function. The points where `h(x) = 0` represent the edges of the design on the base line.\n\n**Part 1: Basic Design**\nFor the initial design, the height `h(x)` is modeled by the quadratic polynomial `P(x) = -x² + 6x - 8`.\n(i) What are the horizontal distances `x` where the height of this design element is zero? (1 Mark)\n(ii) If the craftsman modifies the design such that the sum of the zeroes of the new quadratic polynomial is 7 and the product of the zeroes is 10, write the new quadratic polynomial. (1 Mark)\n\n**Part 2: Complex Design**\nFor a more complex tile, the height `h(x)` is modeled by a cubic polynomial `Q(x) = x³ - 7x² + 14x - 8`.\n(iii) If it is known that `x=1` is one of the horizontal distances where the height of the complex design element is zero, find the sum of the other two zeroes. (2 Marks)",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "(i) x = 2 cm, 4 cm\n(ii) k(x² - 7x + 10), where k is a non-zero constant (e.g., x² - 7x + 10)\n(iii) Sum of other two zeroes = 6",
+          "explanation": "(i) To find the horizontal distances where the height is zero, we need to find the zeroes of `P(x)`.\n`P(x) = -x² + 6x - 8 = 0`\nMultiply the equation by -1 to simplify:\n`x² - 6x + 8 = 0`\nFactorize the quadratic expression:\n`x² - 2x - 4x + 8 = 0`\n`x(x - 2) - 4(x - 2) = 0`\n`(x - 2)(x - 4) = 0`\nSo, `x = 2` or `x = 4`.\nThe horizontal distances where the height of the design element is zero are 2 cm and 4 cm.\n\n(ii) For a quadratic polynomial, if the sum of zeroes `(α + β)` is S and the product of zeroes `(α β)` is P, the polynomial can be written in the form `k(x² - Sx + P)`, where `k` is any non-zero constant.\nGiven: Sum of zeroes (S) = 7\nProduct of zeroes (P) = 10\nSubstituting these values into the general form, the new quadratic polynomial is `k(x² - 7x + 10)`. \nIf we take `k=1` (the simplest form), the polynomial is `x² - 7x + 10`.\n\n(iii) For the cubic polynomial `Q(x) = x³ - 7x² + 14x - 8`, let the zeroes be `α`, `β`, `γ`.\nThe general form of a cubic polynomial is `ax³ + bx² + cx + d`.\nFor `Q(x)`, we have `a=1`, `b=-7`, `c=14`, `d=-8`.\nWe know the relationship between the zeroes and the coefficients of a cubic polynomial:\nSum of the zeroes `(α + β + γ) = -b/a`\nGiven that `x=1` is one of the zeroes. Let `α = 1`.\nSo, `1 + β + γ = -(-7)/1`\n`1 + β + γ = 7`\n`β + γ = 7 - 1`\n`β + γ = 6`\nThus, the sum of the other two zeroes is 6.\n\nAlternatively for (iii):\nSince `x=1` is a zero of `Q(x)`, it means `(x-1)` is a factor of `Q(x)`. We can perform polynomial division to find the other factors:\n\n\n          x²  - 6x  + 8\n        _________________\nx - 1 | x³ - 7x² + 14x - 8\n        -(x³ -  x²)\n        ___________\n              -6x² + 14x\n            -(-6x² +  6x)\n            ___________\n                      8x - 8\n                    -(8x - 8)\n                    _________\n                            0\n\nThe quotient obtained is `x² - 6x + 8`. The other two zeroes are the zeroes of this quadratic polynomial.\nSet `x² - 6x + 8 = 0`.\nFactorize: `(x - 2)(x - 4) = 0`\nSo, the other two zeroes are `x = 2` and `x = 4`.\nThe sum of these two zeroes is `2 + 4 = 6`.",
+          "bloomsLevel": "Analyze",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Polynomials",
+          "hasLatex": true,
+          "keySteps": [
+            "Factorize the quadratic polynomial to find its zeroes.",
+            "Use the relationship between sum/product of zeroes and coefficients to construct a quadratic polynomial.",
+            "Apply Vieta's formulas for cubic polynomials to find the sum of the remaining zeroes when one zero is known, or perform polynomial division and factorize the resulting quadratic to find the other zeroes and their sum."
+          ],
+          "internalChoice": true
+        },
+        {
+          "text": "A stationery shop owner, Mr. Sharma, records his sales daily. On Monday, a customer named Rahul bought 4 pens and 6 notebooks for a total of ₹180. On Tuesday, another customer named Priya bought 3 pens and 5 notebooks for a total of ₹145. Assuming the price of each pen and each notebook remains constant, answer the following questions:\n\n(i) Formulate the pair of linear equations representing the given situation.\n(ii) Find the cost of one pen and one notebook.\n(iii) If a third customer buys 5 pens and 3 notebooks, what would be the total cost?",
+          "type": "CASE",
+          "options": [],
+          "correctAnswer": "(i) 4x + 6y = 180 and 3x + 5y = 145\n(ii) Cost of one pen = ₹15, Cost of one notebook = ₹20\n(iii) ₹135",
+          "explanation": "Let the cost of one pen be ₹x and the cost of one notebook be ₹y.\n\n(i) From the given information, we can formulate the following pair of linear equations:\nFor Rahul's purchase: 4 pens and 6 notebooks for ₹180.\nEquation (1): 4x + 6y = 180\n\nFor Priya's purchase: 3 pens and 5 notebooks for ₹145.\nEquation (2): 3x + 5y = 145\n\n(ii) To find the cost of one pen and one notebook, we solve the system of equations:\n4x + 6y = 180  (1)\n3x + 5y = 145  (2)\n\nWe can use the elimination method.\nMultiply Equation (1) by 3: 3 × (4x + 6y) = 3 × 180 implies 12x + 18y = 540  (3)\nMultiply Equation (2) by 4: 4 × (3x + 5y) = 4 × 145 implies 12x + 20y = 580  (4)\n\nSubtract Equation (3) from Equation (4):\n(12x + 20y) - (12x + 18y) = 580 - 540\n2y = 40\ny = (40/2)\ny = 20\n\nSubstitute the value of y = 20 into Equation (1):\n4x + 6(20) = 180\n4x + 120 = 180\n4x = 180 - 120\n4x = 60\nx = (60/4)\nx = 15\n\nSo, the cost of one pen is ₹15 and the cost of one notebook is ₹20.\n\n(iii) A third customer buys 5 pens and 3 notebooks.\nTotal cost = 5 × (text{cost of one pen}) + 3 × (text{cost of one notebook})\nTotal cost = 5x + 3y\nTotal cost = 5(15) + 3(20)\nTotal cost = 75 + 60\nTotal cost = ₹135",
+          "bloomsLevel": "Apply",
+          "marks": 4,
+          "difficulty": "Medium",
+          "chapter": "Pair of Linear Equations in Two Variables",
+          "hasLatex": true,
+          "keySteps": [
+            "Define variables for the unknown costs.",
+            "Formulate two linear equations based on the given purchase information.",
+            "Solve the system of linear equations using the elimination method to find the cost of one pen (x) and one notebook (y).",
+            "Calculate the total cost for the third customer by substituting the found values of x and y into the expression 5x + 3y."
+          ],
+          "internalChoice": true
+        }
+      ],
+      "marks": 12
+    }
+  },
+  "metadata": {
+    "board": "CBSE",
+    "class": 10,
+    "subject": "Mathematics",
+    "totalQuestions": 38,
+    "totalMarks": 80,
+    "duration": 180,
+    "generationMethod": "RAG+LLM",
+    "llmModel": "gemini-2.5-flash",
+    "chaptersUsed": [
+      "Real Numbers",
+      "Polynomials",
+      "Pair of Linear Equations in Two Variables",
+      "Quadratic Equations",
+      "Arithmetic Progressions",
+      "Triangles",
+      "Coordinate Geometry",
+      "Introduction to Trigonometry",
+      "Applications of Trigonometry",
+      "Circles",
+      "Areas Related to Circles",
+      "Surface Areas and Volumes",
+      "Statistics",
+      "Probability"
+    ],
+    "generationTimeMs": 507428
+  }
+}

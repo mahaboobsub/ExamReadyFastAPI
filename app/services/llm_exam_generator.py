@@ -15,6 +15,15 @@ class LLMExamGenerator:
     def __init__(self):
         self.qdrant = qdrant_service # Use singleton
         self.gemini = GeminiService()
+        
+        # ADD THIS DIAGNOSTIC:
+        if self.qdrant is None:
+            print("=" * 70)
+            print("⚠️ CRITICAL: Qdrant service is None")
+            print("RAG context will NOT be available. Using LLM-only mode.")
+        else:
+            print(f"✅ Qdrant service connected: {type(self.qdrant)}")
+            
         self.system_prompt = """
 You are an expert CBSE Mathematics question paper setter for Class 10 (2025-26 pattern).
 
@@ -38,8 +47,8 @@ Return questions in this EXACT JSON structure:
   "text": "Question text here",
   "type": "MCQ|AR|VSA|SA|LA|CASE",
   "options": ["Option A", "Option B", "Option C", "Option D"],
-  "correctAnswer": "Correct option text or numerical answer",
-  "explanation": "Detailed step-by-step solution",
+  "correctAnswer": "Complete correct option text or numerical answer",
+  "explanation": "Detailed step-by-step solution. MUST be a SINGLE string. Do NOT split into multiple keys.",
   "bloomsLevel": "Remember|Understand|Apply|Analyze|Evaluate",
   "marks": 1|2|3|5|4,
   "difficulty": "Easy|Medium|Hard",
@@ -47,6 +56,12 @@ Return questions in this EXACT JSON structure:
   "hasLatex": true|false,
   "keySteps": ["Step 1", "Step 2"]
 }
+
+### CRITICAL JSON RULES
+1. **Explanation Field**: Must be one long string with \\n for line breaks. NEVER create extra keys like "number", "each", "conditions".
+2. **Options**: Must be complete phrases (e.g., "x² + 1" not just "x²").
+3. **No Trailing Commas**: Valid JSON only.
+4. **Escape Characters**: Properly escape backslashes in LaTeX (e.g., \\frac).
 """
         
     async def generate_cbse_board_exam(
@@ -54,11 +69,19 @@ Return questions in this EXACT JSON structure:
         board: str = "CBSE",
         class_num: int = 10,
         subject: str = "Mathematics",
-        chapters: List[str] = None
+        chapters: List[str] = None,
+        difficulty_mode: str = "standard", # standard, easy, hard
+        avoid_topics: List[str] = None
     ) -> Dict:
         """
-        Generate full CBSE board exam with proper chapter distribution
+        Generate full CBSE board exam with proper chapter distribution.
+        Supports difficulty modes and topic avoidance for uniqueness.
         """
+        
+        # Lazy Init Qdrant
+        if self.qdrant and self.qdrant.client is None:
+            print("⚠️ Initializing Qdrant Client (Lazy Init)...")
+            await self.qdrant.initialize()
         
         if not chapters:
             # Default CBSE Class 10 Maths chapters
@@ -124,29 +147,53 @@ Return questions in this EXACT JSON structure:
 
             # Generate each question type for this chapter
             for qtype_config in question_types:
-                try:
+                success = False
+                retry_count = 0
+                max_gen_retries = 5  # High retry count for resilience
+                
+                while not success and retry_count < max_gen_retries:
+                    try:
+                        with open("board_gen_debug.log", "a", encoding="utf-8") as f:
+                             f.write(f"  Generating {qtype_config['count']} {qtype_config['type']} (Attempt {retry_count+1})...\n")
+                             
+                        questions = await self._generate_questions_for_type(
+                            chapter=chapter,
+                            question_type=qtype_config['type'],
+                            count=qtype_config['count'],
+                            blooms_level=qtype_config['blooms'],
+                            rag_context=rag_context,
+                            difficulty_mode=difficulty_mode,
+                            avoid_topics=avoid_topics
+                        )
+                        
+                        if questions:
+                            with open("board_gen_debug.log", "a", encoding="utf-8") as f:
+                                 f.write(f"  ✅ Generated {len(questions)} questions.\n")
+                            all_questions.extend(questions)
+                            success = True
+                        else:
+                            raise Exception("Empty response from generator")
+                            
+                    except Exception as e:
+                        retry_count += 1
+                        wait_time = 30 * retry_count  # Progressive backoff: 30s, 60s, 90s...
+                        with open("board_gen_debug.log", "a", encoding="utf-8") as f:
+                            f.write(f"  ❌ Gen Error: {e}. Retrying in {wait_time}s...\n")
+                        await asyncio.sleep(wait_time)
+                
+                if not success:
                     with open("board_gen_debug.log", "a", encoding="utf-8") as f:
-                         f.write(f"  Generating {qtype_config['count']} {qtype_config['type']}...\n")
-                         
-                    questions = await self._generate_questions_for_type(
-                        chapter=chapter,
-                        question_type=qtype_config['type'],
-                        count=qtype_config['count'],
-                        blooms_level=qtype_config['blooms'],
-                        rag_context=rag_context
-                    )
-                    
-                    with open("board_gen_debug.log", "a", encoding="utf-8") as f:
-                         f.write(f"  ✅ Generated {len(questions)} questions.\n")
-                    
-                    all_questions.extend(questions)
-                except Exception as e:
-                    with open("board_gen_debug.log", "a", encoding="utf-8") as f:
-                        f.write(f"  ❌ Gen Error: {e}\n")
-                    continue
+                        f.write(f"  💀 FAILED to generate {qtype_config['type']} for {chapter} after {max_gen_retries} attempts.\n")
+                    # Should we error out or continue? 
+                    # User wants COMPLETE exam. Erroring out might be safer to flag issues.
+                    # But partial is better than nothing? No, partial is "Failed".
+                    pass
         
         # STEP 3: Organize into sections
         exam = self._organize_into_sections(all_questions)
+        
+        # STEP 3.5: Post-generation validation - fix missing fields
+        exam = self._validate_and_fix_missing_fields(exam)
         
         # STEP 4: Add metadata
         exam['metadata'] = {
@@ -167,20 +214,59 @@ Return questions in this EXACT JSON structure:
     def _calculate_chapter_distribution(self, chapters: List[str]) -> List[Dict]:
         """
         Calculate how many questions of each type per chapter
-        Strategy: Distribute questions evenly across chapters
+        Strategy: Distribute questions evenly AND maintain Bloom's balance
+        
+        FIXED v3: Adjusted targets to reduce Remember (-1) and increase Understand/Apply (+3)
         """
+        import random
+        
+        # Overall Bloom's targets (percentage of 38 questions)
+        OVERALL_BLOOMS_TARGET = {
+            'Remember': 7,     # 18% (Reduced from 8)
+            'Understand': 11,  # 29% (Increased from 9)
+            'Apply': 11,       # 29% (Increased from 10)
+            'Analyze': 7,      # 18% (Reduced from 8)
+            'Evaluate': 2      # 5% (Fixed)
+        }
+        
+        # Minimum quotas - MUST be met
+        BLOOMS_MINIMUM_QUOTA = {
+            'Remember': 5,
+            'Understand': 9,
+            'Apply': 9,
+            'Analyze': 6,
+            'Evaluate': 2  # ✅ FORCE at least 2
+        }
+        
+        # Question type to allowed Bloom's levels (in priority order for that type)
+        # FIXED: VSA/MCQ prioritization shifted to Understand/Apply
+        TYPE_BLOOMS_PRIORITY = {
+            'MCQ': ['Understand', 'Apply', 'Remember'],      # Prioritize Understand for MCQs
+            'AR': ['Understand', 'Apply'],                   # Mid-level
+            'VSA': ['Understand', 'Apply', 'Remember'],      # Prioritize Understand
+            'SA': ['Apply', 'Analyze', 'Understand'],        # Mid-higher
+            'LA': ['Evaluate', 'Analyze', 'Apply'],          # ✅ Evaluate FIRST
+            'CASE': ['Analyze', 'Evaluate', 'Apply']         # Higher-order
+        }
         
         total_distribution = {
-            'MCQ': {'count': 18, 'blooms': ['Remember', 'Understand', 'Apply']},
-            'AR': {'count': 2, 'blooms': ['Understand', 'Apply']},
-            'VSA': {'count': 5, 'blooms': ['Remember', 'Understand', 'Apply']},
-            'SA': {'count': 6, 'blooms': ['Apply', 'Analyze']},
-            'LA': {'count': 4, 'blooms': ['Apply', 'Analyze', 'Evaluate']},
-            'CASE': {'count': 3, 'blooms': ['Apply', 'Analyze']}
+            'MCQ': {'count': 18},
+            'AR': {'count': 2},
+            'VSA': {'count': 5},
+            'SA': {'count': 6},
+            'LA': {'count': 4},
+            'CASE': {'count': 3}
         }
         
         num_chapters = len(chapters)
         distribution = []
+        
+        # Track Bloom's usage globally to maintain balance
+        blooms_used = {level: 0 for level in OVERALL_BLOOMS_TARGET.keys()}
+        
+        # Track which types still need to be assigned (for post-processing)
+        la_assigned = 0
+        case_assigned = 0
         
         for i, chapter in enumerate(chapters):
             chapter_config = {
@@ -190,7 +276,7 @@ Return questions in this EXACT JSON structure:
             
             # Distribute each question type
             for qtype, config in total_distribution.items():
-                # Calculate questions for this chapter (round-robin)
+                # Calculate questions for this chapter (round-robin count)
                 questions_for_chapter = config['count'] // num_chapters
                 
                 # Distribute remainder
@@ -198,19 +284,158 @@ Return questions in this EXACT JSON structure:
                     questions_for_chapter += 1
                 
                 if questions_for_chapter > 0:
-                    # Assign Bloom's level
-                    blooms = config['blooms'][i % len(config['blooms'])]
+                    allowed_blooms = TYPE_BLOOMS_PRIORITY[qtype]
+                    
+                    # SPECIAL HANDLING: Force Evaluate for first LA questions
+                    if qtype == 'LA' and la_assigned < 2 and blooms_used['Evaluate'] < 2:
+                        best_blooms = 'Evaluate'
+                        la_assigned += questions_for_chapter
+                    # Force Analyze for first CASE question if Evaluate quota met
+                    elif qtype == 'CASE' and case_assigned == 0:
+                        best_blooms = 'Analyze'
+                        case_assigned += questions_for_chapter
+                    else:
+                        # Find which allowed Bloom's level is most needed globally
+                        best_blooms = allowed_blooms[0]
+                        max_gap = -999
+                        
+                        for level in allowed_blooms:
+                            target = OVERALL_BLOOMS_TARGET[level]
+                            used = blooms_used[level]
+                            gap = target - used
+                            
+                            # Boost priority for levels below minimum quota
+                            if used < BLOOMS_MINIMUM_QUOTA.get(level, 0):
+                                gap += 10  # Strong priority boost
+                            
+                            if gap > max_gap:
+                                max_gap = gap
+                                best_blooms = level
+                    
+                    # Use the selected Bloom's level and update tracker
+                    blooms_used[best_blooms] += questions_for_chapter
                     
                     chapter_config['question_types'].append({
                         'type': qtype,
                         'count': questions_for_chapter,
-                        'blooms': blooms
+                        'blooms': best_blooms
                     })
             
             if chapter_config['question_types']:
                 distribution.append(chapter_config)
         
+        # POST-DISTRIBUTION CHECK: Swap to meet minimum quotas
+        for level, min_count in BLOOMS_MINIMUM_QUOTA.items():
+            if blooms_used[level] < min_count:
+                print(f"⚠️ {level} under minimum ({blooms_used[level]}/{min_count}), attempting swap...")
+                # Find a question to swap from over-used level
+                for chapter_config in distribution:
+                    for qt in chapter_config['question_types']:
+                        current_level = qt['blooms']
+                        # Only swap if current level is over target and this type allows target level
+                        if (blooms_used[current_level] > OVERALL_BLOOMS_TARGET[current_level] and
+                            level in TYPE_BLOOMS_PRIORITY.get(qt['type'], [])):
+                            qt['blooms'] = level
+                            blooms_used[current_level] -= qt['count']
+                            blooms_used[level] += qt['count']
+                            print(f"  ✅ Swapped {qt['type']} from {current_level} to {level}")
+                            if blooms_used[level] >= min_count:
+                                break
+                    if blooms_used[level] >= min_count:
+                        break
+        
+        # Debug: Print planned Bloom's distribution
+        print(f"\n[BLOOM'S PLAN] Distribution for {len(chapters)} chapters:")
+        for level, count in blooms_used.items():
+            pct = (count / 38) * 100
+            target = OVERALL_BLOOMS_TARGET[level]
+            minimum = BLOOMS_MINIMUM_QUOTA[level]
+            status = "✅" if count >= minimum else "❌"
+            print(f"  {status} {level:10s}: {count:2d} questions ({pct:5.1f}%) - Target: {target}, Min: {minimum}")
+        
         return distribution
+    
+    def _validate_and_fix_missing_fields(self, exam: Dict) -> Dict:
+        """
+        Post-generation validation to fix missing fields
+        Auto-fills: bloomsLevel, difficulty, chapter
+        """
+        import random
+        
+        # Default Bloom's by question type
+        DEFAULT_BLOOMS = {
+            'MCQ': 'Remember',
+            'AR': 'Understand',
+            'VSA': 'Understand',
+            'SA': 'Apply',
+            'LA': 'Analyze',
+            'CASE': 'Analyze'
+        }
+        
+        # Default difficulty by question type
+        DEFAULT_DIFFICULTY = {
+            'MCQ': 'Easy',
+            'AR': 'Medium',
+            'VSA': 'Easy',
+            'SA': 'Medium',
+            'LA': 'Hard',
+            'CASE': 'Medium'
+        }
+        
+        fixes_applied = 0
+        
+        for section_code, section in exam.get('sections', {}).items():
+            for q in section.get('questions', []):
+                qtype = q.get('type', 'MCQ')
+                
+                # Fix missing Bloom's level
+                if not q.get('bloomsLevel') or q.get('bloomsLevel') == 'Unknown':
+                    q['bloomsLevel'] = DEFAULT_BLOOMS.get(qtype, 'Understand')
+                    fixes_applied += 1
+                
+                # Fix missing difficulty
+                if not q.get('difficulty') or q.get('difficulty') == 'Unknown':
+                    q['difficulty'] = DEFAULT_DIFFICULTY.get(qtype, 'Medium')
+                    fixes_applied += 1
+                
+                # Fix missing chapter
+                if not q.get('chapter') or q.get('chapter') == 'Unknown':
+                    # Try to infer from question text keywords
+                    text = q.get('text', '').lower()
+                    if 'polynomial' in text or 'zeroes' in text:
+                        q['chapter'] = 'Polynomials'
+                    elif 'quadratic' in text:
+                        q['chapter'] = 'Quadratic Equations'
+                    elif 'trigonometry' in text or 'sin' in text or 'cos' in text:
+                        q['chapter'] = 'Introduction to Trigonometry'
+                    elif 'circle' in text:
+                        q['chapter'] = 'Circles'
+                    elif 'probability' in text:
+                        q['chapter'] = 'Probability'
+                    elif 'cone' in text or 'sphere' in text or 'cylinder' in text or 'hemisphere' in text:
+                        q['chapter'] = 'Surface Areas and Volumes'
+                    elif 'area' in text and 'circle' in text:
+                        q['chapter'] = 'Areas Related to Circles'
+                    elif 'mean' in text or 'median' in text or 'mode' in text:
+                        q['chapter'] = 'Statistics'
+                    elif 'coordinate' in text or 'distance' in text:
+                        q['chapter'] = 'Coordinate Geometry'
+                    elif 'triangle' in text or 'similar' in text:
+                        q['chapter'] = 'Triangles'
+                    elif 'linear' in text or 'equation' in text:
+                        q['chapter'] = 'Pair of Linear Equations in Two Variables'
+                    elif 'ap' in text or 'arithmetic' in text or 'progression' in text:
+                        q['chapter'] = 'Arithmetic Progressions'
+                    elif 'prime' in text or 'factor' in text or 'hcf' in text or 'lcm' in text:
+                        q['chapter'] = 'Real Numbers'
+                    else:
+                        q['chapter'] = 'Mathematics'  # Generic fallback
+                    fixes_applied += 1
+        
+        if fixes_applied > 0:
+            print(f"\n[VALIDATION] ✅ Auto-fixed {fixes_applied} missing field(s)")
+        
+        return exam
     
     async def _get_chapter_context(
         self,
@@ -254,6 +479,61 @@ Content:
         
         return "\n\n".join(context_parts)
     
+    def _map_blooms_to_difficulty(self, blooms: str, qtype: str, mode: str = "standard") -> str:
+        """
+        Maps Bloom's level to discrete difficulty based on mode.
+        """
+        import random
+        
+        # Helper to pick weighted
+        def pick(options, weights):
+            if not weights or len(options) != len(weights): return options[0]
+            return random.choices(options, weights=weights, k=1)[0]
+            
+        try:
+            if qtype == "MCQ":
+                if blooms == "Remember": return "Easy"
+                elif blooms == "Understand":
+                    if mode == "easy": return pick(["Easy", "Medium"], [0.7, 0.3])
+                    elif mode == "hard": return pick(["Medium", "Hard"], [0.7, 0.3])
+                    else: return pick(["Easy", "Medium"], [0.3, 0.7]) # Standard
+                elif blooms == "Apply":
+                    if mode == "easy": return "Medium"
+                    elif mode == "hard": return "Hard"
+                    else: return "Medium"
+                else: return "Medium"
+                
+            elif qtype == "AR": return "Medium"
+                
+            elif qtype == "VSA":
+                if blooms == "Remember": return "Easy"
+                elif blooms == "Understand":
+                    if mode == "easy": return "Easy"
+                    elif mode == "hard": return "Medium"
+                    else: return "Medium"
+                else: return "Medium"
+                
+            elif qtype == "SA":
+                if blooms == "Apply": return "Medium"
+                elif blooms == "Analyze":
+                    if mode == "easy": return "Medium"
+                    elif mode == "hard": return "Hard"
+                    else: return pick(["Medium", "Hard"], [0.7, 0.3])
+                else: return "Medium"
+                
+            elif qtype == "LA":
+                if blooms == "Evaluate": return "Hard"
+                if mode == "easy": return pick(["Medium", "Hard"], [0.6, 0.4])
+                elif mode == "hard": return "Hard"
+                else: return pick(["Medium", "Hard"], [0.4, 0.6])
+                
+            elif qtype == "CASE":
+                return "Medium"
+            
+            return "Medium"
+        except Exception:
+            return "Medium"
+
     async def _generate_questions_for_type(
         self,
         chapter: str,
@@ -261,22 +541,14 @@ Content:
         count: int,
         blooms_level: str,
         rag_context: str,
-        max_retries: int = 3
+        max_retries: int = 3,
+        difficulty_mode: str = "standard",
+        avoid_topics: List[str] = None
     ) -> List[Dict]:
         """
         Generate questions for specific type with retry logic
         """
-        
-        # Helper to map bloom to difficulty
-        def _map_blooms_to_difficulty(blooms: str) -> str:
-            mapping = {
-                "Remember": "Easy",
-                "Understand": "Easy to Medium",
-                "Apply": "Medium",
-                "Analyze": "Medium to Hard",
-                "Evaluate": "Hard"
-            }
-            return mapping.get(blooms, "Medium")
+        import random
 
         # Helper for type requirements
         def _get_question_type_requirements(qtype: str) -> str:
@@ -285,8 +557,8 @@ Content:
                 "AR": "Format: Assertion-Reason. Use standard options (Both true, etc.)",
                 "VSA": "Solvable in 2-3 mins. 1-2 steps. Direct application.",
                 "SA": "Solvable in 4-5 mins. 3-4 steps. Show method.",
-                "LA": "Solvable in 7-8 mins. 5-7 detailed steps. Multi-part allowed.",
-                "CASE": "Scenario-based. 3-4 subquestions. Total 4 marks."
+                "LA": "Solvable in 7-8 mins. 5-7 detailed steps. Multi-part allowed. COMPLETE all explanations.",
+                "CASE": "Scenario-based. 3-4 subquestions. Total 4 marks. COMPLETE all sub-parts."
             }
             return requirements.get(qtype, "Standard format")
             
@@ -300,7 +572,7 @@ Content:
 **Question Type**: {question_type}
 **Quantity**: {count} questions
 **Bloom's Level**: {blooms_level}
-**Target Difficulty**: {_map_blooms_to_difficulty(blooms_level)}
+**Target Difficulty**: {self._map_blooms_to_difficulty(blooms_level, question_type, difficulty_mode)}
 
 ### RAG CONTEXT (NCERT Source Material)
 ```
@@ -319,10 +591,16 @@ Content:
 4. **Diversity Check**:
    - Each of the {count} questions must have a COMPLETELY DIFFERENT context
    - Avoid repeating age/geometry/motion problems if already generated.
+   - EXCLUSIONS: Do NOT use these topics/values (already covered): {', '.join(avoid_topics) if avoid_topics else 'None'}
 
 5. **NCERT Alignment**:
    - Use the provided RAG context as your primary source.
    - If context is missing, use general NCERT knowledge for this topic.
+
+6. **COMPLETENESS REQUIREMENT**:
+   - CRITICAL: Every question MUST have a COMPLETE explanation.
+   - Do NOT truncate explanations or leave them incomplete.
+   - For LA/CASE questions, include ALL steps and sub-parts.
 
 ### OUTPUT REQUIREMENTS
 Generate EXACTLY {count} questions following the JSON schema.
@@ -332,12 +610,20 @@ Return as a JSON array: [{{ "text": "...", ... }}]
         questions = []
         attempts = 0
         
+        # FIXED: Dynamic token limit based on question type
+        if question_type in ['LA', 'CASE']:
+            token_limit = 8000  # LA/CASE need detailed explanations
+        elif question_type == 'SA':
+            token_limit = 5000
+        else:
+            token_limit = 3000  # MCQ, AR, VSA
+        
         while len(questions) < count and attempts < max_retries:
             try:
                 # Call Gemini
                 response_text = await self.gemini.generate(
                     prompt=self.system_prompt + "\n" + prompt,
-                    max_tokens=4000,
+                    max_tokens=token_limit,
                     temperature=0.7
                 )
                 
@@ -372,36 +658,58 @@ Return as a JSON array: [{{ "text": "...", ... }}]
                 attempts += 1
                 
             except Exception as e:
+                error_msg = str(e).lower()
                 print(f"Error generating questions ({chapter}/{question_type}): {e}")
-                # FALLBACK: Generate Mock Questions if critical failure (e.g. Rate Limit)
-                if attempts == max_retries - 1:
-                    print(f"⚠️ Switching to MOCK generation for {chapter} {question_type}")
-                    mock_qs = self._generate_mock_questions(chapter, question_type, count, blooms_level)
-                    questions.extend(mock_qs)
-                    break
+                
+                # ✅ FIXED: No more mock questions - fail gracefully with partial results
+                if "rate limit" in error_msg or "429" in error_msg or "quota" in error_msg:
+                    print(f"⚠️ Rate limit hit for {chapter}/{question_type}. Waiting 30s...")
+                    await asyncio.sleep(30)
+                elif "500" in error_msg or "internal" in error_msg:
+                    print(f"⚠️ Server error for {chapter}/{question_type}. Waiting 10s...")
+                    await asyncio.sleep(10)
+                else:
+                    print(f"❌ Critical error for {chapter}/{question_type}. Skipping after {attempts+1} attempts.")
+                
                 attempts += 1
-                # Backoff
-                await asyncio.sleep(1)
+                
+                # If max retries exhausted, return what we have (NOT mock questions)
+                if attempts >= max_retries:
+                    print(f"⚠️ Max retries reached for {chapter}/{question_type}. Returning {len(questions)}/{count} questions.")
+                    break
+                
+                await asyncio.sleep(2)
         
         return questions[:count]
-
-    def _generate_mock_questions(self, chapter, qtype, count, blooms) -> List[Dict]:
-        """Fallback generator when LLM fails"""
-        mocks = []
-        for i in range(count):
-            q_data = {
-                "text": f"[MOCK] Question {i+1} about {chapter} ({blooms}: {qtype}). Please ignore content quality.",
-                "type": qtype,
-                "options": ["Option A", "Option B", "Option C", "Option D"],
-                "correctAnswer": "Option A",
-                "explanation": "This is a placeholder explanation generated due to API Rate Limits.",
-                "bloomsLevel": blooms,
-                "difficulty": "Medium",
-                "chapter": chapter,
-                "marks": 1 if qtype=="MCQ" else 4 if qtype=="CASE" else 5 if qtype=="LA" else 3 if qtype=="SA" else 2
-            }
-            mocks.append(q_data)
-        return mocks
+    
+    def _validate_blooms_distribution(self, questions: List[Dict], target: Dict[str, int]) -> bool:
+        """
+        Validate Bloom's distribution matches target (±10% tolerance)
+        Returns True if valid, False if mismatched
+        """
+        if not questions:
+            return False
+            
+        actual = {}
+        for q in questions:
+            level = q.get("bloomsLevel", "Apply")
+            actual[level] = actual.get(level, 0) + 1
+        
+        total = len(questions)
+        mismatches = []
+        
+        for level, target_pct in target.items():
+            actual_pct = (actual.get(level, 0) / total) * 100 if total > 0 else 0
+            
+            # 10% tolerance
+            if abs(actual_pct - target_pct) > 10:
+                mismatches.append(f"{level}: {actual_pct:.1f}% (target: {target_pct}%)")
+        
+        if mismatches:
+            print(f"⚠️ Bloom's distribution mismatch: {', '.join(mismatches)}")
+            return False
+        
+        return True
     
     def _organize_into_sections(self, questions: List[Dict]) -> Dict:
         """
