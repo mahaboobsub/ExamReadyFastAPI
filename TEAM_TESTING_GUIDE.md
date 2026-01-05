@@ -2,13 +2,26 @@
 
 This guide is for teammates to validate the complete ExamReady pipeline, from Data Ingestion to Exam Generation.
 
-## 🛑 Prerequisite
-Ensure your environment is set up:
-```bash
-pip install -r requirements.txt
-# Ensure Tesseract OCR is installed on system and in PATH
-# Ensure .env has GOOGLE_API_KEY and QDRANT details
-```
+## 🛑 Prerequisite (Setup Environment)
+1. **Python Setup:**
+   ```bash
+   pip install -r requirements.txt
+   # Ensure Tesseract OCR is installed on system and in PATH
+   ```
+
+2. **Qdrant Cloud Setup (CRITICAL):**
+   *   Create a FREE account at [cloud.qdrant.io](https://cloud.qdrant.io).
+   *   Create a Cluster (Free Tier).
+   *   Get the **API Key** and **Cluster URL**.
+   *   Create a `.env` file in the project root:
+     ```env
+     QDRANT_URL=https://your-cluster-url.qdrant.tech
+     QDRANT_API_KEY=your-api-key-here
+     GOOGLE_API_KEY=your-gemini-key
+     ```
+
+3. **Verify Connection:**
+   Run `scripts/check_qdrant_coverage.py` to see if connection works (it will show 0 points initially).
 
 ---
 
